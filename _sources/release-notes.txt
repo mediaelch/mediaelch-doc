@@ -1,0 +1,80 @@
+.. |br| raw:: html
+
+   <br />
+
+=============
+Release Notes
+=============
+
+.. note::
+
+  This information is drawn from the GitHub MediaElch project changelog: |br|
+  https://github.com/Komet/MediaElch/blob/master/changelog.md
+
+
+2.4.3 (*tbd*)
+***********************
+
+Features
+^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Use HTTPS for scraping (`#371 <https://github.com/Komet/MediaElch/issues/371>`_)
+ - Set UI language in ````advancedsettings.xml```` (`#411 <https://github.com/Komet/MediaElch/issues/411>`_)
+ - Add Kino.de scraper (`#370 <https://github.com/Komet/MediaElch/issues/370>`_)
+ - Load *all* tags from IMDb (`#469 <https://github.com/Komet/MediaElch/issues/469>`_)
+ - Add more audio and video codecs (`#524 <https://github.com/Komet/MediaElch/issues/524>`_, `#530 <https://github.com/Komet/MediaElch/issues/530>`_)
+ - Remove deprecated Cinefacts (`#370 <https://github.com/Komet/MediaElch/issues/370>`_)
+ - Remove deprecated Coverlib (`#369 <https://github.com/Komet/MediaElch/issues/369>`_)
+ - Remove deprecated MediaPassion (`#449 <https://github.com/Komet/MediaElch/issues/449>`_)
+ - Remove deprecated MovieMaze (`#386 <https://github.com/Komet/MediaElch/issues/386>`_)
+ - Support KDE Breeze Dark theme (`#407 <https://github.com/Komet/MediaElch/issues/407>`_)
+ - Scrape TV show tags when using IMDb
+ - Detect duplicate movies
+ - Create subdirectories
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^
+
+ - HD-Trailers scraper broken (`#445 <https://github.com/Komet/MediaElch/issues/445>`_)
+ - OFDB movie scraper crashes MediaElch (`#394 <https://github.com/Komet/MediaElch/issues/394>`_)
+ - IMDB movie poster not loaded (`#385 <https://github.com/Komet/MediaElch/issues/385>`_)
+ - IMDB top 250 not scraped (`#468 <https://github.com/Komet/MediaElch/issues/468>`_)
+ - IMDB outline/plot scraping broken (`#456 <https://github.com/Komet/MediaElch/issues/456>`_)
+ - studio name not exported (`#392 <https://github.com/Komet/MediaElch/issues/392>`_)
+ - TvShow status not written to ``.nfo`` file (`#380 <https://github.com/Komet/MediaElch/issues/380>`_)
+ - HTML entities in export not escaped (`#391 <https://github.com/Komet/MediaElch/issues/391>`_)
+ - multi scraper does not load all episode thumbnails (`#415 <https://github.com/Komet/MediaElch/issues/415>`_)
+ - studio mapping for TvShow episodes (`#459 <https://github.com/Komet/MediaElch/issues/459>`_)
+ - using filters crashes MediaElch (`#504 <https://github.com/Komet/MediaElch/issues/504>`_)
+ - wrong filter tooltips (`#506 <https://github.com/Komet/MediaElch/issues/506>`_)
+ - concert extra fanart not saved (`#529 <https://github.com/Komet/MediaElch/issues/529>`_)
+ - backdrop not loaded using ADE (`#519 <https://github.com/Komet/MediaElch/issues/519>`_)
+ - adult scrapers broken (`#367 <https://github.com/Komet/MediaElch/issues/367>`_)
+ - *fanart.tv* music scraper broken
+
+Improvements
+^^^^^^^^^^^^^^^^^^^^^^^
+
+ - UI: line break in tree views (`#406 <https://github.com/Komet/MediaElch/issues/406>`_)
+ - UI: add 4k and 8k resolution flag (`#446 <https://github.com/Komet/MediaElch/issues/446>`_)
+ - UI: show green ID flag only if IMDB is valid (`#471 <https://github.com/Komet/MediaElch/issues/471>`_)
+
+2.4.2 (2016-07-01)
+***********************
+
+ - Bugfix: UniversalMusicScraper broken
+
+2.4.1 (2016-03-20)
+***********************
+
+ - Renamer: Show results in table view
+ - Export: Add IMDB ID to template
+ - IMDB: Adjusted scraper to new layout
+ - StreamDetails: Stereomode not detected
+ - IMDB: Rating and votes sometimes not scraped
+ - TheTVDB: Get votes for episodes and shows
+ - Image capture: Prevent possible crash
+ - StreamDetails: Language of subtitle not detected
+ - TvShows: Possible crash when scanning for new episodes of a single show
+ - TvShowEpisodes: epbookmark not saved
+ - AdvancedSettings: Use first studio only not working
