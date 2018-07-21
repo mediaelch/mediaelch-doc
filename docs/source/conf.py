@@ -291,4 +291,4 @@ texinfo_documents = [
 #texinfo_no_detailmenu = False
 
 # apple help book
-applehelp_bundle_id = 'com.kvibes.MediaElch'
+applehelp_bundle_id = 'com.kvibes.MediaElch.help'
