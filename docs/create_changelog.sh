@@ -13,10 +13,10 @@ curl https://raw.githubusercontent.com/Komet/MediaElch/master/changelog.md >> $N
 
 echo "Markdown --> reStructuredText"
 
-sed -i.bak '/###/ a ^^^^^^^^^^^^^^^^^^^^^^^' $NOTES
+sed -i.bak '/###/ a ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^' $NOTES
 sed -i.bak 's/### //' $NOTES
 
-sed -i.bak '/##/ a ***********************' $NOTES
+sed -i.bak '/##/ a ************************************' $NOTES
 sed -i.bak 's/## //' $NOTES
 
 sed -i.bak 's/`/``/g' $NOTES

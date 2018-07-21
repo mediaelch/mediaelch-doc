@@ -6,9 +6,12 @@ Contributing
 
    Work in progress
 
+MediaElch is open source! Would you like to help make MediaElch better? Then this section is for you:
+
+
 .. toctree::
    :maxdepth: 1
 
-   build
-   issues
-   translations
+   Report bugs <bug-reports>
+   Translate MediaElch<translations>
+   Build MediaElch <build>
