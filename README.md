@@ -5,6 +5,7 @@
 ## MediaElch Documentation
 
 This repository contains the source files of the MediaElch documentation.
+You can find the documentation here: https://bugwelle.github.io/mediaelch-doc/
 
 ### Build documentation
 
@@ -26,4 +27,4 @@ Fork this repo and create a pull request containing your changes.
 Any help is welcome! :-)
 
 If you add images (such as screenshots), minimize them using
-[Trimage]](https://trimage.org/).
+[Trimage](https://trimage.org/).
