@@ -25,7 +25,20 @@ Tv themes and trailers can also be downloaded.
 Screenshots
 ===========
 
-.. figure:: images/screenshots/TvShow_Main.png
+.. figure:: images/screenshots/movie-main.png
+   :align: center
+   :alt: Movie section
+
+   The Movie section lists your movies which you can browse,
+   scrape and edit.
+
+.. figure:: images/screenshots/movie-image-chooser.png
+   :align: center
+   :alt: TV Show section
+
+   You can choose from a variety of images (posters, backdrops and more).
+
+.. figure:: images/screenshots/tvshow-main.png
    :align: center
    :alt: TV Show section
 
