@@ -7,7 +7,7 @@ TV Shows
    Work in progress
 
 
-.. figure:: images/screenshots/tvshow-main.png
+.. figure:: ../images/screenshots/tvshow-main.png
    :align: center
    :alt: TV Show section
 

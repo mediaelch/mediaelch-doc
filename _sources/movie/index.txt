@@ -7,7 +7,7 @@ Movie
    Work in progress
 
 
-.. figure:: images/screenshots/movie-main.png
+.. figure:: ../images/screenshots/movie-main.png
    :align: center
    :alt: Movie section
 
