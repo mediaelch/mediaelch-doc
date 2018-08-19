@@ -45,6 +45,12 @@ Screenshots
    The TV Show section lists your TV shows which you can browse,
    scrape and edit.
 
+.. figure:: images/screenshots/settings-global.png
+   :align: center
+   :alt: Settings - Global
+
+   Global MediaElch Settings
+
 .. todo::
 
    Add more screenshots

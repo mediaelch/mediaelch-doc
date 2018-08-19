@@ -7,8 +7,16 @@ Movie
    Work in progress
 
 
+.. figure:: ../images/screenshots/movie-main.png
+   :align: center
+   :alt: Movie section
+
+   The Movie section lists your movies which you can browse,
+   scrape and edit.
+
+
 Movie Sets
 ----------
 
-If you have movies that belong to a set, e.g. "Harry Potter and the Philosopher's Stone" belong
-to the Harry Potter Set/Franchise, they are listed here.
+If you have movies that belong to a set, e.g. "Harry Potter and the Philosopher's Stone"
+which belongs to the Harry Potter Set/Franchise, they are listed here.
