@@ -6,7 +6,7 @@ Export
 
    Work in progress
 
-MediaElchs export feature allows you to export your whole collection as HTML files.
+MediaElch's export feature allows you to export your whole collection as HTML files.
 
 
 .. toctree::
