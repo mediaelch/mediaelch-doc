@@ -64,6 +64,20 @@ openSUSE
 
 Releases for openSUSE are distributed using the `open build service`_.
 
+
+Update External Documentation
+*****************************
+
+There are several external forum posts and other documentation pages that may
+need to be updated. Look at following pages and update them if neccessary:
+
+ - [English] This documentation: https://github.com/mediaelch/mediaelch-doc
+ - [English] https://forum.kodi.tv/showthread.php?tid=136333
+ - [English] https://kodi.wiki/view/MediaElch
+ - [German] https://wiki.ubuntuusers.de/MediaElch
+ - [German] https://www.kodinerds.net/index.php/Thread/14560-MediaElch-MediaManager-for-Mac-Linux-Win/?pageNo=34
+
+
 .. _Launchpad: https://launchpad.net/
 .. _open build service: https://openbuildservice.org/
 
