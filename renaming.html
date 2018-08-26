@@ -165,21 +165,53 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">Work in progress</p>
 </div>
-<p>MediaElch is able to rename your files and folders.
-You are able to define how you want your files and folders to be named.
-After clicking on &#8220;Rename selected files&#8221; in the main toolbar you see a
-bunch of placeholders which can be used for renaming: Some are just
-placeholders (the ones in <code class="docutils literal"><span class="pre">&lt;...&gt;</span></code>) which are replaced every time and
-some are conditional placeholders. The text inside the latter is only
-used if the condition is true.</p>
-<p>Lets do an example: Assume two movies</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>&#8220;My Awesome Movie&#8221;, year is set to 2000, and it&#8217;s a 3D movie (selected in the Stream Details tab)</li>
-<li>&#8220;Ordinary Movie&#8221;, year is set to 1999.</li>
-<li>&#8220;Sequel Movie&#8221;, year is set to 2010, movieset is set to &#8220;Movie collection&#8221;</li>
-</ol>
-</div></blockquote>
+<p>MediaElch is able to rename your files and folders on a given pattern.
+The &#8220;Renamer&#8221; allows you to build up a solid directory structure to
+organize your movies, tv shows and more.</p>
+<div class="figure align-center" id="id1">
+<img alt="Renamer Button" src="_images/renamer-button.png" />
+<p class="caption"><span class="caption-text">The renamer button becomes active if items (movies/tv shows/...) are
+selected.</span></p>
+</div>
+<p>You are able to define how your files and folders should be named.
+After clicking on &#8220;Rename selected files&#8221; (see image above) in the main
+toolbar you see a bunch of placeholders which can be used for renaming:</p>
+<p>Placeholders in angle brackets (<code class="docutils literal"><span class="pre">&lt;...&gt;</span></code>) are replaced by their actual
+value. Playholders in curly brackets (<code class="docutils literal"><span class="pre">{...}</span> <span class="pre">...</span> <span class="pre">{/...}</span></code>) are conditionals.
+The content between them is only used if the condition is true.</p>
+<p>Here&#8217;s an example: Assume we have three movies</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="30%" />
+<col width="10%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Movie</th>
+<th class="head">Year</th>
+<th class="head">Other</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>&#8220;Awesome Movie&#8221;</td>
+<td>2000</td>
+<td>3D movie</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>&#8220;Ordinary Movie&#8221;</td>
+<td>1999</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>&#8220;Sequel Movie&#8221;</td>
+<td>2018</td>
+<td>movieset is &#8220;Movie collection&#8221;</td>
+</tr>
+</tbody>
+</table>
 <p>Using the following rename pattern</p>
 <blockquote>
 <div><ul class="simple">
@@ -188,13 +220,33 @@ used if the condition is true.</p>
 </ul>
 </div></blockquote>
 <p>the movies will be renamed to:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>folder: <strong>My Awesome Movie (2000)</strong>, file: <code class="docutils literal"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie.3D.mkv</span></code></li>
-<li>folder: <strong>Ordinary Movie (1999)</strong>, file: <code class="docutils literal"><span class="pre">Ordinary</span> <span class="pre">Movie.mkv</span></code></li>
-<li>folder: <strong>Movie Collection - Sequel Movie (2010)</strong>, file: <code class="docutils literal"><span class="pre">Sequel</span> <span class="pre">Movie.mkv</span></code></li>
-</ol>
-</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="56%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Folder</th>
+<th class="head">Filename</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td><code class="docutils literal"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie</span> <span class="pre">(2000)</span></code></td>
+<td><code class="docutils literal"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie.3D.mkv</span></code></td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td><code class="docutils literal"><span class="pre">Ordinary</span> <span class="pre">Movie</span> <span class="pre">(1999)</span></code></td>
+<td><code class="docutils literal"><span class="pre">Ordinary</span> <span class="pre">Movie.mkv</span></code></td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td><code class="docutils literal"><span class="pre">Movie</span> <span class="pre">Collection</span> <span class="pre">-</span> <span class="pre">Sequel</span> <span class="pre">Movie</span> <span class="pre">(2010)</span></code></td>
+<td><code class="docutils literal"><span class="pre">Sequel</span> <span class="pre">Movie.mkv</span></code></td>
+</tr>
+</tbody>
+</table>
 <p>The following conditional placeholders are available:</p>
 <blockquote>
 <div><ul class="simple">
@@ -205,9 +257,9 @@ used if the condition is true.</p>
 <li><code class="docutils literal"><span class="pre">{imdbId}&lt;imdbId&gt;{/imdbId}</span></code> The IMDB Id of the movie</li>
 </ul>
 </div></blockquote>
-<p>If you are unsure if your rename pattern gives the result you want, just hit
-the &#8220;Simulate&#8221; button. No file is renamed then but you&#8217;ll see the
-resulting folder- and filenames.</p>
+<p>If you are unsure if your rename pattern gives you the result you want, just hit
+the &#8220;Dry Run&#8221; button. No file is renamed but you&#8217;ll see the
+resulting folder- and filenames if you were to actually rename them.</p>
 </div>
 
 

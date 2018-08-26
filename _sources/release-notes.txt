@@ -17,7 +17,8 @@ Release Notes
 
 Features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+ 
+ - Add user documentation (`#531 <https://github.com/Komet/MediaElch/issues/531>`_)
  - Use HTTPS for scraping (`#371 <https://github.com/Komet/MediaElch/issues/371>`_)
  - Set UI language in ````advancedsettings.xml```` (`#411 <https://github.com/Komet/MediaElch/issues/411>`_)
  - Add Kino.de scraper (`#370 <https://github.com/Komet/MediaElch/issues/370>`_)
@@ -51,6 +52,7 @@ Bugfixes
  - backdrop not loaded using ADE (`#519 <https://github.com/Komet/MediaElch/issues/519>`_)
  - adult scrapers broken (`#367 <https://github.com/Komet/MediaElch/issues/367>`_)
  - *fanart.tv* music scraper broken
+ - Placeholder ``<showTitle>`` does not work for renaming season folders (`#553 <https://github.com/Komet/MediaElch/issues/553>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
