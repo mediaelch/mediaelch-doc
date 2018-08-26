@@ -2,10 +2,6 @@
 Renaming files and directories
 ==============================
 
-.. warning::
-
-   Work in progress
-
 MediaElch is able to rename your files and folders on a given pattern.
 The "Renamer" allows you to build up a solid directory structure to
 organize your movies, tv shows and more.
