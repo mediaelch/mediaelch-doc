@@ -32,6 +32,7 @@ Features
  - Scrape TV show tags when using IMDb
  - Detect duplicate movies
  - Create subdirectories
+ - Concert Renamer
 
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -41,6 +42,7 @@ Bugfixes
  - IMDB movie poster not loaded (`#385 <https://github.com/Komet/MediaElch/issues/385>`_)
  - IMDB top 250 not scraped (`#468 <https://github.com/Komet/MediaElch/issues/468>`_)
  - IMDB outline/plot scraping broken (`#456 <https://github.com/Komet/MediaElch/issues/456>`_)
+ - IMDB genres/studios/... scraping broken (`#556 <https://github.com/Komet/MediaElch/issues/556>`_)
  - studio name not exported (`#392 <https://github.com/Komet/MediaElch/issues/392>`_)
  - TvShow status not written to ``.nfo`` file (`#380 <https://github.com/Komet/MediaElch/issues/380>`_)
  - HTML entities in export not escaped (`#391 <https://github.com/Komet/MediaElch/issues/391>`_)
@@ -49,8 +51,10 @@ Bugfixes
  - using filters crashes MediaElch (`#504 <https://github.com/Komet/MediaElch/issues/504>`_)
  - wrong filter tooltips (`#506 <https://github.com/Komet/MediaElch/issues/506>`_)
  - concert extra fanart not saved (`#529 <https://github.com/Komet/MediaElch/issues/529>`_)
+ - ADE search does not return results (`#565 <https://github.com/Komet/MediaElch/issues/565>`_)
  - backdrop not loaded using ADE (`#519 <https://github.com/Komet/MediaElch/issues/519>`_)
  - adult scrapers broken (`#367 <https://github.com/Komet/MediaElch/issues/367>`_)
+ - VideoBuster does not load certification in special cases (`#571 <https://github.com/Komet/MediaElch/issues/571>`_)
  - *fanart.tv* music scraper broken
  - Placeholder ``<showTitle>`` does not work for renaming season folders (`#553 <https://github.com/Komet/MediaElch/issues/553>`_)
 
