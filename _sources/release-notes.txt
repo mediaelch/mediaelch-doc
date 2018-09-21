@@ -29,6 +29,9 @@ Features
  - Remove deprecated MediaPassion (`#449 <https://github.com/Komet/MediaElch/issues/449>`_)
  - Remove deprecated MovieMaze (`#386 <https://github.com/Komet/MediaElch/issues/386>`_)
  - Support KDE Breeze Dark theme (`#407 <https://github.com/Komet/MediaElch/issues/407>`_)
+ - Use new Kodi XML syntax for movie set names (`#554 <https://github.com/Komet/MediaElch/issues/554>`_)
+ - Add context menu in movie duplicate view (`#591 <https://github.com/Komet/MediaElch/issues/591>`_)
+ - Add AEBN genre option (`#590 <https://github.com/Komet/MediaElch/issues/590>`_)
  - Scrape TV show tags when using IMDb
  - Detect duplicate movies
  - Create subdirectories
