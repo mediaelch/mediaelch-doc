@@ -52,6 +52,7 @@ MediaCenters as well.
    export/index
    Renamer <renaming>
    kodi
+   Portable Mode <portable-mode>
 
 .. toctree::
    :caption: Maintainer
