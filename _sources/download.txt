@@ -14,11 +14,8 @@ They can be downloaded at https://bintray.com/komet/MediaElch (choose your syste
 +-------------------+-------------------+-----------------------------------------------+
 | macOS             | latest (unstable) | |bintray-mac|                                 |
 +-------------------+-------------------+-----------------------------------------------+
-| Linux (AppImage)* | latest (unstable) | |bintray-linux|                               |
+| Linux (AppImage)  | latest (unstable) | |bintray-linux|                               |
 +-------------------+-------------------+-----------------------------------------------+
-
-*The AppImage version requires you to have ``ffmpeg``in your ``$PATH``. 
-It does not come bundled with it like the Windows and maxOS versions do.
 
 .. _AppImage: https://appimage.org/
 
