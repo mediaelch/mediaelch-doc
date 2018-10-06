@@ -184,7 +184,7 @@
 </div>
 <p>This page and its children are used by MediaElch&#8217;s maintainers and contain information
 on how to release a new version, where to publish them, etc.</p>
-<p><strong>If you are an enduser of MediaElch then skip this part.</strong></p>
+<p><strong>If you are an enduser of MediaElch then please skip this part.</strong></p>
 <div class="section" id="release-a-new-version">
 <h2>Release a new version<a class="headerlink" href="#release-a-new-version" title="Permalink to this headline">¶</a></h2>
 <p>Follow these steps when releasing a new version. Start from a fresh git repository:</p>
@@ -206,7 +206,8 @@ on how to release a new version, where to publish them, etc.</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>main changelog (<code class="docutils literal"><span class="pre">changelog.md</span></code>)</li>
-<li>debian changelog (use <code class="docutils literal"><span class="pre">dch</span> <span class="pre">--newversion</span> <span class="pre">&quot;${ME_VERSION}-1&quot;</span> <span class="pre">--distribution</span> <span class="pre">vivid</span></code>)</li>
+<li>debian changelog (use <code class="docutils literal"><span class="pre">dch</span> <span class="pre">--newversion</span> <span class="pre">&quot;${ME_VERSION}-1&quot;</span> <span class="pre">--distribution</span> <span class="pre">vivid</span></code>;
+requires `` libdistro-info-perl``)</li>
 <li>obs changelog (<code class="docutils literal"><span class="pre">obs/MediaElch.changes</span></code>)</li>
 </ol>
 </div></blockquote>
@@ -220,7 +221,7 @@ on how to release a new version, where to publish them, etc.</p>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v1.0</span> <span class="pre">-m</span> <span class="pre">&quot;MediaElch</span> <span class="pre">Version</span> <span class="pre">1.0&quot;</span></code></li>
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v2.6.0</span> <span class="pre">-m</span> <span class="pre">&quot;MediaElch</span> <span class="pre">Version</span> <span class="pre">2.6.0&quot;</span></code></li>
 <li><code class="docutils literal"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code></li>
 <li><code class="docutils literal"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></li>
 </ul>
@@ -237,11 +238,13 @@ on how to release a new version, where to publish them, etc.</p>
 </div>
 <div class="section" id="debian">
 <h4>Debian<a class="headerlink" href="#debian" title="Permalink to this headline">¶</a></h4>
-<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>.</p>
+<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>.
+See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh">https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh</a></p>
 </div>
 <div class="section" id="opensuse">
 <h4>openSUSE<a class="headerlink" href="#opensuse" title="Permalink to this headline">¶</a></h4>
-<p>Releases for openSUSE are distributed using the <a class="reference external" href="https://openbuildservice.org/">open build service</a>.</p>
+<p>Releases for openSUSE are distributed using the <a class="reference external" href="https://openbuildservice.org/">open build service</a>.
+See: <a class="reference external" href="https://github.com/Komet/MediaElch/tree/master/obs">https://github.com/Komet/MediaElch/tree/master/obs</a></p>
 </div>
 </div>
 <div class="section" id="publish-release-notes-in-forums">

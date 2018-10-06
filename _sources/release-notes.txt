@@ -32,10 +32,11 @@ Features
  - Use new Kodi XML syntax for movie set names (`#554 <https://github.com/Komet/MediaElch/issues/554>`_)
  - Add context menu in movie duplicate view (`#591 <https://github.com/Komet/MediaElch/issues/591>`_)
  - Add AEBN genre option (`#590 <https://github.com/Komet/MediaElch/issues/590>`_)
+ - Select scraper language in movie search panel (`#442 <https://github.com/Komet/MediaElch/issues/442>`_)
+ - Concert Renamer (`#574 <https://github.com/Komet/MediaElch/issues/574>`_)
  - Scrape TV show tags when using IMDb
  - Detect duplicate movies
  - Create subdirectories
- - Concert Renamer
 
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

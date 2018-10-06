@@ -9,7 +9,7 @@ Maintainer
 This page and its children are used by MediaElch's maintainers and contain information
 on how to release a new version, where to publish them, etc.
 
-**If you are an enduser of MediaElch then skip this part.**
+**If you are an enduser of MediaElch then please skip this part.**
 
 
 Release a new version
@@ -33,7 +33,8 @@ Update Changelogs
 *****************
 
  1. main changelog (``changelog.md``)
- 2. debian changelog (use ``dch --newversion "${ME_VERSION}-1" --distribution vivid``)
+ 2. debian changelog (use ``dch --newversion "${ME_VERSION}-1" --distribution vivid``;
+    requires `` libdistro-info-perl``)
  3. obs changelog (``obs/MediaElch.changes``)
 
 Update Git
@@ -41,7 +42,7 @@ Update Git
 
  1. Commit your changes (MediaElch version and changelogs).
  2. Add a version tag and push your changes
-  - ``git tag -a v1.0 -m "MediaElch Version 1.0"``
+  - ``git tag -a v2.6.0 -m "MediaElch Version 2.6.0"``
   - ``git push origin master``
   - ``git push --tags``
 
@@ -58,11 +59,13 @@ Debian
 ------
 
 Releases for Debian and Ubuntu are distributed using Launchpad_.
+See: https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh
 
 openSUSE
 --------
 
 Releases for openSUSE are distributed using the `open build service`_.
+See: https://github.com/Komet/MediaElch/tree/master/obs
 
 
 Publish Release Notes in Forums
