@@ -238,8 +238,16 @@ requires `` libdistro-info-perl``)</li>
 </div>
 <div class="section" id="debian">
 <h4>Debian<a class="headerlink" href="#debian" title="Permalink to this headline">¶</a></h4>
-<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>.
-See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh">https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh</a></p>
+<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>.</p>
+<p>See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh">https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh</a></p>
+<div class="highlight-sh"><div class="highlight"><pre><span class="c1"># Create temporary directory</span>
+mkdir mediaelch-deb <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
+<span class="c1"># Have a clean repository</span>
+git clone https://github.com/Komet/MediaElch.git
+<span class="nb">cd</span> MediaElch
+./scripts/package_release.sh linux deb
+</pre></div>
+</div>
 </div>
 <div class="section" id="opensuse">
 <h4>openSUSE<a class="headerlink" href="#opensuse" title="Permalink to this headline">¶</a></h4>
