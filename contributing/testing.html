@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Bug Reports &mdash; MediaElch 2.4.3 documentation</title>
+  <title>Test MediaElch &mdash; MediaElch 2.4.3 documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="../about.html"/>
     <link rel="top" title="MediaElch 2.4.3 documentation" href="../index.html"/>
         <link rel="up" title="Contributing" href="index.html"/>
-        <link rel="next" title="Translations" href="translations.html"/>
-        <link rel="prev" title="Contributing" href="index.html"/> 
+        <link rel="next" title="Settings" href="../settings.html"/>
+        <link rel="prev" title="Build MediaElch" href="build.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -90,10 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-reports.html">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="translations.html">Translate MediaElch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="build.html">Build MediaElch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="testing.html">Test MediaElch</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Test MediaElch</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
@@ -155,11 +155,11 @@
       
           <li><a href="index.html">Contributing</a> &raquo;</li>
       
-    <li>Bug Reports</li>
+    <li>Test MediaElch</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/contributing/bug-reports.rst" class="fa fa-github"> Edit on GitHub</a>
+            <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/contributing/testing.rst" class="fa fa-github"> Edit on GitHub</a>
           
         
       </li>
@@ -169,24 +169,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="bug-reports">
-<h1>Bug Reports<a class="headerlink" href="#bug-reports" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Work in progress</p>
+  <div class="section" id="test-mediaelch">
+<h1>Test MediaElch<a class="headerlink" href="#test-mediaelch" title="Permalink to this headline">¶</a></h1>
+<p>Tests are written using <a class="reference external" href="https://github.com/catchorg/Catch2">Catch2</a>. They are categorized into online/offline
+tests and some other categories.</p>
+<div class="highlight-sh"><div class="highlight"><pre>mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>           <span class="c1"># Create build directory</span>
+qmake .. CONFIG+<span class="o">=</span><span class="nb">test</span>          <span class="c1"># Configure build for tests</span>
+make -j<span class="k">$(</span>nproc<span class="k">)</span>                <span class="c1"># Build tests</span>
+
+<span class="c1"># Below are some commands for the test executable</span>
+./mediaelch-test -h            <span class="c1"># List Catch2 help</span>
+./mediaelch-test -t            <span class="c1"># List all tags</span>
+./mediaelch-test -d yes        <span class="c1"># Run *all* tests and print duration</span>
+./mediaelch-test <span class="s2">&quot;[load_data]&quot;</span> <span class="c1"># Run scraping tests (online test)</span>
+./mediaelch-test <span class="s2">&quot;[search]&quot;</span>    <span class="c1"># Run scraping search tests (online test)</span>
+</pre></div>
 </div>
-<p>You found a bug? Time to report it!</p>
-<p>MediaElch&#8217;s issue tracker is available on GitHub: <a class="reference external" href="https://github.com/Komet/MediaElch/issues">https://github.com/Komet/MediaElch/issues</a></p>
-<p>If you don&#8217;t have an account on GitHub, you can also report bugs in the official kodi forum: <a class="reference external" href="https://forum.kodi.tv/showthread.php?tid=136333">https://forum.kodi.tv/showthread.php?tid=136333</a></p>
-<p>When opening a new issue, please send us:</p>
-<blockquote>
-<div><ul class="simple">
-<li>the name of your operating system plus its version (e.g. Windows 8.1, Linux Mint 19, etc.)</li>
-<li>steps to reproduce the bug</li>
-<li>developer information of your MediaElch version (MediaElch -&gt; About -&gt; Developer)</li>
-</ul>
-</div></blockquote>
-<p>We&#8217;ll try to fix found bugs as fast as possible!</p>
 </div>
 
 
@@ -196,10 +194,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="translations.html" class="btn btn-neutral float-right" title="Translations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Contributing" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="build.html" class="btn btn-neutral" title="Build MediaElch" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

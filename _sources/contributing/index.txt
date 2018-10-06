@@ -15,3 +15,4 @@ MediaElch is open source! Would you like to help make MediaElch better? Then thi
    Report bugs <bug-reports>
    Translate MediaElch<translations>
    Build MediaElch <build>
+   Test MediaElch <testing>
