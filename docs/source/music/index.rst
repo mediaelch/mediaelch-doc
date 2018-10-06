@@ -2,6 +2,14 @@
 Music
 =====
 
+.. figure:: ../images/screenshots/music-main.png
+   :align: center
+   :alt: TV Show section
+
+   The Music section lists your albums which you can browse,
+   scrape and edit.
+
+
 Starting with version 2.2 MediaElch is able to scrape information about your music collection.
 
 To use music scraping, your directory structure must look like the following:
