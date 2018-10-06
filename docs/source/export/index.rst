@@ -2,10 +2,6 @@
 Export
 ======
 
-.. warning::
-
-   Work in progress
-
 MediaElch's export feature allows you to export your whole collection as HTML files.
 
 
