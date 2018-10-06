@@ -69,7 +69,7 @@ See: https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/packag
     # Have a clean repository
     git clone https://github.com/Komet/MediaElch.git
     cd MediaElch
-    ./scripts/package_release.sh linux deb
+    ./scripts/package_release.sh linux launchpad
 
 
 openSUSE

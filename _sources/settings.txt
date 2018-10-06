@@ -2,11 +2,6 @@
 Settings
 ========
 
-.. todo::
-
-   Describe "normal" settings.
-
-
 .. figure:: images/screenshots/settings-global.png
    :align: center
    :alt: Settings - Global
@@ -28,7 +23,7 @@ Settings
 +-------------+                                                                            +
 | Music       |                                                                            |
 +-------------+----------------------------------------------------------------------------+
-| Kodi        | Host, Port, user name and password for kodi instance.                      |
+| Kodi        | Host, Port, user name and password for Kodi instance.                      |
 +-------------+----------------------------------------------------------------------------+
 | Network     | Proxy configuration.                                                       |
 +-------------+----------------------------------------------------------------------------+
