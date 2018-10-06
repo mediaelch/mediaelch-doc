@@ -59,7 +59,18 @@ Debian
 ------
 
 Releases for Debian and Ubuntu are distributed using Launchpad_.
+
 See: https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh
+
+.. code-block:: sh
+
+    # Create temporary directory
+    mkdir mediaelch-deb && cd $_
+    # Have a clean repository
+    git clone https://github.com/Komet/MediaElch.git
+    cd MediaElch
+    ./scripts/package_release.sh linux deb
+
 
 openSUSE
 --------
