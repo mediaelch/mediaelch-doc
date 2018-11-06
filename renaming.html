@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,27 +24,23 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="author" title="About these documents"
-              href="about.html"/>
-    <link rel="top" title="MediaElch 2.4.3 documentation" href="index.html"/>
-        <link rel="next" title="Synchronization with Kodi" href="kodi.html"/>
-        <link rel="prev" title="Create an Export Theme" href="export/create-theme.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Synchronization with Kodi" href="kodi.html" />
+    <link rel="prev" title="Create an Export Theme" href="export/create-theme.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -83,7 +81,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">MediaElch</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">MediaElch</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release-notes.html">Release Notes</a></li>
@@ -109,7 +110,7 @@
 <p class="caption"><span class="caption-text">Features</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="export/index.html">Export</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Renamer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Renamer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kodi.html">Synchronization with Kodi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portable-mode.html">Portable Mode</a></li>
 </ul>
@@ -127,34 +128,56 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">MediaElch</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MediaElch</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Renaming files and directories</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Renaming files and directories</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/renaming.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+            
+              <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/renaming.rst" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -163,20 +186,20 @@
   <div class="section" id="renaming-files-and-directories">
 <h1>Renaming files and directories<a class="headerlink" href="#renaming-files-and-directories" title="Permalink to this headline">¶</a></h1>
 <p>MediaElch is able to rename your files and folders on a given pattern.
-The &#8220;Renamer&#8221; allows you to build up a solid directory structure to
+The “Renamer” allows you to build up a solid directory structure to
 organize your movies, tv shows and more.</p>
 <div class="figure align-center" id="id1">
 <img alt="Renamer Button" src="_images/renamer-button.png" />
-<p class="caption"><span class="caption-text">The renamer button becomes active if items (movies/tv shows/...) are
+<p class="caption"><span class="caption-text">The renamer button becomes active if items (movies/tv shows/…) are
 selected.</span></p>
 </div>
 <p>You are able to define how your files and folders should be named.
-After clicking on &#8220;Rename selected files&#8221; (see image above) in the main
+After clicking on “Rename selected files” (see image above) in the main
 toolbar you see a bunch of placeholders which can be used for renaming:</p>
-<p>Placeholders in angle brackets (<code class="docutils literal"><span class="pre">&lt;...&gt;</span></code>) are replaced by their actual
-value. Playholders in curly brackets (<code class="docutils literal"><span class="pre">{...}</span> <span class="pre">...</span> <span class="pre">{/...}</span></code>) are conditionals.
+<p>Placeholders in angle brackets (<code class="docutils literal notranslate"><span class="pre">&lt;...&gt;</span></code>) are replaced by their actual
+value. Playholders in curly brackets (<code class="docutils literal notranslate"><span class="pre">{...}</span> <span class="pre">...</span> <span class="pre">{/...}</span></code>) are conditionals.
 The content between them is only used if the condition is true.</p>
-<p>Here&#8217;s an example: Assume we have three movies</p>
+<p>Here’s an example: Assume we have three movies</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="8%" />
@@ -193,27 +216,27 @@ The content between them is only used if the condition is true.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>&#8220;Awesome Movie&#8221;</td>
+<td>“Awesome Movie”</td>
 <td>2000</td>
 <td>3D movie</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>&#8220;Ordinary Movie&#8221;</td>
+<td>“Ordinary Movie”</td>
 <td>1999</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>&#8220;Sequel Movie&#8221;</td>
+<td>“Sequel Movie”</td>
 <td>2018</td>
-<td>movieset is &#8220;Movie collection&#8221;</td>
+<td>movieset is “Movie collection”</td>
 </tr>
 </tbody>
 </table>
 <p>Using the following rename pattern</p>
 <blockquote>
 <div><ul class="simple">
-<li>Folder: <code class="docutils literal"><span class="pre">{movieset}&lt;movieset&gt;</span> <span class="pre">-</span> <span class="pre">{/movieset}&lt;title&gt;</span> <span class="pre">(&lt;year&gt;)</span></code></li>
-<li>File: <code class="docutils literal"><span class="pre">&lt;title&gt;{3D}.3D{/3D}.&lt;extension&gt;</span></code></li>
+<li>Folder: <code class="docutils literal notranslate"><span class="pre">{movieset}&lt;movieset&gt;</span> <span class="pre">-</span> <span class="pre">{/movieset}&lt;title&gt;</span> <span class="pre">(&lt;year&gt;)</span></code></li>
+<li>File: <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;{3D}.3D{/3D}.&lt;extension&gt;</span></code></li>
 </ul>
 </div></blockquote>
 <p>the movies will be renamed to:</p>
@@ -231,45 +254,46 @@ The content between them is only used if the condition is true.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><code class="docutils literal"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie</span> <span class="pre">(2000)</span></code></td>
-<td><code class="docutils literal"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie.3D.mkv</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie</span> <span class="pre">(2000)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Awesome</span> <span class="pre">Movie.3D.mkv</span></code></td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><code class="docutils literal"><span class="pre">Ordinary</span> <span class="pre">Movie</span> <span class="pre">(1999)</span></code></td>
-<td><code class="docutils literal"><span class="pre">Ordinary</span> <span class="pre">Movie.mkv</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Ordinary</span> <span class="pre">Movie</span> <span class="pre">(1999)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Ordinary</span> <span class="pre">Movie.mkv</span></code></td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><code class="docutils literal"><span class="pre">Movie</span> <span class="pre">Collection</span> <span class="pre">-</span> <span class="pre">Sequel</span> <span class="pre">Movie</span> <span class="pre">(2010)</span></code></td>
-<td><code class="docutils literal"><span class="pre">Sequel</span> <span class="pre">Movie.mkv</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Movie</span> <span class="pre">Collection</span> <span class="pre">-</span> <span class="pre">Sequel</span> <span class="pre">Movie</span> <span class="pre">(2010)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Sequel</span> <span class="pre">Movie.mkv</span></code></td>
 </tr>
 </tbody>
 </table>
 <p>The following conditional placeholders are available:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">{bluray}{/bluray}</span></code> The movie is a bluray structure</li>
-<li><code class="docutils literal"><span class="pre">{dvd}{/dvd}</span></code> The movie is a dvd structure</li>
-<li><code class="docutils literal"><span class="pre">{3D}{/3D}</span></code> It&#8217;s a 3D movie, you selected a stereo mode in the stream details tab (if not detected automatically)</li>
-<li><code class="docutils literal"><span class="pre">{movieset}&lt;movieset&gt;{/movieset}</span></code> The movieset is not empty</li>
-<li><code class="docutils literal"><span class="pre">{imdbId}&lt;imdbId&gt;{/imdbId}</span></code> The IMDB Id of the movie</li>
+<li><code class="docutils literal notranslate"><span class="pre">{bluray}{/bluray}</span></code> The movie is a bluray structure</li>
+<li><code class="docutils literal notranslate"><span class="pre">{dvd}{/dvd}</span></code> The movie is a dvd structure</li>
+<li><code class="docutils literal notranslate"><span class="pre">{3D}{/3D}</span></code> It’s a 3D movie, you selected a stereo mode in the stream details tab (if not detected automatically)</li>
+<li><code class="docutils literal notranslate"><span class="pre">{movieset}&lt;movieset&gt;{/movieset}</span></code> The movieset is not empty</li>
+<li><code class="docutils literal notranslate"><span class="pre">{imdbId}&lt;imdbId&gt;{/imdbId}</span></code> The IMDB Id of the movie</li>
 </ul>
 </div></blockquote>
 <p>If you are unsure if your rename pattern gives you the result you want, just hit
-the &#8220;Dry Run&#8221; button. No file is renamed but you&#8217;ll see the
+the “Dry Run” button. No file is renamed but you’ll see the
 resulting folder- and filenames if you were to actually rename them.</p>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kodi.html" class="btn btn-neutral float-right" title="Synchronization with Kodi" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kodi.html" class="btn btn-neutral float-right" title="Synchronization with Kodi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="export/create-theme.html" class="btn btn-neutral" title="Create an Export Theme" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="export/create-theme.html" class="btn btn-neutral" title="Create an Export Theme" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -278,11 +302,11 @@ resulting folder- and filenames if you were to actually rename them.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, MediaElch authors.
+        &copy; Copyright 2018, MediaElch authors
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -297,34 +321,24 @@ resulting folder- and filenames if you were to actually rename them.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'2.4.3',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
