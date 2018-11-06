@@ -252,16 +252,31 @@ on how to release a new version, where to publish them, etc.</p>
 </div>
 <div class="section" id="package-mediaelch-for-distributions">
 <h3>Package MediaElch for distributions<a class="headerlink" href="#package-mediaelch-for-distributions" title="Permalink to this headline">¶</a></h3>
+<p>MediaElch is packaged for all major platforms. On Linux, we support multiple distributions.
+Follow these steps to package a release version for publishing. After publishing MediaElch
+do not forget to update this documentation.</p>
 <div class="section" id="windows">
 <h4>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
+<p>Wait for travis-ci to finish and download the latest ZIP. This requires a Git tag to be present.
+Rename the ZIP, upload it on GitHub <a class="reference external" href="https://github.com/Komet/MediaElch/releases">Releases</a>.</p>
 </div>
 <div class="section" id="macos">
 <h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h4>
+<p>Same as for Windows. Download the latest <code class="docutils literal notranslate"><span class="pre">.dmg</span></code>, rename it and upload the version on
+GitHub <a class="reference external" href="https://github.com/Komet/MediaElch/releases">Releases</a>.</p>
 </div>
 <div class="section" id="debian">
 <h4>Debian<a class="headerlink" href="#debian" title="Permalink to this headline">¶</a></h4>
-<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>.</p>
-<p>See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh">https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh</a></p>
+<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>. What you need:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Create a Launchpad account</li>
+<li>Add a GPG key</li>
+<li>Request membership for the <a class="reference external" href="https://launchpad.net/~mediaelch">MediaElch Team</a></li>
+</ol>
+</div></blockquote>
+<p>MediaElch provides a simple script for releasing a new MediaElch debian package.
+See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh">https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh</a></p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create temporary directory</span>
 mkdir mediaelch-deb <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
 <span class="c1"># Set your signing key (if it&#39;s not the same as in debian/changelog)</span>
@@ -276,7 +291,7 @@ git clone https://github.com/Komet/MediaElch.git
 <div class="section" id="opensuse">
 <h4>openSUSE<a class="headerlink" href="#opensuse" title="Permalink to this headline">¶</a></h4>
 <p>Releases for openSUSE are distributed using the <a class="reference external" href="https://openbuildservice.org/">open build service</a>.
-See: <a class="reference external" href="https://github.com/Komet/MediaElch/tree/master/obs">https://github.com/Komet/MediaElch/tree/master/obs</a></p>
+See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/obs/README.md">https://github.com/Komet/MediaElch/blob/master/obs/README.md</a></p>
 </div>
 </div>
 <div class="section" id="publish-release-notes-in-forums">

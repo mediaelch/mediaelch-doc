@@ -48,17 +48,30 @@ Update Git
 Package MediaElch for distributions
 ***********************************
 
+MediaElch is packaged for all major platforms. On Linux, we support multiple distributions.
+Follow these steps to package a release version for publishing. After publishing MediaElch
+do not forget to update this documentation.
+
 Windows
 -------
+Wait for travis-ci to finish and download the latest ZIP. This requires a Git tag to be present.
+Rename the ZIP, upload it on GitHub Releases_.
 
 macOS
 -----
+Same as for Windows. Download the latest ``.dmg``, rename it and upload the version on
+GitHub Releases_.
 
 Debian
 ------
 
-Releases for Debian and Ubuntu are distributed using Launchpad_.
+Releases for Debian and Ubuntu are distributed using Launchpad_. What you need:
 
+ 1. Create a Launchpad account
+ 2. Add a GPG key
+ 3. Request membership for the `MediaElch Team`_
+
+MediaElch provides a simple script for releasing a new MediaElch debian package.
 See: https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh
 
 .. code-block:: sh
@@ -77,7 +90,7 @@ openSUSE
 --------
 
 Releases for openSUSE are distributed using the `open build service`_.
-See: https://github.com/Komet/MediaElch/tree/master/obs
+See: https://github.com/Komet/MediaElch/blob/master/obs/README.md
 
 
 Publish Release Notes in Forums
@@ -102,6 +115,8 @@ need to be updated. Look at following pages and update them if neccessary:
 
 .. _Launchpad: https://launchpad.net/
 .. _open build service: https://openbuildservice.org/
+.. _Releases: https://github.com/Komet/MediaElch/releases
+.. _MediaElch Team: https://launchpad.net/~mediaelch
 
 .. todo::
 
