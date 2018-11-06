@@ -33,8 +33,7 @@ Update Changelogs
 *****************
 
  1. main changelog (``changelog.md``)
- 2. debian changelog (use ``dch --newversion "${ME_VERSION}-1" --distribution vivid``;
-    requires `` libdistro-info-perl``)
+ 2. debian changelog (use ``dch -v "${ME_VERSION}-1" -D xenial -M``
  3. obs changelog (``obs/MediaElch.changes``)
 
 Update Git
@@ -60,16 +59,18 @@ Debian
 
 Releases for Debian and Ubuntu are distributed using Launchpad_.
 
-See: https://github.com/Komet/MediaElch/blob/master/scripts/build_scripts/package_deb.sh
+See: https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh
 
 .. code-block:: sh
 
     # Create temporary directory
     mkdir mediaelch-deb && cd $_
+    # Set your signing key (if it's not the same as in debian/changelog)
+    ME_SIGNING_KEY=D507F8C2686456B1B267B59C95D3C009C530B63C
     # Have a clean repository
     git clone https://github.com/Komet/MediaElch.git
     cd MediaElch
-    ./scripts/package_release.sh linux launchpad
+    ./scripts/packaging/package.sh linux launchpad
 
 
 openSUSE
