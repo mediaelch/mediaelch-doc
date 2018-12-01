@@ -11,12 +11,12 @@ Scraper Issues
 
 If a scraper does not seem to work, try using another scraper.
 
-   - other scraper works: file an :doc:`issue <contributing/bug-reports>`
-   - other scraper does not work: check your internet connection
+   - other scrapers works: file an :doc:`issue <contributing/bug-reports>`
+   - other scrapers do not work: check your internet connection
 
 
-Other
-=====
+Other Issues
+============
 
 If you run into any other problems, try resetting your MediaElch settings.
 If this does not work, create a :doc:`bug-report <contributing/bug-reports>`.

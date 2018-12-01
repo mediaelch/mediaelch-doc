@@ -8,13 +8,9 @@ You need to install the `Transifex client <https://docs.transifex.com/client/ins
 
 .. code-block:: sh
 
+    # You need Qt5 Tools for lupdate and lrelease
+    sudo apt-get install qt5-default qt5-qmake qttools5-dev-tools
+
     export TX_TOKEN=<your_Transifex_API_token>
-	cd MediaElch
-    tx --version
-    tx status
-    tx pull -a -f
-    lupdate -verbose -no-obsolete MediaElch.pro
-    tx push -s -t # Update sources and translations.
-    lrelease # TODO
-    git add i18n
-    git commit -m "[i18n] Update translations from transifex"
+    cd MediaElch
+    ./scripts/update_translation_source.sh

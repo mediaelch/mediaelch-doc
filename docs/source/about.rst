@@ -50,7 +50,3 @@ Screenshots
    :alt: Settings - Global
 
    Global MediaElch Settings
-
-.. todo::
-
-   Add more screenshots

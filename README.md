@@ -10,12 +10,14 @@ You can find the documentation here: https://bugwelle.github.io/mediaelch-doc/
 ### Build documentation
 
 Download and install [Sphinx](http://www.sphinx-doc.org/en/master/) as well
-as the "Read the Docs Sphinx Theme" (`pip install sphinx_rtd_theme`).
+as the "Read the Docs Sphinx Theme".
 
 ```sh
+pip install -U Sphinx        # Install Sphinx
+pip install sphinx_rtd_theme # Install Theme
 cd docs
 ./create_changelog.sh # Concerts the Markdown changelog to reStructuredText
-make dirhtml
+make html
 ```
 
 ### Release documentation
