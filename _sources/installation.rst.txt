@@ -14,6 +14,7 @@ It's easy to install MediaElch on Windows. First download MediaElch from the :do
 Extract the ``zip`` to where you want to install MediaElch, e.g. to ``C:\Users\yourUserName\Desktop\MediaElch``.
 That's it: You can now start ``MediaElch.exe`` and scrape movies, tv shows and more!
 
+For portable mode see :doc:`Portable Mode <portable-mode>`.
 
 Linux
 =====

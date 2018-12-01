@@ -30,6 +30,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release a new MediaElch version" href="release.html" />
     <link rel="prev" title="Windows: Portable Mode" href="../portable-mode.html" /> 
 
   
@@ -86,7 +87,7 @@
               <p class="caption"><span class="caption-text">MediaElch</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes / Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
@@ -116,21 +117,8 @@
 <p class="caption"><span class="caption-text">Maintainer</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Maintainer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#release-a-new-version">Release a new version</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bump-mediaelch-version">Bump MediaElch Version</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#update-changelogs">Update Changelogs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#update-git">Update Git</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#package-mediaelch-for-distributions">Package MediaElch for distributions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#windows">Windows</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#macos">macOS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debian">Debian</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#opensuse">openSUSE</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#publish-release-notes-in-forums">Publish Release Notes in Forums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#update-external-documentation">Update External Documentation</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="release.html">Release a new MediaElch version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transifex.html">Transifex / i18n</a></li>
 </ul>
 </li>
 </ul>
@@ -201,125 +189,14 @@
             
   <div class="section" id="maintainer">
 <h1>Maintainer<a class="headerlink" href="#maintainer" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Work in progress</p>
-</div>
-<p>This page and its children are used by MediaElch’s maintainers and contain information
-on how to release a new version, where to publish them, etc.</p>
-<p><strong>If you are an enduser of MediaElch then please skip this part.</strong></p>
-<div class="section" id="release-a-new-version">
-<h2>Release a new version<a class="headerlink" href="#release-a-new-version" title="Permalink to this headline">¶</a></h2>
-<p>Follow these steps when releasing a new version. Start from a fresh git repository:</p>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/Komet/MediaElch.git</span></code></p>
-<div class="section" id="bump-mediaelch-version">
-<h3>Bump MediaElch Version<a class="headerlink" href="#bump-mediaelch-version" title="Permalink to this headline">¶</a></h3>
-<p>Change the version in following files:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">Version.h</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MediaElch.plist</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">obs/MediaElch.spec</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">obs/README.md</span></code></li>
-</ol>
-</div></blockquote>
-</div>
-<div class="section" id="update-changelogs">
-<h3>Update Changelogs<a class="headerlink" href="#update-changelogs" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ol class="arabic simple">
-<li>main changelog (<code class="docutils literal notranslate"><span class="pre">changelog.md</span></code>)</li>
-<li>debian changelog (use <code class="docutils literal notranslate"><span class="pre">dch</span> <span class="pre">-v</span> <span class="pre">&quot;${ME_VERSION}-1&quot;</span> <span class="pre">-D</span> <span class="pre">xenial</span> <span class="pre">-M</span></code></li>
-<li>obs changelog (<code class="docutils literal notranslate"><span class="pre">obs/MediaElch.changes</span></code>)</li>
-</ol>
-</div></blockquote>
-</div>
-<div class="section" id="update-git">
-<h3>Update Git<a class="headerlink" href="#update-git" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ol class="arabic simple">
-<li>Commit your changes (MediaElch version and changelogs).</li>
-<li>Add a version tag and push your changes</li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v2.6.0</span> <span class="pre">-m</span> <span class="pre">&quot;MediaElch</span> <span class="pre">Version</span> <span class="pre">2.6.0&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release a new MediaElch version</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release.html#release-a-new-version">Release a new version</a></li>
 </ul>
-</div></blockquote>
-</div></blockquote>
-</div>
-<div class="section" id="package-mediaelch-for-distributions">
-<h3>Package MediaElch for distributions<a class="headerlink" href="#package-mediaelch-for-distributions" title="Permalink to this headline">¶</a></h3>
-<p>MediaElch is packaged for all major platforms. On Linux, we support multiple distributions.
-Follow these steps to package a release version for publishing. After publishing MediaElch
-do not forget to update this documentation.</p>
-<div class="section" id="windows">
-<h4>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
-<p>Wait for travis-ci to finish and download the latest ZIP. This requires a Git tag to be present.
-Rename the ZIP, upload it on GitHub <a class="reference external" href="https://github.com/Komet/MediaElch/releases">Releases</a>.</p>
-</div>
-<div class="section" id="macos">
-<h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h4>
-<p>Same as for Windows. Download the latest <code class="docutils literal notranslate"><span class="pre">.dmg</span></code>, rename it and upload the version on
-GitHub <a class="reference external" href="https://github.com/Komet/MediaElch/releases">Releases</a>.</p>
-</div>
-<div class="section" id="debian">
-<h4>Debian<a class="headerlink" href="#debian" title="Permalink to this headline">¶</a></h4>
-<p>Releases for Debian and Ubuntu are distributed using <a class="reference external" href="https://launchpad.net/">Launchpad</a>. What you need:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>Create a Launchpad account</li>
-<li>Add a GPG key</li>
-<li>Request membership for the <a class="reference external" href="https://launchpad.net/~mediaelch">MediaElch Team</a></li>
-</ol>
-</div></blockquote>
-<p>MediaElch provides a simple script for releasing a new MediaElch debian package.
-See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh">https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh</a></p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create temporary directory</span>
-mkdir mediaelch-deb <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
-<span class="c1"># Set your signing key (if it&#39;s not the same as in debian/changelog)</span>
-<span class="nv">ME_SIGNING_KEY</span><span class="o">=</span>D507F8C2686456B1B267B59C95D3C009C530B63C
-<span class="c1"># Have a clean repository</span>
-git clone https://github.com/Komet/MediaElch.git
-<span class="nb">cd</span> MediaElch
-./scripts/packaging/package.sh linux launchpad
-</pre></div>
-</div>
-</div>
-<div class="section" id="opensuse">
-<h4>openSUSE<a class="headerlink" href="#opensuse" title="Permalink to this headline">¶</a></h4>
-<p>Releases for openSUSE are distributed using the <a class="reference external" href="https://openbuildservice.org/">open build service</a>.
-See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/obs/README.md">https://github.com/Komet/MediaElch/blob/master/obs/README.md</a></p>
-</div>
-</div>
-<div class="section" id="publish-release-notes-in-forums">
-<h3>Publish Release Notes in Forums<a class="headerlink" href="#publish-release-notes-in-forums" title="Permalink to this headline">¶</a></h3>
-<p>A new release should be announced in some forum posts:</p>
-<blockquote>
-<div><ul class="simple">
-<li>[English] <a class="reference external" href="https://forum.kodi.tv/showthread.php?tid=136333">https://forum.kodi.tv/showthread.php?tid=136333</a></li>
-<li>[German] <a class="reference external" href="https://www.kodinerds.net/index.php/Thread/14560-MediaElch-MediaManager-for-Mac-Linux-Win/?pageNo=34">https://www.kodinerds.net/index.php/Thread/14560-MediaElch-MediaManager-for-Mac-Linux-Win/?pageNo=34</a></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transifex.html">Transifex / i18n</a></li>
 </ul>
-</div></blockquote>
-</div>
-<div class="section" id="update-external-documentation">
-<h3>Update External Documentation<a class="headerlink" href="#update-external-documentation" title="Permalink to this headline">¶</a></h3>
-<p>There are several external forum posts and other documentation pages that may
-need to be updated. Look at following pages and update them if neccessary:</p>
-<blockquote>
-<div><ul class="simple">
-<li>[English] This documentation: <a class="reference external" href="https://github.com/mediaelch/mediaelch-doc">https://github.com/mediaelch/mediaelch-doc</a></li>
-<li>[English] <a class="reference external" href="https://kodi.wiki/view/MediaElch">https://kodi.wiki/view/MediaElch</a></li>
-<li>[German] <a class="reference external" href="https://wiki.ubuntuusers.de/MediaElch">https://wiki.ubuntuusers.de/MediaElch</a></li>
-</ul>
-</div></blockquote>
-<div class="admonition-todo admonition" id="index-0">
-<p class="first admonition-title">Todo</p>
-<p class="last">Not done, yet.</p>
-</div>
-</div>
 </div>
 </div>
 
@@ -330,6 +207,8 @@ need to be updated. Look at following pages and update them if neccessary:</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="release.html" class="btn btn-neutral float-right" title="Release a new MediaElch version" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../portable-mode.html" class="btn btn-neutral" title="Windows: Portable Mode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -366,7 +245,6 @@ need to be updated. Look at following pages and update them if neccessary:</p>
         <script type="text/javascript" src="../_static/jquery.js"></script>
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

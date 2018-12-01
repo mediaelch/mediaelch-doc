@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Music &mdash; MediaElch 2.4.3 documentation</title>
+  <title>Transifex / i18n &mdash; MediaElch 2.4.3 documentation</title>
   
 
   
@@ -30,8 +30,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Export" href="../export/index.html" />
-    <link rel="prev" title="Concert" href="../concert/index.html" /> 
+    <link rel="prev" title="Release a new MediaElch version" href="release.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -101,14 +100,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sections</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concert/index.html">Concert</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Music</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#scrapers">Scrapers</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../music/index.html">Music</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Features</span></p>
 <ul>
@@ -118,8 +114,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../portable-mode.html">Portable Mode</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Maintainer</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../maintainer/index.html">Maintainer</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Maintainer</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="release.html">Release a new MediaElch version</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Transifex / i18n</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -165,14 +165,16 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Music</li>
+          <li><a href="index.html">Maintainer</a> &raquo;</li>
+        
+      <li>Transifex / i18n</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/music/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/bugwelle/mediaelch-doc/blob/master/docs/source/maintainer/transifex.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -186,37 +188,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="music">
-<h1>Music<a class="headerlink" href="#music" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-center" id="id1">
-<img alt="TV Show section" src="../_images/music-main.png" />
-<p class="caption"><span class="caption-text">The Music section lists your albums which you can browse,
-scrape and edit.</span></p>
-</div>
-<p>Starting with version 2.2 MediaElch is able to scrape information about your music collection.</p>
-<p>To use music scraping, your directory structure must look like the following:</p>
-<blockquote>
-<div><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist1</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist1/Album1</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist1/Album1/song.mp3</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist2</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist2/Album2</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music/Artist2/Album2/song.mp3</span></code></li>
-</ul>
-</div></blockquote>
-<p>This means every artist must have its own subdirectory and inside this directory
-every album must be in another subdirectory. In MediaElchs settings add the
-toplevel directory of the artists (in the example above this is <code class="docutils literal notranslate"><span class="pre">/Volumes/Data/Music</span></code>).</p>
-<div class="section" id="scrapers">
-<h2>Scrapers<a class="headerlink" href="#scrapers" title="Permalink to this headline">¶</a></h2>
-<p>There is only one scraper for music artists and albums: “Universal Music Scraper”.
-This scraper combines <a class="reference external" href="https://www.theaudiodb.com/">The Audio DB</a>, <a class="reference external" href="https://www.allmusic.com/">AllMusic</a> and <a class="reference external" href="https://www.discogs.com/">Discogs</a> for information about artists and albums.
-In the settings you can select the language (just used for The Audio DB) and which one you prefer.
-All images are scraped from Fanart.tv.
-Extra fanart images are also downloaded automatically.
-How many images should be loaded can be adjusted in the settings.
-Set it to <code class="docutils literal notranslate"><span class="pre">0</span></code> if you don’t want extra fanarts to be downloaded automatically.</p>
+  <div class="section" id="transifex-i18n">
+<h1>Transifex / i18n<a class="headerlink" href="#transifex-i18n" title="Permalink to this headline">¶</a></h1>
+<p>This page describes how to update translations locally and on transifex.com</p>
+<p>You need to install the <a class="reference external" href="https://docs.transifex.com/client/installing-the-client">Transifex client</a>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># You need Qt5 Tools for lupdate and lrelease</span>
+sudo apt-get install qt5-default qt5-qmake qttools5-dev-tools
+
+<span class="nb">export</span> <span class="nv">TX_TOKEN</span><span class="o">=</span>&lt;your_Transifex_API_token&gt;
+<span class="nb">cd</span> MediaElch
+./scripts/update_translation_source.sh
+</pre></div>
 </div>
 </div>
 
@@ -228,10 +210,8 @@ Set it to <code class="docutils literal notranslate"><span class="pre">0</span><
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../export/index.html" class="btn btn-neutral float-right" title="Export" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="../concert/index.html" class="btn btn-neutral" title="Concert" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="release.html" class="btn btn-neutral" title="Release a new MediaElch version" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
