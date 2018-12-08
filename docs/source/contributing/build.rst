@@ -128,21 +128,17 @@ and `Homebrew <https://brew.sh/>`_. Instead of XCode you can also just install t
 `XCode Command Line Tools <https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_>`_
 (open a Terminal and execute ``xcode-select --install``).
 
-You have to download [ffmpeg](https://evermeet.cx/ffmpeg/) to be able to create random
-screenshots of video files. After building MediaElch, place ``ffmpeg``
-inside ``MediaElch.app/Contents/MacOS``.
-
 
 Command Line Build
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: sh
 
-    # Install tools and dependencies
-    brew install subversion qt5 media-info
-
     # [Optional] Install git (it should have already been installed by XCode)
     brew install git
+
+    # Install tools and dependencies
+    brew install subversion qt media-info ffmpeg
 
     # Clone MediaElch
     git clone https://github.com/Komet/MediaElch.git && cd MediaElch
@@ -170,6 +166,10 @@ Check that following components are selected:
 Download the `MediaElch source code <https://github.com/Komet/MediaElch>`_
 by clicking "Download" or using git: |br|
 ``git clone https://github.com/Komet/MediaElch.git``.
+
+You have to download `ffmpeg <https://evermeet.cx/ffmpeg/>`_ to be able to create random
+screenshots of video files. After building MediaElch, place ``ffmpeg``
+inside ``MediaElch.app/Contents/MacOS``.
 
 Other Libraries
 ----------------------------------------------------------
