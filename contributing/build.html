@@ -106,7 +106,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id5">Dependencies</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id9">Build</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10">ffmpeg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ffmpeg">ffmpeg</a></li>
 </ul>
 </li>
 </ul>
@@ -216,13 +216,13 @@ Using <a class="reference external" href="https://www.qt.io/download">QtCreator<
 <p><em>Supported platforms:</em></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#linux" id="id12">Linux</a></li>
-<li><a class="reference internal" href="#mac" id="id13">Mac</a></li>
-<li><a class="reference internal" href="#windows" id="id14">Windows</a></li>
+<li><a class="reference internal" href="#linux" id="id11">Linux</a></li>
+<li><a class="reference internal" href="#mac" id="id12">Mac</a></li>
+<li><a class="reference internal" href="#windows" id="id13">Windows</a></li>
 </ul>
 </div>
 <div class="section" id="linux">
-<h2><a class="toc-backref" href="#id12">Linux</a><a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Linux</a><a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
 <p>Linux build instructions are available for:</p>
 <blockquote>
 <div><ul class="simple">
@@ -320,7 +320,7 @@ make -j4
 </div>
 </div>
 <div class="section" id="mac">
-<h2><a class="toc-backref" href="#id13">Mac</a><a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Mac</a><a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h2>
 <p>Install XCode (e.g. through the <a class="reference external" href="https://itunes.apple.com/de/app/xcode/id497799835">Mac App Store</a>)
 and <a class="reference external" href="https://brew.sh/">Homebrew</a>. Instead of XCode you can also just install the
 <a class="reference external" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_">XCode Command Line Tools</a>
@@ -361,8 +361,8 @@ Check that following components are selected:</p>
 <p>Download the <a class="reference external" href="https://github.com/Komet/MediaElch">MediaElch source code</a>
 by clicking “Download” or using git: <br />
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/Komet/MediaElch.git</span></code>.</p>
-<p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg</a> to be able to create random
-screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
+<p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg for Windows</a> to be able
+to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
 inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
 <div class="section" id="other-libraries">
 <h4>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline">¶</a></h4>
@@ -385,7 +385,7 @@ Configure it as “Release” and click “Run” (<code class="docutils literal
 </div>
 </div>
 <div class="section" id="windows">
-<h2><a class="toc-backref" href="#id14">Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id5">
 <h3>Dependencies<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="qt">
@@ -410,8 +410,8 @@ Copy the folder <code class="docutils literal notranslate"><span class="pre">Sou
 <h3>Build<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Open the MediaElch project using QtCreator, configure it and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
 </div>
-<div class="section" id="id10">
-<h3>ffmpeg<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ffmpeg">
+<h3>ffmpeg<a class="headerlink" href="#ffmpeg" title="Permalink to this headline">¶</a></h3>
 <p>You have to download <a class="reference external" href="https://ffmpeg.zeranoe.com/builds/">ffmpeg</a> to be able
 to create random screenshots of video files. After building MediaElch place
 <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> inside a new folder <code class="docutils literal notranslate"><span class="pre">vendor</span></code> which must be placed in the same

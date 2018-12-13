@@ -44,4 +44,4 @@ automatically, you have to create it on your own. It should be placed in followi
 
 As an alternative the ``advancedsettings.xml`` can also be placed in the application directory.
 
-For all possible settings, see [``advancedsettings.xml``](advancedsettings.xml).
+For all possible settings, see `advancedsettings.xml <https://github.com/Komet/MediaElch/blob/master/docs/advancedsettings.xml>`_.

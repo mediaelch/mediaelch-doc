@@ -37,6 +37,7 @@ Update Git
 
  1. Commit your changes (MediaElch version and changelogs).
  2. Add a version tag and push your changes
+ 
   - ``git tag -a v2.6.0 -m "MediaElch Version 2.6.0"``
   - ``git push origin master``
   - ``git push --tags``
