@@ -167,8 +167,8 @@ Download the `MediaElch source code <https://github.com/Komet/MediaElch>`_
 by clicking "Download" or using git: |br|
 ``git clone https://github.com/Komet/MediaElch.git``.
 
-You have to download `ffmpeg <https://evermeet.cx/ffmpeg/>`_ to be able to create random
-screenshots of video files. After building MediaElch, place ``ffmpeg``
+You have to download `ffmpeg for Windows <https://evermeet.cx/ffmpeg/>`_ to be able
+to create random screenshots of video files. After building MediaElch, place ``ffmpeg``
 inside ``MediaElch.app/Contents/MacOS``.
 
 Other Libraries
