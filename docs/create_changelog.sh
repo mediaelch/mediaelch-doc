@@ -9,7 +9,7 @@ NOTES=$DIR/source/release-notes.rst
 rm -f $NOTES
 cat $DIR/release-notes-header.rst > $NOTES
 
-curl https://raw.githubusercontent.com/Komet/MediaElch/master/changelog.md >> $NOTES
+curl https://raw.githubusercontent.com/Komet/MediaElch/master/CHANGELOG.md >> $NOTES
 
 echo "Markdown --> reStructuredText"
 
