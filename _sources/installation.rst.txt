@@ -16,15 +16,17 @@ That's it: You can now start ``MediaElch.exe`` and scrape movies, tv shows and m
 
 For portable mode see :doc:`Portable Mode <portable-mode>`.
 
-Linux
-=====
+Linux - AppImage
+================
 
-Currently only unstable AppImages are available. Download MediaElch from :doc:`download area <index>` and make
-it executable with ``chmod +x MediaElch*.AppImage``. You can now start MediaElch ``./MediaElch*.AppImage``.
+Download MediaElch from :doc:`download area <index>` and make
+it executable with ``chmod +x MediaElch*.AppImage``.
+You can now start MediaElch using ``./MediaElch*.AppImage``.
 
-**Note**: The next stable version will also include `.deb` and `.rpm` packages that you can install
-through your system's package manager.
+Linux - Package Manager
+=======================
 
+Please refer to the page :doc:`Download <download>`.
 
 macOS
 =====
