@@ -56,6 +56,7 @@ Build
 .. code-block:: sh
 
     git clone https://github.com/Komet/MediaElch.git && cd MediaElch
+    git submodule update --init
     mkdir build && cd $_
     qmake ..
     make -j4
@@ -108,6 +109,7 @@ Build
 .. code-block:: sh
 
     git clone https://github.com/Komet/MediaElch.git && cd MediaElch
+    git submodule update --init
     mkdir build && cd $_
     qmake ..
     make -j4
@@ -142,6 +144,7 @@ Command Line Build
 
     # Clone MediaElch
     git clone https://github.com/Komet/MediaElch.git && cd MediaElch
+    git submodule update --init
 
     # Download necessary headers
     svn checkout https://github.com/MediaArea/MediaInfoLib/trunk/Source/MediaInfoDLL
@@ -165,7 +168,7 @@ Check that following components are selected:
 
 Download the `MediaElch source code <https://github.com/Komet/MediaElch>`_
 by clicking "Download" or using git: |br|
-``git clone https://github.com/Komet/MediaElch.git``.
+``git clone https://github.com/Komet/MediaElch.git && git submodule update --init``.
 
 You have to download `ffmpeg for Windows <https://evermeet.cx/ffmpeg/>`_ to be able
 to create random screenshots of video files. After building MediaElch, place ``ffmpeg``
