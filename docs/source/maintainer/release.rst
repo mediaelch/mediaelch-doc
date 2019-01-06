@@ -76,7 +76,7 @@ See: https://github.com/Komet/MediaElch/blob/master/scripts/packaging/package.sh
     # Create temporary directory
     mkdir mediaelch-deb && cd $_
     # Set your signing key (if it's not the same as in debian/changelog)
-    ME_SIGNING_KEY=D507F8C2686456B1B267B59C95D3C009C530B63C
+    export ME_SIGNING_KEY=D507F8C2686456B1B267B59C95D3C009C530B63C
     # Have a clean repository
     git clone https://github.com/Komet/MediaElch.git
     cd MediaElch
