@@ -3,7 +3,8 @@ Download
 ========
 
 MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and Windows.
-They can be downloaded at https://bintray.com/komet/MediaElch (choose your system -> click on tab "Files" -> select version).
+
+Nightlies can be downloaded from https://bintray.com/komet/MediaElch (choose your system -> click on tab "Files" -> select version).
 
 *See also:* :doc:`Install MediaElch <installation>`.
 
