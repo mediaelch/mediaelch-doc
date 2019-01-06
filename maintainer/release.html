@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Release a new MediaElch version &mdash; MediaElch 2.4.3 documentation</title>
+  <title>Release a new MediaElch version &mdash; MediaElch 2.6.0 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                2.4
+                2.6
               </div>
             
           
@@ -277,7 +277,7 @@ See: <a class="reference external" href="https://github.com/Komet/MediaElch/blob
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create temporary directory</span>
 mkdir mediaelch-deb <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
 <span class="c1"># Set your signing key (if it&#39;s not the same as in debian/changelog)</span>
-<span class="nv">ME_SIGNING_KEY</span><span class="o">=</span>D507F8C2686456B1B267B59C95D3C009C530B63C
+<span class="nb">export</span> <span class="nv">ME_SIGNING_KEY</span><span class="o">=</span>D507F8C2686456B1B267B59C95D3C009C530B63C
 <span class="c1"># Have a clean repository</span>
 git clone https://github.com/Komet/MediaElch.git
 <span class="nb">cd</span> MediaElch

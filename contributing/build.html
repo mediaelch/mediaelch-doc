@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Build MediaElch &mdash; MediaElch 2.4.3 documentation</title>
+  <title>Build MediaElch &mdash; MediaElch 2.6.0 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                2.4
+                2.6
               </div>
             
           
@@ -259,6 +259,7 @@ sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev
 <div class="section" id="build">
 <h4>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
+git submodule update --init
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
 qmake ..
 make -j4
@@ -304,6 +305,7 @@ your <code class="docutils literal notranslate"><span class="pre">$PATH</span></
 <div class="section" id="id2">
 <h4>Build<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
+git submodule update --init
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
 qmake ..
 make -j4
@@ -335,6 +337,7 @@ brew install subversion qt media-info ffmpeg
 
 <span class="c1"># Clone MediaElch</span>
 git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
+git submodule update --init
 
 <span class="c1"># Download necessary headers</span>
 svn checkout https://github.com/MediaArea/MediaInfoLib/trunk/Source/MediaInfoDLL
@@ -360,7 +363,7 @@ Check that following components are selected:</p>
 </div></blockquote>
 <p>Download the <a class="reference external" href="https://github.com/Komet/MediaElch">MediaElch source code</a>
 by clicking “Download” or using git: <br />
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/Komet/MediaElch.git</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/Komet/MediaElch.git</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span> <span class="pre">--init</span></code>.</p>
 <p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg for Windows</a> to be able
 to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
 inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
