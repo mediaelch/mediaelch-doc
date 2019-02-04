@@ -12,6 +12,30 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/changelog.md
 
 
+Next Release (*tbd*)
+************************************
+The next release will affect your scraper settings. You'll therefore have
+to reconfigure your scraper settings.
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Fix IMDb tag scraping (`#649 <https://github.com/Komet/MediaElch/issues/649>`_)
+ - Fix TMDb issue with HTML characters in overview/plot (`#651 <https://github.com/Komet/MediaElch/issues/651>`_)
+ - ``Ctrl+A`` works in movie and concert section (`#647 <https://github.com/Komet/MediaElch/issues/647>`_)
+
+Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Update French translation (`#646 <https://github.com/Komet/MediaElch/issues/646>`_)
+ - Add more subtitle formats (`#661 <https://github.com/Komet/MediaElch/issues/661>`_)
+
+Internal Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Implement ScraperSettings class for better mocking
+
+
 2.6.0 - Ferenginar (2019-01-06)
 ************************************
 

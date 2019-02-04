@@ -19,7 +19,7 @@ Temporary files, caches and the internal database are also stored in the default
 storage locations depending on your OS:
 
  * macOS: ``~/Library/Application Support/kvibes/MediaElch/``
- * Linux: ``~/.local/share/data/kvibes/MediaElch/``
+ * Linux: ``~/.local/share/kvibes/MediaElch/``
  * Windows: ``C:\Users\yourUserName\AppData\Local\kvibes\MediaElch\``
 
 If you are using the portable mode (only available on Windows) then all settings
