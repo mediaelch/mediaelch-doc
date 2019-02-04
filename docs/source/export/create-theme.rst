@@ -16,7 +16,7 @@ At first you should install the "Dummy Theme".
 The files will be located at the following places:
 
  - Mac OS: ``/Users/username/Library/Application Support/kvibes/MediaElch/export_themes/dummy``
- - Linux: ``/home/username/.local/share/data/kvibes/MediaElch/export_themes/dummy``
+ - Linux: ``/home/username/.local/share/kvibes/MediaElch/export_themes/dummy``
  - Windows: ``C:\Users\username\AppData\Local\kvibes\MediaElch\export_themes\dummy``
 
 Now just rename the dummy folder as you like. The new name should not
