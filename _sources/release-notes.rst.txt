@@ -15,7 +15,9 @@ Release Notes / Changelog
 Next Release (*tbd*)
 ************************************
 The next release will affect your scraper settings. You'll therefore have
-to reconfigure your scraper settings.
+to reconfigure your scraper settings. You may also need to delete
+``MediaElch.sqlite``. See:
+https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored
 
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,12 +25,16 @@ Bugfixes
  - Fix IMDb tag scraping (`#649 <https://github.com/Komet/MediaElch/issues/649>`_)
  - Fix TMDb issue with HTML characters in overview/plot (`#651 <https://github.com/Komet/MediaElch/issues/651>`_)
  - ``Ctrl+A`` works in movie and concert section (`#647 <https://github.com/Komet/MediaElch/issues/647>`_)
+ - Fix crash when "Load missing episodes" is enabled (`#669 <https://github.com/Komet/MediaElch/issues/669>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Update French translation (`#646 <https://github.com/Komet/MediaElch/issues/646>`_)
  - Add more subtitle formats (`#661 <https://github.com/Komet/MediaElch/issues/661>`_)
+ - UI: Fix list/table style for dark themes (`#640 <https://github.com/Komet/MediaElch/issues/640>`_)
+ - UI: Fix stuck splitter cursor (`#659 <https://github.com/Komet/MediaElch/issues/659>`_)
+ - UI: Restructured search windows (`#660 <https://github.com/Komet/MediaElch/issues/660>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

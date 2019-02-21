@@ -96,8 +96,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ferenginar-2019-01-06">2.6.0 - Ferenginar (2019-01-06)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id42">Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id46">Improvements</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#talax-2016-07-01">2.4.2 - Talax (2016-07-01)</a></li>
@@ -105,7 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#talax-2015-12-06">2.4.0 - Talax (2015-12-06)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#denobula-2015-10-12">2.3.2 - Denobula (2015-10-12)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#denobula-2015-10-10">2.3.1 - Denobula (2015-10-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id46">2.3.0 - Denobula (2015-10-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id50">2.3.0 - Denobula (2015-10-10)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sphere-builder-2015-02-02">2.2.2 - Sphere Builder (2015-02-02)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sphere-builder-2015-01-25">2.2.1 - Sphere Builder (2015-01-25)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sphere-builder-2015-01-23">2.2 - Sphere Builder (2015-01-23)</a></li>
@@ -123,11 +123,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#qo-nos-2012-11-12">1.2 - Qo’noS (2012-11-12)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#andoria-2012-10-22">1.1 - Andoria (2012-10-22)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vulcan-2012-10-08">1.0.0 - Vulcan (2012-10-08)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id47">0.9.6 (2012-09-20)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id48">0.9.5 (2012-09-20)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id49">0.9.4 (2012-06-29)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id50">0.9.3 (2012-06-29)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id51">0.9.2 (2012-06-29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id51">0.9.6 (2012-09-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id52">0.9.5 (2012-09-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id53">0.9.4 (2012-06-29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id54">0.9.3 (2012-06-29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id55">0.9.2 (2012-06-29)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">Download</a></li>
@@ -235,7 +235,9 @@
 <div class="section" id="next-release-tbd">
 <h2>Next Release (<em>tbd</em>)<a class="headerlink" href="#next-release-tbd" title="Permalink to this headline">¶</a></h2>
 <p>The next release will affect your scraper settings. You’ll therefore have
-to reconfigure your scraper settings.</p>
+to reconfigure your scraper settings. You may also need to delete
+<code class="docutils literal notranslate"><span class="pre">MediaElch.sqlite</span></code>. See:
+<a class="reference external" href="https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored">https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored</a></p>
 <div class="section" id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h3>
 <blockquote>
@@ -243,6 +245,7 @@ to reconfigure your scraper settings.</p>
 <li>Fix IMDb tag scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/649">#649</a>)</li>
 <li>Fix TMDb issue with HTML characters in overview/plot (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/651">#651</a>)</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl+A</span></code> works in movie and concert section (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/647">#647</a>)</li>
+<li>Fix crash when “Load missing episodes” is enabled (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/669">#669</a>)</li>
 </ul>
 </div></blockquote>
 </div>
@@ -252,6 +255,9 @@ to reconfigure your scraper settings.</p>
 <div><ul class="simple">
 <li>Update French translation (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/646">#646</a>)</li>
 <li>Add more subtitle formats (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/661">#661</a>)</li>
+<li>UI: Fix list/table style for dark themes (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/640">#640</a>)</li>
+<li>UI: Fix stuck splitter cursor (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/659">#659</a>)</li>
+<li>UI: Restructured search windows (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/660">#660</a>)</li>
 </ul>
 </div></blockquote>
 </div>
@@ -291,8 +297,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id22">
-<h3>Bugfixes<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id26">
+<h3>Bugfixes<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li>HD-Trailers scraper broken (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/445">#445</a>)</li>
@@ -318,8 +324,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id42">
-<h3>Improvements<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id46">
+<h3>Improvements<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li>UI: line break in tree views (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/406">#406</a>)</li>
@@ -409,8 +415,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id46">
-<h2>2.3.0 - Denobula (2015-10-10)<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id50">
+<h2>2.3.0 - Denobula (2015-10-10)<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>Music: Coverlib.com scraper</li>
@@ -897,8 +903,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id47">
-<h2>0.9.6 (2012-09-20)<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id51">
+<h2>0.9.6 (2012-09-20)<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>Ignore files in directory “Extras” (thanks to KBagust)</li>
@@ -908,8 +914,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id48">
-<h2>0.9.5 (2012-09-20)<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id52">
+<h2>0.9.5 (2012-09-20)<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>TV show episodes are grouped by seasons</li>
@@ -927,16 +933,16 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id49">
-<h2>0.9.4 (2012-06-29)<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id53">
+<h2>0.9.4 (2012-06-29)<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>Fixed not escaped characters in SQL interface</li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id50">
-<h2>0.9.3 (2012-06-29)<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id54">
+<h2>0.9.3 (2012-06-29)<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>Added support for TV Show banners</li>
@@ -952,8 +958,8 @@ to reconfigure your scraper settings.</p>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id51">
-<h2>0.9.2 (2012-06-29)<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id55">
+<h2>0.9.2 (2012-06-29)<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li>Bugfixes and some new features</li>

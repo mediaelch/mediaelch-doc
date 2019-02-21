@@ -9,7 +9,7 @@ Nightlies can be downloaded from https://bintray.com/komet/MediaElch (choose you
 *See also:* :doc:`Install MediaElch <installation>`.
 
 +-------------------+-------------------+-----------------------------------------------+
-| System            | Version           | Download                                      |
+| System (64 bit)   | Version           | Download                                      |
 +===================+===================+===============================================+
 | Windows           | 2.6.0             | |gh_pages_260|                                |
 +-------------------+-------------------+-----------------------------------------------+
