@@ -26,6 +26,9 @@ Bugfixes
  - Fix TMDb issue with HTML characters in overview/plot (`#651 <https://github.com/Komet/MediaElch/issues/651>`_)
  - ``Ctrl+A`` works in movie and concert section (`#647 <https://github.com/Komet/MediaElch/issues/647>`_)
  - Fix crash when "Load missing episodes" is enabled (`#669 <https://github.com/Komet/MediaElch/issues/669>`_)
+ - Filter "Movie has no IMDb ID" is inversed (`#680 <https://github.com/Komet/MediaElch/issues/680>`_)
+ - Window positions not saved (`#679 <https://github.com/Komet/MediaElch/issues/679>`_)
+ - Country mappings not used in TMDb (`#689 <https://github.com/Komet/MediaElch/issues/689>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
