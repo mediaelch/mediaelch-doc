@@ -29,6 +29,7 @@ Bugfixes
  - Filter "Movie has no IMDb ID" is inversed (`#680 <https://github.com/Komet/MediaElch/issues/680>`_)
  - Window positions not saved (`#679 <https://github.com/Komet/MediaElch/issues/679>`_)
  - Country mappings not used in TMDb (`#689 <https://github.com/Komet/MediaElch/issues/689>`_)
+ - Windows: Stream Details do not load (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -38,6 +39,7 @@ Improvements
  - UI: Fix list/table style for dark themes (`#640 <https://github.com/Komet/MediaElch/issues/640>`_)
  - UI: Fix stuck splitter cursor (`#659 <https://github.com/Komet/MediaElch/issues/659>`_)
  - UI: Restructured search windows (`#660 <https://github.com/Komet/MediaElch/issues/660>`_)
+ - Windows: Update MediaInfo (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
