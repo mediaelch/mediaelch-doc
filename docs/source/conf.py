@@ -184,6 +184,10 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 
+# -- Options for Apple Help output -------------------------------------------
+
+applehelp_bundle_id = 'com.kvibes.MediaElch.help'
+
 # -- Extension configuration -------------------------------------------------
 
 # -- Options for todo extension ----------------------------------------------
