@@ -5,7 +5,7 @@
 ## MediaElch Documentation
 
 This repository contains the source files of the MediaElch documentation.
-You can find the documentation here: https://bugwelle.github.io/mediaelch-doc/
+You can find the documentation here: https://mediaelch.github.io/mediaelch-doc/
 
 ### Build documentation
 
