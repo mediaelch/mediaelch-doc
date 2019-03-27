@@ -30,6 +30,8 @@ Bugfixes
  - Window positions not saved (`#679 <https://github.com/Komet/MediaElch/issues/679>`_)
  - Country mappings not used in TMDb (`#689 <https://github.com/Komet/MediaElch/issues/689>`_)
  - Windows: Stream Details do not load (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
+ - Crashes on macOS when scanning episodes due to a Qt bug (`#641 <https://github.com/Komet/MediaElch/issues/641>`_)
+ - Fix ADE scraper (`#703 <https://github.com/Komet/MediaElch/issues/703>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -40,11 +42,15 @@ Improvements
  - UI: Fix stuck splitter cursor (`#659 <https://github.com/Komet/MediaElch/issues/659>`_)
  - UI: Restructured search windows (`#660 <https://github.com/Komet/MediaElch/issues/660>`_)
  - Windows: Update MediaInfo (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
+ - Windows: Update to Qt 5.12 and fix style issues (`#678 <https://github.com/Komet/MediaElch/issues/678>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Implement ScraperSettings class for better mocking
+ - Use ``QVector<T>`` instead of ``QList<T>`` as the default container
+ - Reorganize project structure
+ - Add CMake build system (`#700 <https://github.com/Komet/MediaElch/issues/700>`_)
 
 
 2.6.0 - Ferenginar (2019-01-06)
