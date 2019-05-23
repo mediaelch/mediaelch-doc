@@ -25,7 +25,7 @@ make html
 If you are a maintainer of this repository, you can release a new version of this
 documentation by using `./update_github_pages.sh`.
 
-*Note*: You must not have any un-committed changes in your local repository.
+*Note*: You must not have any un-committed changes in your local repository!
 
 #### Troubleshooting
 If you can't install the theme using `pip`, please refer to:
