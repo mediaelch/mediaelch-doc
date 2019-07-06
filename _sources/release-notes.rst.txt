@@ -33,6 +33,7 @@ Bugfixes
  - Crashes on macOS when scanning episodes due to a Qt bug (`#641 <https://github.com/Komet/MediaElch/issues/641>`_)
  - Fix ADE scraper (`#703 <https://github.com/Komet/MediaElch/issues/703>`_, `#725 <https://github.com/Komet/MediaElch/issues/725>`_)
  - Fix TV shows always beeing reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
+ - Fix incompatibilities with Kodi v17 NFO files (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,7 +45,7 @@ Improvements
  - UI: Restructured search windows (`#660 <https://github.com/Komet/MediaElch/issues/660>`_)
  - Windows: Update MediaInfo (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
  - Windows: Update to Qt 5.12 and fix style issues (`#678 <https://github.com/Komet/MediaElch/issues/678>`_)
- - Kodi: Use new syntax for ratings (`#516 <https://github.com/Komet/MediaElch/issues/516>`_)
+ - Kodi: Use new syntax for ratings for movies and tvshows (`#516 <https://github.com/Komet/MediaElch/issues/516>`_)
  - Kodi: Add missing "aspect" attribute to thumbs (`#665 <https://github.com/Komet/MediaElch/issues/665>`_)
  - Settings: Color paths red if directories are not readable (`#730 <https://github.com/Komet/MediaElch/issues/730>`_)
 
