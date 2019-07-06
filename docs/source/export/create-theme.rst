@@ -85,3 +85,178 @@ support@mediaelch.de. Thank you!
 .. |br| raw:: html
 
    <br />
+
+Placeholders
+------------
+
+Here is a list of all placeholders that are available:
+
+.. code-block:: sh
+
+  {{ BEGIN_BLOCK_MOVIE }}
+      {{ MOVIE.ID }}
+      {{ MOVIE.LINK }}
+      {{ MOVIE.IMDB_ID }}
+      {{ MOVIE.TMDB_ID }}
+      {{ MOVIE.TITLE }}
+      {{ MOVIE.YEAR }}
+      {{ MOVIE.ORIGINAL_TITLE }}
+      {{ MOVIE.PLOT }}
+      {{ MOVIE.PLOT_SIMPLE }}
+      {{ MOVIE.SET }}
+      {{ MOVIE.TAGLINE }}
+      {{ MOVIE.GENRES }}
+      {{ MOVIE.COUNTRIES }}
+      {{ MOVIE.STUDIOS }}
+      {{ MOVIE.TAGS }}
+      {{ MOVIE.WRITER }}
+      {{ MOVIE.DIRECTOR }}
+      {{ MOVIE.CERTIFICATION }}
+      {{ MOVIE.TRAILER }}
+      {{ MOVIE.LABEL }}                   # Color label
+      {{ MOVIE.RATING }}
+      {{ MOVIE.VOTES  }}
+      {{ MOVIE.RUNTIME }}
+      {{ MOVIE.PLAY_COUNT  }}
+      {{ MOVIE.LAST_PLAYED }}
+      {{ MOVIE.DATE_ADDED }}
+      {{ MOVIE.FILE_LAST_MODIFIED }}
+      {{ MOVIE.FILENAME }}
+      {{ MOVIE.DIR }}
+      {{ FILEINFO.WIDTH }}
+      {{ FILEINFO.HEIGHT }}
+      {{ FILEINFO.ASPECT }}
+      {{ FILEINFO.CODEC }}
+      {{ FILEINFO.DURATION }}
+      {{ FILEINFO.AUDIO.CODEC }}
+      {{ FILEINFO.AUDIO.CHANNELS }}
+      {{ FILEINFO.AUDIO.LANGUAGE }}
+      {{ IMAGE.POSTER[width, height] }}
+      {{ IMAGE.FANART[width, height] }}
+      {{ IMAGE.LOGO[width, height] }}
+      {{ IMAGE.CLEARART[width, height] }}
+      {{ IMAGE.DISC[width, height] }}
+      {{ BEGIN_BLOCK_TAGS }}
+          {{ TAG.NAME }}
+      {{ END_BLOCK_TAGS }}
+      {{ BEGIN_BLOCK_GENRES }}
+          {{ GENRE.NAME }}
+      {{ END_BLOCK_GENRES }}
+      {{ BEGIN_BLOCK_COUNTRIES }}
+          {{ COUNTRY.NAME }}
+      {{ END_BLOCK_COUNTRIES }}
+      {{ BEGIN_BLOCK_STUDIOS }}
+          {{ STUDIO.NAME }}
+      {{ END_BLOCK_STUDIOS }}
+      {{ BEGIN_BLOCK_ACTORS }}
+          {{ ACTOR.NAME }}
+          {{ ACTOR.ROLE }}
+      {{ END_BLOCK_ACTORS }}
+  {{ END_BLOCK_MOVIE }}
+
+  {{ BEGIN_BLOCK_CONCERT }}
+      {{ CONCERT.ID }}
+      {{ CONCERT.LINK }}
+      {{ CONCERT.TITLE }}
+      {{ CONCERT.ARTIST }}
+      {{ CONCERT.ALBUM }}
+      {{ CONCERT.TAGLINE }}
+      {{ CONCERT.RATING }}
+      {{ CONCERT.YEAR }}
+      {{ CONCERT.RUNTIME }}
+      {{ CONCERT.CERTIFICATION }}
+      {{ CONCERT.TRAILER }}
+      {{ CONCERT.PLAY_COUNT }}
+      {{ CONCERT.LAST_PLAYED }}
+      {{ CONCERT.PLOT }}
+      {{ CONCERT.TAGS }}
+      {{ CONCERT.GENRES }}
+      {{ FILEINFO.WIDTH }}
+      {{ FILEINFO.HEIGHT }}
+      {{ FILEINFO.ASPECT }}
+      {{ FILEINFO.CODEC }}
+      {{ FILEINFO.DURATION }}
+      {{ FILEINFO.AUDIO.CODEC }}
+      {{ FILEINFO.AUDIO.CHANNELS }}
+      {{ FILEINFO.AUDIO.LANGUAGE }}
+      {{ BEGIN_BLOCK_TAGS }}
+          {{ TAG.NAME }}
+      {{ END_BLOCK_TAGS }}
+      {{ BEGIN_BLOCK_GENRES }}
+          {{ GENRE.NAME }}
+      {{ END_BLOCK_GENRES }}
+      {{ IMAGE.POSTER[width, height] }}
+      {{ IMAGE.FANART[width, height] }}
+      {{ IMAGE.LOGO[width, height] }}
+      {{ IMAGE.CLEARART[width, height] }}
+      {{ IMAGE.DISC[width, height] }}
+  {{ END_BLOCK_CONCERT }}
+
+  {{ BEGIN_BLOCK_TVSHOW }}
+      {{ TVSHOW.ID }}
+      {{ TVSHOW.LINK }}
+      {{ TVSHOW.IMDB_ID }}
+      {{ TVSHOW.TITLE }}
+      {{ TVSHOW.RATING }}
+      {{ TVSHOW.VOTES }}
+      {{ TVSHOW.CERTIFICATION }}
+      {{ TVSHOW.FIRST_AIRED }}
+      {{ TVSHOW.STUDIO }}
+      {{ TVSHOW.PLOT }}
+      {{ TVSHOW.TAGS }}
+      {{ TVSHOW.GENRES }}
+      {{ BEGIN_BLOCK_ACTORS }}
+      {{ BEGIN_BLOCK_TAGS }}
+          {{ TAG.NAME }}
+      {{ END_BLOCK_TAGS }}
+      {{ BEGIN_BLOCK_GENRES }}
+          {{ GENRE.NAME }}
+      {{ END_BLOCK_GENRES }}
+          {{ ACTOR.NAME }}
+          {{ ACTOR.ROLE }}
+      {{ END_BLOCK_ACTORS }}
+      {{ IMAGE.POSTER[width, height] }}
+      {{ IMAGE.FANART[width, height] }}
+      {{ IMAGE.LOGO[width, height] }}
+      {{ IMAGE.BANNER[width, height] }}
+      {{ IMAGE.CLEARART[width, height] }}
+      {{ IMAGE.CHARACTERART[width, height] }}
+      {{ IMAGE.DISC[width, height] }}
+
+      {{ BEGIN_BLOCK_SEASON }}
+          {{ SEASON }}
+          {{ BEGIN_BLOCK_EPISODE }}
+          {{ SHOW.TITLE }}
+          {{ SHOW.LINK }}
+          {{ EPISODE.LINK }}
+          {{ EPISODE.TITLE }}
+          {{ EPISODE.SEASON }}
+          {{ EPISODE.EPISODE }}
+          {{ EPISODE.RATING }}
+          {{ EPISODE.CERTIFICATION }}
+          {{ EPISODE.FIRST_AIRED }}
+          {{ EPISODE.LAST_PLAYED }}
+          {{ EPISODE.STUDIO }}
+          {{ EPISODE.PLOT }}
+          {{ EPISODE.WRITERS }}
+          {{ EPISODE.DIRECTORS }}
+          {{ FILEINFO.WIDTH }}
+          {{ FILEINFO.HEIGHT }}
+          {{ FILEINFO.ASPECT }}
+          {{ FILEINFO.CODEC }}
+          {{ FILEINFO.DURATION }}
+          {{ FILEINFO.AUDIO.CODEC }}
+          {{ FILEINFO.AUDIO.CHANNELS }}
+          {{ FILEINFO.AUDIO.LANGUAGE }}
+          {{ BEGIN_BLOCK_WRITERS }}
+              {{ WRITER.NAME }}
+              {{ DIRECTOR.NAME }}
+          {{ END_BLOCK_WRITERS }}
+          {{ IMAGE.THUMBNAIL[width, height] }}
+
+          {{ END_BLOCK_EPISODE }}
+      {{ END_BLOCK_SEASON }}
+
+  {{ END_BLOCK_TVSHOW }}
+
+ 
