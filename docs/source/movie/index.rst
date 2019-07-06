@@ -54,3 +54,20 @@ Movie Sets
 
 If you have movies that belong to a set, e.g. "Harry Potter and the Philosopher's Stone"
 which belongs to the Harry Potter Set/Franchise, they are listed here.
+
+Keyboard Shortcuts
+------------------
+
++-------------------+----------------------------------------------------+
+| Linux / Windows   | Description                                        |
++===================+====================================================+
+| ``Ctrl+F``        | Scrape the selected movie(s).                      |
++-------------------+----------------------------------------------------+
+| ``Ctrl+S``        | Save the selected movie(s).                        |
++-------------------+----------------------------------------------------+
+| ``Ctrl+Shift-S``  | Save all movies                                    |
++-------------------+----------------------------------------------------+
+| ``F5``            | Reload all movies                                  |
++-------------------+----------------------------------------------------+
+| ``a`` - ``z``     | Scroll to movies beginning with the letter pressed |
++-------------------+----------------------------------------------------+

@@ -4,7 +4,7 @@ Music
 
 .. figure:: ../images/screenshots/music-main.png
    :align: center
-   :alt: TV Show section
+   :alt: music section
 
    The Music section lists your albums which you can browse,
    scrape and edit.
@@ -39,3 +39,20 @@ Set it to ``0`` if you don't want extra fanarts to be downloaded automatically.
 .. _The Audio DB: https://www.theaudiodb.com/
 .. _AllMusic: https://www.allmusic.com/
 .. _Discogs: https://www.discogs.com/
+
+Keyboard Shortcuts
+------------------
+
++-------------------+------------------------------------------------------+
+| Linux / Windows   | Description                                          |
++===================+======================================================+
+| ``Ctrl+F``        | Scrape the selected artist(s) or album(s)            |
++-------------------+------------------------------------------------------+
+| ``Ctrl+S``        | Save the selected artist(s) or album(s)              |
++-------------------+------------------------------------------------------+
+| ``Ctrl+Shift-S``  | Save all artists or album(s)                         |
++-------------------+------------------------------------------------------+
+| ``F5``            | Reload all artists or album(s)                       |
++-------------------+------------------------------------------------------+
+| ``a`` - ``z``     | Scroll to artists beginning with the letter pressed  |
++-------------------+------------------------------------------------------+
