@@ -48,6 +48,8 @@ Improvements
  - Kodi: Use new syntax for ratings for movies and tvshows (`#516 <https://github.com/Komet/MediaElch/issues/516>`_)
  - Kodi: Add missing "aspect" attribute to thumbs (`#665 <https://github.com/Komet/MediaElch/issues/665>`_)
  - Settings: Color paths red if directories are not readable (`#730 <https://github.com/Komet/MediaElch/issues/730>`_)
+ - Add ``{{ MOVIE.LABEL }}`` placeholder in templates (`#715 <https://github.com/Komet/MediaElch/issues/715>`_)
+ - Add experimental command line interface (`#720 <https://github.com/Komet/MediaElch/issues/720>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

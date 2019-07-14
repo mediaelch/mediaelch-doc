@@ -18,6 +18,7 @@ MediaCenters as well.
    :hidden:
 
    about
+   Blog <https://mediaelch.github.io/mediaelch-blog/posts/>
    release-notes
    download
    contributing/index
