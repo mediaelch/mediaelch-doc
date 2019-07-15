@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'MediaElch'
-copyright = '2018, MediaElch authors'
+copyright = '2018 - 2019, MediaElch authors'
 author = ''
 
 # The short X.Y version
@@ -81,7 +81,7 @@ pygments_style = None
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'github_user': 'bugwelle',
+    'github_user': 'mediaelch',
     'github_repo': 'mediaelch-doc',
     'github_version': 'master/',
     'display_github': True,
