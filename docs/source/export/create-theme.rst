@@ -123,14 +123,7 @@ Here is a list of all placeholders that are available:
       {{ MOVIE.FILE_LAST_MODIFIED }}
       {{ MOVIE.FILENAME }}
       {{ MOVIE.DIR }}
-      {{ FILEINFO.WIDTH }}
-      {{ FILEINFO.HEIGHT }}
-      {{ FILEINFO.ASPECT }}
-      {{ FILEINFO.CODEC }}
-      {{ FILEINFO.DURATION }}
-      {{ FILEINFO.AUDIO.CODEC }}
-      {{ FILEINFO.AUDIO.CHANNELS }}
-      {{ FILEINFO.AUDIO.LANGUAGE }}
+      # all file information (see section "File Info")
       {{ IMAGE.POSTER[width, height] }}
       {{ IMAGE.FANART[width, height] }}
       {{ IMAGE.LOGO[width, height] }}
@@ -171,14 +164,7 @@ Here is a list of all placeholders that are available:
       {{ CONCERT.PLOT }}
       {{ CONCERT.TAGS }}
       {{ CONCERT.GENRES }}
-      {{ FILEINFO.WIDTH }}
-      {{ FILEINFO.HEIGHT }}
-      {{ FILEINFO.ASPECT }}
-      {{ FILEINFO.CODEC }}
-      {{ FILEINFO.DURATION }}
-      {{ FILEINFO.AUDIO.CODEC }}
-      {{ FILEINFO.AUDIO.CHANNELS }}
-      {{ FILEINFO.AUDIO.LANGUAGE }}
+      # all file information (see section "File Info")
       {{ BEGIN_BLOCK_TAGS }}
           {{ TAG.NAME }}
       {{ END_BLOCK_TAGS }}
@@ -240,14 +226,7 @@ Here is a list of all placeholders that are available:
           {{ EPISODE.PLOT }}
           {{ EPISODE.WRITERS }}
           {{ EPISODE.DIRECTORS }}
-          {{ FILEINFO.WIDTH }}
-          {{ FILEINFO.HEIGHT }}
-          {{ FILEINFO.ASPECT }}
-          {{ FILEINFO.CODEC }}
-          {{ FILEINFO.DURATION }}
-          {{ FILEINFO.AUDIO.CODEC }}
-          {{ FILEINFO.AUDIO.CHANNELS }}
-          {{ FILEINFO.AUDIO.LANGUAGE }}
+          # all file information (see section "File Info")
           {{ BEGIN_BLOCK_WRITERS }}
               {{ WRITER.NAME }}
               {{ DIRECTOR.NAME }}
@@ -260,3 +239,17 @@ Here is a list of all placeholders that are available:
   {{ END_BLOCK_TVSHOW }}
 
  
+File Info
+^^^^^^^^^
+
+.. code-block:: sh
+
+  {{ FILEINFO.WIDTH }}
+  {{ FILEINFO.HEIGHT }}
+  {{ FILEINFO.ASPECT }}
+  {{ FILEINFO.CODEC }}
+  {{ FILEINFO.DURATION }}
+  {{ FILEINFO.AUDIO.CODEC }}        # all audio codecs joined by "|"
+  {{ FILEINFO.AUDIO.CHANNELS }}     # all audio channels joined by "|"
+  {{ FILEINFO.AUDIO.LANGUAGE }}     # all audio languages joined by "|"
+  {{ FILEINFO.SUBTITLES.LANGUAGE }} # all subtitle languages joined by "|"
