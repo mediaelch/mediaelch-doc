@@ -50,6 +50,8 @@ Improvements
  - Settings: Color paths red if directories are not readable (`#730 <https://github.com/Komet/MediaElch/issues/730>`_)
  - Add ``{{ MOVIE.LABEL }}`` placeholder in templates (`#715 <https://github.com/Komet/MediaElch/issues/715>`_)
  - Add experimental command line interface (`#720 <https://github.com/Komet/MediaElch/issues/720>`_)
+ - Add userrating field
+ - Add Kodi v16/v17/v18 switcher (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
