@@ -8,7 +8,8 @@ Dependencies
 .. code-block:: sh
 
     # Build tools and other libraries
-    sudo apt install build-essential git libcurl4-openssl-dev
+    sudo apt install build-essential git 
+    sudo apt install libcurl4-gnutls-dev # or libcurl4-openssl-dev
     sudo apt install libmediainfo-dev
     # ffmpeg is required at runtime to create random screenshots
     sudo apt install ffmpeg
