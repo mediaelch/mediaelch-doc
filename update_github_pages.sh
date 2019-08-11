@@ -21,7 +21,7 @@ popd
 
 # create or use orphaned gh-pages branch
 branch_name=gh-pages
-if [ $(git branch --list "$branch_name") ]
+if [ "$(git branch --list "$branch_name")" ]
 then
 	git stash
 	git checkout $branch_name
@@ -33,7 +33,7 @@ fi
 
 if [ -d "_build" ]
 then
-	(ls | grep -v "_build" | xargs rm -r) || echo "Nothing to clean"
+	(grep -v "_build" ./* | xargs rm -r) || echo "Nothing to clean"
 	mv _build/* . && rm -rf "_build"
 	git add .
 	git commit -m "new pages version $(date)"
