@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>macOS &mdash; MediaElch 2.6.1-dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ubuntu 16.04" href="ubuntu_16_04.html" />
+    <link rel="prev" title="Windows" href="windows.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MediaElch
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">MediaElch</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../release-notes.html">Release Notes / Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download.html">Download</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Contributing &amp; Build</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bug-reports.html">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../translations.html">Translate MediaElch</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Build MediaElch</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="windows.html">Windows</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">macOS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#command-line-build">Command Line Build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qtcreator-build">QtCreator Build</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ubuntu_16_04.html">Ubuntu 16.04 LTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and later</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_42_3.html">openSUSE Leap 42.3 and later</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Sections</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../movie/index.html">Movie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tvshow/index.html">TV Shows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concert/index.html">Concert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../export/index.html">Export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../renaming.html">Renamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kodi.html">Synchronization with Kodi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../portable-mode.html">Portable Mode</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Maintainer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../maintainer/index.html">Maintainer</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MediaElch</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Contributing &amp; Build</a> &raquo;</li>
+        
+          <li><a href="index.html">Build MediaElch</a> &raquo;</li>
+        
+      <li>macOS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/macos.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="macos">
+<h1>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h1>
+<p>MediaElch is build upon Qt. Qt itself requires macOS 10.12 or later and therefore
+MediaElch does as well.</p>
+<p>Install XCode (e.g. through the <a class="reference external" href="https://itunes.apple.com/de/app/xcode/id497799835">Mac App Store</a>)
+and <a class="reference external" href="https://brew.sh/">Homebrew</a>. Instead of XCode you can also just install the
+<a class="reference external" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_">XCode Command Line Tools</a>
+(open a Terminal and execute <code class="docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code>).</p>
+<div class="section" id="command-line-build">
+<h2>Command Line Build<a class="headerlink" href="#command-line-build" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># [Optional] Install git (it should have already been installed by XCode)</span>
+brew install git
+
+<span class="c1"># Install tools and dependencies</span>
+brew install subversion qt media-info ffmpeg
+
+<span class="c1"># Clone MediaElch</span>
+git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
+git submodule update --init
+
+<span class="c1"># Download necessary headers</span>
+svn checkout https://github.com/MediaArea/MediaInfoLib/trunk/Source/MediaInfoDLL
+svn checkout https://github.com/MediaArea/ZenLib/trunk/Source/ZenLib
+
+<span class="c1"># Build MediaElch</span>
+mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>
+qmake ..
+make -j4
+</pre></div>
+</div>
+</div>
+<div class="section" id="qtcreator-build">
+<h2>QtCreator Build<a class="headerlink" href="#qtcreator-build" title="Permalink to this headline">¶</a></h2>
+<p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>. Run it and select the latest Qt
+version for installation (e.g. <code class="docutils literal notranslate"><span class="pre">Qt</span> <span class="pre">5.10.1</span></code>).
+Check that following components are selected:</p>
+<blockquote>
+<div><ul class="simple">
+<li>macOS</li>
+<li>QtCreator</li>
+</ul>
+</div></blockquote>
+<p>Download the <a class="reference external" href="https://github.com/Komet/MediaElch">MediaElch source code</a>
+by clicking “Download” or using git: <br />
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/Komet/MediaElch.git</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span> <span class="pre">--init</span></code>.</p>
+<p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg for Windows</a> to be able
+to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
+inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
+<div class="section" id="other-libraries">
+<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Install MediaInfo as it is required for MediaElch to get stream details. <br />
+Install it using Homebrew: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">media-info</span></code></li>
+<li>Download <a class="reference external" href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>. <br />
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/MediaInfoDLL</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaInfoDLL</span></code></li>
+<li>Download <a class="reference external" href="https://github.com/MediaArea/ZenLib">ZenLib</a>.
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="build">
+<h3>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h3>
+<p>Start QtCreator and open <code class="docutils literal notranslate"><span class="pre">/path/to/MediaElch/MediaElch.pro</span></code>. <br />
+Configure it as “Release” and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">Add build instructions using MacPorts instead of Homebrew.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ubuntu_16_04.html" class="btn btn-neutral float-right" title="Ubuntu 16.04" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="windows.html" class="btn btn-neutral" title="Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018 - 2019, MediaElch authors
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
