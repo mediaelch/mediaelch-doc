@@ -2,7 +2,8 @@
 Download
 ========
 
-MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and Windows.
+MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and
+Windows (ZIP + `chocolatey package`_).
 
 Nightlies can be downloaded from https://bintray.com/komet/MediaElch (choose your system -> click on tab "Files" -> select version).
 Please note that nightlies are **not** stable. APIs may not work as expected.
@@ -24,6 +25,21 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+-------------------+-----------------------------------------------+
 |                   | latest (unstable) | |bintray-linux|                               |
 +-------------------+-------------------+-----------------------------------------------+
+
+Windows Chocolatey
+==================
+
+We provide a chocolatey package for MediaElch.
+If you have chocolatey installed, simply run:
+
+.. code-block:: powershell
+
+    choco install mediaelch
+    # And to update MediaElch:
+    choco upgrade mediaelch
+
+You can find the package online at https://chocolatey.org/packages/MediaElch
+
 
 Linux Repositories
 ==================
@@ -74,6 +90,8 @@ Or you can install MediaElch per command line:
 
 
 .. _AppImage: https://appimage.org/
+
+.. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
 .. |gh_pages_260| image:: https://img.shields.io/badge/version-v2.6.0-blue.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.6.0
