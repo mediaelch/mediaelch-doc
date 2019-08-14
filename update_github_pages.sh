@@ -33,7 +33,7 @@ fi
 
 if [ -d "_build" ]
 then
-	(grep -v "_build" ./* | xargs rm -r) || echo "Nothing to clean"
+	(ls | grep -v "_build" | xargs rm -r) || echo "Nothing to clean"
 	mv _build/* . && rm -rf "_build"
 	git add .
 	git commit -m "new pages version $(date)"
