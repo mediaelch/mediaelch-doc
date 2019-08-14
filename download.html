@@ -90,6 +90,7 @@
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release-notes.html">Release Notes / Changelog</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#windows-chocolatey">Windows Chocolatey</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#linux-repositories">Linux Repositories</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ubuntu">Ubuntu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#opensuse">openSUSE</a></li>
@@ -193,7 +194,8 @@
             
   <div class="section" id="download">
 <h1>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h1>
-<p>MediaElch binaries are available for macOS, Linux (<a class="reference external" href="https://appimage.org/">AppImage</a> + repositories) and Windows.</p>
+<p>MediaElch binaries are available for macOS, Linux (<a class="reference external" href="https://appimage.org/">AppImage</a> + repositories) and
+Windows (ZIP + <a class="reference external" href="https://chocolatey.org/packages/MediaElch">chocolatey package</a>).</p>
 <p>Nightlies can be downloaded from <a class="reference external" href="https://bintray.com/komet/MediaElch">https://bintray.com/komet/MediaElch</a> (choose your system -&gt; click on tab “Files” -&gt; select version).
 Please note that nightlies are <strong>not</strong> stable. APIs may not work as expected.</p>
 <p><em>See also:</em> <a class="reference internal" href="installation.html"><span class="doc">Install MediaElch</span></a>.</p>
@@ -236,6 +238,17 @@ Please note that nightlies are <strong>not</strong> stable. APIs may not work as
 </tr>
 </tbody>
 </table>
+<div class="section" id="windows-chocolatey">
+<h2>Windows Chocolatey<a class="headerlink" href="#windows-chocolatey" title="Permalink to this headline">¶</a></h2>
+<p>We provide a chocolatey package for MediaElch.
+If you have chocolatey installed, simply run:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">mediaelch</span>
+<span class="c"># And to update MediaElch:</span>
+<span class="n">choco</span> <span class="n">upgrade</span> <span class="n">mediaelch</span>
+</pre></div>
+</div>
+<p>You can find the package online at <a class="reference external" href="https://chocolatey.org/packages/MediaElch">https://chocolatey.org/packages/MediaElch</a></p>
+</div>
 <div class="section" id="linux-repositories">
 <h2>Linux Repositories<a class="headerlink" href="#linux-repositories" title="Permalink to this headline">¶</a></h2>
 <p>You can install MediaElch using your system’s package manager. Use the AppImage if your system
