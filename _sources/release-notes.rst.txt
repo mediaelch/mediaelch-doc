@@ -34,6 +34,7 @@ Bugfixes
  - Fix ADE scraper (`#703 <https://github.com/Komet/MediaElch/issues/703>`_, `#725 <https://github.com/Komet/MediaElch/issues/725>`_)
  - Fix TV shows always beeing reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
  - Fix incompatibilities with Kodi v17 NFO files (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
+ - Fix race-condition in DownloadManager (`#766 <https://github.com/Komet/MediaElch/issues/766>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,6 +53,7 @@ Improvements
  - Add experimental command line interface (`#720 <https://github.com/Komet/MediaElch/issues/720>`_)
  - Add userrating field
  - Add Kodi v16/v17/v18 switcher (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
+ - Make episode thumbnail size configurable in ``advancedsettings.xml`` (`#776 <https://github.com/Komet/MediaElch/issues/776>`_)
 
 Internal Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -60,6 +62,7 @@ Internal Improvements
  - Use ``QVector<T>`` instead of ``QList<T>`` as the default container
  - Reorganize project structure
  - Add CMake build system (`#700 <https://github.com/Komet/MediaElch/issues/700>`_)
+ - Add ``DISABLE_UPDATER`` option in QMake and CMake for package maintainers (`#763 <https://github.com/Komet/MediaElch/issues/763>`_)
 
 
 2.6.0 - Ferenginar (2019-01-06)

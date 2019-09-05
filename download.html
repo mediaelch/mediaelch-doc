@@ -238,6 +238,11 @@ Please note that nightlies are <strong>not</strong> stable. APIs may not work as
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The AppImage requires Ubuntu 16.04 or above (or similar systems).
+Ubuntu 14.04 is not supported anymore.</p>
+</div>
 <div class="section" id="windows-chocolatey">
 <h2>Windows Chocolatey<a class="headerlink" href="#windows-chocolatey" title="Permalink to this headline">¶</a></h2>
 <p>We provide a chocolatey package for MediaElch.
@@ -272,7 +277,7 @@ MediaElch
 <p>openSUSE packages are available using the services of build.opensuse.org.
 You can download MediaElch per 1-click-install from
 <a class="reference external" href="https://software.opensuse.org/download.html?project=home%3Abugwelle&amp;package=MediaElch">https://software.opensuse.org/download.html?project=home%3Abugwelle&amp;package=MediaElch</a></p>
-<p>openSUSE Leap 15.0 and Tumbleweed are supported.</p>
+<p>openSUSE Leap 15.0, 15.1 and Tumbleweed are supported.</p>
 <p>Or you can install MediaElch per command line:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># openSUSE Tumbleweed</span>
 zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Tumbleweed/home:bugwelle.repo
@@ -281,6 +286,11 @@ zypper install MediaElch
 
 <span class="c1"># openSUSE Leap 15.0</span>
 zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.0/home:bugwelle.repo
+zypper refresh
+zypper install MediaElch
+
+<span class="c1"># openSUSE Leap 15.1</span>
+zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.1/home:bugwelle.repo
 zypper refresh
 zypper install MediaElch
 </pre></div>

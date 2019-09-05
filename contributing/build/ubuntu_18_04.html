@@ -211,7 +211,8 @@
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
-sudo apt install build-essential git libcurl4-openssl-dev
+sudo apt install build-essential git
+sudo apt install libcurl4-gnutls-dev <span class="c1"># or libcurl4-openssl-dev</span>
 sudo apt install libmediainfo-dev
 <span class="c1"># ffmpeg is required at runtime to create random screenshots</span>
 sudo apt install ffmpeg
