@@ -26,6 +26,12 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 |                   | latest (unstable) | |bintray-linux|                               |
 +-------------------+-------------------+-----------------------------------------------+
 
+.. note::
+
+   The AppImage requires Ubuntu 16.04 or above (or similar systems).
+   Ubuntu 14.04 is not supported anymore.
+
+
 Windows Chocolatey
 ==================
 
@@ -71,7 +77,7 @@ openSUSE packages are available using the services of build.opensuse.org.
 You can download MediaElch per 1-click-install from
 https://software.opensuse.org/download.html?project=home%3Abugwelle&package=MediaElch
 
-openSUSE Leap 15.0 and Tumbleweed are supported.
+openSUSE Leap 15.0, 15.1 and Tumbleweed are supported.
 
 Or you can install MediaElch per command line: 
 
@@ -84,6 +90,11 @@ Or you can install MediaElch per command line:
 
     # openSUSE Leap 15.0
     zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.0/home:bugwelle.repo
+    zypper refresh
+    zypper install MediaElch
+
+    # openSUSE Leap 15.1
+    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.1/home:bugwelle.repo
     zypper refresh
     zypper install MediaElch
 
