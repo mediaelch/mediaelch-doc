@@ -13,15 +13,15 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+-------------------+-----------------------------------------------+
 | System (64 bit)   | Version           | Download                                      |
 +===================+===================+===============================================+
-| Windows           | 2.6.0             | |gh_pages_260|                                |
+| Windows           | 2.6.2             | |gh_pages_262|                                |
 +-------------------+-------------------+-----------------------------------------------+
 |                   | latest (unstable) | |bintray-win|                                 |
 +-------------------+-------------------+-----------------------------------------------+
-| macOS             | 2.6.0             | |gh_pages_260|                                |
+| macOS             | 2.6.2             | |gh_pages_262|                                |
 +-------------------+-------------------+-----------------------------------------------+
 |                   | latest (unstable) | |bintray-mac|                                 |
 +-------------------+-------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.6.0             | |gh_pages_260|                                |
+| Linux (AppImage)  | 2.6.2             | |gh_pages_262|                                |
 +-------------------+-------------------+-----------------------------------------------+
 |                   | latest (unstable) | |bintray-linux|                               |
 +-------------------+-------------------+-----------------------------------------------+
@@ -104,8 +104,8 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_260| image:: https://img.shields.io/badge/version-v2.6.0-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.6.0
+.. |gh_pages_262| image:: https://img.shields.io/badge/version-v2.6.2-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.6.2
 
 .. |bintray-win| image:: https://api.bintray.com/packages/komet/MediaElch/MediaElch-win/images/download.svg
    :target: https://bintray.com/komet/MediaElch/MediaElch-win/_latestVersion
