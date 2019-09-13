@@ -12,17 +12,19 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/changelog.md
 
 
-Next Release (*tbd*)
+2.6.2 - Ferenginar (2019-09-13)
 ************************************
-The next release will affect your scraper settings. You'll therefore have
-to reconfigure your scraper settings. You may also need to delete
-``MediaElch.sqlite``. See:
-https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored
+
+This release will affect your scraper settings. You'll therefore have to
+reconfigure your scraper settings. You may also need to delete ``MediaElch.sqlite``.
+
+See: https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored
 
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Fix IMDb tag scraping (`#649 <https://github.com/Komet/MediaElch/issues/649>`_)
+ - Fix IMDb poster scraping
  - Fix TMDb issue with HTML characters in overview/plot (`#651 <https://github.com/Komet/MediaElch/issues/651>`_)
  - ``Ctrl+A`` works in movie and concert section (`#647 <https://github.com/Komet/MediaElch/issues/647>`_)
  - Fix crash when "Load missing episodes" is enabled (`#669 <https://github.com/Komet/MediaElch/issues/669>`_)
@@ -35,6 +37,7 @@ Bugfixes
  - Fix TV shows always beeing reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
  - Fix incompatibilities with Kodi v17 NFO files (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
  - Fix race-condition in DownloadManager (`#766 <https://github.com/Komet/MediaElch/issues/766>`_)
+ - Fix VideoBuster certification scraping
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,11 +54,12 @@ Improvements
  - Settings: Color paths red if directories are not readable (`#730 <https://github.com/Komet/MediaElch/issues/730>`_)
  - Add ``{{ MOVIE.LABEL }}`` placeholder in templates (`#715 <https://github.com/Komet/MediaElch/issues/715>`_)
  - Add experimental command line interface (`#720 <https://github.com/Komet/MediaElch/issues/720>`_)
- - Add userrating field
+ - Add userrating field to movies
  - Add Kodi v16/v17/v18 switcher (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
  - Make episode thumbnail size configurable in ``advancedsettings.xml`` (`#776 <https://github.com/Komet/MediaElch/issues/776>`_)
+ - Add "avc" to "h264" video codec mapping to defaults (`#728 <https://github.com/Komet/MediaElch/issues/728>`_)
 
-Internal Improvements
+Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Implement ScraperSettings class for better mocking
@@ -63,6 +67,7 @@ Internal Improvements
  - Reorganize project structure
  - Add CMake build system (`#700 <https://github.com/Komet/MediaElch/issues/700>`_)
  - Add ``DISABLE_UPDATER`` option in QMake and CMake for package maintainers (`#763 <https://github.com/Komet/MediaElch/issues/763>`_)
+ - Require Qt 5.6 or later (`#780 <https://github.com/Komet/MediaElch/issues/780>`_)
 
 
 2.6.0 - Ferenginar (2019-01-06)
