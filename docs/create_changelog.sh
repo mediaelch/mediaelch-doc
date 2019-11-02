@@ -13,19 +13,19 @@ curl https://raw.githubusercontent.com/Komet/MediaElch/master/CHANGELOG.md >> $N
 
 echo "Markdown --> reStructuredText"
 
-sed -i.bak '/###/ a ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^' $NOTES
-sed -i.bak 's/### //' $NOTES
+sed -i .bak '/###/ a ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^' $NOTES
+sed -i .bak 's/### //' $NOTES
 
-sed -i.bak '/##/ a ************************************' $NOTES
-sed -i.bak 's/## //' $NOTES
+sed -i .bak '/##/ a ************************************' $NOTES
+sed -i .bak 's/## //' $NOTES
 
 # shellcheck disable=SC2016
-sed -i.bak 's/`/``/g' $NOTES
-sed -i.bak '/# Changelog/d' $NOTES
+sed -i .bak 's/`/``/g' $NOTES
+sed -i .bak '/# Changelog/d' $NOTES
 
 # Create issue/pr links
 # shellcheck disable=SC2016
-sed -i.bak -r 's/#([0-9]+)/`#\1 <https:\/\/github.com\/Komet\/MediaElch\/issues\/\1>`_/g' $NOTES
+sed -i .bak -r 's/#([0-9]+)/`#\1 <https:\/\/github.com\/Komet\/MediaElch\/issues\/\1>`_/g' $NOTES
 
 rm -f $NOTES.bak
 
