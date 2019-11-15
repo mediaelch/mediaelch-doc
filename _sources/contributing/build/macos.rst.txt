@@ -69,6 +69,20 @@ Start QtCreator and open ``/path/to/MediaElch/MediaElch.pro``. |br|
 Configure it as "Release" and click "Run" (``Strg+R``).
 
 
+Troubleshooting (CMake Build)
+**********************************************************
+
+Depending on your macOS version, you may need to set the used C++ standard library.
+See https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update
+
+.. code-block:: sh
+    
+    # Bash (command line)
+    export CXXFLAGS=-stdlib=libc++"
+    # Or in CMake
+    set(CMAKE_CXX_FLAGS "-stdlib=libc++")
+
+
 .. todo::
 
    Add build instructions using MacPorts instead of Homebrew.

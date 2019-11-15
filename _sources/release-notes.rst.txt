@@ -12,6 +12,42 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/changelog.md
 
 
+Next Release (*tbd*)
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Fix hanging window if the custom movie scraper is selected but no valid scraper is found.  
+   This can happen if MediaElch's settings are in an inconsistent state (`#792 <https://github.com/Komet/MediaElch/issues/792>`_)
+ - Fix ``{{ *.RATING }}`` not being replaced in exports if a media item has no rating
+ - Fix movie label color not being shown (`#803 <https://github.com/Komet/MediaElch/issues/803>`_)
+ - Fix default language selection in movie scraper dialog  
+   Default-selected language not used when loading from TheMovieDb
+ - NFO: Only write ``<originaltitle>`` if it's different from ``<title>`` (`#812 <https://github.com/Komet/MediaElch/issues/812>`_)
+ - Fix IMDb runtime scraping (`#810 <https://github.com/Komet/MediaElch/issues/810>`_)
+ - Update TMDb base URL for downloading images (`#807 <https://github.com/Komet/MediaElch/issues/807>`_)  
+   The very old subdomain has been taken offline. We now use the new one.
+ - Fix TMDb scraper language in dialog window (`#813 <https://github.com/Komet/MediaElch/issues/813>`_)  
+   Scraper language wasn't the one saved in settings but always "English".
+ - About Dialog: Fix MediaInfo version string in developer information (`#790 <https://github.com/Komet/MediaElch/issues/790>`_)
+ - Movie/TvShow: Only parse valid ``premiered`` tags (`#827 <https://github.com/Komet/MediaElch/issues/827>`_)
+ - Fix crash when no TV show is selected  
+   For example: Start MediaElch -> click "TvShow" -> click "Sync Kodi" -> click "Close" -> Crash
+
+Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - TMDb: Load more movie collection details (`#800 <https://github.com/Komet/MediaElch/issues/800>`_)
+ - ADA search: Don't filter for DVDs, fix overview scraping of some movies (`#819 <https://github.com/Komet/MediaElch/issues/819>`_)
+ - Movie Search Dialog: Add error message label
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - [CMake] Fix Foundation framework include for macOS
+
+
 2.6.2 - Ferenginar (2019-09-13)
 ************************************
 
@@ -28,13 +64,13 @@ Bugfixes
  - Fix TMDb issue with HTML characters in overview/plot (`#651 <https://github.com/Komet/MediaElch/issues/651>`_)
  - ``Ctrl+A`` works in movie and concert section (`#647 <https://github.com/Komet/MediaElch/issues/647>`_)
  - Fix crash when "Load missing episodes" is enabled (`#669 <https://github.com/Komet/MediaElch/issues/669>`_)
- - Filter "Movie has no IMDb ID" is inversed (`#680 <https://github.com/Komet/MediaElch/issues/680>`_)
+ - Filter "Movie has no IMDb ID" is inverted (`#680 <https://github.com/Komet/MediaElch/issues/680>`_)
  - Window positions not saved (`#679 <https://github.com/Komet/MediaElch/issues/679>`_)
  - Country mappings not used in TMDb (`#689 <https://github.com/Komet/MediaElch/issues/689>`_)
  - Windows: Stream Details do not load (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
  - Crashes on macOS when scanning episodes due to a Qt bug (`#641 <https://github.com/Komet/MediaElch/issues/641>`_)
  - Fix ADE scraper (`#703 <https://github.com/Komet/MediaElch/issues/703>`_, `#725 <https://github.com/Komet/MediaElch/issues/725>`_)
- - Fix TV shows always beeing reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
+ - Fix TV shows always being reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
  - Fix incompatibilities with Kodi v17 NFO files (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
  - Fix race-condition in DownloadManager (`#766 <https://github.com/Komet/MediaElch/issues/766>`_)
  - Fix VideoBuster certification scraping
@@ -49,12 +85,12 @@ Improvements
  - UI: Restructured search windows (`#660 <https://github.com/Komet/MediaElch/issues/660>`_)
  - Windows: Update MediaInfo (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
  - Windows: Update to Qt 5.12 and fix style issues (`#678 <https://github.com/Komet/MediaElch/issues/678>`_)
- - Kodi: Use new syntax for ratings for movies and tvshows (`#516 <https://github.com/Komet/MediaElch/issues/516>`_)
+ - Kodi: Use new syntax for ratings for movies and TV shows (`#516 <https://github.com/Komet/MediaElch/issues/516>`_)
  - Kodi: Add missing "aspect" attribute to thumbs (`#665 <https://github.com/Komet/MediaElch/issues/665>`_)
  - Settings: Color paths red if directories are not readable (`#730 <https://github.com/Komet/MediaElch/issues/730>`_)
  - Add ``{{ MOVIE.LABEL }}`` placeholder in templates (`#715 <https://github.com/Komet/MediaElch/issues/715>`_)
  - Add experimental command line interface (`#720 <https://github.com/Komet/MediaElch/issues/720>`_)
- - Add userrating field to movies
+ - Add ``userrating`` field to movies
  - Add Kodi v16/v17/v18 switcher (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
  - Make episode thumbnail size configurable in ``advancedsettings.xml`` (`#776 <https://github.com/Komet/MediaElch/issues/776>`_)
  - Add "avc" to "h264" video codec mapping to defaults (`#728 <https://github.com/Komet/MediaElch/issues/728>`_)

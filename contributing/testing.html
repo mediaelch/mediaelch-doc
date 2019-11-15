@@ -196,18 +196,8 @@
 <h1>Test MediaElch<a class="headerlink" href="#test-mediaelch" title="Permalink to this headline">¶</a></h1>
 <p>Tests are written using <a class="reference external" href="https://github.com/catchorg/Catch2">Catch2</a>. They are categorized into online/offline
 tests and some other categories.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span>           <span class="c1"># Create build directory</span>
-qmake .. <span class="nv">CONFIG</span><span class="o">+=</span><span class="nb">test</span>          <span class="c1"># Configure build for tests</span>
-make -j<span class="k">$(</span>nproc<span class="k">)</span>                <span class="c1"># Build tests</span>
-
-<span class="c1"># Below are some commands for the test executable</span>
-./mediaelch-test -h            <span class="c1"># List Catch2 help</span>
-./mediaelch-test -t            <span class="c1"># List all tags</span>
-./mediaelch-test -d yes        <span class="c1"># Run *all* tests and print duration</span>
-./mediaelch-test <span class="s2">&quot;[load_data]&quot;</span> <span class="c1"># Run scraping tests (online test)</span>
-./mediaelch-test <span class="s2">&quot;[search]&quot;</span>    <span class="c1"># Run scraping search tests (online test)</span>
-</pre></div>
-</div>
+<p>Tests require you to build MediaElch using CMake. Please refer to:
+<a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/docs/contributing/testing.md">https://github.com/Komet/MediaElch/blob/master/docs/contributing/testing.md</a></p>
 </div>
 
 

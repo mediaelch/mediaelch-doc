@@ -98,6 +98,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">macOS</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#command-line-build">Command Line Build</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#qtcreator-build">QtCreator Build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#troubleshooting-cmake-build">Troubleshooting (CMake Build)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_16_04.html">Ubuntu 16.04 LTS</a></li>
@@ -270,10 +271,21 @@ Copy the folder <code class="docutils literal notranslate"><span class="pre">Sou
 <h3>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h3>
 <p>Start QtCreator and open <code class="docutils literal notranslate"><span class="pre">/path/to/MediaElch/MediaElch.pro</span></code>. <br />
 Configure it as “Release” and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
+</div>
+</div>
+<div class="section" id="troubleshooting-cmake-build">
+<h2>Troubleshooting (CMake Build)<a class="headerlink" href="#troubleshooting-cmake-build" title="Permalink to this headline">¶</a></h2>
+<p>Depending on your macOS version, you may need to set the used C++ standard library.
+See <a class="reference external" href="https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update">https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update</a></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bash (command line)</span>
+<span class="nb">export</span> <span class="nv">CXXFLAGS</span><span class="o">=</span>-stdlib<span class="o">=</span>libc++<span class="s2">&quot;</span>
+<span class="s2"># Or in CMake</span>
+<span class="s2">set(CMAKE_CXX_FLAGS &quot;</span>-stdlib<span class="o">=</span>libc++<span class="s2">&quot;)</span>
+</pre></div>
+</div>
 <div class="admonition-todo admonition" id="index-0">
 <p class="first admonition-title">Todo</p>
 <p class="last">Add build instructions using MacPorts instead of Homebrew.</p>
-</div>
 </div>
 </div>
 </div>
