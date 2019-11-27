@@ -34,6 +34,7 @@ Bugfixes
  - Movie/TvShow: Only parse valid ``premiered`` tags (`#827 <https://github.com/Komet/MediaElch/issues/827>`_)
  - Fix crash when no TV show is selected  
    For example: Start MediaElch -> click "TvShow" -> click "Sync Kodi" -> click "Close" -> Crash
+ - Fix missing TheTvDb ID in episode NFO files (`#788 <https://github.com/Komet/MediaElch/issues/788>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -41,6 +42,7 @@ Improvements
  - TMDb: Load more movie collection details (`#800 <https://github.com/Komet/MediaElch/issues/800>`_)
  - ADA search: Don't filter for DVDs, fix overview scraping of some movies (`#819 <https://github.com/Komet/MediaElch/issues/819>`_)
  - Movie Search Dialog: Add error message label
+ - TheTvDb: Use API v2 (JSON API instead of old XML API) (`#487 <https://github.com/Komet/MediaElch/issues/487>`_, `#432 <https://github.com/Komet/MediaElch/issues/432>`_, `#528 <https://github.com/Komet/MediaElch/issues/528>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
