@@ -13,8 +13,8 @@ Download and install [Sphinx](http://www.sphinx-doc.org/en/master/) as well
 as the "Read the Docs Sphinx Theme".
 
 ```sh
-pip install -U Sphinx        # Install Sphinx
-pip install sphinx_rtd_theme # Install Theme
+pip3 install --user sphinx sphinx-autobuild # Install Sphinx and a watch tool
+pip install --user sphinx_rtd_theme # Install Theme
 cd docs
 ./create_changelog.sh # Concerts the Markdown changelog to reStructuredText
 make html
