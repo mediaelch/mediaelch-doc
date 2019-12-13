@@ -7,3 +7,8 @@ docs/source/release-notes.rst
 
 *.mo
 build_*
+_build
+
+# IDE
+.vscode
+
