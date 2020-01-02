@@ -54,10 +54,3 @@ MediaCenters as well.
    Renamer <renaming>
    kodi
    Portable Mode <portable-mode>
-
-.. toctree::
-   :caption: Maintainer
-   :maxdepth: 1
-   :hidden:
-
-   maintainer/index
