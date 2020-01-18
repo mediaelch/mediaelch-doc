@@ -7,7 +7,7 @@ Bug Reports
    Work in progress
 
 You found a bug? What now?
-====================
+==========================
 Time to report it!
 
 MediaElch's issue tracker is available on GitHub: https://github.com/Komet/MediaElch/issues
@@ -24,7 +24,7 @@ We'll try to fix found bugs as fast as possible!
 
 
 Developer Information
-====================
+=====================
 
 You can find developer information at
 MediaElch -> About -> Developer

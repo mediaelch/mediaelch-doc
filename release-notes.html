@@ -278,6 +278,7 @@ For example: Start MediaElch -&gt; click “TvShow” -&gt; click “Sync Kodi�
 <li>Episode widget: add TheTvDb ID and IMDb ID fields</li>
 <li>AdvancedSettings: Better input validation (issues are printed to the debug log) (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/743">#743</a>)</li>
 <li>AdvancedSettings: Add experimental exclude patterns (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/840">#840</a>)</li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">en_US</span></code> language file for better singular/plural handling</li>
 </ul>
 </div></blockquote>
 </div>
@@ -462,15 +463,15 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Improve album search query</li>
 <li>Don’t reload after rename</li>
 <li>Musicscraper: Show musicbrainz release id in search results</li>
-<li>Move tv shows with new items to the top</li>
+<li>Move TV shows with new items to the top</li>
 <li>Don’t remove custom tags in nfo files</li>
 <li>StreamDetails: Use Channel(s)_Original if available</li>
 <li>Improve UI rendering in Windows</li>
-<li>Get and store IMDB ID for tv show episodes</li>
+<li>Get and store IMDB ID for TV show episodes</li>
 <li>Support for TV show status (continuing/ended)</li>
 <li>Use lowercase video and audio codec in streamdetails</li>
 <li>Save all selected items when saving</li>
-<li>Votes and top 250 for tv shows and episodes</li>
+<li>Votes and top 250 for TV shows and episodes</li>
 <li>TV Shows: Improved UI in listview</li>
 <li>Support image formats with wrong file extension</li>
 <li>Musicscraper: Label, release date and artist is not set</li>
@@ -573,7 +574,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Play movie/episode/concert on double click</li>
 <li>Fanart.tv: Add support for season posters</li>
 <li>NFO: Correctly save multiple entries</li>
-<li>Fanart.tv: Add support for tv show posters</li>
+<li>Fanart.tv: Add support for TV show posters</li>
 <li>Rename XBMC to KODI</li>
 <li>Add icon for DTS-HD HR</li>
 <li>Use icon font for navbar items</li>
@@ -613,7 +614,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <div><ul class="simple">
 <li>Add info about collection</li>
 <li>Join genres in nfo files</li>
-<li>Rename tv shows: dialog doesn’t open …</li>
+<li>Rename TV shows: dialog doesn’t open …</li>
 <li>Custom Scraper: Fanart always from fa…</li>
 <li>IMDB scraper sometimes displays no re…</li>
 <li>Only small actor images from imdb</li>
@@ -714,7 +715,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Exclude words also in directory names</li>
 <li>Search by IMDb id or TMDb id by default</li>
 <li>Also rename .srt subtitles</li>
-<li>Actors for tv show episodes</li>
+<li>Actors for TV show episodes</li>
 <li>TheTvDb: Search by ID</li>
 <li>Speed up loading items</li>
 <li>Add warning for extra fanarts when sep. folders is not cheked</li>
@@ -759,7 +760,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Strip braces in search term</li>
 <li>Add video category to .desktop file</li>
 <li>Allow selecting multiple movies when adding them to sets/genres/certifications</li>
-<li>Sort title for tv shows</li>
+<li>Sort title for TV shows</li>
 <li>Use airs before/airsafter to set display season and episode</li>
 <li>OFDB: Load movie by id</li>
 <li>RegEx for “Season X Episode Y”</li>
@@ -792,12 +793,12 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Small GUI changes</li>
 <li>TV Shows: Show all banners not just season specific</li>
 <li>Bugfix: Opening movie folders in network shares</li>
-<li>Option to use DVD order when scraping tv shows</li>
+<li>Option to use DVD order when scraping TV shows</li>
 <li>Save DVD and BluRay fanart inside the directory structures</li>
 <li>Correctly detect stream details in DVD structures</li>
 <li>Bugfix: Cinefacts scraper didn’t find year and countries</li>
 <li>Option to delete images</li>
-<li>Changed default rename pattern for tv show episodes</li>
+<li>Changed default rename pattern for TV show episodes</li>
 <li>Added filter items for studios, countries and filename</li>
 <li>Fixed tag cloud UI bug</li>
 <li>Bugfix: “Watched” Filter showed unwatched movies</li>
@@ -833,7 +834,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Added .wtv files to scanners</li>
 <li>Changed default filename from cdart.png to disc.png</li>
 <li>Movies -&gt; Votes: Display thousands separator</li>
-<li>Bugfix: Skip downloading of actor images in tv shows if set in settings</li>
+<li>Bugfix: Skip downloading of actor images in TV shows if set in settings</li>
 <li>Correct naming of nfo files and images in stacked movies</li>
 <li>Fixed opening of movie folders in Windows</li>
 <li>Save TV Show update option</li>
@@ -842,7 +843,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Bugfix: Saving of poster and fanarts for DVD and BluRay structures</li>
 <li>Skip extra files in DVD structures</li>
 <li>Show all fanarts from The TV Db when choosing season fanart</li>
-<li>Save tv show specials season artwork as <code class="docutils literal notranslate"><span class="pre">season-special-*.jpg</span></code></li>
+<li>Save TV show specials season artwork as <code class="docutils literal notranslate"><span class="pre">season-special-*.jpg</span></code></li>
 <li>Use JSON RPC to communicate with XBMC</li>
 <li>Fixed XBMC sync</li>
 <li>Moved advanced settings to advancedsettings.xml</li>
@@ -943,9 +944,9 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Change sort order of movies</li>
 <li>Minor GUI improvements</li>
 <li>Pickup movie set from TMDb</li>
-<li>Save episodeguide url in tv show xml</li>
+<li>Save episodeguide url in TV show xml</li>
 <li>Windows: Added missing SSL libraries (needed by VideoBuster Scraper)</li>
-<li>Bugfix: Possible crash when selecting a movie, tv show or concert</li>
+<li>Bugfix: Possible crash when selecting a movie, TV show or concert</li>
 </ul>
 </div></blockquote>
 </div>
@@ -957,7 +958,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Improved filter widget</li>
 <li>Organize movies: move into separate directories (Thanks to googl1)</li>
 <li>Prefer locale posters from TMDb (Thanks to jhenkens)</li>
-<li>Show new mark on tv show seasons</li>
+<li>Show new mark on TV show seasons</li>
 <li>Added .dat, .ts, .vob and .flv file extensions</li>
 <li>Simple caching of scanned folder to speedup scanning for files</li>
 <li>Added director and writer fields for movies</li>
@@ -984,7 +985,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Choose between different files for nfos, posters, fanarts and banners</li>
 <li>Settings is now a dialog</li>
 <li>Added .strm file extension</li>
-<li>Bugfix: Adding of tv show directories possible again</li>
+<li>Bugfix: Adding of TV show directories possible again</li>
 </ul>
 </div></blockquote>
 </div>
@@ -1014,7 +1015,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Bugfix: TV Shows had wrong path when episodes are in subfolders</li>
 <li>Bugfix: Confusion in SQL interfaces when different episodes have equal filenames</li>
 <li>Bugfix: Checkbox “separate folders” won’t show when adding a movie directory</li>
-<li>Bugfix: Changing just poster or fanart in tv shows won’t enable the save button</li>
+<li>Bugfix: Changing just poster or fanart in TV shows won’t enable the save button</li>
 </ul>
 </div></blockquote>
 </div>
@@ -1073,7 +1074,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018 - 2019, MediaElch authors
+        &copy; Copyright 2018 - 2020, MediaElch authors
 
     </p>
   </div>
