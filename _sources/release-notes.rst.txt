@@ -35,6 +35,12 @@ Bugfixes
  - Fix crash when no TV show is selected  
    For example: Start MediaElch -> click "TvShow" -> click "Sync Kodi" -> click "Close" -> Crash
  - Fix missing TheTvDb ID in episode NFO files (`#788 <https://github.com/Komet/MediaElch/issues/788>`_)
+ - Don't write TheTvDb v1 episode-guide URLs to TV show NFOs (`#652 <https://github.com/Komet/MediaElch/issues/652>`_)
+ - Show "Dolby TrueHD" media flag for "truehd" audio codec
+ - Fix audio codec recognition for newer MediaInfoLib versions (`#797 <https://github.com/Komet/MediaElch/issues/797>`_)
+ - Fix "Add to synchronization queue" feature for episodes and TV shows (`#850 <https://github.com/Komet/MediaElch/issues/850>`_)
+ - Allow IMDb IDs with 8 digits (previously only 7 digits allows) (`#855 <https://github.com/Komet/MediaElch/issues/855>`_)
+ - Fix actors having wrong image after removing one actor (`#859 <https://github.com/Komet/MediaElch/issues/859>`_)
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,11 +49,15 @@ Improvements
  - ADA search: Don't filter for DVDs, fix overview scraping of some movies (`#819 <https://github.com/Komet/MediaElch/issues/819>`_)
  - Movie Search Dialog: Add error message label
  - TheTvDb: Use API v2 (JSON API instead of old XML API) (`#487 <https://github.com/Komet/MediaElch/issues/487>`_, `#432 <https://github.com/Komet/MediaElch/issues/432>`_, `#528 <https://github.com/Komet/MediaElch/issues/528>`_)
+ - Episode widget: add TheTvDb ID and IMDb ID fields
+ - AdvancedSettings: Better input validation (issues are printed to the debug log) (`#743 <https://github.com/Komet/MediaElch/issues/743>`_)
+ - AdvancedSettings: Add experimental exclude patterns (`#840 <https://github.com/Komet/MediaElch/issues/840>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - [CMake] Fix Foundation framework include for macOS
+ - CMake: Fix Foundation framework include for macOS
+ - Tests: Add more integration and unit tests
 
 
 2.6.2 - Ferenginar (2019-09-13)

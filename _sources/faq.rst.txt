@@ -48,3 +48,13 @@ They show you what kind of artwork is missing (icon is red). From left to right:
  * Clear Art
  * Character Art
  * Banner
+
+
+Why don't all images from Fanart.tv appear?
+===========================================
+
+The Fanart.tv API only lets us request images that have at least **1** vote.
+Images without votes won't appear in MediaElch. You can help Fanart.tv by
+creating an account there and by upvoting images you like. A related GitHub
+issue can be found at https://github.com/Komet/MediaElch/issues/858
+
