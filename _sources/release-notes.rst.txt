@@ -18,6 +18,10 @@ Next Release (*tbd*)
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+ - Fix TV shows sorting and possible crashes if "Show missing episodes" is enabled (`#789 <https://github.com/Komet/MediaElch/issues/789>`_, `#883 <https://github.com/Komet/MediaElch/issues/883>`_)
+   MediaElch could crash under certain circumstances due to improper use of Qt's
+   model/view system. You may experience that shows are deselected when " Show missing episodes"
+   is clicked the first time.
  - Fix hanging window if the custom movie scraper is selected but no valid scraper is found.  
    This can happen if MediaElch's settings are in an inconsistent state (`#792 <https://github.com/Komet/MediaElch/issues/792>`_)
  - Fix ``{{ *.RATING }}`` not being replaced in exports if a media item has no rating
@@ -53,6 +57,8 @@ Improvements
  - AdvancedSettings: Better input validation (issues are printed to the debug log) (`#743 <https://github.com/Komet/MediaElch/issues/743>`_)
  - AdvancedSettings: Add experimental exclude patterns (`#840 <https://github.com/Komet/MediaElch/issues/840>`_)
  - Add ``en_US`` language file for better singular/plural handling
+ - Better network error reporting for scraping TV shows and movies (`#870 <https://github.com/Komet/MediaElch/issues/870>`_)
+ - Better error reporting in the image dialog (`#864 <https://github.com/Komet/MediaElch/issues/864>`_, `#874 <https://github.com/Komet/MediaElch/issues/874>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
