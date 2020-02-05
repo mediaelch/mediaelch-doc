@@ -130,8 +130,8 @@ Older Releases
 2.6.0 - Ferenginar (2019-01-06)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#Features
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Features
+-------------------------------------
  
  - Add user documentation (`#531 <https://github.com/Komet/MediaElch/issues/531>`_)
  - Use HTTPS for scraping (`#371 <https://github.com/Komet/MediaElch/issues/371>`_)
@@ -152,8 +152,8 @@ Older Releases
  - Detect duplicate movies
  - Create subdirectories
 
-#Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Bugfixes
+-------------------------------------
 
  - HD-Trailers scraper broken (`#445 <https://github.com/Komet/MediaElch/issues/445>`_)
  - OFDB movie scraper crashes MediaElch (`#394 <https://github.com/Komet/MediaElch/issues/394>`_)
@@ -176,8 +176,8 @@ Older Releases
  - *fanart.tv* music scraper broken
  - Placeholder ``<showTitle>`` does not work for renaming season folders (`#553 <https://github.com/Komet/MediaElch/issues/553>`_)
 
-#Improvements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Improvements
+-------------------------------------
 
  - UI: line break in tree views (`#406 <https://github.com/Komet/MediaElch/issues/406>`_)
  - UI: add 4k and 8k resolution flag (`#446 <https://github.com/Komet/MediaElch/issues/446>`_)
