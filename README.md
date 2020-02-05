@@ -27,6 +27,18 @@ documentation by using `./update_github_pages.sh`.
 
 *Note*: You must not have any un-committed changes in your local repository!
 
+You can use the Dockerfile provided to release the documentation. This can be
+helpful if you're on macOS or Windows because the script `create_changelog.sh`
+requires GNU `sed` and can't work with the outdated macOS version.
+
+```sh
+docker build -t "mediaelch_doc:latest" .
+# We need volumes to the mediaelch-doc repository and to your ssh credentials
+docker run -it --rm --name mediaelch_doc -v $(pwd):/opt/mediaelch-doc -v ${HOME}/.ssh:/root/.ssh mediaelch_doc:latest
+# Inside the docker container
+/opt/mediaelch-doc/update_github_pages.sh
+```
+
 #### Troubleshooting
 If you can't install the theme using `pip`, please refer to:
 https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html#via-git-or-download

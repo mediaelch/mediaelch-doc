@@ -4,6 +4,10 @@ set -u
 set -o pipefail
 IFS=$'\n\t'
 
+BASE_DIR="$( cd "$(dirname "$0")"; pwd -P )"
+
+cd "${BASE_DIR}"
+
 # get a clean master branch assuming
 git checkout master
 git pull origin master
