@@ -9,10 +9,10 @@ Release Notes / Changelog
 .. note::
 
   This information is drawn from the GitHub MediaElch project changelog: |br|
-  https://github.com/Komet/MediaElch/blob/master/changelog.md
+  https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-Next Release (*tbd*)
+2.6.2 - Ferenginar (2020-02-08)
 ************************************
 
 Bugfixes
@@ -65,6 +65,7 @@ Internal Improvements and Changes
 
  - CMake: Fix Foundation framework include for macOS
  - Tests: Add more integration and unit tests
+ - Downgrade to Qt 5.5 as minimal requirement (`#885 <https://github.com/Komet/MediaElch/issues/885>`_)
 
 
 2.6.2 - Ferenginar (2019-09-13)
