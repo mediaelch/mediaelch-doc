@@ -12,7 +12,33 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.6.2 - Ferenginar (2020-02-08)
+Next Release (*tbd*)
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Fix AEBN crash when scraping a movie (`#910 <https://github.com/Komet/MediaElch/issues/910>`_)
+ - Select correct language for TMDb in the movie search dialog (`#916 <https://github.com/Komet/MediaElch/issues/916>`_)
+ - Windows: Fix scanning of concerts (`#814 <https://github.com/Komet/MediaElch/issues/814>`_)
+
+Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Always write the episode guide URL to TV show NFOs using TheTvDb format (`#652 <https://github.com/Komet/MediaElch/issues/652>`_)
+ - Fanart.tv: Print better error messages for shows and movies that cannot be found (`#900 <https://github.com/Komet/MediaElch/issues/900>`_)
+ - TMDb: Update available languages to support official translations (`#901 <https://github.com/Komet/MediaElch/issues/901>`_)
+ - Movies: If movies are sorted by "name", the movie's sort title is used if
+   set and the name otherwise (`#919 <https://github.com/Komet/MediaElch/issues/919>`_)
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Set MediaElch specific HTTP User-Agent header for most HTTP requests (`#912 <https://github.com/Komet/MediaElch/issues/912>`_)
+ - Updater: Use new MediaElch meta repository for version checks (`#896 <https://github.com/Komet/MediaElch/issues/896>`_)
+
+
+2.6.4 - Ferenginar (2020-02-08)
 ************************************
 
 Bugfixes

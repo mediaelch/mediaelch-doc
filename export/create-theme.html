@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Renaming files and directories" href="../renaming.html" />
     <link rel="prev" title="Available Themes" href="themes.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -207,10 +209,10 @@
 <h1>Create an Export Theme<a class="headerlink" href="#create-an-export-theme" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></li>
-<li><a class="reference internal" href="#customizing-the-templates" id="id2">Customizing the templates</a></li>
-<li><a class="reference internal" href="#publishing-your-theme" id="id3">Publishing your theme</a></li>
-<li><a class="reference internal" href="#placeholders" id="id4">Placeholders</a></li>
+<li><p><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></p></li>
+<li><p><a class="reference internal" href="#customizing-the-templates" id="id2">Customizing the templates</a></p></li>
+<li><p><a class="reference internal" href="#publishing-your-theme" id="id3">Publishing your theme</a></p></li>
+<li><p><a class="reference internal" href="#placeholders" id="id4">Placeholders</a></p></li>
 </ul>
 </div>
 <p>You can also create a new export theme in a few steps:</p>
@@ -220,9 +222,9 @@
 The files will be located at the following places:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Mac OS: <code class="docutils literal notranslate"><span class="pre">/Users/username/Library/Application</span> <span class="pre">Support/kvibes/MediaElch/export_themes/dummy</span></code></li>
-<li>Linux: <code class="docutils literal notranslate"><span class="pre">/home/username/.local/share/kvibes/MediaElch/export_themes/dummy</span></code></li>
-<li>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Users\username\AppData\Local\kvibes\MediaElch\export_themes\dummy</span></code></li>
+<li><p>Mac OS: <code class="docutils literal notranslate"><span class="pre">/Users/username/Library/Application</span> <span class="pre">Support/kvibes/MediaElch/export_themes/dummy</span></code></p></li>
+<li><p>Linux: <code class="docutils literal notranslate"><span class="pre">/home/username/.local/share/kvibes/MediaElch/export_themes/dummy</span></code></p></li>
+<li><p>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Users\username\AppData\Local\kvibes\MediaElch\export_themes\dummy</span></code></p></li>
 </ul>
 </div></blockquote>
 <p>Now just rename the dummy folder as you like. The new name should not
@@ -232,12 +234,12 @@ contain any special characters or spaces and match the name of your theme.</p>
 <p>Open <code class="docutils literal notranslate"><span class="pre">metadata.xml</span></code> and adjust the information inside:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">name</span></code> should be the name of your theme</li>
-<li><code class="docutils literal notranslate"><span class="pre">identifier</span></code> needs to be an unique identifier and exactly match the folder name you chose before</li>
-<li><code class="docutils literal notranslate"><span class="pre">add</span></code> description tags in languages you want</li>
-<li><code class="docutils literal notranslate"><span class="pre">author</span></code> should be your name</li>
-<li><code class="docutils literal notranslate"><span class="pre">version</span></code> needs to be a numeric</li>
-<li><code class="docutils literal notranslate"><span class="pre">supports</span></code> contains the items which could be exported with your theme</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> should be the name of your theme</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">identifier</span></code> needs to be an unique identifier and exactly match the folder name you chose before</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">add</span></code> description tags in languages you want</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">author</span></code> should be your name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> needs to be a numeric</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">supports</span></code> contains the items which could be exported with your theme</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -457,7 +459,7 @@ your created theme. Just create a zip archive and send it to
         <a href="../renaming.html" class="btn btn-neutral float-right" title="Renaming files and directories" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="themes.html" class="btn btn-neutral" title="Available Themes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="themes.html" class="btn btn-neutral float-left" title="Available Themes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -483,25 +485,16 @@ your created theme. Just create a zip archive and send it to
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
