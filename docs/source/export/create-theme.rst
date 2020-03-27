@@ -191,13 +191,13 @@ Here is a list of all placeholders that are available:
       {{ TVSHOW.PLOT }}
       {{ TVSHOW.TAGS }}
       {{ TVSHOW.GENRES }}
-      {{ BEGIN_BLOCK_ACTORS }}
       {{ BEGIN_BLOCK_TAGS }}
           {{ TAG.NAME }}
       {{ END_BLOCK_TAGS }}
       {{ BEGIN_BLOCK_GENRES }}
           {{ GENRE.NAME }}
       {{ END_BLOCK_GENRES }}
+      {{ BEGIN_BLOCK_ACTORS }}
           {{ ACTOR.NAME }}
           {{ ACTOR.ROLE }}
       {{ END_BLOCK_ACTORS }}
@@ -211,28 +211,27 @@ Here is a list of all placeholders that are available:
 
       {{ BEGIN_BLOCK_SEASON }}
           {{ SEASON }}
-          {{ BEGIN_BLOCK_EPISODE }}
           {{ SHOW.TITLE }}
           {{ SHOW.LINK }}
-          {{ EPISODE.LINK }}
-          {{ EPISODE.TITLE }}
-          {{ EPISODE.SEASON }}
-          {{ EPISODE.EPISODE }}
-          {{ EPISODE.RATING }}
-          {{ EPISODE.CERTIFICATION }}
-          {{ EPISODE.FIRST_AIRED }}
-          {{ EPISODE.LAST_PLAYED }}
-          {{ EPISODE.STUDIO }}
-          {{ EPISODE.PLOT }}
-          {{ EPISODE.WRITERS }}
-          {{ EPISODE.DIRECTORS }}
-          # all file information (see section "File Info")
-          {{ BEGIN_BLOCK_WRITERS }}
-              {{ WRITER.NAME }}
-              {{ DIRECTOR.NAME }}
-          {{ END_BLOCK_WRITERS }}
-          {{ IMAGE.THUMBNAIL[width, height] }}
-
+          {{ BEGIN_BLOCK_EPISODE }}
+              {{ EPISODE.LINK }}
+              {{ EPISODE.TITLE }}
+              {{ EPISODE.SEASON }}
+              {{ EPISODE.EPISODE }}
+              {{ EPISODE.RATING }}
+              {{ EPISODE.CERTIFICATION }}
+              {{ EPISODE.FIRST_AIRED }}
+              {{ EPISODE.LAST_PLAYED }}
+              {{ EPISODE.STUDIO }}
+              {{ EPISODE.PLOT }}
+              {{ EPISODE.WRITERS }}
+              {{ EPISODE.DIRECTORS }}
+              # all file information (see section "File Info")
+              {{ BEGIN_BLOCK_WRITERS }}
+                  {{ WRITER.NAME }}
+                  {{ DIRECTOR.NAME }}
+              {{ END_BLOCK_WRITERS }}
+              {{ IMAGE.THUMBNAIL[width, height] }}
           {{ END_BLOCK_EPISODE }}
       {{ END_BLOCK_SEASON }}
 
