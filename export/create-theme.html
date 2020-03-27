@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -383,13 +383,13 @@ your created theme. Just create a zip archive and send it to
     <span class="o">{{</span> TVSHOW.PLOT <span class="o">}}</span>
     <span class="o">{{</span> TVSHOW.TAGS <span class="o">}}</span>
     <span class="o">{{</span> TVSHOW.GENRES <span class="o">}}</span>
-    <span class="o">{{</span> BEGIN_BLOCK_ACTORS <span class="o">}}</span>
     <span class="o">{{</span> BEGIN_BLOCK_TAGS <span class="o">}}</span>
         <span class="o">{{</span> TAG.NAME <span class="o">}}</span>
     <span class="o">{{</span> END_BLOCK_TAGS <span class="o">}}</span>
     <span class="o">{{</span> BEGIN_BLOCK_GENRES <span class="o">}}</span>
         <span class="o">{{</span> GENRE.NAME <span class="o">}}</span>
     <span class="o">{{</span> END_BLOCK_GENRES <span class="o">}}</span>
+    <span class="o">{{</span> BEGIN_BLOCK_ACTORS <span class="o">}}</span>
         <span class="o">{{</span> ACTOR.NAME <span class="o">}}</span>
         <span class="o">{{</span> ACTOR.ROLE <span class="o">}}</span>
     <span class="o">{{</span> END_BLOCK_ACTORS <span class="o">}}</span>
@@ -403,28 +403,27 @@ your created theme. Just create a zip archive and send it to
 
     <span class="o">{{</span> BEGIN_BLOCK_SEASON <span class="o">}}</span>
         <span class="o">{{</span> SEASON <span class="o">}}</span>
-        <span class="o">{{</span> BEGIN_BLOCK_EPISODE <span class="o">}}</span>
         <span class="o">{{</span> SHOW.TITLE <span class="o">}}</span>
         <span class="o">{{</span> SHOW.LINK <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.LINK <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.TITLE <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.SEASON <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.EPISODE <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.RATING <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.CERTIFICATION <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.FIRST_AIRED <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.LAST_PLAYED <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.STUDIO <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.PLOT <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.WRITERS <span class="o">}}</span>
-        <span class="o">{{</span> EPISODE.DIRECTORS <span class="o">}}</span>
-        <span class="c1"># all file information (see section &quot;File Info&quot;)</span>
-        <span class="o">{{</span> BEGIN_BLOCK_WRITERS <span class="o">}}</span>
-            <span class="o">{{</span> WRITER.NAME <span class="o">}}</span>
-            <span class="o">{{</span> DIRECTOR.NAME <span class="o">}}</span>
-        <span class="o">{{</span> END_BLOCK_WRITERS <span class="o">}}</span>
-        <span class="o">{{</span> IMAGE.THUMBNAIL<span class="o">[</span>width, height<span class="o">]</span> <span class="o">}}</span>
-
+        <span class="o">{{</span> BEGIN_BLOCK_EPISODE <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.LINK <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.TITLE <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.SEASON <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.EPISODE <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.RATING <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.CERTIFICATION <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.FIRST_AIRED <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.LAST_PLAYED <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.STUDIO <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.PLOT <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.WRITERS <span class="o">}}</span>
+            <span class="o">{{</span> EPISODE.DIRECTORS <span class="o">}}</span>
+            <span class="c1"># all file information (see section &quot;File Info&quot;)</span>
+            <span class="o">{{</span> BEGIN_BLOCK_WRITERS <span class="o">}}</span>
+                <span class="o">{{</span> WRITER.NAME <span class="o">}}</span>
+                <span class="o">{{</span> DIRECTOR.NAME <span class="o">}}</span>
+            <span class="o">{{</span> END_BLOCK_WRITERS <span class="o">}}</span>
+            <span class="o">{{</span> IMAGE.THUMBNAIL<span class="o">[</span>width, height<span class="o">]</span> <span class="o">}}</span>
         <span class="o">{{</span> END_BLOCK_EPISODE <span class="o">}}</span>
     <span class="o">{{</span> END_BLOCK_SEASON <span class="o">}}</span>
 

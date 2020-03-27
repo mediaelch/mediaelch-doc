@@ -21,6 +21,10 @@ Bugfixes
  - Fix AEBN crash when scraping a movie (`#910 <https://github.com/Komet/MediaElch/issues/910>`_)
  - Select correct language for TMDb in the movie search dialog (`#916 <https://github.com/Komet/MediaElch/issues/916>`_)
  - Windows: Fix scanning of concerts (`#814 <https://github.com/Komet/MediaElch/issues/814>`_)
+ - Downloads Section: Fix crash when importing items (`#828 <https://github.com/Komet/MediaElch/issues/828>`_)
+ - Downloads Section: Fix invalid file sizes (`#829 <https://github.com/Komet/MediaElch/issues/829>`_)  
+   Due to a bug, files above 2GB had the wrong file size. Furthermore MediaElch
+   showed file sizes in MiB, GiB, etc. even though MB, GB, etc. were displayed.
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -36,6 +40,8 @@ Internal Improvements and Changes
 
  - Set MediaElch specific HTTP User-Agent header for most HTTP requests (`#912 <https://github.com/Komet/MediaElch/issues/912>`_)
  - Updater: Use new MediaElch meta repository for version checks (`#896 <https://github.com/Komet/MediaElch/issues/896>`_)
+ - Download Section: Refactor the file searcher to make it non-blocking and
+   improve the overall performance (`#830 <https://github.com/Komet/MediaElch/issues/830>`_)
 
 
 2.6.4 - Ferenginar (2020-02-08)
