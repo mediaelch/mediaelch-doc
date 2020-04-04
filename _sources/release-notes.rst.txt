@@ -22,18 +22,18 @@ Bugfixes
  - Select correct language for TMDb in the movie search dialog (`#916 <https://github.com/Komet/MediaElch/issues/916>`_)
  - Windows: Fix scanning of concerts (`#814 <https://github.com/Komet/MediaElch/issues/814>`_)
  - Downloads Section: Fix crash when importing items (`#828 <https://github.com/Komet/MediaElch/issues/828>`_)
- - Downloads Section: Fix invalid file sizes (`#829 <https://github.com/Komet/MediaElch/issues/829>`_)  
+ - Downloads Section: Fix invalid file sizes (`#829 <https://github.com/Komet/MediaElch/issues/829>`_) |br|
    Due to a bug, files above 2GB had the wrong file size. Furthermore MediaElch
    showed file sizes in MiB, GiB, etc. even though MB, GB, etc. were displayed.
  - TV episodes: Manually edited writers and directors were not saved (`#933 <https://github.com/Komet/MediaElch/issues/933>`_)
- - TV shows: Fix TV shows always being reloaded from disk (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)  
+ - TV shows: Fix TV shows always being reloaded from disk (`#732 <https://github.com/Komet/MediaElch/issues/732>`_) |br|
    Due to a bug in path handling, TV shows were *always* reloaded even though
    the internal cache should be used.
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - Export: The generated folder name now also contains seconds (`#935 <https://github.com/Komet/MediaElch/issues/935>`_)  
+ - Export: The generated folder name now also contains seconds (`#935 <https://github.com/Komet/MediaElch/issues/935>`_) |br|
    It now has the pattern ``MediaElch Export yyyy-MM-dd hh-mm-ss``.
    Exporting multiple times whithin a minute otherwise leads to name clashes.
 
@@ -70,21 +70,21 @@ Bugfixes
    MediaElch could crash under certain circumstances due to improper use of Qt's
    model/view system. You may experience that shows are deselected when " Show missing episodes"
    is clicked the first time.
- - Fix hanging window if the custom movie scraper is selected but no valid scraper is found.  
+ - Fix hanging window if the custom movie scraper is selected but no valid scraper is found. |br|
    This can happen if MediaElch's settings are in an inconsistent state (`#792 <https://github.com/Komet/MediaElch/issues/792>`_)
  - Fix ``{{ *.RATING }}`` not being replaced in exports if a media item has no rating
  - Fix movie label color not being shown (`#803 <https://github.com/Komet/MediaElch/issues/803>`_)
- - Fix default language selection in movie scraper dialog  
+ - Fix default language selection in movie scraper dialog |br|
    Default-selected language not used when loading from TheMovieDb
  - NFO: Only write ``<originaltitle>`` if it's different from ``<title>`` (`#812 <https://github.com/Komet/MediaElch/issues/812>`_)
  - Fix IMDb runtime scraping (`#810 <https://github.com/Komet/MediaElch/issues/810>`_)
- - Update TMDb base URL for downloading images (`#807 <https://github.com/Komet/MediaElch/issues/807>`_)  
+ - Update TMDb base URL for downloading images (`#807 <https://github.com/Komet/MediaElch/issues/807>`_) |br|
    The very old subdomain has been taken offline. We now use the new one.
- - Fix TMDb scraper language in dialog window (`#813 <https://github.com/Komet/MediaElch/issues/813>`_)  
+ - Fix TMDb scraper language in dialog window (`#813 <https://github.com/Komet/MediaElch/issues/813>`_) |br|
    Scraper language wasn't the one saved in settings but always "English".
  - About Dialog: Fix MediaInfo version string in developer information (`#790 <https://github.com/Komet/MediaElch/issues/790>`_)
  - Movie/TvShow: Only parse valid ``premiered`` tags (`#827 <https://github.com/Komet/MediaElch/issues/827>`_)
- - Fix crash when no TV show is selected  
+ - Fix crash when no TV show is selected |br|
    For example: Start MediaElch -> click "TvShow" -> click "Sync Kodi" -> click "Close" -> Crash
  - Fix missing TheTvDb ID in episode NFO files (`#788 <https://github.com/Komet/MediaElch/issues/788>`_)
  - Don't write TheTvDb v1 episode-guide URLs to TV show NFOs (`#652 <https://github.com/Komet/MediaElch/issues/652>`_)
@@ -414,7 +414,7 @@ Improvements
  - Speed up loading of movies from database
  - Filter for audio formats
  - IMDB scraper doesn't map advanced set...
- - Add stream details to export function  
+ - Add stream details to export function |br|
 
 
 2.1.1 - Trill (2014-03-17)

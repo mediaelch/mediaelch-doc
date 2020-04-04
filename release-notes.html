@@ -255,11 +255,11 @@
 <li>Select correct language for TMDb in the movie search dialog (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/916">#916</a>)</li>
 <li>Windows: Fix scanning of concerts (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/814">#814</a>)</li>
 <li>Downloads Section: Fix crash when importing items (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/828">#828</a>)</li>
-<li>Downloads Section: Fix invalid file sizes (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/829">#829</a>)
+<li>Downloads Section: Fix invalid file sizes (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/829">#829</a>) <br />
 Due to a bug, files above 2GB had the wrong file size. Furthermore MediaElch
 showed file sizes in MiB, GiB, etc. even though MB, GB, etc. were displayed.</li>
 <li>TV episodes: Manually edited writers and directors were not saved (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/933">#933</a>)</li>
-<li>TV shows: Fix TV shows always being reloaded from disk (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/732">#732</a>)
+<li>TV shows: Fix TV shows always being reloaded from disk (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/732">#732</a>) <br />
 Due to a bug in path handling, TV shows were <em>always</em> reloaded even though
 the internal cache should be used.</li>
 </ul>
@@ -269,7 +269,7 @@ the internal cache should be used.</li>
 <h3>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li>Export: The generated folder name now also contains seconds (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/935">#935</a>)
+<li>Export: The generated folder name now also contains seconds (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/935">#935</a>) <br />
 It now has the pattern <code class="docutils literal notranslate"><span class="pre">MediaElch</span> <span class="pre">Export</span> <span class="pre">yyyy-MM-dd</span> <span class="pre">hh-mm-ss</span></code>.
 Exporting multiple times whithin a minute otherwise leads to name clashes.</li>
 </ul>
@@ -314,21 +314,21 @@ improve the overall performance (<a class="reference external" href="https://git
 MediaElch could crash under certain circumstances due to improper use of Qt’s
 model/view system. You may experience that shows are deselected when ” Show missing episodes”
 is clicked the first time.</li>
-<li>Fix hanging window if the custom movie scraper is selected but no valid scraper is found.
+<li>Fix hanging window if the custom movie scraper is selected but no valid scraper is found. <br />
 This can happen if MediaElch’s settings are in an inconsistent state (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/792">#792</a>)</li>
 <li>Fix <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">*.RATING</span> <span class="pre">}}</span></code> not being replaced in exports if a media item has no rating</li>
 <li>Fix movie label color not being shown (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/803">#803</a>)</li>
-<li>Fix default language selection in movie scraper dialog
+<li>Fix default language selection in movie scraper dialog <br />
 Default-selected language not used when loading from TheMovieDb</li>
 <li>NFO: Only write <code class="docutils literal notranslate"><span class="pre">&lt;originaltitle&gt;</span></code> if it’s different from <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;</span></code> (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/812">#812</a>)</li>
 <li>Fix IMDb runtime scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/810">#810</a>)</li>
-<li>Update TMDb base URL for downloading images (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/807">#807</a>)
+<li>Update TMDb base URL for downloading images (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/807">#807</a>) <br />
 The very old subdomain has been taken offline. We now use the new one.</li>
-<li>Fix TMDb scraper language in dialog window (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/813">#813</a>)
+<li>Fix TMDb scraper language in dialog window (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/813">#813</a>) <br />
 Scraper language wasn’t the one saved in settings but always “English”.</li>
 <li>About Dialog: Fix MediaInfo version string in developer information (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/790">#790</a>)</li>
 <li>Movie/TvShow: Only parse valid <code class="docutils literal notranslate"><span class="pre">premiered</span></code> tags (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/827">#827</a>)</li>
-<li>Fix crash when no TV show is selected
+<li>Fix crash when no TV show is selected <br />
 For example: Start MediaElch -&gt; click “TvShow” -&gt; click “Sync Kodi” -&gt; click “Close” -&gt; Crash</li>
 <li>Fix missing TheTvDb ID in episode NFO files (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/788">#788</a>)</li>
 <li>Don’t write TheTvDb v1 episode-guide URLs to TV show NFOs (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/652">#652</a>)</li>
@@ -701,7 +701,7 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 <li>Speed up loading of movies from database</li>
 <li>Filter for audio formats</li>
 <li>IMDB scraper doesn’t map advanced set…</li>
-<li>Add stream details to export function</li>
+<li>Add stream details to export function <br /></li>
 </ul>
 </div></blockquote>
 </div>
