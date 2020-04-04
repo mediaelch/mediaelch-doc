@@ -30,6 +30,9 @@ sed -i.bak '/# Changelog/d' $NOTES
 # shellcheck disable=SC2016
 sed -i.bak -r 's/#([0-9]+)/`#\1 <https:\/\/github.com\/Komet\/MediaElch\/issues\/\1>`_/g' $NOTES
 
+# Create line breaks Markdown Style
+sed -i.bak -r 's/  $/ |br|/g' $NOTES
+
 rm -f $NOTES.bak
 
 echo "Done"
