@@ -25,6 +25,17 @@ Bugfixes
  - Downloads Section: Fix invalid file sizes (`#829 <https://github.com/Komet/MediaElch/issues/829>`_)  
    Due to a bug, files above 2GB had the wrong file size. Furthermore MediaElch
    showed file sizes in MiB, GiB, etc. even though MB, GB, etc. were displayed.
+ - TV episodes: Manually edited writers and directors were not saved (`#933 <https://github.com/Komet/MediaElch/issues/933>`_)
+ - TV shows: Fix TV shows always being reloaded from disk (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)  
+   Due to a bug in path handling, TV shows were *always* reloaded even though
+   the internal cache should be used.
+
+Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Export: The generated folder name now also contains seconds (`#935 <https://github.com/Komet/MediaElch/issues/935>`_)  
+   It now has the pattern ``MediaElch Export yyyy-MM-dd hh-mm-ss``.
+   Exporting multiple times whithin a minute otherwise leads to name clashes.
 
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -34,6 +45,11 @@ Improvements
  - TMDb: Update available languages to support official translations (`#901 <https://github.com/Komet/MediaElch/issues/901>`_)
  - Movies: If movies are sorted by "name", the movie's sort title is used if
    set and the name otherwise (`#919 <https://github.com/Komet/MediaElch/issues/919>`_)
+ - Movie Poster: Make it possible to set a random screenshot as the movie's poster (`#934 <https://github.com/Komet/MediaElch/issues/934>`_)
+   Just like for TV show episode thumbnails, a poster can be created which uses a
+   random screenshot from the movie file. Movies must have a format that is readable
+   by ffmpeg. The resolution is hard coded to 720x1080px which has a typical poster
+   aspect ratio of 2:3.
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,7 +138,6 @@ Bugfixes
  - Windows: Stream Details do not load (`#688 <https://github.com/Komet/MediaElch/issues/688>`_)
  - Crashes on macOS when scanning episodes due to a Qt bug (`#641 <https://github.com/Komet/MediaElch/issues/641>`_)
  - Fix ADE scraper (`#703 <https://github.com/Komet/MediaElch/issues/703>`_, `#725 <https://github.com/Komet/MediaElch/issues/725>`_)
- - Fix TV shows always being reloaded (`#732 <https://github.com/Komet/MediaElch/issues/732>`_)
  - Fix incompatibilities with Kodi v17 NFO files (`#719 <https://github.com/Komet/MediaElch/issues/719>`_)
  - Fix race-condition in DownloadManager (`#766 <https://github.com/Komet/MediaElch/issues/766>`_)
  - Fix VideoBuster certification scraping
