@@ -11,7 +11,7 @@ Settings
 +-------------+----------------------------------------------------------------------------+
 | Menu        | Description                                                                |
 +=============+============================================================================+
-| Global      | Paths of video files for movies, concerts, tv shows and music.             |
+| Global      | Paths of video files for movies, concerts, TV shows and music.             |
 +-------------+----------------------------------------------------------------------------+
 | Scraper     | Language settings, custom scraper, key for fanart.tv, erotic scraper, etc. |
 +-------------+----------------------------------------------------------------------------+
