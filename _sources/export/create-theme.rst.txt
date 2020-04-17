@@ -63,7 +63,7 @@ Movies
 TV Shows and Episodes
 ^^^^^^^^^^^^^^^^^^^^^
 
-``tvshows.html`` is a list view which should show the tv shows title. |br|
+``tvshows.html`` is a list view which should show the TV shows title. |br|
 ``tvshows/tvshow.html`` is the template for all information about
 the show and should contain a list of all episodes. |br|
 ``episodes/episode.html`` should contain all information about an episode.

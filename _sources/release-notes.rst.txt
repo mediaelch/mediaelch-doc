@@ -15,6 +15,10 @@ Release Notes / Changelog
 Next Release (*tbd*)
 ************************************
 
+*Note:* This release has changed its internal file and directory handling to
+fix Windows-related bugs (`#732 <https://github.com/Komet/MediaElch/issues/732>`_).  Please report any issues with network drives
+or other non-local drives.
+
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -29,10 +33,28 @@ Bugfixes
  - TV shows: Fix TV shows always being reloaded from disk (`#732 <https://github.com/Komet/MediaElch/issues/732>`_) |br|
    Due to a bug in path handling, TV shows were *always* reloaded even though
    the internal cache should be used.
- - UI: Fix text color in messages boxes (`#942 <https://github.com/Komet/MediaElch/issues/942>`_)
+ - UI: Fix text color in messages boxes (`#942 <https://github.com/Komet/MediaElch/issues/942>`_) |br|
    On Linux distributions that use the KDE Breeze Dark theme (or other dark
    themes), the text color of message boxes would be white.  Light text on
    light background is not readable. The text is now always set to black.
+ - HotMovies: Fix rating scraping |br|
+   Due to a change on their website, the vote count scraping did not work anymore.
+ - Trailer Download: Fix downloading trailers for many movies (`#940 <https://github.com/Komet/MediaElch/issues/940>`_) |br|
+   If the trailer dialog window was closed using the window frame's close
+   button ("x") instead of the button labeled "Close", the dialog was destroyed
+   and reopening it resulted in an empty dialog window.
+ - TV Tunes Download: Fix crash when aborting download and restarting it (`#940 <https://github.com/Komet/MediaElch/issues/940>`_) |br|
+   If the TV tune dialog is closed before it has finished loading its search
+   results and is reopened for another show, MediaElch crashed due to a
+   race condition.
+ - Movie: Don't save runtime from file if it cannot be detected (`#604 <https://github.com/Komet/MediaElch/issues/604>`_) |br|
+   If the user changes the movie's runtime and saves it, it may be reset to
+   0 if "Automatically load and save stream details from file" is enabled in MediaElch's
+   settings. MediaElch now first checks if the detected runtime is greater than 0.
+ - TV show file searcher now allows spaces between episode and season (`#513 <https://github.com/Komet/MediaElch/issues/513>`_) |br|
+   Previously "S01 E02" was not accepted. However, in older versions of MediaElch
+   this seemed to have worked and now works again.
+ - Image Preview: Fix centering of image dialog (`#863 <https://github.com/Komet/MediaElch/issues/863>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,11 +71,19 @@ Improvements
  - TMDb: Update available languages to support official translations (`#901 <https://github.com/Komet/MediaElch/issues/901>`_)
  - Movies: If movies are sorted by "name", the movie's sort title is used if
    set and the name otherwise (`#919 <https://github.com/Komet/MediaElch/issues/919>`_)
+ - IMDb: Use higher image resolution for actors (`#920 <https://github.com/Komet/MediaElch/issues/920>`_)
+   IMDb has reduced the image resolution for actor images on a movie's main page.
+   MediaElch now loads each actor page and uses an image with higher resolution.
  - Movie Poster: Make it possible to set a random screenshot as the movie's poster (`#934 <https://github.com/Komet/MediaElch/issues/934>`_)
    Just like for TV show episode thumbnails, a poster can be created which uses a
    random screenshot from the movie file. Movies must have a format that is readable
    by ffmpeg. The resolution is hard coded to 720x1080px which has a typical poster
    aspect ratio of 2:3.
+ - TV show: Also load TV show posters when searching for new season posters (`#600 <https://github.com/Komet/MediaElch/issues/600>`_)
+   TheTvDb may not return posters for a certain seasons. However it may still be
+   useful to select TV show posters for a season.
+ - TV show: Remove suffix (e.g. ``.mkv``) from default episode names (`#513 <https://github.com/Komet/MediaElch/issues/513>`_) |br|
+   Default names are just their file names. MediaElch now removes the file suffix.
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,6 +92,12 @@ Internal Improvements and Changes
  - Updater: Use new MediaElch meta repository for version checks (`#896 <https://github.com/Komet/MediaElch/issues/896>`_)
  - Download Section: Refactor the file searcher to make it non-blocking and
    improve the overall performance (`#830 <https://github.com/Komet/MediaElch/issues/830>`_)
+ - Logging: Respect ``QT_MESSAGE_PATTERN`` and use better defaults |br|
+   Previously, MediaElch did not respect Qt's environment variable
+   ``QT_MESSAGE_PATTERN``.  That environment variable can be used to format logging messages.
+   In debug mode the default pattern uses colors if the console supports it.
+ - Replace all old-style ``SIGNAL``/``SLOT`` connections with new-style ones.
+ - Update MediaELch's dependencies and use Qt 5.14.2 for Windows (`#832 <https://github.com/Komet/MediaElch/issues/832>`_)
 
 
 2.6.4 - Ferenginar (2020-02-08)

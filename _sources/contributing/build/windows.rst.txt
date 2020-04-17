@@ -22,7 +22,7 @@ Build
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Open the MediaElch project using QtCreator, configure it and click "Run" (``Strg+R``).
 
-ffmpeg
+ffmpeg executable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 You have to download `ffmpeg <https://ffmpeg.zeranoe.com/builds/>`_ to be able
 to create random screenshots of video files. After building MediaElch place
