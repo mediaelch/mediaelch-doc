@@ -49,3 +49,9 @@ Any help is welcome! :-)
 
 If you add images (such as screenshots), minimize them using
 [Trimage](https://trimage.org/).
+
+Please also run `rstcheck`:
+```sh
+pip install --user rstcheck
+find . -type f -name '*.rst' -exec rstcheck {} \+
+```
