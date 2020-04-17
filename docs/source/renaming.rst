@@ -2,6 +2,11 @@
 Renaming files and directories
 ==============================
 
+.. tip::
+
+    Use the renamer to structure your movies into folders and give them proper file names.
+    MediaElch will automatically create sub-directories as needed.
+
 MediaElch is able to rename your files and folders on a given pattern.
 The "Renamer" allows you to build up a solid directory structure to
 organize your movies, TV shows and more.
@@ -21,10 +26,15 @@ Placeholders in angle brackets (``<...>``) are replaced by their actual
 value. Playholders in curly brackets (``{...} ... {/...}``) are conditionals.
 The content between them is only used if the condition is true.
 
+If the media files for the movies (``mkv``, ``avi``, ``mp4``, etc.) are all
+in a single folder, you can use the renamer to automatically create individual
+folders and put the respective media files into new folders.
+Only the movie's media file is moved to the new folder (no artwork).
+
 Here's an example: Assume we have three movies
 
 +-----+------------------+------+--------------------------------+
-| No. | Movie            | Year | Other                          |
+| No. | Movie            | Year | Other Details                  |
 +=====+==================+======+================================+
 |  1  | "Awesome Movie"  | 2000 | 3D movie                       |
 +-----+------------------+------+--------------------------------+
