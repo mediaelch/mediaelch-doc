@@ -11,8 +11,8 @@ Scraper Issues
 
 If a scraper does not seem to work, try using another scraper.
 
- - other scrapers works: file an :doc:`issue <contributing/bug-reports>`
- - other scrapers do not work: check your internet connection
+ - if other scrapers work: file an :doc:`issue <contributing/bug-reports>`
+ - if other scrapers do not work: check your internet connection
 
 
 Other Issues

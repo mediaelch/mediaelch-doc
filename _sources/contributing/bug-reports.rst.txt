@@ -2,9 +2,6 @@
 Bug Reports
 ============
 
-.. warning::
-
-   Work in progress
 
 You found a bug? What now?
 ==========================
