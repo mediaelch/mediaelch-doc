@@ -12,6 +12,31 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+2.6.8 - *tbd*
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Exporter: Fix episode thumbnails in TV show view (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
+ - Movies: Sub-folders are no longer handled as files (`#978 <https://github.com/Komet/MediaElch/issues/978>`_)
+
+Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Concert Export: ``{{ CONCERT.FILENAME }}`` and ``{{ CONCERT.DIR }}`` are now supported in themes (`#962 <https://github.com/Komet/MediaElch/issues/962>`_)
+
+Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Export: ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
+ - Movie Backdrop: Make it possible to set a random screenshot as the movie's backdrop/fanart (`#965 <https://github.com/Komet/MediaElch/issues/965>`_)
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ - *tbd*
+
+
 2.6.6 - Ferenginar (2020-04-18)
 ************************************
 

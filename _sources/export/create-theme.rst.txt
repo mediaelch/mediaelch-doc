@@ -161,6 +161,11 @@ Here is a list of all placeholders that are available:
       {{ CONCERT.TRAILER }}
       {{ CONCERT.PLAY_COUNT }}
       {{ CONCERT.LAST_PLAYED }}
+
+      # The next 2 exist since v2.6.7-dev
+      {{ CONCERT.FILENAME }}
+      {{ CONCERT.DIR }}
+
       {{ CONCERT.PLOT }}
       {{ CONCERT.TAGS }}
       {{ CONCERT.GENRES }}
@@ -229,8 +234,10 @@ Here is a list of all placeholders that are available:
               # all file information (see section "File Info")
               {{ BEGIN_BLOCK_WRITERS }}
                   {{ WRITER.NAME }}
-                  {{ DIRECTOR.NAME }}
               {{ END_BLOCK_WRITERS }}
+              {{ BEGIN_BLOCK_DIRECTORS }}
+                  {{ DIRECTOR.NAME }}
+              {{ END_BLOCK_DIRECTORS }}
               {{ IMAGE.THUMBNAIL[width, height] }}
           {{ END_BLOCK_EPISODE }}
       {{ END_BLOCK_SEASON }}
