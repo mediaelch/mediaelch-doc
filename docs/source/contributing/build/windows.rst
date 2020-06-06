@@ -20,6 +20,8 @@ Other Libraries
  4. Download and run `MSYS2 installer <https://www.msys2.org/>`_. |br|
     Install ``mingw-w64-i686-quazip`` using included `pacman <https://www.msys2.org/>`_ utility |br|
     Copy the folder ``msys64/mingw32/include/quazip5`` to ``path/to/MediaElch/quazip5`` |br|
+    Copy the file ``msys64/mingw32/include/zconf.h`` to ``path/to/MediaElch/quazip5/zconf.h`` |br|
+    Copy the file ``msys64/mingw32/include/zlib.h`` to ``path/to/MediaElch/quazip5/zlib.h`` |br|
     Copy the file ``msys64/mingw32/bin/libquazip5.dll`` to ``path/to/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/libquazip5.dll`` (The version ``8.1.0`` matches your "Qt with MinGW" installation.)
 
 Build
