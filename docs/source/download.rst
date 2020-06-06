@@ -115,3 +115,8 @@ Or you can install MediaElch per command line:
 
 .. |bintray-linux| image:: https://api.bintray.com/packages/komet/MediaElch/MediaElch-linux/images/download.svg
    :target: https://bintray.com/komet/MediaElch/MediaElch-linux/_latestVersion
+
+
+Source Code
+===========
+MediaElch is open source! The source code is located on GitHub: https://github.com/Komet/MediaElch
