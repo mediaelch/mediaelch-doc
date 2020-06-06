@@ -15,6 +15,10 @@ Release Notes / Changelog
 2.6.8 - *tbd*
 ************************************
 
+MediaElch now requires Qt 5.6 or later. Qt 5.6 was released in 2016 and we highly recommend to update
+to the latest version if your system supports it (this only affects MediaElch's version for Linux
+distributions).
+
 Note: You may need to set "DVD order" in your settings again as the internal settings-key changed.
 
 Bugfixes
@@ -22,6 +26,7 @@ Bugfixes
 
  - Exporter: Fix episode thumbnails in TV show view (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
  - Movies: Sub-folders are no longer handled as files (`#978 <https://github.com/Komet/MediaElch/issues/978>`_)
+ - Downloads: Fix stylesheet of import dialog window (`#984 <https://github.com/Komet/MediaElch/issues/984>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,7 +36,7 @@ Changes
 Improvements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - Export: ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
+ - Export: Image placeholders like ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
  - Movie Backdrop: Make it possible to set a random screenshot as the movie's backdrop/fanart (`#965 <https://github.com/Komet/MediaElch/issues/965>`_)
 
 Internal Improvements and Changes
