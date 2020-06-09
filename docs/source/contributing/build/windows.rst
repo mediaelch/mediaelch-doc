@@ -5,6 +5,9 @@ Windows
 Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Download MediaElch's sources and initialize all Git submodules using
+``git submodule init --update`` before proceding with the steps below.
+
 Qt
 ----------------------------------------------------------
 Download the `Qt online installer`_. Run it and select the latest Qt version
