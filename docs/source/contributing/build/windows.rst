@@ -8,7 +8,13 @@ Dependencies
 Qt
 ----------------------------------------------------------
 Download the `Qt online installer`_. Run it and select the latest Qt version
-for installation (e.g. ``Qt 5.15.0`` with ``MinGW 8.1.0 32-bit`` in it). Then select ``MinGW 8.1.0 32-bit`` in section ``Developer and Designer Tools``. The first option installs QT Creator, qmake etc. The second option installs gcc, gdb etc. (If you want you can also choose ``QT Creator CDB Debugger Support`` and ``Debugging Tools for Windows`` in section ``Developer and Designer Tools``.)
+for installation (e.g. ``Qt 5.15.0`` with ``MinGW 8.1.0 32-bit`` in it).
+Then select ``MinGW 8.1.0 32-bit`` in section ``Developer and Designer Tools``.
+The first option installs QT Creator, qmake etc. The second option installs
+GCC, GDB etc. 
+
+Optional: If you want you can also choose ``QT Creator CDB Debugger Support``
+and ``Debugging Tools for Windows`` in section ``Developer and Designer Tools``.
 
 Other Libraries
 ----------------------------------------------------------
@@ -26,7 +32,11 @@ Other Libraries
 
 Build
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Open the MediaElch project (``path/to/MediaElch/MediaElch.pro``) using QtCreator, configure it (one click on the ``Build & Run > Desktop Qt 5.15.0 MinGW 32-bit > Build`` in the ``Projects`` ribbon is enough), insert ``CONFIG += USE_EXTERN_QUAZIP`` on the new line at the top of ``path/to/MediaElch/MediaElch.pro`` and click "Run" (``Strg+R``). (The version ``5.15.0`` matches your "Qt with MinGW" installation.)
+Open the MediaElch project (``path/to/MediaElch/MediaElch.pro``) using
+QtCreator, configure it (one click on the ``Build & Run > Desktop Qt 5.15.0 MinGW 32-bit > Build``
+in the ``Projects`` ribbon is enough), insert ``CONFIG += USE_EXTERN_QUAZIP``
+on the new line at the top of ``path/to/MediaElch/MediaElch.pro`` and click
+"Run" (``Strg+R``). (The version ``5.15.0`` matches your "Qt with MinGW" installation.)
 
 ffmpeg executable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
