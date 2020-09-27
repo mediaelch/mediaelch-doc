@@ -27,23 +27,31 @@ Bugfixes
  - Exporter: Fix episode thumbnails in TV show view (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
  - Movies: Sub-folders are no longer handled as files (`#978 <https://github.com/Komet/MediaElch/issues/978>`_)
  - Downloads: Fix stylesheet of import dialog window (`#984 <https://github.com/Komet/MediaElch/issues/984>`_)
+ - Fix ADE actor scraping (`#1011 <https://github.com/Komet/MediaElch/issues/1011>`_)
+ - Use user's preferred UI language and not the system language (`#1018 <https://github.com/Komet/MediaElch/issues/1018>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Concert Export: ``{{ CONCERT.FILENAME }}`` and ``{{ CONCERT.DIR }}`` are now supported in themes (`#962 <https://github.com/Komet/MediaElch/issues/962>`_)
+ - IMDb now includes adult search results if adult scrapers are enabled (`#992 <https://github.com/Komet/MediaElch/issues/992>`_)
+ - Export: Image placeholders like ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
 
-Improvements
+Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - Export: Image placeholders like ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
  - Movie Backdrop: Make it possible to set a random screenshot as the movie's backdrop/fanart (`#965 <https://github.com/Komet/MediaElch/issues/965>`_)
+ - Movies: Add option to ignore duplicate original title (`#1006 <https://github.com/Komet/MediaElch/issues/1006>`_) |br|
+   In v2.6.4 MediaElch started to ignore the original title (i.e. did not save it) if it was the same
+   as the "normal" title.  We now added an option to reverse this behavior.
+ - TV shows and episodes now support TMDb IDs (`#1010 <https://github.com/Komet/MediaElch/issues/1010>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Dialogs: Removed singletons for dialog windows (`#980 <https://github.com/Komet/MediaElch/issues/980>`_)
  - Use combo box for "DVD order" and "Aired order" (`#983 <https://github.com/Komet/MediaElch/issues/983>`_)
+ - Use "Locale" class throughout our code base (`#997 <https://github.com/Komet/MediaElch/issues/997>`_)
 
 
 2.6.6 - Ferenginar (2020-04-18)

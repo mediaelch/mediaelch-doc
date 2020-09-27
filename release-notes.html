@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,19 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -29,11 +35,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -52,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> MediaElch
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MediaElch
           
 
           
@@ -79,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -94,34 +96,34 @@
 <li class="toctree-l2"><a class="reference internal" href="#tbd">2.6.8 - <em>tbd</em></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bugfixes">Bugfixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changes">Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#improvements">Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#internal-improvements-and-changes">Internal Improvements and Changes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ferenginar-2020-04-18">2.6.6 - Ferenginar (2020-04-18)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id10">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id24">Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id26">Improvements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id35">Internal Improvements and Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#improvements">Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id40">Internal Improvements and Changes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ferenginar-2020-02-08">2.6.4 - Ferenginar (2020-02-08)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id40">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id57">Improvements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id68">Internal Improvements and Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id45">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id62">Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id73">Internal Improvements and Changes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ferenginar-2019-09-13">2.6.2 - Ferenginar (2019-09-13)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id70">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id84">Improvements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id100">Internal Improvements and Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id75">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id89">Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id105">Internal Improvements and Changes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#older-releases">Older Releases</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ferenginar-2019-01-06">2.6.0 - Ferenginar (2019-01-06)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#features">Features</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id120">Bugfixes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id140">Improvements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id125">Bugfixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id145">Improvements</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#talax-2016-07-01">2.4.2 - Talax (2016-07-01)</a></li>
@@ -129,7 +131,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#talax-2015-12-06">2.4.0 - Talax (2015-12-06)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#denobula-2015-10-12">2.3.2 - Denobula (2015-10-12)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#denobula-2015-10-10">2.3.1 - Denobula (2015-10-10)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id144">2.3.0 - Denobula (2015-10-10)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id149">2.3.0 - Denobula (2015-10-10)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sphere-builder-2015-02-02">2.2.2 - Sphere Builder (2015-02-02)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sphere-builder-2015-01-25">2.2.1 - Sphere Builder (2015-01-25)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sphere-builder-2015-01-23">2.2 - Sphere Builder (2015-01-23)</a></li>
@@ -147,11 +149,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#qo-nos-2012-11-12">1.2 - Qo’noS (2012-11-12)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#andoria-2012-10-22">1.1 - Andoria (2012-10-22)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vulcan-2012-10-08">1.0.0 - Vulcan (2012-10-08)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id145">0.9.6 (2012-09-20)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id146">0.9.5 (2012-09-20)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id147">0.9.4 (2012-06-29)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id148">0.9.3 (2012-06-29)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id149">0.9.2 (2012-06-29)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id150">0.9.6 (2012-09-20)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id151">0.9.5 (2012-09-20)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id152">0.9.4 (2012-06-29)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id153">0.9.3 (2012-06-29)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id154">0.9.2 (2012-06-29)</a></li>
 </ul>
 </li>
 </ul>
@@ -186,6 +188,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -224,7 +227,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Release Notes / Changelog</li>
     
@@ -267,6 +270,8 @@ distributions).</p>
 <li><p>Exporter: Fix episode thumbnails in TV show view (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/961">#961</a>)</p></li>
 <li><p>Movies: Sub-folders are no longer handled as files (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/978">#978</a>)</p></li>
 <li><p>Downloads: Fix stylesheet of import dialog window (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/984">#984</a>)</p></li>
+<li><p>Fix ADE actor scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1011">#1011</a>)</p></li>
+<li><p>Use user’s preferred UI language and not the system language (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1018">#1018</a>)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -275,15 +280,20 @@ distributions).</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Concert Export: <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">CONCERT.FILENAME</span> <span class="pre">}}</span></code> and <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">CONCERT.DIR</span> <span class="pre">}}</span></code> are now supported in themes (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/962">#962</a>)</p></li>
+<li><p>IMDb now includes adult search results if adult scrapers are enabled (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/992">#992</a>)</p></li>
+<li><p>Export: Image placeholders like <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">IMAGE.XYZ</span> <span class="pre">}}</span></code> are now only replaced if the image type is actually used (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/961">#961</a>)</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="improvements">
-<h3>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Export: Image placeholders like <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">IMAGE.XYZ</span> <span class="pre">}}</span></code> are now only replaced if the image type is actually used (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/961">#961</a>)</p></li>
 <li><p>Movie Backdrop: Make it possible to set a random screenshot as the movie’s backdrop/fanart (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/965">#965</a>)</p></li>
+<li><p>Movies: Add option to ignore duplicate original title (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1006">#1006</a>) <br />
+In v2.6.4 MediaElch started to ignore the original title (i.e. did not save it) if it was the same
+as the “normal” title.  We now added an option to reverse this behavior.</p></li>
+<li><p>TV shows and episodes now support TMDb IDs (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1010">#1010</a>)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -293,6 +303,7 @@ distributions).</p>
 <div><ul class="simple">
 <li><p>Dialogs: Removed singletons for dialog windows (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/980">#980</a>)</p></li>
 <li><p>Use combo box for “DVD order” and “Aired order” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/983">#983</a>)</p></li>
+<li><p>Use “Locale” class throughout our code base (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/997">#997</a>)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -302,8 +313,8 @@ distributions).</p>
 <p><em>Note:</em> This release has changed its internal file and directory handling to
 fix Windows-related bugs (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/732">#732</a>).  Please report any issues with network drives
 or other non-local drives.</p>
-<div class="section" id="id10">
-<h3>Bugfixes<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>Bugfixes<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fix AEBN crash when scraping a movie (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/910">#910</a>)</p></li>
@@ -342,8 +353,8 @@ this seemed to have worked and now works again.</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id24">
-<h3>Changes<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id30">
+<h3>Changes<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Export: The generated folder name now also contains seconds (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/935">#935</a>) <br />
@@ -352,8 +363,8 @@ Exporting multiple times whithin a minute otherwise leads to name clashes.</p></
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id26">
-<h3>Improvements<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="improvements">
+<h3>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Always write the episode guide URL to TV show NFOs using TheTvDb format (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/652">#652</a>)</p></li>
@@ -377,8 +388,8 @@ Default names are just their file names. MediaElch now removes the file suffix.<
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id35">
-<h3>Internal Improvements and Changes<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id40">
+<h3>Internal Improvements and Changes<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Set MediaElch specific HTTP User-Agent header for most HTTP requests (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/912">#912</a>)</p></li>
@@ -397,8 +408,8 @@ In debug mode the default pattern uses colors if the console supports it.</p></l
 </div>
 <div class="section" id="ferenginar-2020-02-08">
 <h2>2.6.4 - Ferenginar (2020-02-08)<a class="headerlink" href="#ferenginar-2020-02-08" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id40">
-<h3>Bugfixes<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id45">
+<h3>Bugfixes<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fix TV shows sorting and possible crashes if “Show missing episodes” is enabled (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/789">#789</a>, <a class="reference external" href="https://github.com/Komet/MediaElch/issues/883">#883</a>)
@@ -431,8 +442,8 @@ For example: Start MediaElch -&gt; click “TvShow” -&gt; click “Sync Kodi�
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id57">
-<h3>Improvements<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id62">
+<h3>Improvements<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>TMDb: Load more movie collection details (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/800">#800</a>)</p></li>
@@ -448,8 +459,8 @@ For example: Start MediaElch -&gt; click “TvShow” -&gt; click “Sync Kodi�
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id68">
-<h3>Internal Improvements and Changes<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id73">
+<h3>Internal Improvements and Changes<a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>CMake: Fix Foundation framework include for macOS</p></li>
@@ -464,8 +475,8 @@ For example: Start MediaElch -&gt; click “TvShow” -&gt; click “Sync Kodi�
 <p>This release will affect your scraper settings. You’ll therefore have to
 reconfigure your scraper settings. You may also need to delete <code class="docutils literal notranslate"><span class="pre">MediaElch.sqlite</span></code>.</p>
 <p>See: <a class="reference external" href="https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored">https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored</a></p>
-<div class="section" id="id70">
-<h3>Bugfixes<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id75">
+<h3>Bugfixes<a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fix IMDb tag scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/649">#649</a>)</p></li>
@@ -485,8 +496,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id84">
-<h3>Improvements<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id89">
+<h3>Improvements<a class="headerlink" href="#id89" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Update French translation (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/646">#646</a>)</p></li>
@@ -508,8 +519,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id100">
-<h3>Internal Improvements and Changes<a class="headerlink" href="#id100" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id105">
+<h3>Internal Improvements and Changes<a class="headerlink" href="#id105" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Implement ScraperSettings class for better mocking</p></li>
@@ -551,8 +562,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id120">
-<h4>Bugfixes<a class="headerlink" href="#id120" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id125">
+<h4>Bugfixes<a class="headerlink" href="#id125" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>HD-Trailers scraper broken (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/445">#445</a>)</p></li>
@@ -578,8 +589,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id140">
-<h4>Improvements<a class="headerlink" href="#id140" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id145">
+<h4>Improvements<a class="headerlink" href="#id145" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>UI: line break in tree views (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/406">#406</a>)</p></li>
@@ -669,8 +680,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id144">
-<h3>2.3.0 - Denobula (2015-10-10)<a class="headerlink" href="#id144" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id149">
+<h3>2.3.0 - Denobula (2015-10-10)<a class="headerlink" href="#id149" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Music: Coverlib.com scraper</p></li>
@@ -1157,8 +1168,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id145">
-<h3>0.9.6 (2012-09-20)<a class="headerlink" href="#id145" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id150">
+<h3>0.9.6 (2012-09-20)<a class="headerlink" href="#id150" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Ignore files in directory “Extras” (thanks to KBagust)</p></li>
@@ -1168,8 +1179,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id146">
-<h3>0.9.5 (2012-09-20)<a class="headerlink" href="#id146" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id151">
+<h3>0.9.5 (2012-09-20)<a class="headerlink" href="#id151" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>TV show episodes are grouped by seasons</p></li>
@@ -1187,16 +1198,16 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id147">
-<h3>0.9.4 (2012-06-29)<a class="headerlink" href="#id147" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id152">
+<h3>0.9.4 (2012-06-29)<a class="headerlink" href="#id152" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Fixed not escaped characters in SQL interface</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id148">
-<h3>0.9.3 (2012-06-29)<a class="headerlink" href="#id148" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id153">
+<h3>0.9.3 (2012-06-29)<a class="headerlink" href="#id153" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Added support for TV Show banners</p></li>
@@ -1212,8 +1223,8 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id149">
-<h3>0.9.2 (2012-06-29)<a class="headerlink" href="#id149" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id154">
+<h3>0.9.2 (2012-06-29)<a class="headerlink" href="#id154" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Bugfixes and some new features</p></li>
@@ -1243,11 +1254,19 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2018 - 2020, MediaElch authors
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1258,7 +1277,6 @@ reconfigure your scraper settings. You may also need to delete <code class="docu
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
