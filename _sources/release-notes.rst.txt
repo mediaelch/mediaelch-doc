@@ -29,6 +29,7 @@ Bugfixes
  - Downloads: Fix stylesheet of import dialog window (`#984 <https://github.com/Komet/MediaElch/issues/984>`_)
  - Fix ADE actor scraping (`#1011 <https://github.com/Komet/MediaElch/issues/1011>`_)
  - Use user's preferred UI language and not the system language (`#1002 <https://github.com/Komet/MediaElch/issues/1002>`_)
+ - The filter bar's ``X`` button is now visible again and also clears filters (`#1025 <https://github.com/Komet/MediaElch/issues/1025>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,6 +48,9 @@ Added
  - TV shows and episodes now support TMDb IDs (`#1010 <https://github.com/Komet/MediaElch/issues/1010>`_)
  - macOS: A simple help menu with useful URLs is added (`#1020 <https://github.com/Komet/MediaElch/issues/1020>`_)
  - Movie Renamer: ``<director>`` placeholder is now supported
+ - Movie: Add TMDb ID field to UI (`#1022 <https://github.com/Komet/MediaElch/issues/1022>`_)
+ - Movie: Add buttons that take you to the movie's IMDb/TMDb page (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
+ - Movie Filter: Add "Has TMDb ID"/"No TMDb ID" filters (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
