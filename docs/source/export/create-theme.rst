@@ -196,6 +196,7 @@ Here is a list of all placeholders that are available:
       {{ TVSHOW.PLOT }}
       {{ TVSHOW.TAGS }}
       {{ TVSHOW.GENRES }}
+      {{ TVSHOW.SEASONS_AMOUNT }}
       {{ BEGIN_BLOCK_TAGS }}
           {{ TAG.NAME }}
       {{ END_BLOCK_TAGS }}
