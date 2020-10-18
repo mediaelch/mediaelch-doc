@@ -232,6 +232,8 @@ Here is a list of all placeholders that are available:
               {{ EPISODE.PLOT }}
               {{ EPISODE.WRITERS }}
               {{ EPISODE.DIRECTORS }}
+              {{ EPISODE.FILENAME }}
+              {{ EPISODE.DIR }}
               # all file information (see section "File Info")
               {{ BEGIN_BLOCK_WRITERS }}
                   {{ WRITER.NAME }}
