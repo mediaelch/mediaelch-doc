@@ -60,6 +60,8 @@ Internal Improvements and Changes
  - Dialogs: Removed singletons for dialog windows (`#980 <https://github.com/Komet/MediaElch/issues/980>`_)
  - Use combo box for "DVD order" and "Aired order" (`#983 <https://github.com/Komet/MediaElch/issues/983>`_)
  - Use "Locale" class throughout our code base (`#997 <https://github.com/Komet/MediaElch/issues/997>`_)
+ - Use MediaElch's Meta GitHub repository for export themes
+ - Remote themes are now checked for a valid SHA256 checksum
 
 
 2.6.6 - Ferenginar (2020-04-18)
