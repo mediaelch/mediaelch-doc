@@ -52,6 +52,7 @@ Added
  - Movie: Add TMDb ID field to UI (`#1022 <https://github.com/Komet/MediaElch/issues/1022>`_)
  - Movie: Add buttons that take you to the movie's IMDb/TMDb page (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
  - Movie Filter: Add "Has TMDb ID"/"No TMDb ID" filters (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
+ - Advanced Settings: You can now specify a custom stylesheet for MediaElch theme development (`#1040 <https://github.com/Komet/MediaElch/issues/1040>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
