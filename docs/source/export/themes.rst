@@ -2,7 +2,7 @@
 Available Themes
 ================
 
-MediaElch provides two themes for exporting your media collection.
+MediaElch provides three themes for exporting your media collection.
 
 
 MediaElch
