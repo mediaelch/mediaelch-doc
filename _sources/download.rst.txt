@@ -26,6 +26,11 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 |                   | latest (unstable) | |bintray-linux|                               |
 +-------------------+-------------------+-----------------------------------------------+
 
+.. warning::
+
+   macOS Big Sur is not supported, yet! MediaElch will hang on startup!
+
+
 .. note::
 
    The AppImage requires Ubuntu 16.04 or above (or similar systems).
