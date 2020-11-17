@@ -78,14 +78,14 @@ See https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xc
 .. code-block:: sh
     
     # Bash (command line)
-    export CXXFLAGS=-stdlib=libc++"
+    export CXXFLAGS="-stdlib=libc++"
     # Or in CMake
     set(CMAKE_CXX_FLAGS "-stdlib=libc++")
 
 
 .. todo::
 
-   Add build instructions using MacPorts instead of Homebrew.
+   Add build instructions using MacPorts and not only Homebrew.
 
 
 .. _Qt online installer:
