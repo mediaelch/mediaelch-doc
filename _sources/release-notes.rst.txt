@@ -49,10 +49,11 @@ Added
  - TV shows and episodes now support TMDb IDs (`#1010 <https://github.com/Komet/MediaElch/issues/1010>`_)
  - macOS: A simple help menu with useful URLs is added (`#1020 <https://github.com/Komet/MediaElch/issues/1020>`_)
  - Movie Renamer: ``<director>`` placeholder is now supported
- - Movie: Add TMDb ID field to UI (`#1022 <https://github.com/Komet/MediaElch/issues/1022>`_)
  - Movie: Add buttons that take you to the movie's IMDb/TMDb page (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
- - Movie Filter: Add "Has TMDb ID"/"No TMDb ID" filters (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
+ - TMDb ID field added to UI for movies (`#1022 <https://github.com/Komet/MediaElch/issues/1022>`_)
+ - TMDb ID filter: Add "Has TMDb ID"/"No TMDb ID" movie filters (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
  - Advanced Settings: You can now specify a custom stylesheet for MediaElch theme development (`#1040 <https://github.com/Komet/MediaElch/issues/1040>`_)
+ - Movie Filter: Add filter by original title (`#1057 <https://github.com/Komet/MediaElch/issues/1057>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

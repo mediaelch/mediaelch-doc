@@ -33,12 +33,6 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
    https://bintray.com/bugwelle/MediaElch/MediaElch-macOS/2.6.7-dev_macOS_Big_Sur/view/files#files/ 
 
 
-.. note::
-
-   The AppImage requires Ubuntu 16.04 or above (or similar systems).
-   Ubuntu 14.04 is not supported anymore.
-
-
 Windows Chocolatey
 ==================
 
@@ -64,7 +58,7 @@ Ubuntu
 ------
 
 The official MediaElch PPA can be found at https://launchpad.net/~mediaelch/+archive/ubuntu/mediaelch-stable
-Ubuntu 16.04 and above are supported.
+Ubuntu 18.04 and above are supported.
 
 .. code-block:: sh
 
