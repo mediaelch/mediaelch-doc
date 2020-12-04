@@ -13,15 +13,15 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Windows           | 2.6.6              | |gh_pages_266|                                |
+| Windows           | 2.8.0              | |gh_pages_280|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-win|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.6.6              | |gh_pages_266|                                |
+| macOS             | 2.8.0              | |gh_pages_280|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-mac|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.6.6              | |gh_pages_266|                                |
+| Linux (AppImage)  | 2.8.0              | |gh_pages_280|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-linux|                               |
 +-------------------+--------------------+-----------------------------------------------+
@@ -72,7 +72,7 @@ openSUSE packages are available using the services of build.opensuse.org.
 You can download MediaElch per 1-click-install from
 https://software.opensuse.org/download.html?project=home%3Abugwelle&package=MediaElch
 
-openSUSE Leap 15.0, 15.1 and Tumbleweed are supported.
+openSUSE Leap 15 and Tumbleweed are supported.
 
 Or you can install MediaElch per command line: 
 
@@ -83,13 +83,8 @@ Or you can install MediaElch per command line:
     zypper refresh
     zypper install MediaElch
 
-    # openSUSE Leap 15.0
-    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.0/home:bugwelle.repo
-    zypper refresh
-    zypper install MediaElch
-
-    # openSUSE Leap 15.1
-    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.1/home:bugwelle.repo
+    # openSUSE Leap 15.2
+    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.2/home:bugwelle.repo
     zypper refresh
     zypper install MediaElch
 
@@ -99,8 +94,8 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_266| image:: https://img.shields.io/badge/version-v2.6.6-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.6.6
+.. |gh_pages_280| image:: https://img.shields.io/badge/version-v2.8.0-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.0
 
 .. |bintray-win| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
