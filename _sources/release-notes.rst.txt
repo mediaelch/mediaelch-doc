@@ -12,12 +12,16 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.6.8 - *tbd*
+2.7.0 - *tbd*
 ************************************
+
+This is the next "big" MediaElch version. This version brings fully rewritten TV scrapers including
+improved user interfaces, better user experience and a new TV show scraper.
 
 MediaElch now requires Qt 5.6 or later. Qt 5.6 was released in 2016 and we highly recommend to update
 to the latest version if your system supports it (this only affects MediaElch's version for Linux
-distributions).
+distributions). |br|
+This means that Ubuntu 16.04 is no longer supported!
 
 Note: You may need to set "DVD order" in your settings again as the internal settings-key changed.
 
@@ -31,6 +35,7 @@ Bugfixes
  - Use user's preferred UI language and not the system language (`#1002 <https://github.com/Komet/MediaElch/issues/1002>`_)
  - The filter bar's ``X`` button is now visible again and also clears filters (`#1025 <https://github.com/Komet/MediaElch/issues/1025>`_)
  - Reverting changes for episodes did not always work (`#1032 <https://github.com/Komet/MediaElch/issues/1032>`_)
+ - Just selecting an episode sometimes marked it as unsaved (`#1031 <https://github.com/Komet/MediaElch/issues/1031>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,8 +57,20 @@ Added
  - Movie: Add buttons that take you to the movie's IMDb/TMDb page (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
  - TMDb ID field added to UI for movies (`#1022 <https://github.com/Komet/MediaElch/issues/1022>`_)
  - TMDb ID filter: Add "Has TMDb ID"/"No TMDb ID" movie filters (`#684 <https://github.com/Komet/MediaElch/issues/684>`_)
+ - New TV show search dialog |br|
+   You can now distinguish between episode and TV show details that you want to load using the
+   selected scraper.
+ - New TV scraper settings |br|
+   The settings dialog for TV scrapers has been completely redesigned.  It now features the
+   scraper's website, description, terms of service and more so that you know how MediaElch
+   uses the scraper.
+ - New Custom TV scraper |br|
+   The custom TV scraper has got a new look and feel.  You can select the scrapers you want for
+   episode and TV show details.
  - Advanced Settings: You can now specify a custom stylesheet for MediaElch theme development (`#1040 <https://github.com/Komet/MediaElch/issues/1040>`_)
  - Movie Filter: Add filter by original title (`#1057 <https://github.com/Komet/MediaElch/issues/1057>`_)
+ - Episodes now support tags like TV shows do (`#1061 <https://github.com/Komet/MediaElch/issues/1061>`_) |br|
+   Note that tags for episodes are not supported by Kodi, yet.
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -17,20 +17,14 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-win|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.6.6¹             | |gh_pages_266|                                |
+| macOS             | 2.6.6              | |gh_pages_266|                                |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest¹ (unstable) | |bintray-mac|                                 |
+|                   | latest (unstable)  | |bintray-mac|                                 |
 +-------------------+--------------------+-----------------------------------------------+
 | Linux (AppImage)  | 2.6.6              | |gh_pages_266|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-linux|                               |
 +-------------------+--------------------+-----------------------------------------------+
-
-.. warning::
-
-   ¹: macOS Big Sur is not supported, yet! MediaElch will hang on startup!
-   A beta version for macOS Big Sur can be downloaded from:
-   https://bintray.com/bugwelle/MediaElch/MediaElch-macOS/2.6.7-dev_macOS_Big_Sur/view/files#files/ 
 
 
 Windows Chocolatey
@@ -108,14 +102,24 @@ Or you can install MediaElch per command line:
 .. |gh_pages_266| image:: https://img.shields.io/badge/version-v2.6.6-blue.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.6.6
 
-.. |bintray-win| image:: https://api.bintray.com/packages/komet/MediaElch/MediaElch-win/images/download.svg
-   :target: https://bintray.com/komet/MediaElch/MediaElch-win/_latestVersion
+.. |bintray-win| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
 
-.. |bintray-mac| image:: https://api.bintray.com/packages/komet/MediaElch/MediaElch-macOS/images/download.svg
-   :target: https://bintray.com/komet/MediaElch/MediaElch-macOS/_latestVersion
+..
+   TODO_use: https://api.bintray.com/packages/komet/MediaElch/MediaElch-win/images/download.svg
+   and: https://bintray.com/komet/MediaElch/MediaElch-win/_latestVersion
 
-.. |bintray-linux| image:: https://api.bintray.com/packages/komet/MediaElch/MediaElch-linux/images/download.svg
-   :target: https://bintray.com/komet/MediaElch/MediaElch-linux/_latestVersion
+.. |bintray-mac| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
+
+..
+   TODO_use: https://bintray.com/komet/MediaElch/MediaElch-macOS/_latestVersion
+
+.. |bintray-linux| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
+
+..
+   TODO_use: https://bintray.com/komet/MediaElch/MediaElch-linux/_latestVersion
 
 
 Source Code
