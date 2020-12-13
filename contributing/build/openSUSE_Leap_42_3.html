@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>openSUSE Leap 42.3 and later &mdash; MediaElch 2.6.6 documentation</title>
+  <title>openSUSE Leap 42.3 and later &mdash; MediaElch 2.8.0 documentation</title>
   
 
   
@@ -27,10 +27,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                2.6
+                2.8
               </div>
             
           
@@ -216,6 +216,8 @@ Select the latest stable Qt version (e.g. 5.10.1) with “Desktop gcc 64-bit” 
 sudo zypper install --type pattern devel_basis
 <span class="c1"># Install other dependencies</span>
 sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
+<span class="c1"># Install OpenGL headers. Alternative OpenGL headers will work as well.</span>
+sudo zypper install Mesa-libGL-devel
 <span class="c1"># Install a newer version of GCC (Leap 42.3 uses GCC 4.8.5)</span>
 sudo zypper install gcc7 gcc7-c++
 </pre></div>

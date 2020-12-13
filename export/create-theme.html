@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create an Export Theme &mdash; MediaElch 2.6.6 documentation</title>
+  <title>Create an Export Theme &mdash; MediaElch 2.8.0 documentation</title>
   
 
   
@@ -27,10 +27,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                2.6
+                2.8
               </div>
             
           
@@ -212,10 +212,10 @@
 <h1>Create an Export Theme<a class="headerlink" href="#create-an-export-theme" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></p></li>
-<li><p><a class="reference internal" href="#customizing-the-templates" id="id2">Customizing the templates</a></p></li>
-<li><p><a class="reference internal" href="#publishing-your-theme" id="id3">Publishing your theme</a></p></li>
-<li><p><a class="reference internal" href="#placeholders" id="id4">Placeholders</a></p></li>
+<li><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></li>
+<li><a class="reference internal" href="#customizing-the-templates" id="id2">Customizing the templates</a></li>
+<li><a class="reference internal" href="#publishing-your-theme" id="id3">Publishing your theme</a></li>
+<li><a class="reference internal" href="#placeholders" id="id4">Placeholders</a></li>
 </ul>
 </div>
 <p>You can also create a new export theme in a few steps:</p>
@@ -225,9 +225,9 @@
 The files will be located at the following places:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Mac OS: <code class="docutils literal notranslate"><span class="pre">/Users/username/Library/Application</span> <span class="pre">Support/kvibes/MediaElch/export_themes/dummy</span></code></p></li>
-<li><p>Linux: <code class="docutils literal notranslate"><span class="pre">/home/username/.local/share/kvibes/MediaElch/export_themes/dummy</span></code></p></li>
-<li><p>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Users\username\AppData\Local\kvibes\MediaElch\export_themes\dummy</span></code></p></li>
+<li>Mac OS: <code class="docutils literal notranslate"><span class="pre">/Users/username/Library/Application</span> <span class="pre">Support/kvibes/MediaElch/export_themes/dummy</span></code></li>
+<li>Linux: <code class="docutils literal notranslate"><span class="pre">/home/username/.local/share/kvibes/MediaElch/export_themes/dummy</span></code></li>
+<li>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Users\username\AppData\Local\kvibes\MediaElch\export_themes\dummy</span></code></li>
 </ul>
 </div></blockquote>
 <p>Now just rename the dummy folder as you like. The new name should not
@@ -237,17 +237,17 @@ contain any special characters or spaces and match the name of your theme.</p>
 <p>Open <code class="docutils literal notranslate"><span class="pre">metadata.xml</span></code> and adjust the information inside:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> should be the name of your theme</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">identifier</span></code> needs to be an unique identifier and exactly match the folder name you chose before</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">website</span></code> should be a link to the theme’s website (optional)</p></li>
-<li><p>add <code class="docutils literal notranslate"><span class="pre">description</span></code> tags in languages you want, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;description</span> <span class="pre">lang=&quot;de&quot;&gt;...&lt;/description&gt;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">author</span></code> should be your name</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> needs to be a numeric version of the format <code class="docutils literal notranslate"><span class="pre">`major.minor[.patch]</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">medialech-min</span></code> needs to be a numeric version of the oldest supported version of MediaElch, e.g. <code class="docutils literal notranslate"><span class="pre">2.6.6</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">medialech-max</span></code> should only be set if there are known issues with a certain MediaElch version</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">supports</span></code> contains the sections which could be exported with your theme
-- <code class="docutils literal notranslate"><span class="pre">section</span></code> supported section, can appear multiple times. Possible values: <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">tvshows</span></code>, <code class="docutils literal notranslate"><span class="pre">concerts</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">engine</span></code> should have the value <code class="docutils literal notranslate"><span class="pre">simple</span></code> as there is currently only one supported export engine</p></li>
+<li><code class="docutils literal notranslate"><span class="pre">name</span></code> should be the name of your theme</li>
+<li><code class="docutils literal notranslate"><span class="pre">identifier</span></code> needs to be an unique identifier and exactly match the folder name you chose before</li>
+<li><code class="docutils literal notranslate"><span class="pre">website</span></code> should be a link to the theme’s website (optional)</li>
+<li>add <code class="docutils literal notranslate"><span class="pre">description</span></code> tags in languages you want, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;description</span> <span class="pre">lang=&quot;de&quot;&gt;...&lt;/description&gt;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">author</span></code> should be your name</li>
+<li><code class="docutils literal notranslate"><span class="pre">version</span></code> needs to be a numeric version of the format <code class="docutils literal notranslate"><span class="pre">`major.minor[.patch]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">medialech-min</span></code> needs to be a numeric version of the oldest supported version of MediaElch, e.g. <code class="docutils literal notranslate"><span class="pre">2.8.0</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">medialech-max</span></code> should only be set if there are known issues with a certain MediaElch version</li>
+<li><code class="docutils literal notranslate"><span class="pre">supports</span></code> contains the sections which could be exported with your theme
+- <code class="docutils literal notranslate"><span class="pre">section</span></code> supported section, can appear multiple times. Possible values: <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">tvshows</span></code>, <code class="docutils literal notranslate"><span class="pre">concerts</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">engine</span></code> should have the value <code class="docutils literal notranslate"><span class="pre">simple</span></code> as there is currently only one supported export engine</li>
 </ul>
 </div></blockquote>
 <p>If you want to have your theme available for all MediaElch users, open an issue in MediaElch’s meta repository:

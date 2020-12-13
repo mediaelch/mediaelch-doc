@@ -13,6 +13,8 @@ Select the latest stable Qt version (e.g. 5.10.1) with "Desktop gcc 64-bit" enab
     sudo zypper install --type pattern devel_basis
     # Install other dependencies
     sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
+    # Install OpenGL headers. Alternative OpenGL headers will work as well.
+    sudo zypper install Mesa-libGL-devel
     # Install a newer version of GCC (Leap 42.3 uses GCC 4.8.5)
     sudo zypper install gcc7 gcc7-c++
 
