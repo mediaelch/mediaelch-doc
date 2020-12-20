@@ -13,21 +13,21 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Windows           | 2.8.0  (GitHub)    | |gh_pages_280|                                |
+| Windows           | 2.8.2  (GitHub)    | |gh_pages_282|                                |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.0  (mirror)    | |bintray_280|                                 |
+|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-win|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.8.0  (GitHub)    | |gh_pages_280|                                |
+| macOS             | 2.8.2  (GitHub)    | |gh_pages_282|                                |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.0  (mirror)    | |bintray_280|                                 |
+|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-mac|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.8.0  (GitHub)    | |gh_pages_280|                                |
+| Linux (AppImage)  | 2.8.2  (GitHub)    | |gh_pages_282|                                |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.0  (mirror)    | |bintray_280|                                 |
+|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray-linux|                               |
 +-------------------+--------------------+-----------------------------------------------+
@@ -100,11 +100,11 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_280| image:: https://img.shields.io/badge/version-v2.8.0-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.0
+.. |gh_pages_282| image:: https://img.shields.io/badge/version-v2.8.2-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.2
 
-.. |bintray_280| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.0
-   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.0#files
+.. |bintray_282| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.2
+   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.2#files
 
 .. |bintray-win| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1

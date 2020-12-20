@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.2 - tbd
+2.8.2 - Coridian (2020-12-20)
 ************************************
 
 Bugfixes
@@ -33,12 +33,12 @@ Changes
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - A TVmaze ID field was added to the TV show UI (`#834 <https://github.com/Komet/MediaElch/issues/834>`_)
+ - A TVmaze ID field was added to the TV show and episode UI (`#834 <https://github.com/Komet/MediaElch/issues/834>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - Better error reporting for TV scrapers
 
 
 2.8.0 - Coridian (2020-12-13)
