@@ -17,19 +17,19 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+--------------------+-----------------------------------------------+
 |                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray-win|                                 |
+|                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 | macOS             | 2.8.2  (GitHub)    | |gh_pages_282|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray-mac|                                 |
+|                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 | Linux (AppImage)  | 2.8.2  (GitHub)    | |gh_pages_282|                                |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | 2.8.2  (mirror)    | |bintray_282|                                 |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray-linux|                               |
+|                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 
 
@@ -106,24 +106,8 @@ Or you can install MediaElch per command line:
 .. |bintray_282| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.2
    :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.2#files
 
-.. |bintray-win| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
-
-..
-   TODO_use: https://api.bintray.com/packages/komet/MediaElch/MediaElch-win/images/download.svg
-   and: https://bintray.com/komet/MediaElch/MediaElch-win/_latestVersion
-
-.. |bintray-mac| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
-
-..
-   TODO_use: https://bintray.com/komet/MediaElch/MediaElch-macOS/_latestVersion
-
-.. |bintray-linux| image:: https://img.shields.io/badge/version-v2.7.0+beta-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.7.0-beta.1
-
-..
-   TODO_use: https://bintray.com/komet/MediaElch/MediaElch-linux/_latestVersion
+.. |bintray| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Nightly/images/download.svg
+   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Nightly/_latestVersion
 
 
 Source Code
