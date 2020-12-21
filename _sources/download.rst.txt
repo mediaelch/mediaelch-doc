@@ -34,7 +34,8 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 
 .. note::
 
-  The AppImage has network issues at the moment.  We will update it in the next few days.
+  The AppImage has for v2.8.2 was updated on 2020-12-21. The version from 2020-12-20
+  has network issues.
 
 
 Windows Chocolatey
