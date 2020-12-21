@@ -32,6 +32,10 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 |                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 
+.. note::
+
+  The AppImage has network issues at the moment.  We will update it in the next view days.
+
 
 Windows Chocolatey
 ==================
