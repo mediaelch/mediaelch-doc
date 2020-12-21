@@ -34,7 +34,7 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 
 .. note::
 
-  The AppImage has network issues at the moment.  We will update it in the next view days.
+  The AppImage has network issues at the moment.  We will update it in the next few days.
 
 
 Windows Chocolatey
