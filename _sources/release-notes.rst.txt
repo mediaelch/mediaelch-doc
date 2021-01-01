@@ -45,8 +45,8 @@ Added
    on their website.
  - The movie renamer now supports ``<studio>`` which contains the movie's studio(s) (`#1136 <https://github.com/Komet/MediaElch/issues/1136>`_) |br|
    If there is more than one studio, all studios are separated by a comma (``,``).
- - The exporter can now be opened using the shortcut <kbd>Ctrl+E</kbd> (<kbd>⌘+E</kbd> on macOS)
- - An experimental CSV exporter can now be opened using the shortcut <kbd>Ctrl+Shift+E</kbd> (<kbd>⌘+⇧+E</kbd> on macOS) (`#585 <https://github.com/Komet/MediaElch/issues/585>`_)
+ - The exporter can now be opened using the shortcut :kbd:`Ctrl+E` (:kbd:`⌘+E` on macOS)
+ - An experimental CSV exporter can now be opened using the shortcut :kbd:`Ctrl+Shift+E` (:kbd:`⌘+⇧+E` on macOS) (`#585 <https://github.com/Komet/MediaElch/issues/585>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
