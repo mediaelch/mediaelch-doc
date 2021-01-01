@@ -33,6 +33,12 @@ sed -i.bak -r 's/#([0-9]+)/`#\1 <https:\/\/github.com\/Komet\/MediaElch\/issues\
 # Create line breaks Markdown Style
 sed -i.bak -r 's/  $/ |br|/g' $NOTES
 
+# Keyboard shortcuts
+# shellcheck disable=SC2016
+sed -i.bak 's/<kbd>/:kbd:`/g' $NOTES
+# shellcheck disable=SC2016
+sed -i.bak 's$</kbd>$`$g' $NOTES
+
 rm -f $NOTES.bak
 
 echo "Done"
