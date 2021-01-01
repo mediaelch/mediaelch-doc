@@ -28,7 +28,11 @@ Bugfixes
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - NFO files now contain a ``<generator>`` tag which holds meta information about MediaElch. |br|
+   This may be helpful when users complain about Kodi not displaying certain details on the Kodi forum.
+ - Renamer: Special characters that are not allowed in filenames are now replaced by a space. |br|
+   Windows disallows the following characters in filenames: ``<``, ``>``, ``:``, ``"``, ``/``, ``\``, ``|``, ``?``, ``*``.
+   MediaElch now does a bit of filename sanitization, even if not a lot.
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,6 +43,10 @@ Added
    TVmaze works great for actor images and season posters.  Due to API
    limitations not all episode details are available that you can see
    on their website.
+ - The movie renamer now supports ``<studio>`` which contains the movie's studio(s) (`#1136 <https://github.com/Komet/MediaElch/issues/1136>`_) |br|
+   If there is more than one studio, all studios are separated by a comma (``,``).
+ - The exporter can now be opened using the shortcut <kbd>Ctrl+E</kbd> (<kbd>⌘+E</kbd> on macOS)
+ - An experimental CSV exporter can now be opened using the shortcut <kbd>Ctrl+Shift+E</kbd> (<kbd>⌘+⇧+E</kbd> on macOS) (`#585 <https://github.com/Komet/MediaElch/issues/585>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
