@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.3 - tb
+2.8.3 - tbd
 ************************************
 
 Bugfixes
@@ -24,15 +24,19 @@ Bugfixes
  - TV search: Episode and show details are stored per scraper (`#801 <https://github.com/Komet/MediaElch/issues/801>`_)
  - Movie Sets: Adding a movie works again (`#1129 <https://github.com/Komet/MediaElch/issues/1129>`_)
  - Name Formatter: If an excluded word contains special characters, it is removed again (`#1131 <https://github.com/Komet/MediaElch/issues/1131>`_)
+ - Universal Music Scraper: "Formed" field now strips HTML tags (`#1152 <https://github.com/Komet/MediaElch/issues/1152>`_)
+ - If you click "Cancel" in the file dialog when adding a new media directory, the home directory is no longer added.
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - NFO files now contain a ``<generator>`` tag which holds meta information about MediaElch. |br|
    This may be helpful when users complain about Kodi not displaying certain details on the Kodi forum.
- - Renamer: Special characters that are not allowed in filenames are now replaced by a space. |br|
+ - Renamer: More special characters that are not allowed in filenames are now replaced by a space. |br|
    Windows disallows the following characters in filenames: ``<``, ``>``, ``:``, ``"``, ``/``, ``\``, ``|``, ``?``, ``*``.
-   MediaElch now does a bit of filename sanitization, even if not a lot.
+   MediaElch now does a bit of filename sanitization more, even if not a lot.  Previously unchecked was ``|``.
+   Furthermore, leading dots are removed because they indicate hidden files on Unix systems.
+ - On macOS the discrete GPU is no longer required (`#702 <https://github.com/Komet/MediaElch/issues/702>`_)
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,6 +51,16 @@ Added
    If there is more than one studio, all studios are separated by a comma (``,``).
  - The exporter can now be opened using the shortcut :kbd:`Ctrl+E` (:kbd:`⌘+E` on macOS)
  - An experimental CSV exporter can now be opened using the shortcut :kbd:`Ctrl+Shift+E` (:kbd:`⌘+⇧+E` on macOS) (`#585 <https://github.com/Komet/MediaElch/issues/585>`_)
+ - Universal Music Scraper: MusicBrainz was added as a biography source (`#1065 <https://github.com/Komet/MediaElch/issues/1065>`_) |br|
+   Due to API-changes in TheAudioDb, MediaElch no longer scraped artist's biography from
+   TheAudioDb but from AllMusic which was a fallback. But AllMusic only supports English.
+   To have translated texts again, we now use MusicBrainz as a biography source.
+   MusicBrainz uses texts from Wikipedia.
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Support for Kodi v16 NFO files is removed.  MediaElch can still read them but does not write them anymore. (`#1142 <https://github.com/Komet/MediaElch/issues/1142>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
