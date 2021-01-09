@@ -32,11 +32,6 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 |                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 
-.. note::
-
-  The AppImage has for v2.8.4 was updated on 2020-12-21. The version from 2020-12-20
-  has network issues.
-
 
 Windows Chocolatey
 ==================

@@ -12,6 +12,35 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+2.8.5 - tbd
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Added
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+
 2.8.4 - Coridian (2021-01-09)
 ************************************
 
@@ -63,11 +92,6 @@ Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Support for Kodi v16 NFO files is removed.  MediaElch can still read them but does not write them anymore. (`#1142 <https://github.com/Komet/MediaElch/issues/1142>`_)
-
-Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
 
 
 2.8.2 - Coridian (2020-12-20)
