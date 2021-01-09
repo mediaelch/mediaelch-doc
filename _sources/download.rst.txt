@@ -13,28 +13,28 @@ Please note that nightlies are **not** stable. APIs may not work as expected.
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Windows           | 2.8.2  (GitHub)    | |gh_pages_282|                                |
+| Windows           | 2.8.4  (GitHub)    | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
-+-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray|                                     |
-+-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.8.2  (GitHub)    | |gh_pages_282|                                |
-+-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
+|                   | 2.8.4  (mirror)    | |bintray_release|                             |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.8.2  (GitHub)    | |gh_pages_282|                                |
+| macOS             | 2.8.4  (GitHub)    | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.2  (mirror)    | |bintray_282|                                 |
+|                   | 2.8.4  (mirror)    | |bintray_release|                             |
++-------------------+--------------------+-----------------------------------------------+
+|                   | latest (unstable)  | |bintray|                                     |
++-------------------+--------------------+-----------------------------------------------+
+| Linux (AppImage)  | 2.8.4  (GitHub)    | |gh_pages_release|                            |
++-------------------+--------------------+-----------------------------------------------+
+|                   | 2.8.4  (mirror)    | |bintray_release|                             |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |bintray|                                     |
 +-------------------+--------------------+-----------------------------------------------+
 
 .. note::
 
-  The AppImage has for v2.8.2 was updated on 2020-12-21. The version from 2020-12-20
+  The AppImage has for v2.8.4 was updated on 2020-12-21. The version from 2020-12-20
   has network issues.
 
 
@@ -105,11 +105,11 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_282| image:: https://img.shields.io/badge/version-v2.8.2-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.2
+.. |gh_pages_release| image:: https://img.shields.io/badge/version-v2.8.4-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.4
 
-.. |bintray_282| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.2
-   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.2#files
+.. |bintray_release| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.4
+   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.4#files
 
 .. |bintray| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Nightly/images/download.svg
    :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Nightly/_latestVersion

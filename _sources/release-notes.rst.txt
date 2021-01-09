@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.3 - tbd
+2.8.4 - Coridian (2021-01-09)
 ************************************
 
 Bugfixes
@@ -26,6 +26,7 @@ Bugfixes
  - Name Formatter: If an excluded word contains special characters, it is removed again (`#1131 <https://github.com/Komet/MediaElch/issues/1131>`_)
  - Universal Music Scraper: "Formed" field now strips HTML tags (`#1152 <https://github.com/Komet/MediaElch/issues/1152>`_)
  - If you click "Cancel" in the file dialog when adding a new media directory, the home directory is no longer added.
+ - ADE: Actor images are loaded again (`#1164 <https://github.com/Komet/MediaElch/issues/1164>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -42,8 +43,9 @@ Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Concert: Add IMDb/TMDb ID fields
+ - Concert search: Add language dropdown to search dialog
  - Added ``*.webm`` to default file filters for video files (`#1122 <https://github.com/Komet/MediaElch/issues/1122>`_)
- - Add TVmaze as a TV scraper (`#834 <https://github.com/Komet/MediaElch/issues/834>`_)
+ - Add TVmaze as a TV scraper (`#834 <https://github.com/Komet/MediaElch/issues/834>`_) |br|
    TVmaze works great for actor images and season posters.  Due to API
    limitations not all episode details are available that you can see
    on their website.
