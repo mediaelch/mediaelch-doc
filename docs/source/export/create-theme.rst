@@ -196,6 +196,11 @@ Here is a list of all placeholders that are available:
       {{ TVSHOW.LINK }}
       {{ TVSHOW.IMDB_ID }}
       {{ TVSHOW.TITLE }}
+
+      # The next 2 exist since v2.8.5-dev
+      {{ TVSHOW.ORIGINALTITLE }}
+      {{ TVSHOW.SORTTITLE }}
+
       {{ TVSHOW.RATING }}
       {{ TVSHOW.VOTES }}
       {{ TVSHOW.CERTIFICATION }}
