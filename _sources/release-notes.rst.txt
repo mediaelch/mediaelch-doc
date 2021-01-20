@@ -21,12 +21,22 @@ Bugfixes
  - Audio-channel detection was broken since the previous version (`#1172 <https://github.com/Komet/MediaElch/issues/1172>`_)
  - Translations were updated |br|
    Due to a bug in our "update translation" script, new strings were not published.
- - Genre/Certification/Studio mappings for all TV show scrapers are now respected, now just for TheTvDb (`#1176 <https://github.com/Komet/MediaElch/issues/1176>`_)
+ - Genre/Certification/Studio mappings for all TV show scrapers are now respected, not just for TheTvDb (`#1176 <https://github.com/Komet/MediaElch/issues/1176>`_)
+ - FanartTv: The default language is now English (`#1190 <https://github.com/Komet/MediaElch/issues/1190>`_) |br|
+   Previously, the first language in the checkbox was used (i.e. Bulgarian).
+ - Kodi: v18 was not selectable in MediaElch's settings for Kodi (`#1193 <https://github.com/Komet/MediaElch/issues/1193>`_)
+ - IMDb movie scraper: Search results contain the movie's year again
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - CSV Export: Column names in generated CSV files were renamed
+ - TV Show search: If the show's title contains its year, it is remove in the search dialog (`#1192 <https://github.com/Komet/MediaElch/issues/1192>`_)
+ - TV Show search: All checkboxes are selected per default on new installations (`#1189 <https://github.com/Komet/MediaElch/issues/1189>`_)
+ - File Searcher: A delimiter is expected if a file is split up into multiple parts (`#1194 <https://github.com/Komet/MediaElch/issues/1194>`_) |br|
+   If you have media files that are split up into multiple parts (e.g. CDs, DVDs, ...) then MediaElch
+   expects it to be named like ``title.part1.mkv`` (or ``-dvd1``, etc.). ``titlepart1.mkv``, i.e. without a
+   delimiter worked before but caused false positives. Delimiters are `` ``, ``.``, ``_`` and ``-``.
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
