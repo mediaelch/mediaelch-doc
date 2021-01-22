@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.5 - tbd
+2.8.6 - Coridian (2021-01-22)
 ************************************
 
 Bugfixes
@@ -26,12 +26,13 @@ Bugfixes
    Previously, the first language in the checkbox was used (i.e. Bulgarian).
  - Kodi: v18 was not selectable in MediaElch's settings for Kodi (`#1193 <https://github.com/Komet/MediaElch/issues/1193>`_)
  - IMDb movie scraper: Search results contain the movie's year again
+ - Streamdetails: Detection of runtime is fixed (`#923 <https://github.com/Komet/MediaElch/issues/923>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - CSV Export: Column names in generated CSV files were renamed
- - TV Show search: If the show's title contains its year, it is remove in the search dialog (`#1192 <https://github.com/Komet/MediaElch/issues/1192>`_)
+ - TV Show search: If the show's title contains its year, it is removed in the search dialog (`#1192 <https://github.com/Komet/MediaElch/issues/1192>`_)
  - TV Show search: All checkboxes are selected per default on new installations (`#1189 <https://github.com/Komet/MediaElch/issues/1189>`_)
  - File Searcher: A delimiter is expected if a file is split up into multiple parts (`#1194 <https://github.com/Komet/MediaElch/issues/1194>`_) |br|
    If you have media files that are split up into multiple parts (e.g. CDs, DVDs, ...) then MediaElch
@@ -44,16 +45,6 @@ Added
  - CSV Export: The experimental CSV exporter now supports "directory" and "filenames" as options (`#1173 <https://github.com/Komet/MediaElch/issues/1173>`_)
  - TV show: Add original title field (`#1180 <https://github.com/Komet/MediaElch/issues/1180>`_) |br|
    This field is only supported by the TMDb TV show scraper.
-
-Removed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
-
-Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
 
 
 2.8.4 - Coridian (2021-01-09)
@@ -138,8 +129,11 @@ Internal Improvements and Changes
  - Better error reporting for TV scrapers
 
 
-2.8.0 - Coridian (2020-12-13)
+Older Releases
 ************************************
+
+2.8.0 - Coridian (2020-12-13)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is the next "big" MediaElch version. This version brings fully rewritten TV scrapers including
 improved user interfaces, better user experience and a new TV show scraper.
@@ -152,7 +146,7 @@ This means that Ubuntu 16.04 is no longer supported!
 Note: You may need to set "DVD order" in your settings again as the internal settings-key changed.
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Exporter: Fix episode thumbnails in TV show view (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
  - Movies: Sub-folders are no longer handled as files (`#978 <https://github.com/Komet/MediaElch/issues/978>`_)
@@ -167,14 +161,14 @@ Bugfixes
  - Fix HotMovies scraper and add backdrop support
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Concert Export: ``{{ CONCERT.FILENAME }}`` and ``{{ CONCERT.DIR }}`` are now supported in themes (`#962 <https://github.com/Komet/MediaElch/issues/962>`_)
  - IMDb now includes adult search results if adult scrapers are enabled (`#992 <https://github.com/Komet/MediaElch/issues/992>`_)
  - Export: Image placeholders like ``{{ IMAGE.XYZ }}`` are now only replaced if the image type is actually used (`#961 <https://github.com/Komet/MediaElch/issues/961>`_)
 
 Added
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Movie Backdrop: Make it possible to set a random screenshot as the movie's backdrop/fanart (`#965 <https://github.com/Komet/MediaElch/issues/965>`_)
  - Movies: Add option to ignore duplicate original title (`#1006 <https://github.com/Komet/MediaElch/issues/1006>`_) |br|
@@ -202,7 +196,7 @@ Added
    Note that tags for episodes are not supported by Kodi, yet.
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Dialogs: Removed singletons for dialog windows (`#980 <https://github.com/Komet/MediaElch/issues/980>`_)
  - Use combo box for "DVD order" and "Aired order" (`#983 <https://github.com/Komet/MediaElch/issues/983>`_)
@@ -212,14 +206,14 @@ Internal Improvements and Changes
 
 
 2.6.6 - Ferenginar (2020-04-18)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Note:* This release has changed its internal file and directory handling to
 fix Windows-related bugs (`#732 <https://github.com/Komet/MediaElch/issues/732>`_).  Please report any issues with network drives
 or other non-local drives.
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Fix AEBN crash when scraping a movie (`#910 <https://github.com/Komet/MediaElch/issues/910>`_)
  - Select correct language for TMDb in the movie search dialog (`#916 <https://github.com/Komet/MediaElch/issues/916>`_)
@@ -256,14 +250,14 @@ Bugfixes
  - Image Preview: Fix centering of image dialog (`#863 <https://github.com/Komet/MediaElch/issues/863>`_)
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Export: The generated folder name now also contains seconds (`#935 <https://github.com/Komet/MediaElch/issues/935>`_) |br|
    It now has the pattern ``MediaElch Export yyyy-MM-dd hh-mm-ss``.
    Exporting multiple times whithin a minute otherwise leads to name clashes.
 
 Improvements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Always write the episode guide URL to TV show NFOs using TheTvDb format (`#652 <https://github.com/Komet/MediaElch/issues/652>`_)
  - Fanart.tv: Print better error messages for shows and movies that cannot be found (`#900 <https://github.com/Komet/MediaElch/issues/900>`_)
@@ -285,7 +279,7 @@ Improvements
    Default names are just their file names. MediaElch now removes the file suffix.
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Set MediaElch specific HTTP User-Agent header for most HTTP requests (`#912 <https://github.com/Komet/MediaElch/issues/912>`_)
  - Updater: Use new MediaElch meta repository for version checks (`#896 <https://github.com/Komet/MediaElch/issues/896>`_)
@@ -300,10 +294,10 @@ Internal Improvements and Changes
 
 
 2.6.4 - Ferenginar (2020-02-08)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Fix TV shows sorting and possible crashes if "Show missing episodes" is enabled (`#789 <https://github.com/Komet/MediaElch/issues/789>`_, `#883 <https://github.com/Komet/MediaElch/issues/883>`_)
    MediaElch could crash under certain circumstances due to improper use of Qt's
@@ -334,7 +328,7 @@ Bugfixes
  - Fix actors having wrong image after removing one actor (`#859 <https://github.com/Komet/MediaElch/issues/859>`_)
 
 Improvements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - TMDb: Load more movie collection details (`#800 <https://github.com/Komet/MediaElch/issues/800>`_)
  - ADA search: Don't filter for DVDs, fix overview scraping of some movies (`#819 <https://github.com/Komet/MediaElch/issues/819>`_)
@@ -348,7 +342,7 @@ Improvements
  - Better error reporting in the image dialog (`#864 <https://github.com/Komet/MediaElch/issues/864>`_, `#874 <https://github.com/Komet/MediaElch/issues/874>`_)
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - CMake: Fix Foundation framework include for macOS
  - Tests: Add more integration and unit tests
@@ -356,7 +350,7 @@ Internal Improvements and Changes
 
 
 2.6.2 - Ferenginar (2019-09-13)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This release will affect your scraper settings. You'll therefore have to
 reconfigure your scraper settings. You may also need to delete ``MediaElch.sqlite``.
@@ -364,7 +358,7 @@ reconfigure your scraper settings. You may also need to delete ``MediaElch.sqlit
 See: https://mediaelch.github.io/mediaelch-doc/faq.html#where-are-mediaelchs-settings-stored
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Fix IMDb tag scraping (`#649 <https://github.com/Komet/MediaElch/issues/649>`_)
  - Fix IMDb poster scraping
@@ -382,7 +376,7 @@ Bugfixes
  - Fix VideoBuster certification scraping
 
 Improvements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Update French translation (`#646 <https://github.com/Komet/MediaElch/issues/646>`_)
  - Add more subtitle formats (`#661 <https://github.com/Komet/MediaElch/issues/661>`_)
@@ -402,7 +396,7 @@ Improvements
  - Add "avc" to "h264" video codec mapping to defaults (`#728 <https://github.com/Komet/MediaElch/issues/728>`_)
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Implement ScraperSettings class for better mocking
  - Use ``QVector<T>`` instead of ``QList<T>`` as the default container
@@ -411,8 +405,6 @@ Internal Improvements and Changes
  - Add ``DISABLE_UPDATER`` option in QMake and CMake for package maintainers (`#763 <https://github.com/Komet/MediaElch/issues/763>`_)
  - Require Qt 5.6 or later (`#780 <https://github.com/Komet/MediaElch/issues/780>`_)
 
-Older Releases
-************************************
 
 2.6.0 - Ferenginar (2019-01-06)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
