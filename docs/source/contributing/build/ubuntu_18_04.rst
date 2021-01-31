@@ -15,7 +15,7 @@ Dependencies
     sudo apt install ffmpeg
 
     # Qt (alternative: download and install Qt from its official website)
-    sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev
+    sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev qttools5-dev-tools
 
 Build
 **********************************************************
