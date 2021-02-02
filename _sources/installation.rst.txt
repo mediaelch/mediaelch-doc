@@ -20,7 +20,7 @@ For portable mode see :doc:`Portable Mode <portable-mode>`.
 Windows - Chocolatey
 ====================
 
-Please refer to the page :doc:`Download <download>`.
+Please refer to the :doc:`Download <download>` page.
 
 
 Linux - AppImage
@@ -46,3 +46,10 @@ folder.
 
 **Note**: You may have to adjust your system's security settings as MediaElch is not signed by
 a registered developer.
+
+.. figure:: images/installation/macOS-installation-screen.png
+   :align: center
+   :alt: Drag&Drop MediaElch into the Applications folder
+
+   Installing Apps on macOS is easy! Simply open the downloaded ``*.dmg``
+   file and Drag&Drop MediaElch into the Applications folder.

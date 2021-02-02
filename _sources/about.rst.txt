@@ -7,19 +7,18 @@ About
    :alt: MediaElch Logo
 
 MediaElch is a MediaManager for Kodi. Information about Movies, TV Shows,
-Concerts and Music are stored as nfo files. Fanarts are downloaded
-automatically from fanart.tv. Using the nfo generator, MediaElch can
-be used with other MediaCenters as well.
+Concerts and Music are stored as NFO files.  Fanarts are downloaded
+automatically from fanart.tv.
 
 
 Supported scrapers
 ==================
 
-Included are scrapers for The Movie DB, The TV DB, Kino.de, Videobuster,
+Included are scrapers for The Movie DB, The TV DB, Videobuster,
 OFDb, IMDB and Fanart.tv (and also some adult content scrapers).
-The Movie DB and The TV DB are available in more than 20 languages.
+The Movie DB is available in more than 20 languages.
 Music information is scraped from The Audio DB, All Music and Discogs.
-Tv themes and trailers can also be downloaded.
+TV themes and trailers can also be downloaded.
 
 
 Screenshots
