@@ -2,12 +2,13 @@
 	<img alt="MediaElch Logo" src="docs/source/images/MediaElch.png" />
 </div>
 
-## MediaElch Documentation
+# MediaElch Documentation
 
 This repository contains the source files of the MediaElch documentation.
 You can find the documentation here: https://mediaelch.github.io/mediaelch-doc/
 
-### Build documentation
+
+## Build documentation
 
 Download and install [Sphinx](http://www.sphinx-doc.org/en/master/) as well
 as the "Read the Docs Sphinx Theme".
@@ -20,7 +21,8 @@ cd docs
 make html
 ```
 
-### Release documentation
+
+## Release documentation
 
 If you are a maintainer of this repository, you can release a new version of this
 documentation by using `./update_github_pages.sh`.
@@ -39,11 +41,15 @@ docker run -it --rm --name mediaelch_doc -v $(pwd):/opt/mediaelch-doc -v ${HOME}
 /opt/mediaelch-doc/update_github_pages.sh
 ```
 
-#### Troubleshooting
+
+### Troubleshooting
+
 If you can't install the theme using `pip`, please refer to:
 https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html#via-git-or-download
 
-### Contributing
+
+## Contributing
+
 Fork this repo and create a pull request containing your changes.
 Any help is welcome! :-)
 
@@ -55,3 +61,11 @@ Please also run `rstcheck`:
 pip install --user rstcheck
 find . -type f -name '*.rst' -exec rstcheck {} \+
 ```
+
+
+## Scripts
+
+The `scripts` directory contains some scripts that can be used
+to prefer folder structures, etc. for screenshots.
+
+Refer to each script's source for more details.

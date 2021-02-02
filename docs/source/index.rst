@@ -13,6 +13,14 @@ MediaCenters as well.
 
 *More in* :doc:`About MediaElch <about>`.
 
+.. figure:: images/screenshots/movie-main.png
+   :align: center
+   :alt: Movie section
+
+   The Movie section lists your movies which you can browse,
+   scrape and edit.
+
+
 .. toctree::
    :caption: MediaElch
    :hidden:
@@ -25,6 +33,7 @@ MediaCenters as well.
    settings
    license
 
+
 .. toctree::
    :caption: Getting Started
    :maxdepth: 1
@@ -35,6 +44,7 @@ MediaCenters as well.
    troubleshooting
    FAQ <faq>
 
+
 .. toctree::
    :caption: Sections
    :maxdepth: 1
@@ -44,6 +54,7 @@ MediaCenters as well.
    tvshow/index
    concert/index
    music/index
+
 
 .. toctree::
    :caption: Features

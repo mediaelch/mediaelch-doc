@@ -5,6 +5,8 @@
 docs/build
 docs/source/release-notes.rst
 
+/examples/
+
 *.mo
 build_*
 _build
