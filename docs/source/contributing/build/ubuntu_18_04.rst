@@ -15,7 +15,9 @@ Dependencies
     sudo apt install ffmpeg
 
     # Qt (alternative: download and install Qt from its official website)
-    sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev qttools5-dev-tools
+    sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev 
+    # These are required for the linguist tool (for translations)
+    sudo apt install qttools5-dev qttools5-dev-tools
 
 Build
 **********************************************************
