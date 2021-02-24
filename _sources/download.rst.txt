@@ -5,31 +5,32 @@ Download
 MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and
 Windows (ZIP + `chocolatey package`_).
 
-Nightlies can be downloaded from https://bintray.com/komet/MediaElch (choose your system -> click on tab "Files" -> select version).
+Nightlies can be downloaded from https://mediaelch-downloads.ameyering.de/snapshots/ .
 Please note that nightlies are **not** stable. APIs may not work as expected.
+The server is also hosted by our team.  If the server is down, please contact us.
 
 *See also:* :doc:`Install MediaElch <installation>`.
 
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Windows           | 2.8.6  (Bintray)   | |bintray_release|                             |
+| Windows           | 2.8.6  (GitHub)    | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.6  (GitHub)    | |gh_pages_release|                            |
+|                   | 2.8.6  (Mirror)    | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray|                                     |
+|                   | latest (unstable)  | |mirror_nightly_linux|                        |
 +-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.8.6  (Bintray)   | |bintray_release|                             |
+| macOS             | 2.8.6  (GitHub)    | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.6  (GitHub)    | |gh_pages_release|                            |
+|                   | 2.8.6  (Mirror)    | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray|                                     |
+|                   | latest (unstable)  | |mirror_nightly_macOS|                        |
 +-------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.8.6  (Bintray)   | |bintray_release|                             |
+| Linux (AppImage)  | 2.8.6  (GitHub)    | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.6  (GitHub)    | |gh_pages_release|                            |
+|                   | 2.8.6  (Mirror)    | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |bintray|                                     |
+|                   | latest (unstable)  | |mirror_nightly_Windows|                      |
 +-------------------+--------------------+-----------------------------------------------+
 
 .. note::
@@ -110,11 +111,17 @@ Or you can install MediaElch per command line:
 .. |gh_pages_release| image:: https://img.shields.io/badge/version-v2.8.6-blue.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.6
 
-.. |bintray_release| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Releases/images/download.svg?version=v2.8.6
-   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Releases/v2.8.6#files
+.. |mirror_release| image:: https://img.shields.io/badge/version-v2.8.6-blue.svg
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.6/
 
-.. |bintray| image:: https://api.bintray.com/packages/bugwelle/MediaElch/MediaElch-Nightly/images/download.svg
-   :target: https://bintray.com/bugwelle/MediaElch/MediaElch-Nightly/_latestVersion
+.. |mirror_nightly_linux| image:: https://img.shields.io/badge/Linux-v2.8.7--dev-blue.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
+
+.. |mirror_nightly_macOS| image:: https://img.shields.io/badge/macOS-v2.8.7--dev-blue.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
+
+.. |mirror_nightly_windows| image:: https://img.shields.io/badge/Windows-v2.8.7--dev-blue.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows/
 
 
 Source Code
