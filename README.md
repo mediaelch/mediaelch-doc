@@ -36,9 +36,12 @@ requires GNU `sed` and can't work with the outdated macOS version.
 ```sh
 docker build -t "mediaelch_doc:latest" .
 # We need volumes to the mediaelch-doc repository and to your ssh credentials
-docker run -it --rm --name mediaelch_doc -v $(pwd):/opt/mediaelch-doc -v ${HOME}/.ssh:/root/.ssh mediaelch_doc:latest
-# Inside the docker container
-/opt/mediaelch-doc/update_github_pages.sh
+docker run -it --rm \
+  --name mediaelch_doc \
+  -v $(pwd):/opt/mediaelch-doc \
+  -v ${HOME}/.ssh:/root/.ssh \
+  mediaelch_doc:latest \
+  /opt/mediaelch-doc/update_github_pages.sh
 ```
 
 
