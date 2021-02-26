@@ -32,6 +32,17 @@ Can I help translate MediaElch?
 See :doc:`Contributing -> Translations <contributing/translations>`
 
 
+Will MediaElch be a paid application in the future?
+===================================================
+
+**No**. MediaElch was, is and will remain an open-source project.
+We will not charge for anything.
+
+However, meta-data providers may become subscription-based in the future.
+TheTvDb is one such example.  If that happens, MediaElch may still support
+the provider but you will need to subscribe to their services.
+
+
 What is the meaning of the little icons under each show title?
 ==============================================================
 
@@ -58,3 +69,34 @@ Images without votes won't appear in MediaElch. You can help Fanart.tv by
 creating an account there and by upvoting images you like. A related GitHub
 issue can be found at https://github.com/Komet/MediaElch/issues/858
 
+
+Will MediaElch support other Media Centers than Kodi?
+=====================================================
+
+No.  There are too few contributors to MediaElch and maintaining support for Kodi
+alone takes a lot of time.
+
+But we will gladly accept pull requests on GitHub_.
+
+
+Does MediaElch support all features of Kodi?
+============================================
+
+We try to be as compatible as possible to Kodi.  But we cannot always keep up
+with Kodi's new features.  We will try to implement/add them as soon as possible
+but some changes need time.  For example, MediaElch does not support multiple ratings, yet.
+
+
+What alternatives to MediaElch exist?
+=====================================
+
+MediaElch may not solve all your issues and may not meet all your requirements.
+If you need more features, you can ask us to add them of course.
+But if you're missing many features, then you can always use another software:
+
+ - Kodi's builtin scrapers
+ - https://www.tinymediamanager.org/
+
+You can find more at https://kodi.wiki/view/Supplemental_tools
+
+.. _GitHub: https://github.com/Komet/MediaElch
