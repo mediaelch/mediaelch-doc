@@ -42,6 +42,8 @@ automatically, you have to create it on your own. It should be placed in followi
  - Linux: ``~/.local/share/kvibes/MediaElch/advancedsettings.xml``
  - Windows: ``C:\Users\yourUserName\AppData\Local\kvibes\MediaElch\advancedsettings.xml``
 
-As an alternative the ``advancedsettings.xml`` can also be placed in the application directory.
+As an alternative the ``advancedsettings.xml`` can also be placed in the application directory,
+i.e. next to ``MediaElch.exe`` or the ``MediaElch`` binary.
+On macOS the application directory is ``MediaElch.app/Contents/MacOS``.
 
 For all possible settings, see `advancedsettings.xml <https://github.com/Komet/MediaElch/blob/master/docs/advancedsettings.xml>`_.
