@@ -49,11 +49,26 @@ the correct movie.
    you, make sure you have set the same language for fanart.tv as for
    your selected scraper.
 
+
 Movie Sets
 ----------
 
 If you have movies that belong to a set, e.g. "Harry Potter and the Philosopher's Stone"
 which belongs to the Harry Potter Set/Franchise, they are listed here.
+
+
+Movie Filter
+------------
+
+MediaElch can filter movies by name, genre and some other fields.
+If the text matches a genre, you can select the "Genre" filter.
+
+.. figure:: ../images/movie/movie-search-filter-genre.png
+   :align: center
+   :alt: Movie Filter (Genre).
+
+   MediaElch allows users to filter movies by genre.
+
 
 Movie Scrapers
 --------------
