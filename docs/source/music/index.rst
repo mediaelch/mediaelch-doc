@@ -22,8 +22,16 @@ To use music scraping, your directory structure must look like the following:
  - ``/Volumes/Data/Music/Artist2/Album2/song.mp3``
 
 This means every artist must have its own subdirectory and inside this directory
-every album must be in another subdirectory. In MediaElchs settings add the
+every album must be in another subdirectory.  In MediaElchs settings add the
 toplevel directory of the artists (in the example above this is ``/Volumes/Data/Music``).
+
+
+.. note::
+
+   MediaElch uses NFO files for music.  It does *not* use ID3 or other tags of your music
+   files (``*.mp3`` and similar).  If you want to modify ID3 tags, we recommend to use
+   alternative software.
+
 
 Scrapers
 --------
