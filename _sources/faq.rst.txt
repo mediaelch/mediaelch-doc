@@ -97,6 +97,10 @@ But if you're missing many features, then you can always use another software:
  - Kodi's builtin scrapers
  - https://www.tinymediamanager.org/
 
+For Music you may find MusicBrainz Picard  interesting:
+
+- https://picard.musicbrainz.org/
+
 You can find more at https://kodi.wiki/view/Supplemental_tools
 
 .. _GitHub: https://github.com/Komet/MediaElch
