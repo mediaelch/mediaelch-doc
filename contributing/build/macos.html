@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>macOS &mdash; MediaElch 2.8.6 documentation</title>
@@ -90,7 +91,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">MediaElch</span></p>
+              <p><span class="caption-text">MediaElch</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
@@ -117,21 +118,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Sections</span></p>
+<p><span class="caption-text">Sections</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concert/index.html">Concert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../export/index.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../renaming.html">Renamer</a></li>
@@ -210,7 +211,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="macos">
+  <section id="macos">
 <h1>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h1>
 <p>MediaElch is build upon Qt. Qt itself requires macOS 10.12 or later and therefore
 MediaElch does as well.</p>
@@ -218,7 +219,7 @@ MediaElch does as well.</p>
 and <a class="reference external" href="https://brew.sh/">Homebrew</a>. Instead of XCode you can also just install the
 <a class="reference external" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_">XCode Command Line Tools</a>
 (open a Terminal and execute <code class="docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code>).</p>
-<div class="section" id="command-line-build">
+<section id="command-line-build">
 <h2>Command Line Build<a class="headerlink" href="#command-line-build" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># [Optional] Install git (it should have already been installed by XCode)</span>
 brew install git
@@ -240,8 +241,8 @@ qmake ..
 make -j4
 </pre></div>
 </div>
-</div>
-<div class="section" id="qtcreator-build">
+</section>
+<section id="qtcreator-build">
 <h2>QtCreator Build<a class="headerlink" href="#qtcreator-build" title="Permalink to this headline">¶</a></h2>
 <p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>. Run it and select the latest Qt
 version for installation (e.g. <code class="docutils literal notranslate"><span class="pre">Qt</span> <span class="pre">5.10.1</span></code>).
@@ -258,7 +259,7 @@ by clicking “Download” or using git: <br />
 <p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg for Windows</a> to be able
 to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
 inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
-<div class="section" id="other-libraries">
+<section id="other-libraries">
 <h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
@@ -270,14 +271,14 @@ Copy the folder <code class="docutils literal notranslate"><span class="pre">Sou
 Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code></p></li>
 </ol>
 </div></blockquote>
-</div>
-<div class="section" id="build">
+</section>
+<section id="build">
 <h3>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h3>
 <p>Start QtCreator and open <code class="docutils literal notranslate"><span class="pre">/path/to/MediaElch/MediaElch.pro</span></code>. <br />
 Configure it as “Release” and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
-</div>
-</div>
-<div class="section" id="troubleshooting-cmake-build">
+</section>
+</section>
+<section id="troubleshooting-cmake-build">
 <h2>Troubleshooting (CMake Build)<a class="headerlink" href="#troubleshooting-cmake-build" title="Permalink to this headline">¶</a></h2>
 <p>Depending on your macOS version, you may need to set the used C++ standard library.
 See <a class="reference external" href="https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update">https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update</a></p>
@@ -291,8 +292,8 @@ set<span class="o">(</span>CMAKE_CXX_FLAGS <span class="s2">&quot;-stdlib=libc++
 <p class="admonition-title">Todo</p>
 <p>Add build instructions using MacPorts and not only Homebrew.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

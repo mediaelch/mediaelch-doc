@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Ubuntu 18.04 and later &mdash; MediaElch 2.8.6 documentation</title>
@@ -90,7 +91,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">MediaElch</span></p>
+              <p><span class="caption-text">MediaElch</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
@@ -117,21 +118,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Sections</span></p>
+<p><span class="caption-text">Sections</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concert/index.html">Concert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../export/index.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../renaming.html">Renamer</a></li>
@@ -210,9 +211,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ubuntu-18-04-and-later">
+  <section id="ubuntu-18-04-and-later">
 <h1>Ubuntu 18.04 and later<a class="headerlink" href="#ubuntu-18-04-and-later" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="dependencies">
+<section id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
 sudo apt install build-essential git
@@ -227,8 +228,8 @@ sudo apt install qt5-default qtmultimedia5-dev qtdeclarative5-dev
 sudo apt install qttools5-dev qttools5-dev-tools
 </pre></div>
 </div>
-</div>
-<div class="section" id="build">
+</section>
+<section id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
 git submodule update --init
@@ -237,15 +238,15 @@ qmake ..
 make -j4
 </pre></div>
 </div>
-</div>
-<div class="section" id="install">
+</section>
+<section id="install">
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
 <p>Run following command after building MediaElch to install it on your system.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
