@@ -34,10 +34,10 @@ helpful if you're on macOS or Windows because the script `create_changelog.sh`
 requires GNU `sed` and can't work with the outdated macOS version.
 
 ```sh
-docker build -t "mediaelch_doc:latest" .
+docker build --pull -t "mediaelch/mediaelch-ci-doc:latest" .
 # We need volumes to the mediaelch-doc repository and to your ssh credentials
 docker run -it --rm \
-  --name mediaelch_doc \
+  --name mediaelch/mediaelch-ci-doc:latest \
   -v $(pwd):/opt/mediaelch-doc \
   -v ${HOME}/.ssh:/root/.ssh \
   mediaelch_doc:latest \
