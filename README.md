@@ -37,10 +37,10 @@ requires GNU `sed` and can't work with the outdated macOS version.
 docker build --pull -t "mediaelch/mediaelch-ci-doc:latest" .
 # We need volumes to the mediaelch-doc repository and to your ssh credentials
 docker run -it --rm \
-  --name mediaelch/mediaelch-ci-doc:latest \
+  --name mediaelch_doc_build \
   -v $(pwd):/opt/mediaelch-doc \
   -v ${HOME}/.ssh:/root/.ssh \
-  mediaelch_doc:latest \
+  mediaelch/mediaelch-ci-doc:latest \
   /opt/mediaelch-doc/update_github_pages.sh
 ```
 
