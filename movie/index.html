@@ -4,8 +4,7 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Movie &mdash; MediaElch 2.8.6 documentation</title>
@@ -34,7 +33,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -92,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">MediaElch</span></p>
+              <p class="caption"><span class="caption-text">MediaElch</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
@@ -102,14 +100,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
-<p><span class="caption-text">Getting Started</span></p>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
-<p><span class="caption-text">Sections</span></p>
+<p class="caption"><span class="caption-text">Sections</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Movie</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#search-scrape-new-movies">Search/Scrape New Movies</a></li>
@@ -123,7 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../concert/index.html">Concert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../music/index.html">Music</a></li>
 </ul>
-<p><span class="caption-text">Features</span></p>
+<p class="caption"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../export/index.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../renaming.html">Renamer</a></li>
@@ -198,39 +196,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="movie">
+  <div class="section" id="movie">
 <h1>Movie<a class="headerlink" href="#movie" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Work in progress</p>
 </div>
-<figure class="align-center" id="id1">
+<div class="figure align-center" id="id1">
 <img alt="Movie section" src="../_images/movie-main1.png" />
-<figcaption>
-<p><span class="caption-text">The Movie section lists your movies which you can browse,
+<p class="caption"><span class="caption-text">The Movie section lists your movies which you can browse,
 scrape and edit.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-<section id="search-scrape-new-movies">
+</div>
+<div class="section" id="search-scrape-new-movies">
 <h2>Search/Scrape New Movies<a class="headerlink" href="#search-scrape-new-movies" title="Permalink to this headline">¶</a></h2>
 <p>Scraping new movies in MediaElch is easy! Select the movie(s) you want to
 load form e.g. <strong>IMDb</strong> oder <strong>The Movie Db</strong> and click on the scrape
 button (<code class="docutils literal notranslate"><span class="pre">Ctrl+F</span></code>, see screenshot below). A new dialog will pop up in
 which can select what information you want to load and you can select
 the correct movie.</p>
-<figure class="align-center" id="id2">
+<div class="figure align-center" id="id2">
 <img alt="Movie Search Action/Button" src="../_images/movie-search-action.png" />
-<figcaption>
-<p><span class="caption-text">The movie scrape/search button.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id3">
+<p class="caption"><span class="caption-text">The movie scrape/search button.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id3">
 <img alt="Movie scrape dialog." src="../_images/movie-search-dialog.png" />
-<figcaption>
-<p><span class="caption-text">The Movie scrape dialog with checkboxes for each data
+<p class="caption"><span class="caption-text">The Movie scrape dialog with checkboxes for each data
 point you want to load (e.g. title, images, etc.)</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You may wonder why some images are loaded in a different language than
@@ -240,24 +232,22 @@ selected scraper. Many are loaded from fanart.tv. If this happens to
 you, make sure you have set the same language for fanart.tv as for
 your selected scraper.</p>
 </div>
-</section>
-<section id="movie-sets">
+</div>
+<div class="section" id="movie-sets">
 <h2>Movie Sets<a class="headerlink" href="#movie-sets" title="Permalink to this headline">¶</a></h2>
 <p>If you have movies that belong to a set, e.g. “Harry Potter and the Philosopher’s Stone”
 which belongs to the Harry Potter Set/Franchise, they are listed here.</p>
-</section>
-<section id="movie-filter">
+</div>
+<div class="section" id="movie-filter">
 <h2>Movie Filter<a class="headerlink" href="#movie-filter" title="Permalink to this headline">¶</a></h2>
 <p>MediaElch can filter movies by name, genre and some other fields.
 If the text matches a genre, you can select the “Genre” filter.</p>
-<figure class="align-center" id="id4">
+<div class="figure align-center" id="id4">
 <img alt="Movie Filter (Genre)." src="../_images/movie-search-filter-genre.png" />
-<figcaption>
-<p><span class="caption-text">MediaElch allows users to filter movies by genre.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="movie-scrapers">
+<p class="caption"><span class="caption-text">MediaElch allows users to filter movies by genre.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="movie-scrapers">
 <h2>Movie Scrapers<a class="headerlink" href="#movie-scrapers" title="Permalink to this headline">¶</a></h2>
 <p>Following tables list supported features for each movie scraper.</p>
 <table class="docutils align-default">
@@ -501,8 +491,8 @@ If the text matches a genre, you can select the “Genre” filter.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="keyboard-shortcuts">
+</div>
+<div class="section" id="keyboard-shortcuts">
 <h2>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
@@ -532,8 +522,8 @@ If the text matches a genre, you can select the “Genre” filter.</p>
 </tr>
 </tbody>
 </table>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
