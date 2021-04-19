@@ -24,6 +24,7 @@ Alternatively, you can also install Qt using zypper (see second code block below
 Install Qt using zypper:
 
 .. code-block:: sh
+
     zypper install \
         libqt5-qtbase libqt5-qtdeclarative-devel libqt5-qtdeclarative-tools \
         libqt5-qtmultimedia-devel libqt5-qttools libqt5-qttools-devel \
