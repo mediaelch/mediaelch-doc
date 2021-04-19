@@ -4,8 +4,10 @@ openSUSE Leap 42.3 and later
 
 Dependencies
 **********************************************************
+
 Follow the instructions on https://wiki.qt.io/Install_Qt_5_on_openSUSE |br|
-Select the latest stable Qt version (e.g. 5.10.1) with "Desktop gcc 64-bit" enabled.
+Select the latest stable Qt version (e.g. 5.15.2) with "Desktop gcc 64-bit" enabled.
+Alternatively, you can also install Qt using zypper (see second code block below).
 
 .. code-block:: sh
 
@@ -17,6 +19,18 @@ Select the latest stable Qt version (e.g. 5.10.1) with "Desktop gcc 64-bit" enab
     sudo zypper install Mesa-libGL-devel
     # Install a newer version of GCC (Leap 42.3 uses GCC 4.8.5)
     sudo zypper install gcc7 gcc7-c++
+
+
+Install Qt using zypper:
+
+.. code-block:: sh
+
+    zypper install \
+        libqt5-qtbase libqt5-qtdeclarative-devel libqt5-qtdeclarative-tools \
+        libqt5-qtmultimedia-devel libqt5-qttools libqt5-qttools-devel \
+        libqt5-qtsvg-devel libQt5Concurrent5 libQt5Concurrent-devel \
+        libQt5OpenGL5 libQt5OpenGL-devel libQt5Sql-devel
+
 
 Note that MediaElch needs ffmpeg to create screenshots.
 ffmpeg itself requires multimedia codecs. Please refer to
