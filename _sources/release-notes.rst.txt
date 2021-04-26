@@ -23,6 +23,7 @@ Bugfixes
  - Fix translations on some Windows systems (`#1191 <https://github.com/Komet/MediaElch/issues/1191>`_)
  - Fix spacing between icons for movie and TV show views (`#793 <https://github.com/Komet/MediaElch/issues/793>`_)
  - macOS: Fix text spacing of "new" count bubble (`#1275 <https://github.com/Komet/MediaElch/issues/1275>`_)
+ - Custom TV scraper: Fix scraping of TV shows when TMDb isn't used at all (`#1293 <https://github.com/Komet/MediaElch/issues/1293>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

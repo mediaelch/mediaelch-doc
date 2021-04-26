@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>openSUSE Leap 42.3 and later &mdash; MediaElch 2.8.6 documentation</title>
+  <title>Ubuntu 21.04 and later &mdash; MediaElch 2.8.6 documentation</title>
   
 
   
@@ -38,8 +38,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Test MediaElch" href="../testing.html" />
-    <link rel="prev" title="Ubuntu 21.04 and later" href="ubuntu_21_04.html" /> 
+    <link rel="next" title="openSUSE Leap 42.3 and later" href="openSUSE_Leap_42_3.html" />
+    <link rel="prev" title="Ubuntu 18.04 and 20.04" href="ubuntu_18_04.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -101,13 +101,13 @@
 <li class="toctree-l3"><a class="reference internal" href="windows.html">Windows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="macos.html">macOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and 20.04</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ubuntu_21_04.html">Ubuntu 21.04 LTS and later</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">openSUSE Leap 42.3 and later</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Ubuntu 21.04 LTS and later</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install">Install</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_42_3.html">openSUSE Leap 42.3 and later</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
@@ -186,14 +186,14 @@
         
           <li><a href="index.html">Build MediaElch</a> &raquo;</li>
         
-      <li>openSUSE Leap 42.3 and later</li>
+      <li>Ubuntu 21.04 and later</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/openSUSE_Leap_42_3.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/ubuntu_21_04.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -207,42 +207,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="opensuse-leap-42-3-and-later">
-<h1>openSUSE Leap 42.3 and later<a class="headerlink" href="#opensuse-leap-42-3-and-later" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="ubuntu-21-04-and-later">
+<h1>Ubuntu 21.04 and later<a class="headerlink" href="#ubuntu-21-04-and-later" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
-<p>Follow the instructions on <a class="reference external" href="https://wiki.qt.io/Install_Qt_5_on_openSUSE">https://wiki.qt.io/Install_Qt_5_on_openSUSE</a> <br />
-Select the latest stable Qt version (e.g. 5.15.2) with “Desktop gcc 64-bit” enabled.
-Alternatively, you can also install Qt using zypper (see second code block below).</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install development tools</span>
-sudo zypper install --type pattern devel_basis
-<span class="c1"># Install other dependencies</span>
-sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
-<span class="c1"># Install OpenGL headers. Alternative OpenGL headers will work as well.</span>
-sudo zypper install Mesa-libGL-devel
-<span class="c1"># Install a newer version of GCC (Leap 42.3 uses GCC 4.8.5)</span>
-sudo zypper install gcc7 gcc7-c++
-</pre></div>
-</div>
-<p>Install Qt using zypper:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>zypper install <span class="se">\</span>
-    libqt5-qtbase libqt5-qtdeclarative-devel libqt5-qtdeclarative-tools <span class="se">\</span>
-    libqt5-qtmultimedia-devel libqt5-qttools libqt5-qttools-devel <span class="se">\</span>
-    libqt5-qtsvg-devel libQt5Concurrent5 libQt5Concurrent-devel <span class="se">\</span>
-    libQt5OpenGL5 libQt5OpenGL-devel libQt5Sql-devel
-</pre></div>
-</div>
-<p>Note that MediaElch needs ffmpeg to create screenshots.
-ffmpeg itself requires multimedia codecs. Please refer to
-<a class="reference external" href="http://opensuse-guide.org/codecs.php">http://opensuse-guide.org/codecs.php</a> to learn how to install them.
-Then install ffmpeg.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo zypper install ffmpeg
-</pre></div>
-</div>
-<p>To be able to build MediaElch using the command line, don’t forget to
-add the <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory of the previously installed Qt version to
-your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>. For example add following to your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/Qt/5.10.1/gcc_64/bin
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
+sudo apt install build-essential git
+sudo apt install libcurl4-gnutls-dev <span class="c1"># or libcurl4-openssl-dev</span>
+sudo apt install libmediainfo-dev
+
+<span class="c1"># ffmpeg is required at runtime to create random screenshots</span>
+sudo apt install ffmpeg
+
+<span class="c1"># Qt (alternative: download and install Qt from its official website)</span>
+sudo apt install <span class="se">\</span>
+    qt5-qmake <span class="se">\</span>
+    qtbase5-dev <span class="se">\</span>
+    qtbase5-dev-tools <span class="se">\</span>
+    qtdeclarative5-dev <span class="se">\</span>
+    qtmultimedia5-dev <span class="se">\</span>
+    qttools5-dev <span class="se">\</span>
+    qttools5-dev-tools <span class="se">\</span>
+    libqt5opengl5 <span class="se">\</span>
+    libqt5opengl5-dev <span class="se">\</span>
+    libqt5svg5 <span class="se">\</span>
+    libqt5svg5-dev
 </pre></div>
 </div>
 </div>
@@ -273,10 +262,10 @@ make -j4
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../testing.html" class="btn btn-neutral float-right" title="Test MediaElch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="openSUSE_Leap_42_3.html" class="btn btn-neutral float-right" title="openSUSE Leap 42.3 and later" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ubuntu_21_04.html" class="btn btn-neutral float-left" title="Ubuntu 21.04 and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ubuntu_18_04.html" class="btn btn-neutral float-left" title="Ubuntu 18.04 and 20.04" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
