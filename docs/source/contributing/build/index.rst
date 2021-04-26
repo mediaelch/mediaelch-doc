@@ -15,7 +15,8 @@ QMake, though.
 
    Windows<windows>
    macOS <macos>
-   Ubuntu 18.04 LTS and later<ubuntu_18_04>
+   Ubuntu 18.04 LTS and 20.04<ubuntu_18_04>
+   Ubuntu 21.04 LTS and later<ubuntu_21_04>
    openSUSE Leap 42.3 and later<openSUSE_Leap_42_3>
 
 

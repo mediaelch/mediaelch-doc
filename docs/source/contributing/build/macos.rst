@@ -31,7 +31,7 @@ Command Line Build
     svn checkout https://github.com/MediaArea/ZenLib/trunk/Source/ZenLib
 
     # Build MediaElch
-    mkdir build && cd $_
+    mkdir build && cd build
     qmake ..
     make -j4
 

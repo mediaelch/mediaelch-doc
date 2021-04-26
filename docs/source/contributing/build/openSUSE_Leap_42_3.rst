@@ -55,7 +55,7 @@ Build
 
     git clone https://github.com/Komet/MediaElch.git && cd MediaElch
     git submodule update --init
-    mkdir build && cd $_
+    mkdir build && cd build
     qmake ..
     make -j4
 
