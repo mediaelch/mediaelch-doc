@@ -1,6 +1,6 @@
-=========
-MediaElch
-=========
+=====================================
+Welcome to MediaElch's documentation!
+=====================================
 
 .. image:: images/MediaElch.png
    :align: center
@@ -12,9 +12,6 @@ from fanart.tv. Using the nfo generator, MediaElch can be used with other
 MediaCenters as well.
 
 *More in* :doc:`About MediaElch <about>`.
-
-:doc:`Download here <download>`
-
 
 .. figure:: images/screenshots/movie-main.png
    :align: center
@@ -28,7 +25,42 @@ MediaCenters as well.
    :caption: MediaElch
    :hidden:
 
-   self
    about
-   Documentation <docs>
-   Blog <https://mediaelch.github.io/mediaelch-blog/posts/>
+   release-notes
+   download
+   contributing/index
+   settings
+   license
+
+
+.. toctree::
+   :caption: Getting Started
+   :maxdepth: 1
+   :hidden:
+
+   installation
+   quick-start
+   troubleshooting
+   FAQ <faq>
+
+
+.. toctree::
+   :caption: Sections
+   :maxdepth: 1
+   :hidden:
+
+   movie/index
+   tvshow/index
+   concert/index
+   music/index
+
+
+.. toctree::
+   :caption: Features
+   :maxdepth: 1
+   :hidden:
+
+   export/index
+   Renamer <renaming>
+   kodi
+   Portable Mode <portable-mode>
