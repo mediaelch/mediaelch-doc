@@ -15,7 +15,7 @@ as the "Read the Docs Sphinx Theme".
 
 ```sh
 pip3 install --user sphinx sphinx-autobuild # Install Sphinx and a watch tool
-pip3 install --user sphinx_rtd_theme # Install Theme
+pip3 install --user pydata_sphinx_theme # Install Theme
 cd docs
 ./create_changelog.sh # Concerts the Markdown changelog to reStructuredText
 make html
