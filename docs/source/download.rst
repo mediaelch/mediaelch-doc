@@ -11,12 +11,6 @@ The server is also hosted by our team.  If the server is down, please contact us
 
 *See also:* :doc:`Install MediaElch <installation>`.
 
-.. note::
-
-    The Windows build for v2.8.8 will be updated silently soon.
-    The current version always opens a terminal. This is not intended.
-
-
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
