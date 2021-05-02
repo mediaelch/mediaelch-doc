@@ -12,6 +12,39 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+2.8.10 - *tbd*
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Movie sets: Sometimes, MediaElch crashed if movies were reloaded (`#1298 <https://github.com/Komet/MediaElch/issues/1298>`_)
+ - Main Window: Fix hard-coded window size (`#1301 <https://github.com/Komet/MediaElch/issues/1301>`_)
+ - TV Shows: If the episode filename does not start with "SxxExx", we sometimes
+   created the episode twice (`#1302 <https://github.com/Komet/MediaElch/issues/1302>`_)
+ - TV Show: The media status column for clear-art and thumbnails was always red (`#1304 <https://github.com/Komet/MediaElch/issues/1304>`_)
+
+Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - The navigation bar now uses KDE Breeze icons.
+
+Added
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+
 2.8.8 - Coridian (2021-04-26)
 ************************************
 
