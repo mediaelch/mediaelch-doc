@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Ubuntu 18.04 and 20.04 &mdash; MediaElch 2.8.10 documentation</title>
+  <title>Ubuntu 18.04 and 20.04 &mdash; MediaElch 2.8.11-dev documentation</title>
   
 
   
@@ -223,9 +223,15 @@ sudo apt install libmediainfo-dev
 sudo apt install ffmpeg
 
 <span class="c1"># Qt (alternative: download and install Qt from its official website)</span>
-sudo apt install qt5-default libqt5svg5 libqt5svg5-dev qtmultimedia5-dev qtdeclarative5-dev
-<span class="c1"># These are required for the linguist tool (for translations)</span>
-sudo apt install qttools5-dev qttools5-dev-tools
+sudo apt install qt5-default <span class="se">\</span>
+    qttools5-dev <span class="se">\</span>
+    qttools5-dev-tools <span class="se">\</span>
+    qtdeclarative5-dev <span class="se">\</span>
+    qtmultimedia5-dev <span class="se">\</span>
+    libqt5svg5 <span class="se">\</span>
+    libqt5svg5-dev <span class="se">\</span>
+    qml-module-qtquick-controls <span class="se">\</span>
+    qml-module-qtqml-models2
 </pre></div>
 </div>
 </div>

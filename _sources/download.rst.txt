@@ -2,6 +2,12 @@
 Download
 ========
 
+.. warning::
+
+   v2.8.8 and v2.8.10 have a bug that makes MediaElch crash when movies are reloaded.
+   A fix is on the way! Expected between 2021-05-10 and 2021-05-15.
+
+
 MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and
 Windows (ZIP + `chocolatey package`_).
 
