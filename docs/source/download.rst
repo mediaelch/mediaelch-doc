@@ -36,10 +36,14 @@ The server is also hosted by our team.  If the server is down, please contact us
 .. note::
 
     Supported systems are:
-      - Windows 7, 8 and 10
+      - Windows 8 and 10 and later
       - macOS 10.13 and later
       - Ubuntu 18.04 and later
       - openSUSE Tumbleweed, 15.2 and later
+
+    Supported architectures are only 64-bit x86 systems.
+    32-bit systems are not officially supported.
+
 
 Windows Chocolatey
 ==================
