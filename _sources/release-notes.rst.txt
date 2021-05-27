@@ -12,6 +12,38 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+2.8.13 - *tbd*
+************************************
+
+Bugfixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - AEBN scraper now loads movies again (`#1325 <https://github.com/Komet/MediaElch/issues/1325>`_) |br|
+   v2.8.8 introduced a bug where the movie ID was parsed incorrectly and the
+   scraping failed with a network error.
+
+Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Added
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - *tbd*
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - The movie file searcher has been reworked again. |br|
+   It now runs in another thread so that MediaElch now longer "freezes".
+
+
 2.8.12 - Coridian (2021-05-10)
 ************************************
 
