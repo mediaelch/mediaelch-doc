@@ -6,6 +6,15 @@ FAQ - Frequently Asked Questions
    :local:
    :depth: 1
 
+What is MediaElch's intent on monetizing?
+=========================================
+
+MediaElch will always be free and always be open-source.
+Both MediaElch's author and MediaElch's current maintainer have agreed on that:
+
+ - see https://github.com/Komet/MediaElch/issues/1048
+
+
 Where are MediaElchs settings stored?
 =====================================
 
