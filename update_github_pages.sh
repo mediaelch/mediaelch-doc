@@ -1,7 +1,6 @@
-#!/bin/bash
-set -e
-set -u
-set -o pipefail
+#!/usr/bin/env bash
+
+set -euo pipefail
 IFS=$'\n\t'
 
 BASE_DIR="$( cd "$(dirname "$0")"; pwd -P )"
