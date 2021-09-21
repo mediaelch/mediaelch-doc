@@ -18,6 +18,8 @@ Release Notes / Changelog
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+ - IMDb now works again (`#1088 <https://github.com/Komet/MediaElch/issues/1088>`_, `#1355 <https://github.com/Komet/MediaElch/issues/1355>`_) |br|
+   Due to changes to IMDb's website, MediaElch no longer scraped movie and TV show details.
  - AEBN scraper now loads movies again (`#1325 <https://github.com/Komet/MediaElch/issues/1325>`_) |br|
    v2.8.8 introduced a bug where the movie ID was parsed incorrectly and the
    scraping failed with a network error.
