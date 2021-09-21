@@ -2,6 +2,11 @@
 Bug Reports
 ============
 
+.. warning::
+
+   TheTvDb will stop working from October on.  MediaElch will remove support for TheTvDb in the next version.
+   Please switch to either TMDb or IMDb.  Some features such as "show all episodes" will no longer work.
+
 
 You found a bug? What now?
 ==========================
