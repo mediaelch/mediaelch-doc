@@ -29,6 +29,10 @@ Bugfixes
  - AEBN scraper now loads movies again (`#1325 <https://github.com/Komet/MediaElch/issues/1325>`_) |br|
    v2.8.8 introduced a bug where the movie ID was parsed incorrectly and the
    scraping failed with a network error.
+ - Music scrapers now correctly remove HTML entities such as ``&amp;`` from texts
+   such as biographies and reviews.
+ - AllMusic scrapes artist's biographies again (`#1379 <https://github.com/Komet/MediaElch/issues/1379>`_)
+ - Discogs scrapes years correctly again for Non-English users (`#1379 <https://github.com/Komet/MediaElch/issues/1379>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,6 +60,23 @@ Internal Improvements and Changes
  - MediaElch will check for QuaZip 1.x if ``USE_EXTERN_QUAZIP`` is provided in CMake configuration.
    If it cannot be found, ``quazip5`` is expected to exist (which is the previous behavior).
    MediaElch now also search for QuaZip headers in ``quazip/`` and no longer ``quazip5/``.
+ - CMake: Option ``ENABLE_TESTS`` was added. Without it, MediaElch's tests will
+   not be build.  The reason is that normal users, that only want to build
+   MediaElch, do not need them.
+ - QuaZip was updated to v1.1.  Note that ``-DUSE_EXTERN_QUAZIP=ON`` for CMake and
+   ``CONFIG+=USE_EXTERN_QUAZIP`` for QMake can still be used to use the system's QuaZip.
+   QuaZip v0.9 is still supported as well.
+   This step was necessary for Qt6 support.
+ - MediaElch now supports Qt6!
+
+Changes for Package Maintainers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you package MediaElch, e.g. for some Linux distributions, these notes may be important for you:
+
+ - MediaElch now fully supports Qt6!  Note however, that if you use ``USE_EXTERN_QUAZIP``
+   with Qt6, only the CMake build is supported! Qt6 with QMake is only supported
+   without ``USE_EXTERN_QUAZIP``!
 
 
 2.8.12 - Coridian (2021-05-10)
