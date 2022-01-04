@@ -6,7 +6,7 @@ Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download MediaElch's sources and initialize all Git submodules using
-``git submodule init --update`` before proceding with the steps below.
+``git submodule update --init`` before proceding with the steps below.
 
 Qt
 ----------------------------------------------------------
