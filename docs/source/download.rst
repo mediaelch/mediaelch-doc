@@ -104,14 +104,24 @@ Or you can install MediaElch per command line:
 .. code-block:: sh
 
     # openSUSE Tumbleweed
-    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Tumbleweed/home:bugwelle.repo
-    zypper refresh
-    zypper install MediaElch
+    sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Tumbleweed/home:bugwelle.repo
+    sudo zypper refresh
+    sudo zypper install MediaElch
 
     # openSUSE Leap 15.2
-    zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.2/home:bugwelle.repo
-    zypper refresh
-    zypper install MediaElch
+    sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.2/home:bugwelle.repo
+    sudo zypper refresh
+    sudo zypper install MediaElch
+
+    # openSUSE Leap 15.3
+    sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.3/home:bugwelle.repo
+    sudo zypper refresh
+    sudo zypper install MediaElch
+
+    # openSUSE Leap 15.4
+    sudo zypper addrepo https://download.opensuse.org/repositories/home:/bugwelle/15.4/home:bugwelle.repo
+    sudo zypper refresh
+    sudo zypper install MediaElch
 
 
 
