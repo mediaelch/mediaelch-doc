@@ -4,8 +4,8 @@ Download
 
 .. warning::
 
-   TheTvDb will stop working from October on.  MediaElch will remove support for TheTvDb in the next version.
-   Please switch to either TMDb or IMDb.  Some features such as "show all episodes" will no longer work.
+   TheTvDb has stopped working from October on.  MediaElch has removed support for TheTvDb in the next version v2.8.14.
+   Please switch to either TMDb or IMDb.  Some features such as "show all episodes" no longer work.
 
 
 MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and
