@@ -30,7 +30,7 @@ Then open "Git Bash" and run the following commands. Lines starting with ``#`` a
 
 It should look like the following:
 
-.. figure:: images/build/windows/git-clone.png
+.. figure:: ../../images/build/windows/git-clone.png
    :align: center
    :alt: Setup MediaElch Git Repository
 
@@ -63,14 +63,14 @@ Furthermore, further down in the installer, select the following "Developer and 
 The installation will take a while.
 
 
-.. figure:: images/build/windows/qt-install-part-1.png
+.. figure:: ../../images/build/windows/qt-install-part-1.png
    :align: center
    :alt: Qt installer (Part 1)
 
    First part of MediaElch's Qt dependencies
 
 
-.. figure:: images/build/windows/qt-install-part-2.png
+.. figure:: ../../images/build/windows/qt-install-part-2.png
    :align: center
    :alt: Qt installer (Part 2)
 
