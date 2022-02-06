@@ -8,6 +8,7 @@ Download
    Please switch to either TMDb or IMDb.  Some features such as "show all episodes" no longer work.
 
 
+
 MediaElch binaries are available for macOS, Linux (AppImage_ + repositories) and
 Windows (ZIP + `chocolatey package`_).
 

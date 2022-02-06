@@ -6,6 +6,10 @@
 docs/build
 docs/source/release-notes.rst
 
+_images/
+_sources/
+_static/
+
 /examples/
 
 *.mo
