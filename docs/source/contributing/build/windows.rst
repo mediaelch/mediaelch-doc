@@ -81,10 +81,10 @@ Other Libraries
 ----------------------------------------------------------
  1. Download and install `MediaInfo (DLL) <https://mediaarea.net/en/MediaInfo/Download/Windows>`_
  2. Download `MediaInfoLib <https://github.com/MediaArea/MediaInfoLib>`_. |br|
- 	Either use Git to clone the repository or click on "Code" -> "Download ZIP".
+    Either use Git to clone the repository or click on "Code" -> "Download ZIP".
     Copy the folder ``Source/MediaInfoDLL`` to ``path/to/MediaElch/MediaInfoDLL``
  3. Download `ZenLib <https://github.com/MediaArea/ZenLib>`_. |br|
- 	Either use Git to clone the repository or click on "Code" -> "Download ZIP".
+    Either use Git to clone the repository or click on "Code" -> "Download ZIP".
     Copy the folder ``Source/ZenLib`` to ``path/to/MediaElch/ZenLib`` |br|
 
 
