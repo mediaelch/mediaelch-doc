@@ -1,6 +1,6 @@
 # OS specific
 .directory
 .DS_Store
-
+.venv/
 docs/build
 docs/source/release-notes.rst

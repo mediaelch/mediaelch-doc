@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.13 - *tbd*
+2.8.14 - Coridian (2022-02-06)
 ************************************
 
 Notes
@@ -29,10 +29,12 @@ Bugfixes
  - AEBN scraper now loads movies again (`#1325 <https://github.com/Komet/MediaElch/issues/1325>`_) |br|
    v2.8.8 introduced a bug where the movie ID was parsed incorrectly and the
    scraping failed with a network error.
+ - ADE scraper now loads actors for VOD videos (`#1353 <https://github.com/Komet/MediaElch/issues/1353>`_)
  - Music scrapers now correctly remove HTML entities such as ``&amp;`` from texts
    such as biographies and reviews.
  - AllMusic scrapes artist's biographies again (`#1379 <https://github.com/Komet/MediaElch/issues/1379>`_)
  - Discogs scrapes years correctly again for Non-English users (`#1379 <https://github.com/Komet/MediaElch/issues/1379>`_)
+ - A crash when concerts were reloaded was fixed (`#1335 <https://github.com/Komet/MediaElch/issues/1335>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +45,8 @@ Changes
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - Advanced Settings: More default video file extensions were added (`#1383 <https://github.com/Komet/MediaElch/issues/1383>`_)
+ - Renamer: You can now use ``<seasonName>`` and ``{seasonName}`` (`#1378 <https://github.com/Komet/MediaElch/issues/1378>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
