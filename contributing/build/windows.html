@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Windows &mdash; MediaElch 2.8.14 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>Windows &mdash; MediaElch 2.8.14 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -40,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">MediaElch</span></p>
+              <p class="caption" role="heading"><span class="caption-text">MediaElch</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
@@ -68,21 +70,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Sections</span></p>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concert/index.html">Concert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../export/index.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../renaming.html">Renamer</a></li>
@@ -116,14 +118,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="windows">
-<h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="dependencies">
-<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+  <section id="windows">
+<h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline"></a></h1>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h2>
 <p>Download MediaElch’s sources and initialize all Git submodules using
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">submodule</span> <span class="pre">update</span> <span class="pre">--init</span></code> before proceding with the steps below.</p>
-<div class="section" id="qt">
-<h3>Qt<a class="headerlink" href="#qt" title="Permalink to this headline">¶</a></h3>
+<section id="qt">
+<h3>Qt<a class="headerlink" href="#qt" title="Permalink to this headline"></a></h3>
 <p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>. Run it and select the latest Qt version
 for installation (e.g. <code class="docutils literal notranslate"><span class="pre">Qt</span> <span class="pre">5.15.0</span></code> with <code class="docutils literal notranslate"><span class="pre">MinGW</span> <span class="pre">8.1.0</span> <span class="pre">32-bit</span></code> in it).
 Then select <code class="docutils literal notranslate"><span class="pre">MinGW</span> <span class="pre">8.1.0</span> <span class="pre">32-bit</span></code> in section <code class="docutils literal notranslate"><span class="pre">Developer</span> <span class="pre">and</span> <span class="pre">Designer</span> <span class="pre">Tools</span></code>.
@@ -131,42 +133,42 @@ The first option installs QT Creator, qmake etc. The second option installs
 GCC, GDB etc.</p>
 <p>Optional: If you want you can also choose <code class="docutils literal notranslate"><span class="pre">QT</span> <span class="pre">Creator</span> <span class="pre">CDB</span> <span class="pre">Debugger</span> <span class="pre">Support</span></code>
 and <code class="docutils literal notranslate"><span class="pre">Debugging</span> <span class="pre">Tools</span> <span class="pre">for</span> <span class="pre">Windows</span></code> in section <code class="docutils literal notranslate"><span class="pre">Developer</span> <span class="pre">and</span> <span class="pre">Designer</span> <span class="pre">Tools</span></code>.</p>
-</div>
-<div class="section" id="other-libraries">
-<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="other-libraries">
+<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline"></a></h3>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Download precompiled <a class="reference external" href="https://mediaarea.net/de/MediaInfo/Download/Windows">MediaInfo</a> (DLL)</li>
-<li>Download <a class="reference external" href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>. <br />
-Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/MediaInfoDLL</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaInfoDLL</span></code></li>
-<li>Download <a class="reference external" href="https://github.com/MediaArea/ZenLib">ZenLib</a>. <br />
-Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code> <br /></li>
-<li>Download and run <a class="reference external" href="https://www.msys2.org/">MSYS2 installer</a>. <br />
+<li><p>Download precompiled <a class="reference external" href="https://mediaarea.net/de/MediaInfo/Download/Windows">MediaInfo</a> (DLL)</p></li>
+<li><p>Download <a class="reference external" href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>. <br />
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/MediaInfoDLL</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaInfoDLL</span></code></p></li>
+<li><p>Download <a class="reference external" href="https://github.com/MediaArea/ZenLib">ZenLib</a>. <br />
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code> <br /></p></li>
+<li><p>Download and run <a class="reference external" href="https://www.msys2.org/">MSYS2 installer</a>. <br />
 Install <code class="docutils literal notranslate"><span class="pre">mingw-w64-i686-quazip</span></code> using included <a class="reference external" href="https://www.msys2.org/">pacman</a> utility <br />
 Copy the folder <code class="docutils literal notranslate"><span class="pre">msys64/mingw32/include/quazip5</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/quazip5</span></code> <br />
 Copy the file <code class="docutils literal notranslate"><span class="pre">msys64/mingw32/include/zconf.h</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/quazip5/zconf.h</span></code> <br />
 Copy the file <code class="docutils literal notranslate"><span class="pre">msys64/mingw32/include/zlib.h</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/quazip5/zlib.h</span></code> <br />
-Copy the file <code class="docutils literal notranslate"><span class="pre">msys64/mingw32/bin/libquazip5.dll</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/libquazip5.dll</span></code> (The version <code class="docutils literal notranslate"><span class="pre">8.1.0</span></code> matches your “Qt with MinGW” installation.)</li>
+Copy the file <code class="docutils literal notranslate"><span class="pre">msys64/mingw32/bin/libquazip5.dll</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/libquazip5.dll</span></code> (The version <code class="docutils literal notranslate"><span class="pre">8.1.0</span></code> matches your “Qt with MinGW” installation.)</p></li>
 </ol>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="build">
-<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline"></a></h2>
 <p>Open the MediaElch project (<code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaElch.pro</span></code>) using
 QtCreator, configure it (one click on the <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">&amp;</span> <span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Desktop</span> <span class="pre">Qt</span> <span class="pre">5.15.0</span> <span class="pre">MinGW</span> <span class="pre">32-bit</span> <span class="pre">&gt;</span> <span class="pre">Build</span></code>
 in the <code class="docutils literal notranslate"><span class="pre">Projects</span></code> ribbon is enough), insert <code class="docutils literal notranslate"><span class="pre">CONFIG</span> <span class="pre">+=</span> <span class="pre">USE_EXTERN_QUAZIP</span></code>
 on the new line at the top of <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaElch.pro</span></code> and click
 “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>). (The version <code class="docutils literal notranslate"><span class="pre">5.15.0</span></code> matches your “Qt with MinGW” installation.)</p>
-</div>
-<div class="section" id="ffmpeg-executable">
-<h2>ffmpeg executable<a class="headerlink" href="#ffmpeg-executable" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="ffmpeg-executable">
+<h2>ffmpeg executable<a class="headerlink" href="#ffmpeg-executable" title="Permalink to this headline"></a></h2>
 <p>You have to download <a class="reference external" href="https://ffmpeg.zeranoe.com/builds/">ffmpeg</a> to be able
 to create random screenshots of video files. After building MediaElch place
 <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> inside a new folder <code class="docutils literal notranslate"><span class="pre">vendor</span></code> which must be placed in the same
 directory as <code class="docutils literal notranslate"><span class="pre">MediaElch.exe</span></code>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
