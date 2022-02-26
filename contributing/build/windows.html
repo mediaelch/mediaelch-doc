@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Windows &mdash; MediaElch 2.8.14 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <title>Windows &mdash; MediaElch 2.8.14 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -40,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">MediaElch</span></p>
+              <p class="caption" role="heading"><span class="caption-text">MediaElch</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
@@ -68,21 +70,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Sections</span></p>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concert/index.html">Concert</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../export/index.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../renaming.html">Renamer</a></li>
@@ -116,13 +118,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="windows">
-<h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
+  <section id="windows">
+<h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline"></a></h1>
 <p>This page will take you through downloading, building and installing MediaElch from source.</p>
-<div class="section" id="dependencies-and-source-code">
-<h2>Dependencies and Source Code<a class="headerlink" href="#dependencies-and-source-code" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="git-and-source-code">
-<h3>Git and Source Code<a class="headerlink" href="#git-and-source-code" title="Permalink to this headline">¶</a></h3>
+<section id="dependencies-and-source-code">
+<h2>Dependencies and Source Code<a class="headerlink" href="#dependencies-and-source-code" title="Permalink to this headline"></a></h2>
+<section id="git-and-source-code">
+<h3>Git and Source Code<a class="headerlink" href="#git-and-source-code" title="Permalink to this headline"></a></h3>
 <p>MediaElch uses Git aus its version control system.  Download and install it
 from <a class="reference external" href="https://git-scm.com/download/win">git-scm.com</a>.</p>
 <p>Then open “Git Bash” and run the following commands. Lines starting with <code class="docutils literal notranslate"><span class="pre">#</span></code> are comments.</p>
@@ -137,13 +139,15 @@ git submodule update --init
 </pre></div>
 </div>
 <p>It should look like the following:</p>
-<div class="figure align-center" id="id1">
+<figure class="align-center" id="id1">
 <img alt="Setup MediaElch Git Repository" src="../../_images/git-clone.png" />
-<p class="caption"><span class="caption-text">Clone and setup MediaElch’s source code.</span></p>
-</div>
-</div>
-<div class="section" id="qt">
-<h3>Qt<a class="headerlink" href="#qt" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-text">Clone and setup MediaElch’s source code.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="qt">
+<h3>Qt<a class="headerlink" href="#qt" title="Permalink to this headline"></a></h3>
 <p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>.  On the download page, you will need to
 navigate to “Downloads for open source users” -&gt; “Go open source” -&gt; scroll down
 -&gt; “Download the Qt Inline Installer” -&gt; “Download”.  You will need a Qt account
@@ -151,45 +155,49 @@ to install Qt.  There may be other sources for Qt which are not discussed on
 this page.</p>
 <p>Run the installer and select Qt 5.15.2 with the following components:</p>
 <ul class="simple">
-<li>MinGW 8.1.0 64-bit</li>
-<li>Sources</li>
+<li><p>MinGW 8.1.0 64-bit</p></li>
+<li><p>Sources</p></li>
 </ul>
 <p>Furthermore, further down in the installer, select the following “Developer and Designer Tools”:</p>
 <ul class="simple">
-<li>Qt Creator</li>
-<li>Qt Design Studio</li>
-<li>MinGW 8.1.0 64-bit</li>
-<li>CMake</li>
-<li>Ninja</li>
-<li>OpenSSL 1.1.1j Toolkit</li>
+<li><p>Qt Creator</p></li>
+<li><p>Qt Design Studio</p></li>
+<li><p>MinGW 8.1.0 64-bit</p></li>
+<li><p>CMake</p></li>
+<li><p>Ninja</p></li>
+<li><p>OpenSSL 1.1.1j Toolkit</p></li>
 </ul>
 <p>The installation will take a while.</p>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <img alt="Qt installer (Part 1)" src="../../_images/qt-install-part-1.png" />
-<p class="caption"><span class="caption-text">First part of MediaElch’s Qt dependencies</span></p>
-</div>
-<div class="figure align-center" id="id3">
+<figcaption>
+<p><span class="caption-text">First part of MediaElch’s Qt dependencies</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
 <img alt="Qt installer (Part 2)" src="../../_images/qt-install-part-2.png" />
-<p class="caption"><span class="caption-text">First part of MediaElch’s Qt dependencies</span></p>
-</div>
-</div>
-<div class="section" id="other-libraries">
-<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-text">First part of MediaElch’s Qt dependencies</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="other-libraries">
+<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this headline"></a></h3>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Download and install <a class="reference external" href="https://mediaarea.net/en/MediaInfo/Download/Windows">MediaInfo (DLL)</a></li>
-<li>Download <a class="reference external" href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>. <br />
+<li><p>Download and install <a class="reference external" href="https://mediaarea.net/en/MediaInfo/Download/Windows">MediaInfo (DLL)</a></p></li>
+<li><p>Download <a class="reference external" href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>. <br />
 Either use Git to clone the repository or click on “Code” -&gt; “Download ZIP”.
-Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/MediaInfoDLL</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaInfoDLL</span></code></li>
-<li>Download <a class="reference external" href="https://github.com/MediaArea/ZenLib">ZenLib</a>. <br />
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/MediaInfoDLL</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/MediaInfoDLL</span></code></p></li>
+<li><p>Download <a class="reference external" href="https://github.com/MediaArea/ZenLib">ZenLib</a>. <br />
 Either use Git to clone the repository or click on “Code” -&gt; “Download ZIP”.
-Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code> <br /></li>
+Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code> <br /></p></li>
 </ol>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="build">
-<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline"></a></h2>
 <p>Open the MediaElch project (<code class="docutils literal notranslate"><span class="pre">MediaElch.pro</span></code>) using QtCreator.
 In the new window, configure the project using the default values
 (should be “Desktop Qt 5.15.2 MinGW 64-bit”).</p>
@@ -202,15 +210,15 @@ the build directory could not be created or that a dependency is missing
 (for example QuaZip) if you haven’t initialized the Git submodules.</p>
 <p>It may take between 5 to 20min to build MediaElch, depending on your
 machine.</p>
-</div>
-<div class="section" id="ffmpeg-executable">
-<h2>ffmpeg executable<a class="headerlink" href="#ffmpeg-executable" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="ffmpeg-executable">
+<h2>ffmpeg executable<a class="headerlink" href="#ffmpeg-executable" title="Permalink to this headline"></a></h2>
 <p>You have to download <a class="reference external" href="https://ffmpeg.zeranoe.com/builds/">ffmpeg</a> to be able
 to create random screenshots of video files.  After building MediaElch place
 <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> inside a new folder <code class="docutils literal notranslate"><span class="pre">vendor</span></code> which must be placed in the same
 directory as <code class="docutils literal notranslate"><span class="pre">MediaElch.exe</span></code>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

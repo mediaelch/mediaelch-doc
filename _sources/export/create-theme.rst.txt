@@ -33,8 +33,8 @@ Open ``metadata.xml`` and adjust the information inside:
  - add ``description`` tags in languages you want, e.g. ``<description lang="de">...</description>``
  - ``author`` should be your name
  - ``version`` needs to be a numeric version of the format ```major.minor[.patch]``
- - ``medialech-min`` needs to be a numeric version of the oldest supported version of MediaElch, e.g. ``2.8.14``
- - ``medialech-max`` should only be set if there are known issues with a certain MediaElch version
+ - ``mediaelch-min`` needs to be a numeric version of the oldest supported version of MediaElch, e.g. ``2.8.14``
+ - ``mediaelch-max`` should only be set if there are known issues with a certain MediaElch version
  - ``supports`` contains the sections which could be exported with your theme
    - ``section`` supported section, can appear multiple times. Possible values: ``movies``, ``tvshows``, ``concerts``
  - ``engine`` should have the value ``simple`` as there is currently only one supported export engine

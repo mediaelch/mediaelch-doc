@@ -23,7 +23,10 @@ Notes
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - Movies: Downloading multiple movies (and their fanart) crashed MediaElch (`#1408 <https://github.com/Komet/MediaElch/issues/1408>`_)
+ - TV Shows: When selecting TV shows/seasons/episodes on Linux, the background
+   was just white (`#1412 <https://github.com/Komet/MediaElch/issues/1412>`_)
+ - UI: Fix spacing for checkboxes in movie search window
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -33,7 +36,8 @@ Changes
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - If streamdetails can't be loaded (e.g. because libmediainfo is missing), a click on the button
+   "Reload Streamdetails" will now tell your (`#1414 <https://github.com/Komet/MediaElch/issues/1414>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
