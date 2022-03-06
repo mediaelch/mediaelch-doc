@@ -21,10 +21,11 @@ pipeline {
   stages {
 
     stage("Checkout") {
-      when { branch 'jenkins' }
       steps {
         checkout scm
         // Ensure that gh-pages is available.
+        // Requires that the ref-spec is configured as
+        //   +refs/heads/*:refs/remotes/@{remote}/*
         sh '''
           if ! git rev-parse --verify gh-pages; then
             git branch gh-pages origin/gh-pages;
@@ -34,8 +35,9 @@ pipeline {
     }
 
     stage('Build and Publish Documentation') {
+      when { branch 'master' }
       steps {
-        withCredentials([gitUsernamePassword(credentialsId: 'ef9dd6c5-be4f-405a-922e-536b5d7114de', gitToolName: 'Default')]) {
+        withCredentials([gitUsernamePassword(credentialsId: 'mediaelch-org-github', gitToolName: 'Default')]) {
           sh './update_github_pages.sh'
         }
       }

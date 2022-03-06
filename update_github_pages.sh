@@ -25,7 +25,7 @@ fi
 
 # Ensure that the worktree is relative.  This is important
 # to have it work in Docker containers as well.
-if grep 'gitdir: /' dist/.git; then
+if grep 'gitdir: /' dist/.git > /dev/null; then
 	sed -i.bak 's$/.*/.git$../.git$' ./dist/.git
 	rm ./dist/.git.bak
 fi
