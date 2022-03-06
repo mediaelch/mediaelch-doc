@@ -2,6 +2,7 @@
 .directory
 .DS_Store
 .venv/
+dist/
 
 docs/build
 docs/source/release-notes.rst

@@ -3,48 +3,50 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-BASE_DIR="$( cd "$(dirname "$0")"; pwd -P )"
+cd "$(dirname "$0")"
+SCRIPT_DIR="$(pwd)"
 
-cd "${BASE_DIR}"
+###############################################################################
+# Create a workspace which is essentially just our gh-pages branch.
+#
+# For git workspace, see:
+# https://gist.github.com/cobyism/4730490?permalink_comment_id=2375522#gistcomment-2375522
+###############################################################################
 
-# get a clean master branch assuming
-git checkout master
-git pull origin master
-git clean -df
-git checkout -- .
-git fetch --all
-
-# build html docs from sphinx files
-pushd docs
-./create_changelog.sh
-pushd source
-sphinx-build -b html . "../../_build"
-popd
-popd
-
-# create or use orphaned gh-pages branch
-branch_name=gh-pages
-if [ "$(git branch --list "$branch_name")" ]
-then
-	git stash
-	git checkout $branch_name
-	git pull origin $branch_name
-	git checkout stash -- . 2> /dev/null || echo "Nothing on stash stack" # force git stash to overwrite added files
+if [[ ! -d dist ]]; then
+  git worktree add --quiet dist gh-pages
 else
-	git checkout --orphan "$branch_name"
+  cd dist
+  git reset --hard HEAD
+  # Assure we pull the current branch from origin
+  git pull origin "$(git rev-parse --abbrev-ref HEAD)"
+  cd "${SCRIPT_DIR}"
 fi
 
-if [ -d "_build" ]
-then
-	(ls | grep -v "_build" | xargs rm -r) || echo "Nothing to clean"
-	mv _build/* . && rm -rf "_build"
-	git add .
-	git commit -m "new pages version $(date)"
+# Ensure that the worktree is relative.  This is important
+# to have it work in Docker containers as well.
+if grep 'gitdir: /' dist/.git; then
+	sed -i.bak 's$/.*/.git$../.git$' ./dist/.git
+	rm ./dist/.git.bak
+fi
+
+###############################################################################
+# Build HTML Docs from Sphinx Files
+###############################################################################
+
+./docs/create_changelog.sh
+sphinx-build --color -b html docs/source "./dist"
+rm -rf ./dist/.doctrees ./dist/.buildinfo
+
+cd ./dist
+git add .
+if ! git diff --cached --quiet; then
+	git commit -m "New pages version $(date)"
 	git push origin gh-pages
 	# github.com recognizes gh-pages branch and create pages
 	# url scheme https//:[github-handle].github.io/[repository]
 else
-	echo "directory _build does not exists"
+	echo "Nothing to commit!"
 fi
 
-git checkout master
+cd ..
