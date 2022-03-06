@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ubuntu 18.04 and 20.04 &mdash; MediaElch 2.8.14 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -118,9 +117,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ubuntu-18-04-and-20-04">
+  <div class="section" id="ubuntu-18-04-and-20-04">
 <h1>Ubuntu 18.04 and 20.04<a class="headerlink" href="#ubuntu-18-04-and-20-04" title="Permalink to this headline"></a></h1>
-<section id="dependencies">
+<div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
 sudo apt install build-essential git
@@ -141,8 +140,8 @@ sudo apt install qt5-default <span class="se">\</span>
     qml-module-qtqml-models2
 </pre></div>
 </div>
-</section>
-<section id="build">
+</div>
+<div class="section" id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this headline"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
 git submodule update --init
@@ -151,15 +150,15 @@ qmake ..
 make -j4
 </pre></div>
 </div>
-</section>
-<section id="install">
+</div>
+<div class="section" id="install">
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this headline"></a></h2>
 <p>Run following command after building MediaElch to install it on your system.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

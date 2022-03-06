@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create an Export Theme &mdash; MediaElch 2.8.14 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -120,19 +119,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="create-an-export-theme">
+  <div class="section" id="create-an-export-theme">
 <h1>Create an Export Theme<a class="headerlink" href="#create-an-export-theme" title="Permalink to this headline"></a></h1>
-<nav class="contents local" id="contents">
+<div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></p></li>
 <li><p><a class="reference internal" href="#customizing-the-templates" id="id2">Customizing the templates</a></p></li>
 <li><p><a class="reference internal" href="#publishing-your-theme" id="id3">Publishing your theme</a></p></li>
 <li><p><a class="reference internal" href="#placeholders" id="id4">Placeholders</a></p></li>
 </ul>
-</nav>
+</div>
 <p>You can also create a new export theme in a few steps:</p>
-<section id="installing-the-dummy-theme">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Installing the Dummy theme</a><a class="headerlink" href="#installing-the-dummy-theme" title="Permalink to this headline"></a></h2>
+<div class="section" id="installing-the-dummy-theme">
+<h2><a class="toc-backref" href="#id1">Installing the Dummy theme</a><a class="headerlink" href="#installing-the-dummy-theme" title="Permalink to this headline"></a></h2>
 <p>At first you should install the “Dummy Theme”.
 The files will be located at the following places:</p>
 <blockquote>
@@ -144,7 +143,7 @@ The files will be located at the following places:</p>
 </div></blockquote>
 <p>Now just rename the dummy folder as you like. The new name should not
 contain any special characters or spaces and match the name of your theme.</p>
-<section id="adjust-the-themes-metadata">
+<div class="section" id="adjust-the-themes-metadata">
 <h3>Adjust the themes metadata<a class="headerlink" href="#adjust-the-themes-metadata" title="Permalink to this headline"></a></h3>
 <p>Open <code class="docutils literal notranslate"><span class="pre">metadata.xml</span></code> and adjust the information inside:</p>
 <blockquote>
@@ -164,10 +163,10 @@ contain any special characters or spaces and match the name of your theme.</p>
 </div></blockquote>
 <p>If you want to have your theme available for all MediaElch users, open an issue in MediaElch’s meta repository:
 <a class="reference external" href="https://github.com/mediaelch/mediaelch-meta">https://github.com/mediaelch/mediaelch-meta</a></p>
-</section>
-</section>
-<section id="customizing-the-templates">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Customizing the templates</a><a class="headerlink" href="#customizing-the-templates" title="Permalink to this headline"></a></h2>
+</div>
+</div>
+<div class="section" id="customizing-the-templates">
+<h2><a class="toc-backref" href="#id2">Customizing the templates</a><a class="headerlink" href="#customizing-the-templates" title="Permalink to this headline"></a></h2>
 <p>All other files are just plain HTML files with some placeholders.</p>
 <p>If you place other files inside your theme folder as the ones mentioned
 below they will be copied on export. This means you can also create subfolders
@@ -180,32 +179,32 @@ This will insert an image with the maximum size of <code class="docutils literal
 aspect ratio will be kept. For every image you include you should place a default
 image (png format) in the defaults folder which should be named (for example):
 <code class="docutils literal notranslate"><span class="pre">movie_poster_200x400.png</span></code></p>
-<section id="movies">
+<div class="section" id="movies">
 <h3>Movies<a class="headerlink" href="#movies" title="Permalink to this headline"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">movies.html</span></code> is a list view which should show the movies title. <br />
 <code class="docutils literal notranslate"><span class="pre">movies/movie.html</span></code> is the template for all information about a movie</p>
-</section>
-<section id="tv-shows-and-episodes">
+</div>
+<div class="section" id="tv-shows-and-episodes">
 <h3>TV Shows and Episodes<a class="headerlink" href="#tv-shows-and-episodes" title="Permalink to this headline"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">tvshows.html</span></code> is a list view which should show the TV shows title. <br />
 <code class="docutils literal notranslate"><span class="pre">tvshows/tvshow.html</span></code> is the template for all information about
 the show and should contain a list of all episodes. <br />
 <code class="docutils literal notranslate"><span class="pre">episodes/episode.html</span></code> should contain all information about an episode.</p>
-</section>
-<section id="concerts">
+</div>
+<div class="section" id="concerts">
 <h3>Concerts<a class="headerlink" href="#concerts" title="Permalink to this headline"></a></h3>
 <p><em>concerts.html</em> is a list view which should show the concerts title. <br />
 <code class="docutils literal notranslate"><span class="pre">concerts/concert.html</span></code> is the template for all information about a concert.</p>
-</section>
-</section>
-<section id="publishing-your-theme">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Publishing your theme</a><a class="headerlink" href="#publishing-your-theme" title="Permalink to this headline"></a></h2>
+</div>
+</div>
+<div class="section" id="publishing-your-theme">
+<h2><a class="toc-backref" href="#id3">Publishing your theme</a><a class="headerlink" href="#publishing-your-theme" title="Permalink to this headline"></a></h2>
 <p>As MediaElch is available for free it would be nice if you would share
 your created theme. Just create a zip archive and send it to
 <a class="reference external" href="mailto:support&#37;&#52;&#48;mediaelch&#46;de">support<span>&#64;</span>mediaelch<span>&#46;</span>de</a>. Thank you!</p>
-</section>
-<section id="placeholders">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Placeholders</a><a class="headerlink" href="#placeholders" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="placeholders">
+<h2><a class="toc-backref" href="#id4">Placeholders</a><a class="headerlink" href="#placeholders" title="Permalink to this headline"></a></h2>
 <p>Here is a list of all placeholders that are available:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">{{</span> BEGIN_BLOCK_MOVIE <span class="o">}}</span>
     <span class="o">{{</span> MOVIE.ID <span class="o">}}</span>
@@ -367,7 +366,7 @@ your created theme. Just create a zip archive and send it to
 <span class="o">{{</span> END_BLOCK_TVSHOW <span class="o">}}</span>
 </pre></div>
 </div>
-<section id="file-info">
+<div class="section" id="file-info">
 <h3>File Info<a class="headerlink" href="#file-info" title="Permalink to this headline"></a></h3>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">{{</span> FILEINFO.WIDTH <span class="o">}}</span>
 <span class="o">{{</span> FILEINFO.HEIGHT <span class="o">}}</span>
@@ -380,9 +379,9 @@ your created theme. Just create a zip archive and send it to
 <span class="o">{{</span> FILEINFO.SUBTITLES.LANGUAGE <span class="o">}}</span> <span class="c1"># all subtitle languages joined by &quot;|&quot;</span>
 </pre></div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
