@@ -4,15 +4,22 @@ Windows
 
 This page will take you through downloading, building and installing MediaElch from source.
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Dependencies and Source Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you can compile MediaElch, you first need to install its dependencies.
+These include a compiler, the source code and more.
+
 
 Git and Source Code
 ----------------------------------------------------------
 
 MediaElch uses Git aus its version control system.  Download and install it
-from `git-scm.com <https://git-scm.com/download/win>`_.
-
+from `git-scm.com <https://git-scm.com/download/win>`_.  The default values
+of the setup guide are good. |br|
 Then open "Git Bash" and run the following commands. Lines starting with ``#`` are comments.
 
 
@@ -41,12 +48,12 @@ Qt
 ----------------------------------------------------------
 
 Download the `Qt online installer`_.  On the download page, you will need to
-navigate to "Downloads for open source users" -> "Go open source" -> scroll down
--> "Download the Qt Inline Installer" -> "Download".  You will need a Qt account
+navigate to "Downloads for open source users" ➞ "Go open source" ➞ scroll down
+➞ "Download the Qt Inline Installer" ➞ "Download".  You will need a Qt account
 to install Qt.  There may be other sources for Qt which are not discussed on
 this page.
 
-Run the installer and select Qt 5.15.2 with the following components:
+Run the installer and select Qt 5.15.2 (under section "Qt") with the following components:
 
 - MinGW 8.1.0 64-bit
 - Sources
@@ -60,7 +67,8 @@ Furthermore, further down in the installer, select the following "Developer and 
 - Ninja
 - OpenSSL 1.1.1j Toolkit
 
-The installation will take a while.
+The installation will take a while.  Below are screenshots that show how the
+installer will look like with the selected items.
 
 
 .. figure:: ../../images/build/windows/qt-install-part-1.png
@@ -81,10 +89,10 @@ Other Libraries
 ----------------------------------------------------------
  1. Download and install `MediaInfo (DLL) <https://mediaarea.net/en/MediaInfo/Download/Windows>`_
  2. Download `MediaInfoLib <https://github.com/MediaArea/MediaInfoLib>`_. |br|
-    Either use Git to clone the repository or click on "Code" -> "Download ZIP".
+    Either use Git to clone the repository or click on "Code" ➞ "Download ZIP".
     Copy the folder ``Source/MediaInfoDLL`` to ``path/to/MediaElch/MediaInfoDLL``
  3. Download `ZenLib <https://github.com/MediaArea/ZenLib>`_. |br|
-    Either use Git to clone the repository or click on "Code" -> "Download ZIP".
+    Either use Git to clone the repository or click on "Code" ➞ "Download ZIP".
     Copy the folder ``Source/ZenLib`` to ``path/to/MediaElch/ZenLib`` |br|
 
 
@@ -95,10 +103,25 @@ Open the MediaElch project (``MediaElch.pro``) using QtCreator.
 In the new window, configure the project using the default values
 (should be "Desktop Qt 5.15.2 MinGW 64-bit").
 
+
+.. figure:: ../../images/build/windows/qt-creator-configure-button.png
+   :align: center
+   :alt: Screenshot showing Qt Creator Configure Button
+
+   Qt Creator Configure Button
+
 You can ignore any errors/warning regarding the command "sed".
 
 On the bottom left, click on the "Run" button.
 You can adapt the build directory in the "Projects" tab.
+
+
+.. figure:: ../../images/build/windows/qt-creator-build-button.png
+   :align: center
+   :alt: Screenshot showing Qt Creator Build Button on bottom right
+
+   Qt Creator Build Button
+
 
 If the build was successfull, MediaElch will start.  Otherwise, read the error
 messages to see whether it may be an issue with your setup. It could be that
