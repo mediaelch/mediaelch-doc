@@ -12,13 +12,8 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.15 - *tbd*
+2.8.16 - 2022-03-13
 ************************************
-
-Notes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
 
 Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,27 +23,12 @@ Bugfixes
    was just white (`#1412 <https://github.com/Komet/MediaElch/issues/1412>`_)
  - UI: Fix spacing for checkboxes in movie search window
 
-Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
-
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - If streamdetails can't be loaded (e.g. because libmediainfo is missing), a click on the button
    "Reload Streamdetails" will now tell your (`#1414 <https://github.com/Komet/MediaElch/issues/1414>`_)
  - More default sort tokens for other languages were added (`#1421 <https://github.com/Komet/MediaElch/issues/1421>`_)
-
-Removed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
-
-Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
 
 
 2.8.14 - Coridian (2022-02-06)
