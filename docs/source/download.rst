@@ -4,7 +4,7 @@ Download
 
 .. warning::
 
-   TheTvDb has stopped working from October on.  MediaElch has removed support for TheTvDb in the next version v2.8.14.
+   TheTvDb has stopped working from October on.  MediaElch has removed support for TheTvDb in version v2.8.14 and later.
    Please switch to either TMDb or IMDb.  Some features such as "show all episodes" no longer work.
 
 
@@ -21,21 +21,21 @@ The server is also hosted by our team.  If the server is down, please contact us
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Windows           | 2.8.14  (GitHub)   | |gh_pages_release|                            |
+| Windows           | 2.8.16  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.14  (Mirror)   | |mirror_release|                              |
+|                   | 2.8.16  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |mirror_nightly_windows|                      |
 +-------------------+--------------------+-----------------------------------------------+
-| macOS             | 2.8.14  (GitHub)   | |gh_pages_release|                            |
+| macOS             | 2.8.16  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.14  (Mirror)   | |mirror_release|                              |
+|                   | 2.8.16  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |mirror_nightly_macOS|                        |
 +-------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)  | 2.8.14  (GitHub)   | |gh_pages_release|                            |
+| Linux (AppImage)  | 2.8.16  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.14  (Mirror)   | |mirror_release|                              |
+|                   | 2.8.16  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |mirror_nightly_linux|                        |
 +-------------------+--------------------+-----------------------------------------------+
@@ -129,19 +129,19 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_release| image:: https://img.shields.io/badge/version-v2.8.14-blue.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.14
+.. |gh_pages_release| image:: https://img.shields.io/badge/version-v2.8.16-blue.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.16
 
-.. |mirror_release| image:: https://img.shields.io/badge/version-v2.8.14-blue.svg
-   :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.14/
+.. |mirror_release| image:: https://img.shields.io/badge/version-v2.8.16-blue.svg
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.16/
 
-.. |mirror_nightly_linux| image:: https://img.shields.io/badge/Linux-v2.8.15--dev-blue.svg
+.. |mirror_nightly_linux| image:: https://img.shields.io/badge/Linux-v2.8.17--dev-blue.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
 
-.. |mirror_nightly_macOS| image:: https://img.shields.io/badge/macOS-v2.8.15--dev-blue.svg
+.. |mirror_nightly_macOS| image:: https://img.shields.io/badge/macOS-v2.8.17--dev-blue.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
 
-.. |mirror_nightly_windows| image:: https://img.shields.io/badge/Windows-v2.8.15--dev-blue.svg
+.. |mirror_nightly_windows| image:: https://img.shields.io/badge/Windows-v2.8.17--dev-blue.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows/
 
 
