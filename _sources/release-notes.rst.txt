@@ -27,11 +27,16 @@ Bugfixes
  - UI: The "subtitle" column of movies is now also green if there are external subtitles (`#1435 <https://github.com/Komet/MediaElch/issues/1435>`_)
  - Renamer: If subtitles are renamed, movie is marked "changed" (`#1432 <https://github.com/Komet/MediaElch/issues/1432>`_) |br|
    This is necessary to update the ``<subtitle>`` tag in the NFO file.
+ - VideoBuster: Fix searching & scraping of movies
+ - IMDb: 
+   - Fix runtime scraping
+   - Fix rating scraping of TV episodes (`#1441 <https://github.com/Komet/MediaElch/issues/1441>`_)
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - Network proxy is disabled (per default) for Kodi Synchronisation (`#1430 <https://github.com/Komet/MediaElch/issues/1430>`_) |br|
+   This can be re-enabled in MediaElch's network settings. 
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
