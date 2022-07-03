@@ -32,12 +32,14 @@ Bugfixes
    - Fix runtime scraping
    - Fix rating scraping of TV episodes (`#1441 <https://github.com/Komet/MediaElch/issues/1441>`_)
  - HotMovies: Search and scraping of ratings was fixed
+ - Fixed crash if custom movie scraper was used with adult scrapers
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Network proxy is disabled (per default) for Kodi Synchronisation (`#1430 <https://github.com/Komet/MediaElch/issues/1430>`_) |br|
    This can be re-enabled in MediaElch's network settings. 
+ - Windows: Qt was updated to 5.15.3
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
