@@ -5,6 +5,8 @@ Build MediaElch
 MediaElch can be build using ``qmake`` and ``CMake``.
 Using `QtCreator`_ is supported and advised.
 
+We support Qt 5 and Qt 6.
+
 CMake is supported as well. Following instructions will use
 QMake, though.
 
