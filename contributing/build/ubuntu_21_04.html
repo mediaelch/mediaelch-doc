@@ -14,7 +14,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -61,6 +63,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_42_3.html">openSUSE Leap 42.3 and later</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fedora_36.html">Fedora 36 and later</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
@@ -73,7 +76,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Support &amp; Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sections</span></p>
@@ -118,9 +121,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="ubuntu-21-04-and-later">
-<h1>Ubuntu 21.04 and later<a class="headerlink" href="#ubuntu-21-04-and-later" title="Permalink to this headline"></a></h1>
+<h1>Ubuntu 21.04 and later<a class="headerlink" href="#ubuntu-21-04-and-later" title="Permalink to this heading"></a></h1>
 <div class="section" id="dependencies">
-<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h2>
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
 sudo apt install build-essential git
 sudo apt install libcurl4-gnutls-dev <span class="c1"># or libcurl4-openssl-dev</span>
@@ -148,8 +151,9 @@ sudo apt install <span class="se">\</span>
 </div>
 </div>
 <div class="section" id="build">
-<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline"></a></h2>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git
+<span class="nb">cd</span> MediaElch
 git submodule update --init
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
 qmake ..
@@ -158,7 +162,7 @@ make -j4
 </div>
 </div>
 <div class="section" id="install">
-<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline"></a></h2>
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this heading"></a></h2>
 <p>Run following command after building MediaElch to install it on your system.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
 </pre></div>

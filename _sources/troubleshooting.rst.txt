@@ -1,6 +1,6 @@
-===============
-Troubleshooting
-===============
+=========================
+Support & Troubleshooting
+=========================
 
 Problems using MediaElch? If you run into any problems, please try following
 steps before issuing a new bug.

@@ -33,19 +33,28 @@ Bugfixes
    - Fix rating scraping of TV episodes (`#1441 <https://github.com/Komet/MediaElch/issues/1441>`_)
  - HotMovies: Search and scraping of ratings was fixed
  - Fixed crash if custom movie scraper was used with adult scrapers
+ - Kodi NFO files will only contain ``<uniqueid>`` if there are valid ones
+ - TMDb TV now scrapes the full cast of a TV show instead of only the last season's (`#1454 <https://github.com/Komet/MediaElch/issues/1454>`_)
+ - A crash in the image dialog was fixed
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Network proxy is disabled (per default) for Kodi Synchronisation (`#1430 <https://github.com/Komet/MediaElch/issues/1430>`_) |br|
    This can be re-enabled in MediaElch's network settings. 
- - Windows: Qt was updated to 5.15.3
+ - Windows: Qt was updated to 5.15.5
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - Renamer: Placeholder input fields now provide examples through a drop-down menu (`#657 <https://github.com/Komet/MediaElch/issues/657>`_) |br|
    Only few are shown by default.  If you want more, let us know by opening an issue on GitHub.
+ - CSV Exporter: Field "type" was added for all export types; field "last modified" was
+   added for movies (`#1456 <https://github.com/Komet/MediaElch/issues/1456>`_)
+ - TMDb for concerts:
+   - load ratings' vote-count (`#1467 <https://github.com/Komet/MediaElch/issues/1467>`_)
+   - load original title (`#1468 <https://github.com/Komet/MediaElch/issues/1468>`_)
+ - TvMaze now loads an episode's rating (`#1471 <https://github.com/Komet/MediaElch/issues/1471>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -57,7 +66,7 @@ Removed
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - Git: We started to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 
 2.8.16 - 2022-03-13

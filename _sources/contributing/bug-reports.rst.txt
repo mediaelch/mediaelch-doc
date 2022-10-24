@@ -4,12 +4,13 @@ Bug Reports
 
 .. warning::
 
-   TheTvDb will stop working from October on.  MediaElch will remove support for TheTvDb in the next version.
-   Please switch to either TMDb or IMDb.  Some features such as "show all episodes" will no longer work.
+   TheTvDb has stopped working since October 2021.  MediaElch will remove support for TheTvDb in the next versions.
+   Please switch to either TMDb or IMDb.  Some features such as "show all episodes" will no longer work (will be added again).
 
 
 You found a bug? What now?
 ==========================
+
 Time to report it!
 
 MediaElch's issue tracker is available on GitHub: https://github.com/Komet/MediaElch/issues

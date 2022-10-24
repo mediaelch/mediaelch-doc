@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build MediaElch &mdash; MediaElch 2.8.16 documentation</title>
+  <title>Fedora 36 and later &mdash; MediaElch 2.8.16 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
@@ -21,8 +21,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Windows" href="windows.html" />
-    <link rel="prev" title="Translations" href="../translations.html" /> 
+    <link rel="next" title="Test MediaElch" href="../testing.html" />
+    <link rel="prev" title="openSUSE Leap 42.3 and later" href="openSUSE_Leap_42_3.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,13 +52,18 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Contributing &amp; Build</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../bug-reports.html">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../translations.html">Translate MediaElch</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Build MediaElch</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Build MediaElch</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="windows.html">Windows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="macos.html">macOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and 20.04</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_21_04.html">Ubuntu 21.04 LTS and later</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_42_3.html">openSUSE Leap 42.3 and later</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fedora_36.html">Fedora 36 and later</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fedora 36 and later</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install">Install</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
@@ -104,9 +109,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Contributing &amp; Build</a> &raquo;</li>
-      <li>Build MediaElch</li>
+          <li><a href="index.html">Build MediaElch</a> &raquo;</li>
+      <li>Fedora 36 and later</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/fedora_36.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -114,23 +120,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="build-mediaelch">
-<h1>Build MediaElch<a class="headerlink" href="#build-mediaelch" title="Permalink to this heading"></a></h1>
-<p>MediaElch can be build using <code class="docutils literal notranslate"><span class="pre">qmake</span></code> and <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.
-Using <a class="reference external" href="https://www.qt.io/download">QtCreator</a> is supported and advised.</p>
-<p>We support Qt 5 and Qt 6.</p>
-<p>CMake is supported as well. Following instructions will use
-QMake, though.</p>
-<p><em>Supported platforms:</em></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="windows.html">Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="macos.html">macOS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and 20.04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ubuntu_21_04.html">Ubuntu 21.04 LTS and later</a></li>
-<li class="toctree-l1"><a class="reference internal" href="openSUSE_Leap_42_3.html">openSUSE Leap 42.3 and later</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fedora_36.html">Fedora 36 and later</a></li>
-</ul>
+  <div class="section" id="fedora-36-and-later">
+<h1>Fedora 36 and later<a class="headerlink" href="#fedora-36-and-later" title="Permalink to this heading"></a></h1>
+<p>This document describes how to build MediaElch for Fedora 36 or later.
+In contrast to other build instructions, we use Qt 6 here.</p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
+<p>Use the following to execute a build in a fresh toolbox or on the host:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo dnf install <span class="se">\</span>
+  qt6-qtbase-devel <span class="se">\</span>
+  qt6-qtmultimedia <span class="se">\</span>
+  qt6-qtmultimedia-devel <span class="se">\</span>
+  qt6-qttools <span class="se">\</span>
+  qt6-qttools-devel <span class="se">\</span>
+  qt6-qtdeclarative-devel <span class="se">\</span>
+  qt6-svg  <span class="se">\</span>
+  qt6-svg-devel <span class="se">\</span>
+  qt6-qt5compat-devel <span class="se">\</span>
+  qt6-qt5compat <span class="se">\</span>
+  libmediainfo-devel
+</pre></div>
+</div>
+</div>
+<div class="section" id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git
+<span class="nb">cd</span> MediaElch
+git submodule update --init
+mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+qmake ..
+make -j4
+</pre></div>
+</div>
+</div>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this heading"></a></h2>
+<p>Run following command after building MediaElch to install it on your system.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -138,8 +166,8 @@ QMake, though.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../translations.html" class="btn btn-neutral float-left" title="Translations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="windows.html" class="btn btn-neutral float-right" title="Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openSUSE_Leap_42_3.html" class="btn btn-neutral float-left" title="openSUSE Leap 42.3 and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../testing.html" class="btn btn-neutral float-right" title="Test MediaElch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
