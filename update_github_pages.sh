@@ -35,7 +35,7 @@ fi
 ###############################################################################
 
 ./docs/create_changelog.sh
-sphinx-build --color -b html docs/source "./dist"
+sphinx-build --color -b html "docs/source" "./dist"
 rm -rf ./dist/.doctrees ./dist/.buildinfo
 
 cd ./dist

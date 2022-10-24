@@ -5,22 +5,38 @@
 # MediaElch Documentation
 
 This repository contains the source files of the MediaElch documentation.
-You can find the documentation here: https://mediaelch.github.io/mediaelch-doc/
+You can find the documentation here: <https://mediaelch.github.io/mediaelch-doc/>
+
+
+## Table of Contents
+
+- [Build documentation](#build-documentation)
+- [Release documentation](#release-documentation)
+- [Contributing](#contributing)
+- [Scripts](#scripts)
 
 
 ## Build documentation
 
 Download and install [Sphinx](http://www.sphinx-doc.org/en/master/) as well
-as the "Read the Docs Sphinx Theme".
+as the "Read the Docs Sphinx Theme".  We will use [pipenv] for a clean
+python environment and require Python 3.10.
 
 ```sh
-pip3 install --user sphinx sphinx-autobuild # Install Sphinx and a watch tool
-pip3 install --user sphinx_rtd_theme # Install Theme
-cd docs
-./create_changelog.sh # Concerts the Markdown changelog to reStructuredText
-make html
-```
+pip install --user pipenv # Setup
 
+pipenv install # Install dependencies
+pipenv shell   # Environment with all dependencies
+
+./docs/create_changelog.sh # Creates the Markdown changelog to reStructuredText
+
+# Create documentation, single time
+sphinx-build -b html "docs/source" "dist"
+# or "cd docs && make html"
+
+# With live-reload on changes
+sphinx-autobuild -b html "docs/source" "dist"
+```
 
 ## Release documentation
 
@@ -56,8 +72,7 @@ https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html#via-git-or-dow
 Fork this repo and create a pull request containing your changes.
 Any help is welcome! :-)
 
-If you add images (such as screenshots), minimize them using
-[Trimage](https://trimage.org/).
+If you add images (such as screenshots), minimize them using [Trimage].
 
 Please also run `rstcheck`:
 ```sh
@@ -72,3 +87,7 @@ The `scripts` directory contains some scripts that can be used
 to prefer folder structures, etc. for screenshots.
 
 Refer to each script's source for more details.
+
+
+[pipenv]: https://pipenv.pypa.io/en/latest/
+[Trimage]: https://trimage.org/

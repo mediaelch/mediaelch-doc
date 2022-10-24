@@ -1,8 +1,12 @@
 # OS specific
 .directory
 .DS_Store
+
 .venv/
 dist/
+
+# IDE
+.idea/
 
 docs/build
 docs/source/release-notes.rst
