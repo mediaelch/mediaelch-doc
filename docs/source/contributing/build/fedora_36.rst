@@ -2,10 +2,14 @@
 Fedora 36 and later
 ============================
 
+This document describes how to build MediaElch for Fedora 36 or later.
+In contrast to other build instructions, we use Qt 6 here.
+
 Dependencies
 **********************************************************
 
 Use the following to execute a build in a fresh toolbox or on the host:
+
 .. code-block:: sh
 
     sudo dnf install \
@@ -23,9 +27,11 @@ Use the following to execute a build in a fresh toolbox or on the host:
 
 Build
 **********************************************************
+
 .. code-block:: sh
 
-    git clone https://github.com/Komet/MediaElch.git && cd MediaElch
+    git clone https://github.com/Komet/MediaElch.git
+    cd MediaElch
     git submodule update --init
     mkdir build && cd build
     qmake ..
@@ -33,13 +39,9 @@ Build
 
 Install
 **********************************************************
+
 Run following command after building MediaElch to install it on your system.
 
 .. code-block:: sh
 
     sudo make install
-
-
-.. |br| raw:: html
-
-   <br />
