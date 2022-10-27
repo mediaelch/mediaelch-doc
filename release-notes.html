@@ -237,7 +237,7 @@
 <h3>Notes<a class="headerlink" href="#notes" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>tbd</em></p></li>
+<li><p>MediaElch now fully supports Qt6!</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -249,15 +249,15 @@
 <li><p>UI: The “subtitle” column of movies is now also green if there are external subtitles (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1435">#1435</a>)</p></li>
 <li><p>Renamer: If subtitles are renamed, movie is marked “changed” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1432">#1432</a>) <br />
 This is necessary to update the <code class="docutils literal notranslate"><span class="pre">&lt;subtitle&gt;</span></code> tag in the NFO file.</p></li>
-<li><p>VideoBuster: Fix searching &amp; scraping of movies</p></li>
+<li><p>VideoBuster: Fix searching &amp; scraping of movies.</p></li>
 <li><p>IMDb:
 - Fix runtime scraping
 - Fix rating scraping of TV episodes (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1441">#1441</a>)</p></li>
-<li><p>HotMovies: Search and scraping of ratings was fixed</p></li>
-<li><p>Fixed crash if custom movie scraper was used with adult scrapers</p></li>
-<li><p>Kodi NFO files will only contain <code class="docutils literal notranslate"><span class="pre">&lt;uniqueid&gt;</span></code> if there are valid ones</p></li>
+<li><p>HotMovies: Search and scraping of ratings was fixed.</p></li>
+<li><p>Fixed crash if custom movie scraper was used with adult scrapers.</p></li>
+<li><p>Kodi NFO files will only contain <code class="docutils literal notranslate"><span class="pre">&lt;uniqueid&gt;</span></code> if there are valid ones.</p></li>
 <li><p>TMDb TV now scrapes the full cast of a TV show instead of only the last season’s (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1454">#1454</a>)</p></li>
-<li><p>A crash in the image dialog was fixed</p></li>
+<li><p>A crash in the image dialog was fixed.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -267,7 +267,7 @@ This is necessary to update the <code class="docutils literal notranslate"><span
 <div><ul class="simple">
 <li><p>Network proxy is disabled (per default) for Kodi Synchronisation (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1430">#1430</a>) <br />
 This can be re-enabled in MediaElch’s network settings.</p></li>
-<li><p>Windows: Qt was updated to 5.15.5</p></li>
+<li><p>Windows: Bundled Qt version was updated to 5.15.5</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -301,6 +301,7 @@ was removed.</p></li>
 <blockquote>
 <div><ul class="simple">
 <li><p>Git: We started to use [Conventional Commits](<a class="reference external" href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a>)</p></li>
+<li><p>CI: We now test against Qt6.2 to ensure that we don’t rely on Qt5-only coding.</p></li>
 </ul>
 </div></blockquote>
 </div>
