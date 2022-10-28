@@ -1,5 +1,5 @@
 ======================
-Ubuntu 21.04 and later
+Ubuntu 22.04 and later
 ======================
 
 Dependencies
@@ -43,8 +43,10 @@ Build
     qmake ..
     make -j4
 
+
 Install
 **********************************************************
+
 Run following command after building MediaElch to install it on your system.
 
 .. code-block:: sh

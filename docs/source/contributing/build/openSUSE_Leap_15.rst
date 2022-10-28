@@ -1,5 +1,5 @@
 ============================
-openSUSE Leap 42.3 and later
+openSUSE Leap 15 and later
 ============================
 
 Dependencies
@@ -17,8 +17,8 @@ Alternatively, you can also install Qt using zypper (see second code block below
     sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
     # Install OpenGL headers. Alternative OpenGL headers will work as well.
     sudo zypper install Mesa-libGL-devel
-    # Install a newer version of GCC (Leap 42.3 uses GCC 4.8.5)
-    sudo zypper install gcc7 gcc7-c++
+    # Install a newer version of GCC
+    sudo zypper install gcc8 gcc8-c++
 
 
 Install Qt using zypper:
@@ -47,21 +47,27 @@ your ``$PATH``. For example add following to your ``~/.bashrc``:
 
 .. code-block:: sh
 
-    export PATH=$PATH:$HOME/Qt/5.10.1/gcc_64/bin
+    export PATH=$PATH:$HOME/Qt/5.15.2/gcc_64/bin
+
 
 Build
 **********************************************************
+
 .. code-block:: sh
 
-    git clone https://github.com/Komet/MediaElch.git
+    # Optional, if you use non-default GCC
+    export CXX=g++-8; export CC=gcc-8;
+    # Clone with dependencies
+    git clone --recursive --depth=1 https://github.com/Komet/MediaElch.git
     cd MediaElch
-    git submodule update --init
     mkdir build && cd build
     qmake ..
     make -j4
 
+
 Install
 **********************************************************
+
 Run following command after building MediaElch to install it on your system.
 
 .. code-block:: sh
