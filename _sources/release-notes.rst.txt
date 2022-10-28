@@ -12,7 +12,7 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.17 - *tbd*
+2.8.18 - 2022-10-28
 ************************************
 
 Notes
@@ -190,11 +190,14 @@ Changes
  - The navigation bar now uses KDE Breeze icons.
 
 
-2.8.8 - Coridian (2021-04-26)
+Older Releases
 ************************************
 
-Bugfixes
+2.8.8 - Coridian (2021-04-26)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Bugfixes
+-------------------------------------
 
  - Renamer: On macOS, the renamer was sometimes so large that buttons were not visible (`#1227 <https://github.com/Komet/MediaElch/issues/1227>`_)
  - Local trailers for movies are now detected if the filename contains square brackets such as ``Movie[BLURAY]`` (`#1231 <https://github.com/Komet/MediaElch/issues/1231>`_)
@@ -204,14 +207,14 @@ Bugfixes
  - Custom TV scraper: Fix scraping of TV shows when TMDb isn't used at all (`#1293 <https://github.com/Komet/MediaElch/issues/1293>`_)
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - The experimental CSV Exporter now supports streamdetails as well (`#1204 <https://github.com/Komet/MediaElch/issues/1204>`_)
  - ``<episodeguide>`` tags in TV shows will now use TMDb first and will only use TheTvDb as a fallback (`#1233 <https://github.com/Komet/MediaElch/issues/1233>`_)
  - Settings: If a new movie folder is added, "in separate folders" is enabled by default.
 
 Added
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - A quick-open menu for movies was added. Open it by clicking :kbd:`Ctrl+O` (:kbd:`⌘+O` on macOS) (`#1214 <https://github.com/Komet/MediaElch/issues/1214>`_) |br|
    It uses a Fuzzy matching algorithm. The menu was inspired and partially taken from the
@@ -228,7 +231,7 @@ Added
  - New movie media columns "subtitles" and "tags" can now be used (`#795 <https://github.com/Komet/MediaElch/issues/795>`_, `#425 <https://github.com/Komet/MediaElch/issues/425>`_)
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - The Kodi generators now use ``QXmlStreamWriter`` instead of ``QDomDocument``. |br|
    This has the side-effect that unrecognized tags will be removed.
@@ -245,10 +248,10 @@ Internal Improvements and Changes
  - MediaElch now uses Qt's logging categories (`#1278 <https://github.com/Komet/MediaElch/issues/1278>`_)
 
 2.8.6 - Coridian (2021-01-22)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Audio-channel detection was broken since the previous version (`#1172 <https://github.com/Komet/MediaElch/issues/1172>`_)
  - Translations were updated |br|
@@ -261,7 +264,7 @@ Bugfixes
  - Streamdetails: Detection of runtime is fixed (`#923 <https://github.com/Komet/MediaElch/issues/923>`_)
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - CSV Export: Column names in generated CSV files were renamed
  - TV Show search: If the show's title contains its year, it is removed in the search dialog (`#1192 <https://github.com/Komet/MediaElch/issues/1192>`_)
@@ -272,7 +275,7 @@ Changes
    delimiter worked before but caused false positives. Delimiters are `` ``, ``.``, ``_`` and ``-``.
 
 Added
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - CSV Export: The experimental CSV exporter now supports "directory" and "filenames" as options (`#1173 <https://github.com/Komet/MediaElch/issues/1173>`_)
  - TV show: Add original title field (`#1180 <https://github.com/Komet/MediaElch/issues/1180>`_) |br|
@@ -280,10 +283,10 @@ Added
 
 
 2.8.4 - Coridian (2021-01-09)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - TV search on TMDb: It is now possible to search for a show by its TMDb and IMDb ID,
    e.g. "tt0096697" or "456" for "The Simpsons"
@@ -296,7 +299,7 @@ Bugfixes
  - ADE: Actor images are loaded again (`#1164 <https://github.com/Komet/MediaElch/issues/1164>`_)
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - NFO files now contain a ``<generator>`` tag which holds meta information about MediaElch. |br|
    This may be helpful when users complain about Kodi not displaying certain details on the Kodi forum.
@@ -307,7 +310,7 @@ Changes
  - On macOS the discrete GPU is no longer required (`#702 <https://github.com/Komet/MediaElch/issues/702>`_)
 
 Added
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Concert: Add IMDb/TMDb ID fields
  - Concert search: Add language dropdown to search dialog
@@ -327,16 +330,16 @@ Added
    MusicBrainz uses texts from Wikipedia.
 
 Removed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Support for Kodi v16 NFO files is removed.  MediaElch can still read them but does not write them anymore. (`#1142 <https://github.com/Komet/MediaElch/issues/1142>`_)
 
 
 2.8.2 - Coridian (2020-12-20)
-************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bugfixes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Revert the use of the user's preferred UI language and not the system language (`#1002 <https://github.com/Komet/MediaElch/issues/1002>`_) |br|
    The implementation was wrong which lead to users getting MediaElch in English even
@@ -346,23 +349,19 @@ Bugfixes
    This is now fixed and those two directories are skiped.
 
 Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Image downloads are now run in parallel (up to 6 downloads) (`#1077 <https://github.com/Komet/MediaElch/issues/1077>`_)
 
 Added
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - A TVmaze ID field was added to the TV show and episode UI (`#834 <https://github.com/Komet/MediaElch/issues/834>`_)
 
 Internal Improvements and Changes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
  - Better error reporting for TV scrapers
-
-
-Older Releases
-************************************
 
 2.8.0 - Coridian (2020-12-13)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
