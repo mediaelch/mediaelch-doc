@@ -129,19 +129,19 @@ Or you can install MediaElch per command line:
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_release| image:: https://img.shields.io/badge/version-v2.8.18-blue.svg
+.. |gh_pages_release| image:: images/badges/Version-v2.8.18.svg
    :target: https://github.com/Komet/MediaElch/releases/tag/v2.8.18
 
-.. |mirror_release| image:: https://img.shields.io/badge/version-v2.8.18-blue.svg
+.. |mirror_release| image:: images/badges/Version-v2.8.18.svg
    :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.18/
 
-.. |mirror_nightly_linux| image:: https://img.shields.io/badge/Linux-v2.8.19--dev-blue.svg
+.. |mirror_nightly_linux| image:: images/badges/Linux-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
 
-.. |mirror_nightly_macOS| image:: https://img.shields.io/badge/macOS-v2.8.19--dev-blue.svg
+.. |mirror_nightly_macOS| image:: images/badges/macOS-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
 
-.. |mirror_nightly_windows| image:: https://img.shields.io/badge/Windows-v2.8.19--dev-blue.svg
+.. |mirror_nightly_windows| image:: images/badges/Windows-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows/
 
 
