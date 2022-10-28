@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fedora 36 and later &mdash; MediaElch 2.8.16 documentation</title>
+  <title>openSUSE Leap 15 and later &mdash; MediaElch 2.8.16 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
@@ -21,8 +21,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Test MediaElch" href="../testing.html" />
-    <link rel="prev" title="openSUSE Leap 15 and later" href="openSUSE_Leap_15.html" /> 
+    <link rel="next" title="Fedora 36 and later" href="fedora_36.html" />
+    <link rel="prev" title="Ubuntu 22.04 and later" href="ubuntu_22_04.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -57,13 +57,13 @@
 <li class="toctree-l3"><a class="reference internal" href="macos.html">macOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and 20.04</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_22_04.html">Ubuntu 22.04 LTS and later</a></li>
-<li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_15.html">openSUSE Leap 15 and later</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Fedora 36 and later</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">openSUSE Leap 15 and later</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install">Install</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="fedora_36.html">Fedora 36 and later</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
@@ -110,9 +110,9 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Contributing &amp; Build</a> &raquo;</li>
           <li><a href="index.html">Build MediaElch</a> &raquo;</li>
-      <li>Fedora 36 and later</li>
+      <li>openSUSE Leap 15 and later</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/fedora_36.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/openSUSE_Leap_15.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -120,33 +120,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="fedora-36-and-later">
-<h1>Fedora 36 and later<a class="headerlink" href="#fedora-36-and-later" title="Permalink to this heading"></a></h1>
-<p>This document describes how to build MediaElch for Fedora 36 or later.
-In contrast to other build instructions, we use Qt 6 here.</p>
+  <div class="section" id="opensuse-leap-15-and-later">
+<h1>openSUSE Leap 15 and later<a class="headerlink" href="#opensuse-leap-15-and-later" title="Permalink to this heading"></a></h1>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
-<p>Use the following to execute a build in a fresh toolbox or on the host:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo dnf install <span class="se">\</span>
-  qt6-qtbase-devel <span class="se">\</span>
-  qt6-qtmultimedia <span class="se">\</span>
-  qt6-qtmultimedia-devel <span class="se">\</span>
-  qt6-qttools <span class="se">\</span>
-  qt6-qttools-devel <span class="se">\</span>
-  qt6-qtdeclarative-devel <span class="se">\</span>
-  qt6-svg  <span class="se">\</span>
-  qt6-svg-devel <span class="se">\</span>
-  qt6-qt5compat-devel <span class="se">\</span>
-  qt6-qt5compat <span class="se">\</span>
-  libmediainfo-devel
+<p>Follow the instructions on <a class="reference external" href="https://wiki.qt.io/Install_Qt_5_on_openSUSE">https://wiki.qt.io/Install_Qt_5_on_openSUSE</a> <br />
+Select the latest stable Qt version (e.g. 5.15.2) with “Desktop gcc 64-bit” enabled.
+Alternatively, you can also install Qt using zypper (see second code block below).</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install development tools</span>
+sudo zypper install --type pattern devel_basis
+<span class="c1"># Install other dependencies</span>
+sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
+<span class="c1"># Install OpenGL headers. Alternative OpenGL headers will work as well.</span>
+sudo zypper install Mesa-libGL-devel
+<span class="c1"># Install a newer version of GCC</span>
+sudo zypper install gcc8 gcc8-c++
+</pre></div>
+</div>
+<p>Install Qt using zypper:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>zypper install <span class="se">\</span>
+    libqt5-qtbase libqt5-qtdeclarative-devel libqt5-qtdeclarative-tools <span class="se">\</span>
+    libqt5-qtmultimedia-devel libqt5-qttools libqt5-qttools-devel <span class="se">\</span>
+    libqt5-qtsvg-devel libQt5Concurrent5 libQt5Concurrent-devel <span class="se">\</span>
+    libQt5OpenGL5 libQt5OpenGL-devel libQt5Sql-devel
+</pre></div>
+</div>
+<p>Note that MediaElch needs ffmpeg to create screenshots.
+ffmpeg itself requires multimedia codecs. Please refer to
+<a class="reference external" href="http://opensuse-guide.org/codecs.php">http://opensuse-guide.org/codecs.php</a> to learn how to install them.
+Then install ffmpeg.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo zypper install ffmpeg
+</pre></div>
+</div>
+<p>To be able to build MediaElch using the command line, don’t forget to
+add the <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory of the previously installed Qt version to
+your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>. For example add following to your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/Qt/5.15.2/gcc_64/bin
 </pre></div>
 </div>
 </div>
 <div class="section" id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h2>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional, if you use non-default GCC</span>
+<span class="nb">export</span> <span class="nv">CXX</span><span class="o">=</span>g++-8<span class="p">;</span> <span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span>gcc-8<span class="p">;</span>
+<span class="c1"># Clone with dependencies</span>
+git clone --recursive --depth<span class="o">=</span><span class="m">1</span> https://github.com/Komet/MediaElch.git
 <span class="nb">cd</span> MediaElch
-git submodule update --init
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
 qmake ..
 make -j4
@@ -166,8 +185,8 @@ make -j4
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="openSUSE_Leap_15.html" class="btn btn-neutral float-left" title="openSUSE Leap 15 and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../testing.html" class="btn btn-neutral float-right" title="Test MediaElch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ubuntu_22_04.html" class="btn btn-neutral float-left" title="Ubuntu 22.04 and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fedora_36.html" class="btn btn-neutral float-right" title="Fedora 36 and later" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

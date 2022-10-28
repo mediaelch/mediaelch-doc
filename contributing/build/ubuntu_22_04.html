@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fedora 36 and later &mdash; MediaElch 2.8.16 documentation</title>
+  <title>Ubuntu 22.04 and later &mdash; MediaElch 2.8.16 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
@@ -21,8 +21,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Test MediaElch" href="../testing.html" />
-    <link rel="prev" title="openSUSE Leap 15 and later" href="openSUSE_Leap_15.html" /> 
+    <link rel="next" title="openSUSE Leap 15 and later" href="openSUSE_Leap_15.html" />
+    <link rel="prev" title="Ubuntu 18.04 and 20.04" href="ubuntu_18_04.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,14 +56,14 @@
 <li class="toctree-l3"><a class="reference internal" href="windows.html">Windows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="macos.html">macOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ubuntu_18_04.html">Ubuntu 18.04 LTS and 20.04</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ubuntu_22_04.html">Ubuntu 22.04 LTS and later</a></li>
-<li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_15.html">openSUSE Leap 15 and later</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Fedora 36 and later</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Ubuntu 22.04 LTS and later</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install">Install</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="openSUSE_Leap_15.html">openSUSE Leap 15 and later</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fedora_36.html">Fedora 36 and later</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../testing.html">Test MediaElch</a></li>
@@ -110,9 +110,9 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Contributing &amp; Build</a> &raquo;</li>
           <li><a href="index.html">Build MediaElch</a> &raquo;</li>
-      <li>Fedora 36 and later</li>
+      <li>Ubuntu 22.04 and later</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/fedora_36.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/contributing/build/ubuntu_22_04.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -120,25 +120,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="fedora-36-and-later">
-<h1>Fedora 36 and later<a class="headerlink" href="#fedora-36-and-later" title="Permalink to this heading"></a></h1>
-<p>This document describes how to build MediaElch for Fedora 36 or later.
-In contrast to other build instructions, we use Qt 6 here.</p>
+  <div class="section" id="ubuntu-22-04-and-later">
+<h1>Ubuntu 22.04 and later<a class="headerlink" href="#ubuntu-22-04-and-later" title="Permalink to this heading"></a></h1>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
-<p>Use the following to execute a build in a fresh toolbox or on the host:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo dnf install <span class="se">\</span>
-  qt6-qtbase-devel <span class="se">\</span>
-  qt6-qtmultimedia <span class="se">\</span>
-  qt6-qtmultimedia-devel <span class="se">\</span>
-  qt6-qttools <span class="se">\</span>
-  qt6-qttools-devel <span class="se">\</span>
-  qt6-qtdeclarative-devel <span class="se">\</span>
-  qt6-svg  <span class="se">\</span>
-  qt6-svg-devel <span class="se">\</span>
-  qt6-qt5compat-devel <span class="se">\</span>
-  qt6-qt5compat <span class="se">\</span>
-  libmediainfo-devel
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build tools and other libraries</span>
+sudo apt install build-essential git
+sudo apt install libcurl4-gnutls-dev <span class="c1"># or libcurl4-openssl-dev</span>
+sudo apt install libmediainfo-dev
+
+<span class="c1"># ffmpeg is required at runtime to create random screenshots</span>
+sudo apt install ffmpeg
+
+<span class="c1"># Qt (alternative: download and install Qt from its official website)</span>
+sudo apt install <span class="se">\</span>
+    qt5-qmake <span class="se">\</span>
+    qtbase5-dev <span class="se">\</span>
+    qtbase5-dev-tools <span class="se">\</span>
+    qtdeclarative5-dev <span class="se">\</span>
+    qtmultimedia5-dev <span class="se">\</span>
+    qttools5-dev <span class="se">\</span>
+    qttools5-dev-tools <span class="se">\</span>
+    libqt5opengl5 <span class="se">\</span>
+    libqt5opengl5-dev <span class="se">\</span>
+    libqt5svg5 <span class="se">\</span>
+    libqt5svg5-dev <span class="se">\</span>
+    qml-module-qtquick-controls <span class="se">\</span>
+    qml-module-qtqml-models2
 </pre></div>
 </div>
 </div>
@@ -166,8 +174,8 @@ make -j4
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="openSUSE_Leap_15.html" class="btn btn-neutral float-left" title="openSUSE Leap 15 and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../testing.html" class="btn btn-neutral float-right" title="Test MediaElch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ubuntu_18_04.html" class="btn btn-neutral float-left" title="Ubuntu 18.04 and 20.04" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="openSUSE_Leap_15.html" class="btn btn-neutral float-right" title="openSUSE Leap 15 and later" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
