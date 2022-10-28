@@ -21,7 +21,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Contributing &amp; Build" href="contributing/index.html" />
+    <link rel="next" title="Download MediaElch for Windows" href="download/windows.html" />
     <link rel="prev" title="Release Notes / Changelog" href="release-notes.html" /> 
 </head>
 
@@ -49,12 +49,9 @@
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release-notes.html">Release Notes / Changelog</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#windows-chocolatey">Windows Chocolatey</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#linux-repositories">Linux Repositories</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ubuntu">Ubuntu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#opensuse">openSUSE</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="download/windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download/macOS.html">macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download/linux.html">Linux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#source-code">Source Code</a></li>
 </ul>
 </li>
@@ -110,17 +107,19 @@
              
   <div class="section" id="download">
 <h1>Download<a class="headerlink" href="#download" title="Permalink to this heading"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>TheTvDb has stopped working from October on.  MediaElch has removed support for TheTvDb in version v2.8.14 and later.
-Please switch to either TMDb or IMDb.  Some features such as “show all episodes” no longer work.</p>
-</div>
-<p>MediaElch binaries are available for macOS, Linux (<a class="reference external" href="https://appimage.org/">AppImage</a> + repositories) and
-Windows (ZIP + <a class="reference external" href="https://chocolatey.org/packages/MediaElch">chocolatey package</a>).</p>
-<p>Nightlies can be downloaded from <a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/">https://mediaelch-downloads.ameyering.de/snapshots/</a> .
+<p>MediaElch binaries are available for <em>macOS</em>, <em>Linux</em> (<a class="reference external" href="https://appimage.org/">AppImage</a> + repositories) and
+<em>Windows</em> (ZIP + <a class="reference external" href="https://chocolatey.org/packages/MediaElch">chocolatey package</a>).</p>
+<p><em>Nightlies</em> can be downloaded <a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/">here</a> .
 Please note that nightlies are <strong>not</strong> stable. APIs may not work as expected.
 The server is also hosted by our team.  If the server is down, please contact us.</p>
-<p><em>See also:</em> <a class="reference internal" href="installation.html"><span class="doc">Install MediaElch</span></a>.</p>
+<p><strong>Detailed download pages:</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download/windows.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download/macOS.html">macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download/linux.html">Linux</a></li>
+</ul>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 22%" />
@@ -136,115 +135,62 @@ The server is also hosted by our team.  If the server is down, please contact us
 <tbody>
 <tr class="row-even"><td><p>Windows</p></td>
 <td><p>2.8.18  (GitHub)</p></td>
-<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>2.8.18  (Mirror)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>latest (unstable)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/Windows/"><img alt="mirror_nightly_windows" src="https://img.shields.io/badge/Windows-v2.8.19--dev-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/Windows/"><img alt="mirror_nightly_windows" src="_images/Windows-v2.8.19-dev.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>macOS</p></td>
 <td><p>2.8.18  (GitHub)</p></td>
-<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>2.8.18  (Mirror)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>latest (unstable)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/macOS/"><img alt="mirror_nightly_macOS" src="https://img.shields.io/badge/macOS-v2.8.19--dev-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/macOS/"><img alt="mirror_nightly_macOS" src="_images/macOS-v2.8.19-dev.svg" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Linux (AppImage)</p></td>
 <td><p>2.8.18  (GitHub)</p></td>
-<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/Komet/MediaElch/releases/tag/v2.8.18"><img alt="gh_pages_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>2.8.18  (Mirror)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="https://img.shields.io/badge/version-v2.8.18-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/releases/v2.8.18/"><img alt="mirror_release" src="_images/Version-v2.8.18.svg" /></a></p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>latest (unstable)</p></td>
-<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/Linux/"><img alt="mirror_nightly_linux" src="https://img.shields.io/badge/Linux-v2.8.19--dev-blue.svg" /></a></p></td>
+<td><p><a class="reference external" href="https://mediaelch-downloads.ameyering.de/snapshots/Linux/"><img alt="mirror_nightly_linux" src="_images/Linux-v2.8.19-dev.svg" /></a></p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<dl class="simple">
-<dt>Supported systems are:</dt><dd><ul class="simple">
+<p><em>See also:</em> <a class="reference internal" href="installation.html"><span class="doc">Install MediaElch</span></a>.</p>
+<p><strong>Supported systems are:</strong></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Windows 8 and 10 and later</p></li>
 <li><p>macOS 10.13 and later</p></li>
-<li><p>Ubuntu 18.04 and later</p></li>
+<li><p>Ubuntu 18.04 and later (PPA)</p></li>
+<li><p>Ubuntu 16.04 and later (AppImage)</p></li>
 <li><p>openSUSE Tumbleweed, 15.2 and later</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
+<p><strong>Supported Qt versions:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Qt 5.6 or later</p></li>
+<li><p>Qt 6.2 or later</p></li>
+</ul>
+</div></blockquote>
 <p>Supported architectures are only 64-bit x86 systems.
-32-bit systems are not officially supported.</p>
-</div>
-<div class="section" id="windows-chocolatey">
-<h2>Windows Chocolatey<a class="headerlink" href="#windows-chocolatey" title="Permalink to this heading"></a></h2>
-<p>We provide a chocolatey package for MediaElch.
-If you have chocolatey installed, simply run:</p>
-<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">mediaelch</span>
-<span class="c"># And to update MediaElch:</span>
-<span class="n">choco</span> <span class="n">upgrade</span> <span class="n">mediaelch</span>
-</pre></div>
-</div>
-<p>You can find the package online at <a class="reference external" href="https://chocolatey.org/packages/MediaElch">https://chocolatey.org/packages/MediaElch</a></p>
-</div>
-<div class="section" id="linux-repositories">
-<h2>Linux Repositories<a class="headerlink" href="#linux-repositories" title="Permalink to this heading"></a></h2>
-<p>You can install MediaElch using your system’s package manager. Use the AppImage if your system
-is not supported.</p>
-<div class="section" id="ubuntu">
-<h3>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this heading"></a></h3>
-<p>The official MediaElch PPA can be found at <a class="reference external" href="https://launchpad.net/~mediaelch/+archive/ubuntu/mediaelch-stable">https://launchpad.net/~mediaelch/+archive/ubuntu/mediaelch-stable</a>
-Ubuntu 18.04 and above are supported.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add the repository to your system</span>
-sudo add-apt-repository ppa:mediaelch/mediaelch-stable
-sudo apt-get update
-<span class="c1"># Install MediaElch</span>
-sudo apt-get install mediaelch
-<span class="c1"># Start MediaElch</span>
-MediaElch
-</pre></div>
-</div>
-</div>
-<div class="section" id="opensuse">
-<h3>openSUSE<a class="headerlink" href="#opensuse" title="Permalink to this heading"></a></h3>
-<p>openSUSE packages are available using the services of build.opensuse.org.
-You can download MediaElch per 1-click-install from
-<a class="reference external" href="https://software.opensuse.org/download.html?project=home%3Abugwelle&amp;package=MediaElch">https://software.opensuse.org/download.html?project=home%3Abugwelle&amp;package=MediaElch</a></p>
-<p>openSUSE Leap 15 and Tumbleweed are supported.</p>
-<p>Or you can install MediaElch per command line:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># openSUSE Tumbleweed</span>
-sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Tumbleweed/home:bugwelle.repo
-sudo zypper refresh
-sudo zypper install MediaElch
-
-<span class="c1"># openSUSE Leap 15.2</span>
-sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.2/home:bugwelle.repo
-sudo zypper refresh
-sudo zypper install MediaElch
-
-<span class="c1"># openSUSE Leap 15.3</span>
-sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.3/home:bugwelle.repo
-sudo zypper refresh
-sudo zypper install MediaElch
-
-<span class="c1"># openSUSE Leap 15.4</span>
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/bugwelle/15.4/home:bugwelle.repo
-sudo zypper refresh
-sudo zypper install MediaElch
-</pre></div>
-</div>
-</div>
-</div>
+32-bit systems are not supported and only released on-demand.</p>
 <div class="section" id="source-code">
 <h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this heading"></a></h2>
 <p>MediaElch is open source! The source code is located on GitHub: <a class="reference external" href="https://github.com/Komet/MediaElch">https://github.com/Komet/MediaElch</a></p>
@@ -256,7 +202,7 @@ sudo zypper install MediaElch
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="release-notes.html" class="btn btn-neutral float-left" title="Release Notes / Changelog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="contributing/index.html" class="btn btn-neutral float-right" title="Contributing &amp; Build" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="download/windows.html" class="btn btn-neutral float-right" title="Download MediaElch for Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

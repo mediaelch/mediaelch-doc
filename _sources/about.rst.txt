@@ -6,7 +6,7 @@ About
    :align: center
    :alt: MediaElch Logo
 
-MediaElch is a MediaManager for Kodi. Information about Movies, TV Shows,
+MediaElch is a MediaManager for **Kodi**. Information about Movies, TV Shows,
 Concerts and Music are stored as NFO files.  Fanarts are downloaded
 automatically from fanart.tv.
 
