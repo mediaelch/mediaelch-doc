@@ -84,4 +84,4 @@ MediaElch is open source! The source code is located on GitHub: https://github.c
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
 
 .. |mirror_nightly_windows| image:: images/badges/Windows-v2.8.19-dev.svg
-   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows/
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_7_8/
