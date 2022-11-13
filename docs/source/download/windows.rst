@@ -4,15 +4,21 @@ Download MediaElch for Windows
 
 MediaElch supports Windows 8, 10 or later.  You can download MediaElch as ``*.zip`` at:
 
-+-------------------+--------------------+-----------------------------------------------+
-| System (64 bit)   | Version            | Download                                      |
-+===================+====================+===============================================+
-| Windows           | 2.8.18  (GitHub)   | |gh_pages_release|                            |
-+-------------------+--------------------+-----------------------------------------------+
-|                   | 2.8.18  (Mirror)   | |mirror_release|                              |
-+-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |mirror_nightly_windows|                      |
-+-------------------+--------------------+-----------------------------------------------+
++---------------------+--------------------+-----------------------------------------------+
+| System (64 bit)     | Version            | Download                                      |
++=====================+====================+===============================================+
+| Windows 10 or later | 2.8.18  (GitHub)   | |gh_pages_release|                            |
++---------------------+--------------------+-----------------------------------------------+
+|                     | 2.8.18  (Mirror)   | |mirror_release|                              |
++---------------------+--------------------+-----------------------------------------------+
+|                     | latest (unstable)  | |mirror_nightly_windows_10_or_later|          |
++---------------------+--------------------+-----------------------------------------------+
+| Windows 7 + 8       | 2.8.18  (GitHub)   | |gh_pages_release|                            |
++---------------------+--------------------+-----------------------------------------------+
+|                     | 2.8.18  (Mirror)   | |mirror_release|                              |
++---------------------+--------------------+-----------------------------------------------+
+|                     | latest (unstable)  | |mirror_nightly_windows_7_8|                  |
++---------------------+--------------------+-----------------------------------------------+
 
 
 *See also section Windows in:* :doc:`Install MediaElch <../installation>`.
@@ -41,5 +47,8 @@ You can find the package online at https://chocolatey.org/packages/MediaElch
 .. |mirror_release| image:: ../images/badges/Version-v2.8.18.svg
    :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.18/
 
-.. |mirror_nightly_windows| image:: ../images/badges/Windows-v2.8.19-dev.svg
+.. |mirror_nightly_windows_7_8| image:: ../images/badges/Windows-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_7_8/
+
+.. |mirror_nightly_windows_10_or_later| image:: ../images/badges/Windows-v2.8.19-dev.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_10_or_later/
