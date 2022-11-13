@@ -42,4 +42,4 @@ You can find the package online at https://chocolatey.org/packages/MediaElch
    :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.18/
 
 .. |mirror_nightly_windows| image:: ../images/badges/Windows-v2.8.19-dev.svg
-   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows/
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_7_8/
