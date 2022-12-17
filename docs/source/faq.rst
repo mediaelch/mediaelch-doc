@@ -15,7 +15,7 @@ Both MediaElch's author and MediaElch's current maintainer have agreed on that:
  - see https://github.com/Komet/MediaElch/issues/1048
 
 
-Where are MediaElchs settings stored?
+Where are MediaElch's settings stored?
 =====================================
 
 MediaElch stores its settings in the usual places depending on your OS:
