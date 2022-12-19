@@ -2,6 +2,15 @@
 Download
 ========
 
+
+.. warning::
+
+   Version v2.8.18 contains two bugs that make "movie file search" stuck
+   and make some TV show scrapers stuck as well.  A new version will be
+   released in January.  In the meantime, try a Nightly version if you
+   experience these bugs.
+
+
 MediaElch binaries are available for *macOS*, *Linux* (AppImage_ + repositories) and
 *Windows* (ZIP + `chocolatey package`_).
 
