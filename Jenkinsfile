@@ -10,6 +10,7 @@ pipeline {
     ansiColor('xterm')
     timestamps()
     timeout(30)
+    buildDiscarder logRotator(numToKeepStr: '3')
   }
 
   environment {
