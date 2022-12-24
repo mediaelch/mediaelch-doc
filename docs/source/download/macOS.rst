@@ -7,11 +7,17 @@ macOS 10.13 or later is supported.  You can download MediaElch as a ``*.dmg`` fi
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| macOS             | 2.8.18  (GitHub)   | |gh_pages_release|                            |
+| macOS 11 or later | 2.8.18  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | 2.8.18  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |mirror_nightly_macOS|                        |
+|                   | latest (unstable)  | |mirror_nightly_macOS_11_or_later|            |
++-------------------+--------------------+-----------------------------------------------+
+| macOS X           | 2.8.18  (GitHub)   | |gh_pages_release|                            |
++-------------------+--------------------+-----------------------------------------------+
+|                   | 2.8.18  (Mirror)   | |mirror_release|                              |
++-------------------+--------------------+-----------------------------------------------+
+|                   | latest (unstable)  | |mirror_nightly_macOS_X|                      |
 +-------------------+--------------------+-----------------------------------------------+
 
 
@@ -24,5 +30,8 @@ macOS 10.13 or later is supported.  You can download MediaElch as a ``*.dmg`` fi
 .. |mirror_release| image:: ../images/badges/Version-v2.8.18.svg
    :target: https://mediaelch-downloads.ameyering.de/releases/v2.8.18/
 
-.. |mirror_nightly_macOS| image:: ../images/badges/macOS-v2.8.19-dev.svg
-   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
+.. |mirror_nightly_macOS_11_or_later| image:: ../images/badges/macOS-v2.8.19-dev.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_11_or_later/
+
+.. |mirror_nightly_macOS_X| image:: ../images/badges/macOS-v2.8.19-dev.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_X/
