@@ -105,10 +105,10 @@ MediaElch is open source! The source code is located on GitHub: https://github.c
 .. |mirror_nightly_linux| image:: images/badges/Linux-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
 
-.. |mirror_nightly_macOS_11_or_later| image:: ../images/badges/macOS-v2.8.19-dev.svg
+.. |mirror_nightly_macOS_11_or_later| image:: images/badges/macOS-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_11_or_later/
 
-.. |mirror_nightly_macOS_X| image:: ../images/badges/macOS-v2.8.19-dev.svg
+.. |mirror_nightly_macOS_X| image:: images/badges/macOS-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_X/
 
 .. |mirror_nightly_windows_7_8| image:: images/badges/Windows-v2.8.19-dev.svg
