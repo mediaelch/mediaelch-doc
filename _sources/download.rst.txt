@@ -45,11 +45,17 @@ The server is also hosted by our team.  If the server is down, please contact us
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
-| macOS               | 2.8.18  (GitHub)   | |gh_pages_release|                            |
+| macOS 11 or later   | 2.8.18  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | 2.8.18  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | latest (unstable)  | |mirror_nightly_macOS|                        |
+|                     | latest (unstable)  | |mirror_nightly_macOS_11_or_later|            |
++---------------------+--------------------+-----------------------------------------------+
+| macOS X             | 2.8.18  (GitHub)   | |gh_pages_release|                            |
++---------------------+--------------------+-----------------------------------------------+
+|                     | 2.8.18  (Mirror)   | |mirror_release|                              |
++---------------------+--------------------+-----------------------------------------------+
+|                     | latest (unstable)  | |mirror_nightly_macOS_X|                      |
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
@@ -74,7 +80,7 @@ The server is also hosted by our team.  If the server is down, please contact us
 **Supported Qt versions:**
 
   - Qt 5.6 or later
-  - Qt 6.2 or later
+  - Qt 6.3 or later
 
 Supported architectures are only 64-bit x86 systems.
 32-bit systems are not supported and only released on-demand.
@@ -99,8 +105,11 @@ MediaElch is open source! The source code is located on GitHub: https://github.c
 .. |mirror_nightly_linux| image:: images/badges/Linux-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
 
-.. |mirror_nightly_macOS| image:: images/badges/macOS-v2.8.19-dev.svg
-   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS/
+.. |mirror_nightly_macOS_11_or_later| image:: ../images/badges/macOS-v2.8.19-dev.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_11_or_later/
+
+.. |mirror_nightly_macOS_X| image:: ../images/badges/macOS-v2.8.19-dev.svg
+   :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_X/
 
 .. |mirror_nightly_windows_7_8| image:: images/badges/Windows-v2.8.19-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_7_8/

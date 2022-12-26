@@ -26,15 +26,24 @@ Bugfixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - macOS: CMD+R now correctly triggers a reload.
- - IMDb: TV show runtimes are scraped correctly again.
- - UI: Incorrectly scaled tables on HighDPI display now work with Qt6.
+ - IMDb:
+   - Movie search did not return any results.
+   - TV show search did not return any results.
+   - TV show runtimes are scraped correctly again.
+ - UI: 
+   - Incorrectly scaled tables on HighDPI display now work with Qt6.
+   - If the renamer dialog was re-opened, the placeholder-table was mixed up.
  - Multi-Movie Scraper: If using TheMovieDb, scraping could get stuck and not continue (`#1505 <https://github.com/Komet/MediaElch/issues/1505>`_)
  - TV Show Scraper: The "Downloading images..." dialog was not removed when finished (`#1507 <https://github.com/Komet/MediaElch/issues/1507>`_)
+ - AllMusic: Fix loading of "born" and "died" (`#1336 <https://github.com/Komet/MediaElch/issues/1336>`_)
+ - TvTunes: Spaces around titles were not removed
+ - Discogs: Albums are loaded properly again.
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - TvMaze: For a TV show's cast, if there are character images, use those
+   instead of the actor's image, e.g. use "Homer Simpson" for "Dan Castellaneta".
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,7 +58,8 @@ Removed
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - *tbd*
+ - We've added a lot of tests for our music scrapers to ensure that
+   regressions aren't unnoticed for so long anymore.
 
 
 2.8.18 - 2022-10-28
