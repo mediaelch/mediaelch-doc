@@ -57,16 +57,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#internal-improvements-and-changes">Internal Improvements and Changes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">2.8.18 - 2022-10-28</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id21">Removed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">Internal Improvements and Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coridian-2022-10-28">2.8.18 - Coridian (2022-10-28)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Internal Improvements and Changes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">2.8.16 - 2022-03-13</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#coridian-2022-03-13">2.8.16 - Coridian (2022-03-13)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id24">Bugfixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id28">Added</a></li>
 </ul>
@@ -85,12 +85,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#id47">Bugfixes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#coridian-2021-05-03">2.8.10 - Coridian (2021-05-03)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id52">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id57">Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#older-releases">Older Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coridian-2021-05-03">2.8.10 - Coridian (2021-05-03)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id52">Bugfixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id57">Changes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#older-releases">Older Releases</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#coridian-2021-04-26">2.8.8 - Coridian (2021-04-26)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id58">Bugfixes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id65">Changes</a></li>
@@ -257,6 +257,9 @@ with scaling &gt;100% (<a class="reference external" href="https://github.com/Ko
 <blockquote>
 <div><ul class="simple">
 <li><p>macOS: CMD+R now correctly triggers a reload.</p></li>
+<li><p>If a movie directory had “auto-reload” enabled, each start of MediaElch added
+entries to our cache database without remove old entries.  The database
+size grew fast.  Clicking “reload” is a workaround (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1487">#1487</a>)</p></li>
 <li><p>IMDb:
 - Movie search did not return any results.
 - TV show search did not return any results.
@@ -264,7 +267,9 @@ with scaling &gt;100% (<a class="reference external" href="https://github.com/Ko
 <li><p>UI:
 - Incorrectly scaled tables on HighDPI display now work with Qt6.
 - If the renamer dialog was re-opened, the placeholder-table was mixed up.</p></li>
-<li><p>Multi-Movie Scraper: If using TheMovieDb, scraping could get stuck and not continue (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1505">#1505</a>)</p></li>
+<li><p>Multi-Movie Scraper:
+- If using TheMovieDb, scraping could get stuck and not continue (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1505">#1505</a>)
+- Adult Scrapers were always shown, even if disabled.</p></li>
 <li><p>TV Show Scraper: The “Downloading images…” dialog was not removed when finished (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1507">#1507</a>)</p></li>
 <li><p>AllMusic: Fix loading of “born” and “died” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1336">#1336</a>)</p></li>
 <li><p>TvTunes: Spaces around titles were not removed</p></li>
@@ -278,6 +283,8 @@ with scaling &gt;100% (<a class="reference external" href="https://github.com/Ko
 <div><ul class="simple">
 <li><p>TvMaze: For a TV show’s cast, if there are character images, use those
 instead of the actor’s image, e.g. use “Homer Simpson” for “Dan Castellaneta”.</p></li>
+<li><p>For Kodi v19 and later, <code class="docutils literal notranslate"><span class="pre">&lt;episodeguide&gt;</span></code> will use the new format, see
+[Kodi Forum](<a class="reference external" href="https://forum.kodi.tv/showthread.php?tid=370489">https://forum.kodi.tv/showthread.php?tid=370489</a>)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -285,7 +292,9 @@ instead of the actor’s image, e.g. use “Homer Simpson” for “Dan Castella
 <h3>Added<a class="headerlink" href="#added" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>tbd</em></p></li>
+<li><p>Dark Mode: MediaElch has gained an experimental dark mode for its _main <a href="#id286"><span class="problematic" id="id287">window_</span></a> (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/761">#761</a>).
+It can only be set through <code class="docutils literal notranslate"><span class="pre">advancedsettings.xml</span></code> and will be made into a proper
+settings option in future releases.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -307,18 +316,18 @@ regressions aren’t unnoticed for so long anymore.</p></li>
 </div></blockquote>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>2.8.18 - 2022-10-28<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
-<div class="section" id="id6">
-<h3>Notes<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
+<div class="section" id="coridian-2022-10-28">
+<h2>2.8.18 - Coridian (2022-10-28)<a class="headerlink" href="#coridian-2022-10-28" title="Permalink to this heading"></a></h2>
+<div class="section" id="id7">
+<h3>Notes<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>MediaElch now fully supports Qt6!</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id7">
-<h3>Bugfixes<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<div class="section" id="id8">
+<h3>Bugfixes<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Multi-Episode numbers such as <code class="docutils literal notranslate"><span class="pre">S01E01E02E03.mov</span></code> are now correctly identified (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1429">#1429</a>)</p></li>
@@ -337,8 +346,8 @@ This is necessary to update the <code class="docutils literal notranslate"><span
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id13">
-<h3>Changes<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h3>
+<div class="section" id="id14">
+<h3>Changes<a class="headerlink" href="#id14" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Network proxy is disabled (per default) for Kodi Synchronisation (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1430">#1430</a>) <br />
@@ -347,8 +356,8 @@ This can be re-enabled in MediaElch’s network settings.</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id15">
-<h3>Added<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h3>
+<div class="section" id="id16">
+<h3>Added<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Renamer: Placeholder input fields now provide examples through a drop-down menu (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/657">#657</a>) <br />
@@ -362,8 +371,8 @@ added for movies (<a class="reference external" href="https://github.com/Komet/M
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id21">
-<h3>Removed<a class="headerlink" href="#id21" title="Permalink to this heading"></a></h3>
+<div class="section" id="id22">
+<h3>Removed<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>OFDb scraper was removed. <br />
@@ -372,8 +381,8 @@ was removed.</p></li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="id22">
-<h3>Internal Improvements and Changes<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h3>
+<div class="section" id="id23">
+<h3>Internal Improvements and Changes<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Git: We started to use [Conventional Commits](<a class="reference external" href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a>)</p></li>
@@ -382,8 +391,8 @@ was removed.</p></li>
 </div></blockquote>
 </div>
 </div>
-<div class="section" id="id23">
-<h2>2.8.16 - 2022-03-13<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h2>
+<div class="section" id="coridian-2022-03-13">
+<h2>2.8.16 - Coridian (2022-03-13)<a class="headerlink" href="#coridian-2022-03-13" title="Permalink to this heading"></a></h2>
 <div class="section" id="id24">
 <h3>Bugfixes<a class="headerlink" href="#id24" title="Permalink to this heading"></a></h3>
 <blockquote>
@@ -510,10 +519,12 @@ We were only able to fix all of these issues thanks to Alexander Weber who helpe
 </div></blockquote>
 </div>
 </div>
+<div class="section" id="older-releases">
+<h2>Older Releases<a class="headerlink" href="#older-releases" title="Permalink to this heading"></a></h2>
 <div class="section" id="coridian-2021-05-03">
-<h2>2.8.10 - Coridian (2021-05-03)<a class="headerlink" href="#coridian-2021-05-03" title="Permalink to this heading"></a></h2>
+<h3>2.8.10 - Coridian (2021-05-03)<a class="headerlink" href="#coridian-2021-05-03" title="Permalink to this heading"></a></h3>
 <div class="section" id="id52">
-<h3>Bugfixes<a class="headerlink" href="#id52" title="Permalink to this heading"></a></h3>
+<h4>Bugfixes<a class="headerlink" href="#id52" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>Movie sets: Sometimes, MediaElch crashed if movies were reloaded (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1298">#1298</a>)</p></li>
@@ -525,7 +536,7 @@ created the episode twice (<a class="reference external" href="https://github.co
 </div></blockquote>
 </div>
 <div class="section" id="id57">
-<h3>Changes<a class="headerlink" href="#id57" title="Permalink to this heading"></a></h3>
+<h4>Changes<a class="headerlink" href="#id57" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>The navigation bar now uses KDE Breeze icons.</p></li>
@@ -533,8 +544,6 @@ created the episode twice (<a class="reference external" href="https://github.co
 </div></blockquote>
 </div>
 </div>
-<div class="section" id="older-releases">
-<h2>Older Releases<a class="headerlink" href="#older-releases" title="Permalink to this heading"></a></h2>
 <div class="section" id="coridian-2021-04-26">
 <h3>2.8.8 - Coridian (2021-04-26)<a class="headerlink" href="#coridian-2021-04-26" title="Permalink to this heading"></a></h3>
 <div class="section" id="id58">
