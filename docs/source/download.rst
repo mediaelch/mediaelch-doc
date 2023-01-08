@@ -75,7 +75,7 @@ The server is also hosted by our team.  If the server is down, please contact us
   - macOS 10.13 and later
   - Ubuntu 18.04 and later (PPA)
   - Ubuntu 16.04 and later (AppImage)
-  - openSUSE Tumbleweed, 15.2 and later
+  - openSUSE Tumbleweed, 15.4 and later
 
 **Supported Qt versions:**
 
