@@ -43,6 +43,10 @@ Bugfixes
  - AllMusic: Fix loading of "born" and "died" (`#1336 <https://github.com/Komet/MediaElch/issues/1336>`_)
  - TvTunes: Spaces around titles were not removed
  - Discogs: Albums are loaded properly again.
+ - TMDb TV show and movie search: If a TV show title looks like a TMDb id
+   (i.e. only numbers such as 1899 or 1923),
+   we assumed it indeed is an ID and not a search query (`#1527 <https://github.com/Komet/MediaElch/issues/1527>`_).
+ - TMDb Concerts: We didn't always properly save the currently used language.
 
 Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,6 +55,9 @@ Changes
    instead of the actor's image, e.g. use "Homer Simpson" for "Dan Castellaneta".
  - For Kodi v19 and later, ``<episodeguide>`` will use the new format, see
    [Kodi Forum](https://forum.kodi.tv/showthread.php?tid=370489)
+ - If the query in the TV show or movie search dialog has the format ``tmdb12345``,
+   we search by TMDb ID ``12345``.  Previously, this worked for search query
+   ``12345`` as well, but that clashed with TV shows and movies such as ``1923``.
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -58,6 +65,7 @@ Added
  - Dark Mode: MediaElch has gained an experimental dark mode for its _main window_ (`#761 <https://github.com/Komet/MediaElch/issues/761>`_).
    It can only be set through ``advancedsettings.xml`` and will be made into a proper
    settings option in future releases.
+ - The TV show search dialog has gained a preview
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

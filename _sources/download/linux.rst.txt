@@ -9,7 +9,7 @@ package managers.
 
   - Ubuntu 18.04 and later (PPA)
   - Ubuntu 16.04 and later (AppImage)
-  - openSUSE Tumbleweed, 15.2 and later (OBS)
+  - openSUSE Tumbleweed, 15.4 and later (OBS)
 
 
 Linux AppImage
@@ -60,16 +60,6 @@ Or you can install MediaElch per command line:
 
     # openSUSE Tumbleweed
     sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Tumbleweed/home:bugwelle.repo
-    sudo zypper refresh
-    sudo zypper install MediaElch
-
-    # openSUSE Leap 15.2
-    sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.2/home:bugwelle.repo
-    sudo zypper refresh
-    sudo zypper install MediaElch
-
-    # openSUSE Leap 15.3
-    sudo zypper addrepo https://download.opensuse.org/repositories/home:bugwelle/openSUSE_Leap_15.3/home:bugwelle.repo
     sudo zypper refresh
     sudo zypper install MediaElch
 
