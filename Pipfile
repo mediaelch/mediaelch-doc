@@ -4,12 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-sphinx = "*"
+sphinx = "==6.1.3"
 sphinx-autobuild = "*"
-sphinx_rtd_theme = "*"
-# docutils needs to be hard-coded, see
-# https://github.com/readthedocs/sphinx_rtd_theme/issues/1115
-docutils = "==0.16"
+sphinx_rtd_theme = "==1.2.0rc2"
 
 [dev-packages]
 

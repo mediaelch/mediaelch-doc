@@ -38,6 +38,12 @@ sphinx-build -b html "docs/source" "dist"
 sphinx-autobuild -b html "docs/source" "dist"
 ```
 
+Tips:
+
+```sh
+pipenv --rm # clean venv
+```
+
 ## Release documentation
 
 If you are a maintainer of this repository, you can release a new version of this
