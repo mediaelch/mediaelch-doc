@@ -4,3 +4,4 @@
 .venv/
 docs/build
 docs/source/release-notes.rst
+.idea/
