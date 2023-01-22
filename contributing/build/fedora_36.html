@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fedora 36 and later &mdash; MediaElch 2.8.18 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" src="../../_static/jquery.js"></script>
+        <script integrity="sha384-lSZeSIVKp9myfKbDQ3GkN/KHjUc+mzg17VKDN4Y2kUeBSJioB9QSM639vM9fuY//" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -37,7 +37,7 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -107,7 +107,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Contributing &amp; Build</a></li>
           <li class="breadcrumb-item"><a href="index.html">Build MediaElch</a></li>
       <li class="breadcrumb-item active">Fedora 36 and later</li>
@@ -120,47 +120,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="fedora-36-and-later">
+  <section id="fedora-36-and-later">
 <h1>Fedora 36 and later<a class="headerlink" href="#fedora-36-and-later" title="Permalink to this heading"></a></h1>
 <p>This document describes how to build MediaElch for Fedora 36 or later.
 In contrast to other build instructions, we use Qt 6 here.</p>
-<div class="section" id="dependencies">
+<section id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
 <p>Use the following to execute a build in a fresh toolbox or on the host:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo dnf install <span class="se">\</span>
-  qt6-qtbase-devel <span class="se">\</span>
-  qt6-qtmultimedia <span class="se">\</span>
-  qt6-qtmultimedia-devel <span class="se">\</span>
-  qt6-qttools <span class="se">\</span>
-  qt6-qttools-devel <span class="se">\</span>
-  qt6-qtdeclarative-devel <span class="se">\</span>
-  qt6-svg  <span class="se">\</span>
-  qt6-svg-devel <span class="se">\</span>
-  qt6-qt5compat-devel <span class="se">\</span>
-  qt6-qt5compat <span class="se">\</span>
-  libmediainfo-devel
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qtbase-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qtmultimedia<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qtmultimedia-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qttools<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qttools-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qtdeclarative-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-svg<span class="w">  </span><span class="se">\</span>
+<span class="w">  </span>qt6-svg-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qt5compat-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>qt6-qt5compat<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>libmediainfo-devel
 </pre></div>
 </div>
-</div>
-<div class="section" id="build">
+</section>
+<section id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h2>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Komet/MediaElch.git
-<span class="nb">cd</span> MediaElch
-git submodule update --init
-mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
-qmake ..
-make -j4
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Komet/MediaElch.git
+<span class="nb">cd</span><span class="w"> </span>MediaElch
+git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init
+mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+qmake<span class="w"> </span>..
+make<span class="w"> </span>-j4
 </pre></div>
 </div>
-</div>
-<div class="section" id="install">
+</section>
+<section id="install">
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this heading"></a></h2>
 <p>Run following command after building MediaElch to install it on your system.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>make<span class="w"> </span>install
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -173,7 +173,7 @@ make -j4
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018 - 2022, MediaElch authors.</p>
+    <p>&#169; Copyright 2018 - 2023, MediaElch authors.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

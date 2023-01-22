@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>macOS &mdash; MediaElch 2.8.18 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" src="../../_static/jquery.js"></script>
+        <script integrity="sha384-lSZeSIVKp9myfKbDQ3GkN/KHjUc+mzg17VKDN4Y2kUeBSJioB9QSM639vM9fuY//" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -37,7 +37,7 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -107,7 +107,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Contributing &amp; Build</a></li>
           <li class="breadcrumb-item"><a href="index.html">Build MediaElch</a></li>
       <li class="breadcrumb-item active">macOS</li>
@@ -120,7 +120,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="macos">
+  <section id="macos">
 <h1>macOS<a class="headerlink" href="#macos" title="Permalink to this heading"></a></h1>
 <p>MediaElch is build upon Qt. Qt itself requires macOS 10.12 or later and therefore
 MediaElch does as well.</p>
@@ -128,30 +128,30 @@ MediaElch does as well.</p>
 and <a class="reference external" href="https://brew.sh/">Homebrew</a>. Instead of XCode you can also just install the
 <a class="reference external" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_">XCode Command Line Tools</a>
 (open a Terminal and execute <code class="docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code>).</p>
-<div class="section" id="command-line-build">
+<section id="command-line-build">
 <h2>Command Line Build<a class="headerlink" href="#command-line-build" title="Permalink to this heading"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># [Optional] Install git (it should have already been installed by XCode)</span>
-brew install git
+brew<span class="w"> </span>install<span class="w"> </span>git
 
 <span class="c1"># Install tools and dependencies</span>
-brew install subversion qt media-info ffmpeg
+brew<span class="w"> </span>install<span class="w"> </span>subversion<span class="w"> </span>qt<span class="w"> </span>media-info<span class="w"> </span>ffmpeg
 
 <span class="c1"># Clone MediaElch</span>
-git clone https://github.com/Komet/MediaElch.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> MediaElch
-git submodule update --init
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Komet/MediaElch.git<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>MediaElch
+git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init
 
 <span class="c1"># Download necessary headers</span>
-svn checkout https://github.com/MediaArea/MediaInfoLib/trunk/Source/MediaInfoDLL
-svn checkout https://github.com/MediaArea/ZenLib/trunk/Source/ZenLib
+svn<span class="w"> </span>checkout<span class="w"> </span>https://github.com/MediaArea/MediaInfoLib/trunk/Source/MediaInfoDLL
+svn<span class="w"> </span>checkout<span class="w"> </span>https://github.com/MediaArea/ZenLib/trunk/Source/ZenLib
 
 <span class="c1"># Build MediaElch</span>
-mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
-qmake ..
-make -j4
+mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+qmake<span class="w"> </span>..
+make<span class="w"> </span>-j4
 </pre></div>
 </div>
-</div>
-<div class="section" id="qtcreator-build">
+</section>
+<section id="qtcreator-build">
 <h2>QtCreator Build<a class="headerlink" href="#qtcreator-build" title="Permalink to this heading"></a></h2>
 <p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>. Run it and select the latest Qt
 version for installation (e.g. <code class="docutils literal notranslate"><span class="pre">Qt</span> <span class="pre">5.10.1</span></code>).
@@ -168,7 +168,7 @@ by clicking “Download” or using git: <br />
 <p>You have to download <a class="reference external" href="https://evermeet.cx/ffmpeg/">ffmpeg for Windows</a> to be able
 to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
 inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
-<div class="section" id="other-libraries">
+<section id="other-libraries">
 <h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ol class="arabic simple">
@@ -180,29 +180,29 @@ Copy the folder <code class="docutils literal notranslate"><span class="pre">Sou
 Copy the folder <code class="docutils literal notranslate"><span class="pre">Source/ZenLib</span></code> to <code class="docutils literal notranslate"><span class="pre">path/to/MediaElch/ZenLib</span></code></p></li>
 </ol>
 </div></blockquote>
-</div>
-<div class="section" id="build">
+</section>
+<section id="build">
 <h3>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h3>
 <p>Start QtCreator and open <code class="docutils literal notranslate"><span class="pre">/path/to/MediaElch/MediaElch.pro</span></code>. <br />
 Configure it as “Release” and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
-</div>
-</div>
-<div class="section" id="troubleshooting-cmake-build">
+</section>
+</section>
+<section id="troubleshooting-cmake-build">
 <h2>Troubleshooting (CMake Build)<a class="headerlink" href="#troubleshooting-cmake-build" title="Permalink to this heading"></a></h2>
 <p>Depending on your macOS version, you may need to set the used C++ standard library.
 See <a class="reference external" href="https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update">https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update</a></p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bash (command line)</span>
-<span class="nb">export</span> <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">&quot;-stdlib=libc++&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">&quot;-stdlib=libc++&quot;</span>
 <span class="c1"># Or in CMake</span>
-set<span class="o">(</span>CMAKE_CXX_FLAGS <span class="s2">&quot;-stdlib=libc++&quot;</span><span class="o">)</span>
+set<span class="o">(</span>CMAKE_CXX_FLAGS<span class="w"> </span><span class="s2">&quot;-stdlib=libc++&quot;</span><span class="o">)</span>
 </pre></div>
 </div>
 <div class="admonition-todo admonition" id="id1">
 <p class="admonition-title">Todo</p>
 <p>Add build instructions using MacPorts and not only Homebrew.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -215,7 +215,7 @@ set<span class="o">(</span>CMAKE_CXX_FLAGS <span class="s2">&quot;-stdlib=libc++
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018 - 2022, MediaElch authors.</p>
+    <p>&#169; Copyright 2018 - 2023, MediaElch authors.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

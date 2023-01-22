@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openSUSE Leap 15 and later &mdash; MediaElch 2.8.18 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" src="../../_static/jquery.js"></script>
+        <script integrity="sha384-lSZeSIVKp9myfKbDQ3GkN/KHjUc+mzg17VKDN4Y2kUeBSJioB9QSM639vM9fuY//" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -37,7 +37,7 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -107,7 +107,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Contributing &amp; Build</a></li>
           <li class="breadcrumb-item"><a href="index.html">Build MediaElch</a></li>
       <li class="breadcrumb-item active">openSUSE Leap 15 and later</li>
@@ -120,66 +120,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="opensuse-leap-15-and-later">
+  <section id="opensuse-leap-15-and-later">
 <h1>openSUSE Leap 15 and later<a class="headerlink" href="#opensuse-leap-15-and-later" title="Permalink to this heading"></a></h1>
-<div class="section" id="dependencies">
+<section id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading"></a></h2>
 <p>Follow the instructions on <a class="reference external" href="https://wiki.qt.io/Install_Qt_5_on_openSUSE">https://wiki.qt.io/Install_Qt_5_on_openSUSE</a> <br />
 Select the latest stable Qt version (e.g. 5.15.2) with “Desktop gcc 64-bit” enabled.
 Alternatively, you can also install Qt using zypper (see second code block below).</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install development tools</span>
-sudo zypper install --type pattern devel_basis
+sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>--type<span class="w"> </span>pattern<span class="w"> </span>devel_basis
 <span class="c1"># Install other dependencies</span>
-sudo zypper install libmediainfo0 libmediainfo-devel libpulse-devel
+sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>libmediainfo0<span class="w"> </span>libmediainfo-devel<span class="w"> </span>libpulse-devel
 <span class="c1"># Install OpenGL headers. Alternative OpenGL headers will work as well.</span>
-sudo zypper install Mesa-libGL-devel
+sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>Mesa-libGL-devel
 <span class="c1"># Install a newer version of GCC</span>
-sudo zypper install gcc8 gcc8-c++
+sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>gcc8<span class="w"> </span>gcc8-c++
 </pre></div>
 </div>
 <p>Install Qt using zypper:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>zypper install <span class="se">\</span>
-    libqt5-qtbase libqt5-qtdeclarative-devel libqt5-qtdeclarative-tools <span class="se">\</span>
-    libqt5-qtmultimedia-devel libqt5-qttools libqt5-qttools-devel <span class="se">\</span>
-    libqt5-qtsvg-devel libQt5Concurrent5 libQt5Concurrent-devel <span class="se">\</span>
-    libQt5OpenGL5 libQt5OpenGL-devel libQt5Sql-devel
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>zypper<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libqt5-qtbase<span class="w"> </span>libqt5-qtdeclarative-devel<span class="w"> </span>libqt5-qtdeclarative-tools<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libqt5-qtmultimedia-devel<span class="w"> </span>libqt5-qttools<span class="w"> </span>libqt5-qttools-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libqt5-qtsvg-devel<span class="w"> </span>libQt5Concurrent5<span class="w"> </span>libQt5Concurrent-devel<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libQt5OpenGL5<span class="w"> </span>libQt5OpenGL-devel<span class="w"> </span>libQt5Sql-devel
 </pre></div>
 </div>
 <p>Note that MediaElch needs ffmpeg to create screenshots.
 ffmpeg itself requires multimedia codecs. Please refer to
 <a class="reference external" href="http://opensuse-guide.org/codecs.php">http://opensuse-guide.org/codecs.php</a> to learn how to install them.
 Then install ffmpeg.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo zypper install ffmpeg
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>zypper<span class="w"> </span>install<span class="w"> </span>ffmpeg
 </pre></div>
 </div>
 <p>To be able to build MediaElch using the command line, don’t forget to
 add the <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory of the previously installed Qt version to
 your <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>. For example add following to your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/Qt/5.15.2/gcc_64/bin
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/Qt/5.15.2/gcc_64/bin
 </pre></div>
 </div>
-</div>
-<div class="section" id="build">
+</section>
+<section id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional, if you use non-default GCC</span>
-<span class="nb">export</span> <span class="nv">CXX</span><span class="o">=</span>g++-8<span class="p">;</span> <span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span>gcc-8<span class="p">;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">CXX</span><span class="o">=</span>g++-8<span class="p">;</span><span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">CC</span><span class="o">=</span>gcc-8<span class="p">;</span>
 <span class="c1"># Clone with dependencies</span>
-git clone --recursive --depth<span class="o">=</span><span class="m">1</span> https://github.com/Komet/MediaElch.git
-<span class="nb">cd</span> MediaElch
-mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
-qmake ..
-make -j4
+git<span class="w"> </span>clone<span class="w"> </span>--recursive<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/Komet/MediaElch.git
+<span class="nb">cd</span><span class="w"> </span>MediaElch
+mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+qmake<span class="w"> </span>..
+make<span class="w"> </span>-j4
 </pre></div>
 </div>
-</div>
-<div class="section" id="install">
+</section>
+<section id="install">
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this heading"></a></h2>
 <p>Run following command after building MediaElch to install it on your system.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo make install
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>make<span class="w"> </span>install
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -192,7 +192,7 @@ make -j4
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2018 - 2022, MediaElch authors.</p>
+    <p>&#169; Copyright 2018 - 2023, MediaElch authors.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
