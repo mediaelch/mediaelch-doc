@@ -12,14 +12,14 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
-2.8.19 - *tbd*
+2.10.0 - Benzar (2023-02-05)
 ************************************
 
 Notes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - There are now different MediaElch releases for Windows 7/8 and Windows 10/11.
-   The Windows 10 or later releases use Qt6, which fix scaling issuse on 4k display
+   The Windows 10 or later releases use Qt6, which fix scaling issues on 4k display
    with scaling >100% (`#429 <https://github.com/Komet/MediaElch/issues/429>`_)
 
 Bugfixes
@@ -63,15 +63,10 @@ Changes
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- - Dark Mode: MediaElch has gained an experimental dark mode for its _main window_ (`#761 <https://github.com/Komet/MediaElch/issues/761>`_).
+ - Dark Mode: MediaElch has gained an experimental dark mode for its *main window* (`#761 <https://github.com/Komet/MediaElch/issues/761>`_).
    It can only be set through MediaElch's settings.  On macOS, the theme is automatically
    detected if set to "auto".
- - The TV show search dialog has gained a preview
-
-Removed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
- - *tbd*
+ - The TV show search dialog has gained a preview (`#1513 <https://github.com/Komet/MediaElch/issues/1513>`_)
 
 Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
