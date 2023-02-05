@@ -21,6 +21,12 @@ macOS 10.13 or later is supported.  You can download MediaElch as a ``*.dmg`` fi
 +-------------------+--------------------+-----------------------------------------------+
 
 
+.. warning::
+
+   The DMG for macOS 11 or later is currently about 180MiB.
+   With the next release, it will be down to 70MiB again.
+
+
 *See also section macOS in:* :doc:`Install MediaElch <../installation>`.
 
 
