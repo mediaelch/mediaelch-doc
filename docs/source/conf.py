@@ -24,9 +24,9 @@ copyright = '2018 - 2023, MediaElch authors'
 author = ''
 
 # The short X.Y version
-version = u'2.8'
+version = u'2.10'
 # The full version, including alpha/beta/rc tags
-release = u'2.8.18'
+release = u'2.10.0'
 
 
 # -- General configuration ---------------------------------------------------
