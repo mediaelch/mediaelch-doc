@@ -12,6 +12,39 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+2.10.2 - tbd
+************************************
+
+Notes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - MediaElch for macOS 11 and later now uses Qt 6.5
+
+Fixed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - UI: Color labels have better color for the dark theme (`#1545 <https://github.com/Komet/MediaElch/issues/1545>`_)
+
+Changed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - …
+
+Added
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - Movie renamer: It is now possible to use a movie's TMDb ID as placeholder (`#1542 <https://github.com/Komet/MediaElch/issues/1542>`_)
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - …
+
+Internal Improvements and Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ - MediaElch now requires CMake 3.15 or later
+
 2.10.0 - Benzar (2023-02-05)
 ************************************
 

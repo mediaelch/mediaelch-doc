@@ -19,8 +19,8 @@ Use the following to execute a build in a fresh toolbox or on the host:
       qt6-qttools \
       qt6-qttools-devel \
       qt6-qtdeclarative-devel \
-      qt6-svg  \
-      qt6-svg-devel \
+      qt6-qtsvg \
+      qt6-qtsvg-devel \
       qt6-qt5compat-devel \
       qt6-qt5compat \
       libmediainfo-devel
