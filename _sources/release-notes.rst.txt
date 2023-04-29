@@ -24,6 +24,7 @@ Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - UI: Color labels have better color for the dark theme (`#1545 <https://github.com/Komet/MediaElch/issues/1545>`_)
+ - UI: The language dropdown menu is now sorted according to the translated language names (`#1560 <https://github.com/Komet/MediaElch/issues/1560>`_)
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
