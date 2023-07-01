@@ -6,6 +6,11 @@ pipeline {
     }
   }
 
+  triggers {
+    // Once a week on Sundays between 1 and 6 AM.
+    cron('H H(1-6) * * 0')
+  }
+
   options {
     ansiColor('xterm')
     timestamps()
