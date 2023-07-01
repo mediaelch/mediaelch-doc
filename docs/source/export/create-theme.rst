@@ -1,6 +1,6 @@
-======================
-Create an Export Theme
-======================
+===========================
+Create an Export HTML Theme
+===========================
 
 .. contents::
    :local:

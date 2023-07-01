@@ -1,6 +1,6 @@
-================
-Available Themes
-================
+=====================
+Available HTML Themes
+=====================
 
 MediaElch provides three themes for exporting your media collection.
 
