@@ -18,11 +18,11 @@ Linux AppImage
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Linux (AppImage)  | 2.10.0  (GitHub)   | |gh_pages_release|                            |
+| Linux (AppImage)  | 2.10.2  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.10.0  (Mirror)   | |mirror_release|                              |
+|                   | 2.10.2  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | latest (unstable)  | |mirror_nightly_linux|                        |
+|                   | latest (unstable)  | |mirror_snapshot_linux|                       |
 +-------------------+--------------------+-----------------------------------------------+
 
 
@@ -71,11 +71,11 @@ Or you can install MediaElch per command line:
 
 .. _AppImage: https://appimage.org/
 
-.. |gh_pages_release| image:: ../images/badges/Version-v2.10.0.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.0
+.. |gh_pages_release| image:: ../images/badges/Version-v2.10.2.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.2
 
-.. |mirror_release| image:: ../images/badges/Version-v2.10.0.svg
-   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.0/
+.. |mirror_release| image:: ../images/badges/Version-v2.10.2.svg
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.2/
 
-.. |mirror_nightly_linux| image:: ../images/badges/Linux-v2.10.1-dev.svg
+.. |mirror_snapshot_linux| image:: ../images/badges/Linux-v2.10.3-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
