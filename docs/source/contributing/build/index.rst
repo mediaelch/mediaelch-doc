@@ -7,9 +7,6 @@ Using `QtCreator`_ is supported and advised.
 
 We support Qt 5 and Qt 6.
 
-CMake is supported as well. Following instructions will use
-QMake, though.
-
 *Supported platforms:*
 
 .. toctree::
