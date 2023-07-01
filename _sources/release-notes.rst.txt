@@ -22,7 +22,7 @@ Notes
    a movie/TV show/concert is selected, then your MediaInfo version has a bug.
    Please contact the maintainer of your system's ``libmediainfo``.
    See [here](https://github.com/MediaArea/MediaInfo/issues/707) for more.
- - MediaElch for macOS 11 and later now uses Qt 6.5
+ - MediaElch for macOS 11 and later now uses Qt 6.5.1
 
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -32,7 +32,13 @@ Fixed
    - Color labels have better color for the dark theme (`#1545 <https://github.com/Komet/MediaElch/issues/1545>`_)
    - The language dropdown menu is now sorted according to the translated language names (`#1560 <https://github.com/Komet/MediaElch/issues/1560>`_)
    - Fix the ordering of custom movie scraper details; previously it was sorted randomly (`#1562 <https://github.com/Komet/MediaElch/issues/1562>`_)
+   - After scraping movie images, the "has image" icons were not immediately updated (`#1591 <https://github.com/Komet/MediaElch/issues/1591>`_)
  - If a movie directory contains an invalid ``*.nfo`` file, it was not listed properly when reloading movies (`#1564 <https://github.com/Komet/MediaElch/issues/1564>`_)
+ - macOS: When a new directory is added in the settings window, the main window was moved on top (`#1577 <https://github.com/Komet/MediaElch/issues/1577>`_)
+ - TV shows: You can now search by an IMDb ID when scraping TV shows.
+ - ADE:
+   - Fix title and actor scraping (`#1592 <https://github.com/Komet/MediaElch/issues/1592>`_)
+   - Remove ``On Sale!`` from title if ADE sets it
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,6 +50,7 @@ Added
 
  - Movie renamer: It is now possible to use a movie's TMDb ID as placeholder (`#1542 <https://github.com/Komet/MediaElch/issues/1542>`_)
  - Custom Movie Scraper: You can now load movie tags as well (`#1162 <https://github.com/Komet/MediaElch/issues/1162>`_)
+ - A new TV scraper for fernsehserien.de was added (`#1135 <https://github.com/Komet/MediaElch/issues/1135>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,8 +61,17 @@ Internal Improvements and Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  - MediaElch now requires CMake 3.15 or later
+ - QML and QtQuick are no longer required
  - The movie scrapers have been refactored to allow parallel downloads in the future as well
    as preview images in the search dialog.
+ - 
+Changes for Package Maintainers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you package MediaElch, e.g. for some Linux distributions, these notes may be important for you:
+
+ - QML and QtQuick are no longer required and can be removed from MediaElch's dependencies.
+   This includes the ``declarative`` module and everything QML and QtQuick related.
 
 2.10.0 - Benzar (2023-02-05)
 ************************************
