@@ -7,15 +7,15 @@ About
    :alt: MediaElch Logo
 
 MediaElch is a MediaManager for **Kodi**. Information about Movies, TV Shows,
-Concerts and Music are stored as NFO files.  Fanarts are downloaded
-automatically from fanart.tv.
+Concerts and Music are stored as NFO files.  Fanart is downloaded
+automatically from `Fanart.tv`_.
 
 
 Supported scrapers
 ==================
 
-Included are scrapers for The Movie DB, The TV DB, Videobuster,
-IMDB and Fanart.tv (and also some adult content scrapers).
+Included are scrapers for `The Movie DB`_, Videobuster_, TVMaze_, `fernsehserien.de`_,
+IMDb_ and `Fanart.tv`_ (and also some adult content scrapers).
 The Movie DB is available in more than 20 languages.
 Music information is scraped from The Audio DB, All Music and Discogs.
 TV themes and trailers can also be downloaded.
@@ -49,3 +49,10 @@ Screenshots
    :alt: Settings - Global
 
    Global MediaElch Settings
+
+.. _Fanart.tv: https://fanart.tv
+.. _Videobuster: https://www.videobuster.de/
+.. _TVMaze: https://www.tvmaze.com/
+.. _fernsehserien.de: https://fernsehserien.de
+.. _IMDb: https://imdb.com
+.. _The Movie DB: https://www.themoviedb.org/

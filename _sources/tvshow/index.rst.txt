@@ -19,7 +19,7 @@ Features
 
 The TV show page let's you manage your TV shows and their seasons/episodes.
 You can manage details like title, rating and runtime or images which you can
-load from Fanart.tv or TMDb.
+load from Fanart.tv or TMDB.
 
 TV Tune
 -------

@@ -30,7 +30,6 @@ MediaCenters as well.
    release-notes
    download
    contributing/index
-   settings
    license
 
 
@@ -50,6 +49,7 @@ MediaCenters as well.
    :maxdepth: 1
    :hidden:
 
+   settings
    movie/index
    tvshow/index
    concert/index

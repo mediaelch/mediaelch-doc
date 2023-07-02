@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Release Notes / Changelog &mdash; MediaElch 2.10.0 documentation</title>
+  <title>Release Notes / Changelog &mdash; MediaElch 2.10.2 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
@@ -46,30 +46,28 @@
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://mediaelch.github.io/mediaelch-blog/posts/">Blog</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes / Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#tbd">2.10.2 - tbd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.10.2 - 2023-07-01</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#internal-improvements-and-changes">Internal Improvements and Changes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changes-for-package-maintainers">Changes for Package Maintainers</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#benzar-2023-02-05">2.10.0 - Benzar (2023-02-05)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id12">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Notes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bugfixes">Bugfixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changes">Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id19">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">Internal Improvements and Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Internal Improvements and Changes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#coridian-2022-10-28">2.8.18 - Coridian (2022-10-28)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id23">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id24">Bugfixes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id30">Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id32">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id38">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Bugfixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id39">Internal Improvements and Changes</a></li>
 </ul>
 </li>
@@ -191,7 +189,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">Download</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing/index.html">Contributing &amp; Build</a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
@@ -203,6 +200,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sections</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="concert/index.html">Concert</a></li>
@@ -210,7 +208,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="export/index.html">Export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export/index.html">Export your Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="renaming.html">Renamer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kodi.html">Synchronization with Kodi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portable-mode.html">Portable Mode</a></li>
@@ -247,8 +245,8 @@
 <p>This information is drawn from the GitHub MediaElch project changelog: <br />
 <a class="reference external" href="https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md">https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md</a></p>
 </div>
-<section id="tbd">
-<h2>2.10.2 - tbd<a class="headerlink" href="#tbd" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h2>2.10.2 - 2023-07-01<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <section id="notes">
 <h3>Notes<a class="headerlink" href="#notes" title="Permalink to this heading"></a></h3>
 <blockquote>
@@ -280,14 +278,6 @@ See [here](<a class="reference external" href="https://github.com/MediaArea/Medi
 </ul>
 </div></blockquote>
 </section>
-<section id="changed">
-<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>…</p></li>
-</ul>
-</div></blockquote>
-</section>
 <section id="added">
 <h3>Added<a class="headerlink" href="#added" title="Permalink to this heading"></a></h3>
 <blockquote>
@@ -295,14 +285,6 @@ See [here](<a class="reference external" href="https://github.com/MediaArea/Medi
 <li><p>Movie renamer: It is now possible to use a movie’s TMDb ID as placeholder (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1542">#1542</a>)</p></li>
 <li><p>Custom Movie Scraper: You can now load movie tags as well (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1162">#1162</a>)</p></li>
 <li><p>A new TV scraper for fernsehserien.de was added (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1135">#1135</a>)</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="removed">
-<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this heading"></a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>…</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -314,7 +296,6 @@ See [here](<a class="reference external" href="https://github.com/MediaArea/Medi
 <li><p>QML and QtQuick are no longer required</p></li>
 <li><p>The movie scrapers have been refactored to allow parallel downloads in the future as well
 as preview images in the search dialog.</p></li>
-<li></li>
 </ul>
 </div></blockquote>
 </section>
@@ -331,8 +312,8 @@ This includes the <code class="docutils literal notranslate"><span class="pre">d
 </section>
 <section id="benzar-2023-02-05">
 <h2>2.10.0 - Benzar (2023-02-05)<a class="headerlink" href="#benzar-2023-02-05" title="Permalink to this heading"></a></h2>
-<section id="id12">
-<h3>Notes<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
+<section id="id13">
+<h3>Notes<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>There are now different MediaElch releases for Windows 7/8 and Windows 10/11.
@@ -385,8 +366,8 @@ we search by TMDb ID <code class="docutils literal notranslate"><span class="pre
 </ul>
 </div></blockquote>
 </section>
-<section id="id19">
-<h3>Added<a class="headerlink" href="#id19" title="Permalink to this heading"></a></h3>
+<section id="id20">
+<h3>Added<a class="headerlink" href="#id20" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Dark Mode: MediaElch has gained an experimental dark mode for its <em>main window</em> (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/761">#761</a>).
@@ -396,8 +377,8 @@ detected if set to “auto”.</p></li>
 </ul>
 </div></blockquote>
 </section>
-<section id="id22">
-<h3>Internal Improvements and Changes<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h3>
+<section id="id23">
+<h3>Internal Improvements and Changes<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>We’ve added a lot of tests for our music scrapers to ensure that
@@ -408,16 +389,16 @@ regressions aren’t unnoticed for so long anymore.</p></li>
 </section>
 <section id="coridian-2022-10-28">
 <h2>2.8.18 - Coridian (2022-10-28)<a class="headerlink" href="#coridian-2022-10-28" title="Permalink to this heading"></a></h2>
-<section id="id23">
-<h3>Notes<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h3>
+<section id="id24">
+<h3>Notes<a class="headerlink" href="#id24" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>MediaElch now fully supports Qt6!</p></li>
 </ul>
 </div></blockquote>
 </section>
-<section id="id24">
-<h3>Bugfixes<a class="headerlink" href="#id24" title="Permalink to this heading"></a></h3>
+<section id="id25">
+<h3>Bugfixes<a class="headerlink" href="#id25" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Multi-Episode numbers such as <code class="docutils literal notranslate"><span class="pre">S01E01E02E03.mov</span></code> are now correctly identified (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1429">#1429</a>)</p></li>
@@ -436,8 +417,8 @@ This is necessary to update the <code class="docutils literal notranslate"><span
 </ul>
 </div></blockquote>
 </section>
-<section id="id30">
-<h3>Changes<a class="headerlink" href="#id30" title="Permalink to this heading"></a></h3>
+<section id="id31">
+<h3>Changes<a class="headerlink" href="#id31" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Network proxy is disabled (per default) for Kodi Synchronisation (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1430">#1430</a>) <br />
@@ -446,8 +427,8 @@ This can be re-enabled in MediaElch’s network settings.</p></li>
 </ul>
 </div></blockquote>
 </section>
-<section id="id32">
-<h3>Added<a class="headerlink" href="#id32" title="Permalink to this heading"></a></h3>
+<section id="id33">
+<h3>Added<a class="headerlink" href="#id33" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>Renamer: Placeholder input fields now provide examples through a drop-down menu (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/657">#657</a>) <br />
@@ -461,8 +442,8 @@ added for movies (<a class="reference external" href="https://github.com/Komet/M
 </ul>
 </div></blockquote>
 </section>
-<section id="id38">
-<h3>Removed<a class="headerlink" href="#id38" title="Permalink to this heading"></a></h3>
+<section id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>OFDb scraper was removed. <br />

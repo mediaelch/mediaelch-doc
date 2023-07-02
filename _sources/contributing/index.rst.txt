@@ -2,11 +2,12 @@
 Contributing & Build
 ====================
 
-.. warning::
+MediaElch is open source! Would you like to help make MediaElch better? Then this section is for you.
 
-   Work in progress
+There is a lot you can do. From translating MediaElch, to reporting bugs, fixing typos/grammar
+in our documentation, testing and helping to improve MediaElch in general.
 
-MediaElch is open source! Would you like to help make MediaElch better? Then this section is for you:
+Refer to these sub-pages for more details.
 
 
 .. toctree::

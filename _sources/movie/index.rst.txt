@@ -19,7 +19,7 @@ Search/Scrape New Movies
 ------------------------
 
 Scraping new movies in MediaElch is easy! Select the movie(s) you want to
-load form e.g. **IMDb** oder **The Movie Db** and click on the scrape
+load form e.g. **IMDb** or **The Movie DB** and click on the scrape
 button (``Ctrl+F``, see screenshot below). A new dialog will pop up in
 which can select what information you want to load and you can select
 the correct movie.
@@ -86,10 +86,11 @@ Following tables list supported features for each movie scraper.
 +----------------------+-------+---------+--------+--------------+---------+---------------+---------+----------+--------+----------+--------+--------+---------+-----------+--------+----------+------+---------------+-----+------+-------+----------+--------+-------+
 | AEBN                 | yes   | no      | no     | yes          | yes     | no            | no      | yes      | yes    | no       | yes    | yes    | yes     | no        | no     | yes      | yes  | no            | yes | no   | no    | no       | no     | no    |
 +----------------------+-------+---------+--------+--------------+---------+---------------+---------+----------+--------+----------+--------+--------+---------+-----------+--------+----------+------+---------------+-----+------+-------+----------+--------+-------+
-| HotMovies            | yes   | no      | yes    | yes          | yes     | no            | no      | yes      | yes    | no       | yes    | yes    | yes     | no        | no     | yes      | no   | no            | yes | no   | no    | no       | no     | no    |
+| HotMovies            | yes   | no      | yes    | yes          | yes     | no            | no      | yes      | yes    | yes      | yes    | yes    | yes     | no        | no     | yes      | no   | no            | yes | no   | no    | no       | no     | no    |
 +----------------------+-------+---------+--------+--------------+---------+---------------+---------+----------+--------+----------+--------+--------+---------+-----------+--------+----------+------+---------------+-----+------+-------+----------+--------+-------+
 | Adult DVD Empire     | yes   | no      | no     | yes          | yes     | no            | no      | yes      | yes    | yes      | yes    | yes    | yes     | no        | no     | yes      | no   | no            | yes | no   | no    | no       | no     | no    |
 +----------------------+-------+---------+--------+--------------+---------+---------------+---------+----------+--------+----------+--------+--------+---------+-----------+--------+----------+------+---------------+-----+------+-------+----------+--------+-------+
+
 
 Keyboard Shortcuts
 ------------------

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create an Export Theme &mdash; MediaElch 2.10.0 documentation</title>
+  <title>Create an Export HTML Theme &mdash; MediaElch 2.10.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Renaming files and directories" href="../renaming.html" />
-    <link rel="prev" title="Available Themes" href="themes.html" /> 
+    <link rel="prev" title="Available HTML Themes" href="themes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,7 +48,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes / Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing &amp; Build</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
@@ -60,6 +59,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sections</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../movie/index.html">Movie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tvshow/index.html">TV Shows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../concert/index.html">Concert</a></li>
@@ -67,9 +67,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Export</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="themes.html">Available Themes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Create an Export Theme</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Export your Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="export-csv.html">Export to CSV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="themes.html">Available HTML Themes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create an Export HTML Theme</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installing-the-dummy-theme">Installing the Dummy theme</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#adjust-the-themes-metadata">Adjust the themes metadata</a></li>
 </ul>
@@ -108,8 +109,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">Export</a></li>
-      <li class="breadcrumb-item active">Create an Export Theme</li>
+          <li class="breadcrumb-item"><a href="index.html">Export your Library</a></li>
+      <li class="breadcrumb-item active">Create an Export HTML Theme</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/mediaelch/mediaelch-doc/blob/master/docs/source/export/create-theme.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -119,8 +120,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="create-an-export-theme">
-<h1>Create an Export Theme<a class="headerlink" href="#create-an-export-theme" title="Permalink to this heading"></a></h1>
+  <section id="create-an-export-html-theme">
+<h1>Create an Export HTML Theme<a class="headerlink" href="#create-an-export-html-theme" title="Permalink to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#installing-the-dummy-theme" id="id1">Installing the Dummy theme</a></p></li>
@@ -154,7 +155,7 @@ contain any special characters or spaces and match the name of your theme.</p>
 <li><p>add <code class="docutils literal notranslate"><span class="pre">description</span></code> tags in languages you want, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;description</span> <span class="pre">lang=&quot;de&quot;&gt;...&lt;/description&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">author</span></code> should be your name</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> needs to be a numeric version of the format <code class="docutils literal notranslate"><span class="pre">`major.minor[.patch]</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mediaelch-min</span></code> needs to be a numeric version of the oldest supported version of MediaElch, e.g. <code class="docutils literal notranslate"><span class="pre">2.10.0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mediaelch-min</span></code> needs to be a numeric version of the oldest supported version of MediaElch, e.g. <code class="docutils literal notranslate"><span class="pre">2.10.2</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mediaelch-max</span></code> should only be set if there are known issues with a certain MediaElch version</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">supports</span></code> contains the sections which could be exported with your theme
 - <code class="docutils literal notranslate"><span class="pre">section</span></code> supported section, can appear multiple times. Possible values: <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">tvshows</span></code>, <code class="docutils literal notranslate"><span class="pre">concerts</span></code></p></li>
@@ -387,7 +388,7 @@ your created theme. Just create a zip archive and send it to
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="themes.html" class="btn btn-neutral float-left" title="Available Themes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="themes.html" class="btn btn-neutral float-left" title="Available HTML Themes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../renaming.html" class="btn btn-neutral float-right" title="Renaming files and directories" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
