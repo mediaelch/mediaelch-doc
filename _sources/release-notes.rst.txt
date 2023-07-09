@@ -12,6 +12,34 @@ Release Notes / Changelog
   https://github.com/Komet/MediaElch/blob/master/CHANGELOG.md
 
 
+
+Upcoming
+************************************
+
+Fixed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Movie scrapers: Original title was missing and the setting "ignore duplicate original title"
+  was ignored (`#1601 <https://github.com/Komet/MediaElch/issues/1601>`_).
+- Custom Movie Scraper: Images from fanart.tv were not loaded, even though it was selected in MediaElch's settings (`#1598 <https://github.com/Komet/MediaElch/issues/1598>`_)
+- Universal Music Scraper: The MusicBrainz part of the universal music scraper now works again (`#1597 <https://github.com/Komet/MediaElch/issues/1597>`_).
+
+Changed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- tbd
+
+Removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- tbd
+
+Added
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- tbd
+
+
 2.10.2 - 2023-07-01
 ************************************
 
