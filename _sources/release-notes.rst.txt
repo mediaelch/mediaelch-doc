@@ -22,7 +22,9 @@ Fixed
 - Movie scrapers: Original title was missing and the setting "ignore duplicate original title"
   was ignored (`#1601 <https://github.com/Komet/MediaElch/issues/1601>`_).
 - Custom Movie Scraper: Images from fanart.tv were not loaded, even though it was selected in MediaElch's settings (`#1598 <https://github.com/Komet/MediaElch/issues/1598>`_)
-- Universal Music Scraper: The MusicBrainz part of the universal music scraper now works again (`#1597 <https://github.com/Komet/MediaElch/issues/1597>`_).
+- Universal Music Scraper: 
+  - The MusicBrainz part of the universal music scraper now works again (`#1597 <https://github.com/Komet/MediaElch/issues/1597>`_).
+  - Discogs correctly loads an artists biography again (`#1606 <https://github.com/Komet/MediaElch/issues/1606>`_)
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,7 +39,7 @@ Removed
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+ - The movie search dialog has gained a preview (`#1607 <https://github.com/Komet/MediaElch/issues/1607>`_)
 
 
 2.10.2 - 2023-07-01
