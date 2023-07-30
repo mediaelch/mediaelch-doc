@@ -22,37 +22,37 @@ The server is also hosted by our team.  If the server is down, please contact us
 +---------------------+--------------------+-----------------------------------------------+
 | System (64 bit)     | Version            | Download                                      |
 +=====================+====================+===============================================+
-| Windows 10 or later | 2.10.2  (GitHub)   | |gh_pages_release|                            |
+| Windows 10 or later | 2.10.4  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.2  (Mirror)   | |mirror_release|                              |
+|                     | 2.10.4  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_windows_10_or_later|         |
 +---------------------+--------------------+-----------------------------------------------+
-| Windows 7 + 8       | 2.10.2  (GitHub)   | |gh_pages_release|                            |
+| Windows 7 + 8       | 2.10.4  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.2  (Mirror)   | |mirror_release|                              |
+|                     | 2.10.4  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_windows_7_8|                 |
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
-| macOS 11 or later   | 2.10.2  (GitHub)   | |gh_pages_release|                            |
+| macOS 11 or later   | 2.10.4  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.2  (Mirror)   | |mirror_release|                              |
+|                     | 2.10.4  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_macOS_11_or_later|           |
 +---------------------+--------------------+-----------------------------------------------+
-| macOS X             | 2.10.2  (GitHub)   | |gh_pages_release|                            |
+| macOS X             | 2.10.4  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.2  (Mirror)   | |mirror_release|                              |
+|                     | 2.10.4  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_macOS_X|                     |
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)    | 2.10.2  (GitHub)   | |gh_pages_release|                            |
+| Linux (AppImage)    | 2.10.4  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.2  (Mirror)   | |mirror_release|                              |
+|                     | 2.10.4  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_linux|                       |
 +---------------------+--------------------+-----------------------------------------------+
@@ -87,23 +87,23 @@ MediaElch is open source! The source code is located on GitHub: https://github.c
 
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
-.. |gh_pages_release| image:: images/badges/Version-v2.10.2.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.2
+.. |gh_pages_release| image:: images/badges/Version-v2.10.4.svg
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.4
 
-.. |mirror_release| image:: images/badges/Version-v2.10.2.svg
-   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.2/
+.. |mirror_release| image:: images/badges/Version-v2.10.4.svg
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.4/
 
-.. |mirror_snapshot_linux| image:: images/badges/Linux-v2.10.3-dev.svg
+.. |mirror_snapshot_linux| image:: images/badges/Linux-v2.10.5-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
 
-.. |mirror_snapshot_macOS_11_or_later| image:: images/badges/macOS-v2.10.3-dev.svg
+.. |mirror_snapshot_macOS_11_or_later| image:: images/badges/macOS-v2.10.5-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_11_or_later/
 
-.. |mirror_snapshot_macOS_X| image:: images/badges/macOS-v2.10.3-dev.svg
+.. |mirror_snapshot_macOS_X| image:: images/badges/macOS-v2.10.5-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/macOS_X/
 
-.. |mirror_snapshot_windows_7_8| image:: images/badges/Windows-v2.10.3-dev.svg
+.. |mirror_snapshot_windows_7_8| image:: images/badges/Windows-v2.10.5-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_7_8/
 
-.. |mirror_snapshot_windows_10_or_later| image:: images/badges/Windows-v2.10.3-dev.svg
+.. |mirror_snapshot_windows_10_or_later| image:: images/badges/Windows-v2.10.5-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Windows_10_or_later/
