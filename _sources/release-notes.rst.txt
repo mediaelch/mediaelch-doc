@@ -19,9 +19,14 @@ Upcoming
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+- The movie renamer did not replace ``<director>`` in movie folder names (`#1611 <https://github.com/Komet/MediaElch/issues/1611>`_)
+- Advanced Settings: If ``<exclude>`` exists in ``advancedsettings.xml``, we accidentally cleared
+  the sort tokens, meaning sorting without articles was not possible (`#1613 <https://github.com/Komet/MediaElch/issues/1613>`_)
 - Movie scrapers: Original title was missing and the setting "ignore duplicate original title"
   was ignored (`#1601 <https://github.com/Komet/MediaElch/issues/1601>`_).
 - Custom Movie Scraper: Images from fanart.tv were not loaded, even though it was selected in MediaElch's settings (`#1598 <https://github.com/Komet/MediaElch/issues/1598>`_)
+- IMDb TV: If a season has an episode No. 0 (e.g. a pilot), it could not be scraped and all other episodes were offset by 1 (`#1614 <https://github.com/Komet/MediaElch/issues/1614>`_)
+- Fernsehserien.de: Fix TV show search
 - Universal Music Scraper: 
   - The MusicBrainz part of the universal music scraper now works again (`#1597 <https://github.com/Komet/MediaElch/issues/1597>`_).
   - Discogs correctly loads an artists biography again (`#1606 <https://github.com/Komet/MediaElch/issues/1606>`_)
