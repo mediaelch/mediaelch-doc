@@ -20,11 +20,15 @@ Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Movies: Opening and immediately closing the trailer search could crash MediaElch
+- UI:
+  - Dark Theme: The music file list (artist/album) is now readable (better colors)
+  - Dark Theme: The search/filter result list has explicit colors: they are now readable (`#1629 <https://github.com/Komet/MediaElch/issues/1629>`_)
+- UniversalMusicScraper: If an artist has no Discogs link on MusicBrainz, MediaElch was stuck.
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- Image Dialog: Images downloaded from fanart.tv are now sorted by preferred language, if set (`#1619 <https://github.com/Komet/MediaElch/issues/1619>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
