@@ -29,6 +29,11 @@ Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Image Dialog: Images downloaded from fanart.tv are now sorted by preferred language, if set (`#1619 <https://github.com/Komet/MediaElch/issues/1619>`_)
+- TMDB:
+  - API queries now set a "region" based on the selected language.
+    For example, the country's release date will be used.
+  - If a movie has more than one certification in a given language, we sometimes accidentally
+    ignored the selected language if TMDB has an empty certification for it (`#1641 <https://github.com/Komet/MediaElch/issues/1641>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
