@@ -43,7 +43,7 @@ Removed
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- TV Shows: Episode's TMDB id is now shown as well (`#1644 <https://github.com/Komet/MediaElch/issues/1644>`_)
 
 
 2.10.4 - 2023-07-30
