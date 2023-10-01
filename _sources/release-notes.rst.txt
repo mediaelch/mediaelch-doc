@@ -24,6 +24,7 @@ Fixed
   - Dark Theme: The music file list (artist/album) is now readable (better colors)
   - Dark Theme: The search/filter result list has explicit colors: they are now readable (`#1629 <https://github.com/Komet/MediaElch/issues/1629>`_)
 - UniversalMusicScraper: If an artist has no Discogs link on MusicBrainz, MediaElch was stuck.
+- ADE: Overview and posters are properly scraped again (`#1650 <https://github.com/Komet/MediaElch/issues/1650>`_)
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +44,9 @@ Removed
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- TV Shows: Episode's TMDB id is now shown as well (`#1644 <https://github.com/Komet/MediaElch/issues/1644>`_)
+- TV Shows: 
+  - Episode's TMDB id is now shown as well (`#1644 <https://github.com/Komet/MediaElch/issues/1644>`_)
+  - IDs (e.g. IMDb ID) now have a button that takes you to the corresponding website (`#1645 <https://github.com/Komet/MediaElch/issues/1645>`_)
 
 
 2.10.4 - 2023-07-30
