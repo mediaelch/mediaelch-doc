@@ -19,12 +19,16 @@ Upcoming
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Movies: Opening and immediately closing the trailer search could crash MediaElch
+- Movies: 
+  - Opening and immediately closing the trailer search could crash MediaElch
+  - Exclusion filters are now applied to all folders, not just a file's parent directory (`#1653 <https://github.com/Komet/MediaElch/issues/1653>`_) |br|
+    Thanks to GitHub user ``Neinei0k`` for implementing it!
 - UI:
   - Dark Theme: The music file list (artist/album) is now readable (better colors)
   - Dark Theme: The search/filter result list has explicit colors: they are now readable (`#1629 <https://github.com/Komet/MediaElch/issues/1629>`_)
 - UniversalMusicScraper: If an artist has no Discogs link on MusicBrainz, MediaElch was stuck.
 - ADE: Overview and posters are properly scraped again (`#1650 <https://github.com/Komet/MediaElch/issues/1650>`_)
+- IMDb: Fix scraping of episode IDs from season pages.
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,11 +39,13 @@ Changed
     For example, the country's release date will be used.
   - If a movie has more than one certification in a given language, we sometimes accidentally
     ignored the selected language if TMDB has an empty certification for it (`#1641 <https://github.com/Komet/MediaElch/issues/1641>`_)
+- UI: Images are now loaded asynchronously, which should improve the performance when switching items (`#1640 <https://github.com/Komet/MediaElch/issues/1640>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- Advanced Settings: Option ``forceCache`` was removed; if you were relying on this feature,
+  please let us know.
 
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
