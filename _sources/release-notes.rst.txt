@@ -31,12 +31,13 @@ Fixed
 - UI: Dark Theme:
   - The music file list (artist/album) is now readable (better colors)
   - The search/filter result list has explicit colors: they are now readable (`#1629 <https://github.com/Komet/MediaElch/issues/1629>`_)
-  - TV Status field and the Movie Streamdetails->Stereo fields are now properly colored (`#1657 <https://github.com/Komet/MediaElch/issues/1657>`_)
+  - TV Status field and the Movie streamdetails->Stereo fields are now properly colored (`#1657 <https://github.com/Komet/MediaElch/issues/1657>`_)
   - The numbers and icons in the left navigation bar were not properly scaled (`#1662 <https://github.com/Komet/MediaElch/issues/1662>`_)
 - UniversalMusicScraper: If an artist has no Discogs link on MusicBrainz, MediaElch was stuck.
 - ADE: Overview and posters are properly scraped again (`#1650 <https://github.com/Komet/MediaElch/issues/1650>`_)
 - IMDb: Fix scraping of episode IDs from season pages
 - AppImage: the SVG plugin is now shipped explicitly, fixing the icons in the navigation bar (`#1662 <https://github.com/Komet/MediaElch/issues/1662>`_)
+- AllMusic/Universal Music Scraper: Fixed biography and mood scraping (`#1606 <https://github.com/Komet/MediaElch/issues/1606>`_)
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
