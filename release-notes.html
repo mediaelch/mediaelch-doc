@@ -316,26 +316,32 @@
 </section>
 <section id="id3">
 <h3>Fixed<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Movies:</p>
 <ul>
-<li><p>Movies:
-- Opening and immediately closing the trailer search could crash MediaElch
-- Exclusion filters are now applied to all folders, not just a file’s parent directory (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1653">#1653</a>) <br /></p>
-<blockquote>
-<div><p>Thanks to GitHub user <code class="docutils literal notranslate"><span class="pre">Neinei0k</span></code> for implementing it!</p>
-</div></blockquote>
+<li><p>Opening and immediately closing the trailer search could crash MediaElch</p></li>
+<li><p>Exclusion filters are now applied to all folders, not just a file’s parent directory (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1653">#1653</a>) <br />
+Thanks to GitHub user <code class="docutils literal notranslate"><span class="pre">Neinei0k</span></code> for implementing it!</p></li>
+</ul>
 </li>
-<li><p>UI: Dark Theme:
-- The music file list (artist/album) is now readable (better colors)
-- The search/filter result list has explicit colors: they are now readable (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1629">#1629</a>)
-- TV Status field and the Movie streamdetails-&gt;Stereo fields are now properly colored (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1657">#1657</a>)
-- The numbers and icons in the left navigation bar were not properly scaled (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1662">#1662</a>)</p></li>
+<li><p>UI: Dark Theme:</p>
+<ul>
+<li><p>The music file list (artist/album) is now readable (better colors)</p></li>
+<li><p>The search/filter result list has explicit colors: they are now readable (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1629">#1629</a>)</p></li>
+<li><p>TV Status field and the Movie streamdetails-&gt;Stereo fields are now properly colored (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1657">#1657</a>)</p></li>
+<li><p>The numbers and icons in the left navigation bar were not properly scaled (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1662">#1662</a>)</p></li>
+</ul>
+</li>
 <li><p>UniversalMusicScraper: If an artist has no Discogs link on MusicBrainz, MediaElch was stuck.</p></li>
 <li><p>ADE: Overview and posters are properly scraped again (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1650">#1650</a>)</p></li>
-<li><p>IMDb:
-- Fix scraping of episode IDs from season pages
-- Fix tag loading: option “load all tags” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1634">#1634</a>)
-- Fix movie search
-- Fix TV show search</p></li>
+<li><p>IMDb:</p>
+<ul>
+<li><p>Fix scraping of episode IDs from season pages</p></li>
+<li><p>Fix tag loading: option “load all tags” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1634">#1634</a>)</p></li>
+<li><p>Fix movie search</p></li>
+<li><p>Fix TV show search</p></li>
+</ul>
+</li>
 <li><p>TMDB: Don’t store invalid poster/actor image URLs (only the base URL was stored)</p></li>
 <li><p>HotMovies: Fix movie scraping</p></li>
 <li><p>AppImage: the SVG plugin is now shipped explicitly, fixing the icons in the navigation bar (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1662">#1662</a>)</p></li>
@@ -344,21 +350,22 @@
 </section>
 <section id="id12">
 <h3>Changed<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
-<ul>
-<li><p>Image Dialog: Images downloaded from fanart.tv are now sorted by preferred language, if set (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1619">#1619</a>)</p></li>
-<li><p>TMDB:
-- API queries now set a “region” based on the selected language.</p>
-<blockquote>
-<div><p>For example, the country’s release date will be used.</p>
-</div></blockquote>
 <ul class="simple">
+<li><p>Image Dialog: Images downloaded from fanart.tv are now sorted by preferred language, if set (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1619">#1619</a>)</p></li>
+<li><p>TMDB:</p>
+<ul>
+<li><p>API queries now set a “region” based on the selected language.
+For example, the country’s release date will be used.</p></li>
 <li><p>If a movie has more than one certification in a given language, we sometimes accidentally
 ignored the selected language if TMDB has an empty certification for it (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1641">#1641</a>)</p></li>
 </ul>
 </li>
-<li><p>UI:
-- Images are now loaded asynchronously, which should improve the performance when switching items (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1640">#1640</a>)
-- TV shows: If the “first aired” date is invalid/missing, MediaElch shows the current date, but adds a “missing” marker (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1663">#1663</a>)</p></li>
+<li><p>UI:</p>
+<ul>
+<li><p>Images are now loaded asynchronously, which should improve the performance when switching items (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1640">#1640</a>)</p></li>
+<li><p>TV shows: If the “first aired” date is invalid/missing, MediaElch shows the current date, but adds a “missing” marker (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1663">#1663</a>)</p></li>
+</ul>
+</li>
 <li><p>TV shows: The TMDB id, if available, is now marked as “default” in NFO files.</p></li>
 <li><p>Settings: Changing the main window theme no longer requires a restart.</p></li>
 </ul>
@@ -373,9 +380,12 @@ please let us know.</p></li>
 <section id="id18">
 <h3>Added<a class="headerlink" href="#id18" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>TV Shows:
-- Episode’s TMDB id is now shown as well (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1644">#1644</a>)
-- IDs (e.g. IMDb ID) now have a button that takes you to the corresponding website (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1645">#1645</a>)</p></li>
+<li><p>TV Shows:</p>
+<ul>
+<li><p>Episode’s TMDB id is now shown as well (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1644">#1644</a>)</p></li>
+<li><p>IDs (e.g. IMDb ID) now have a button that takes you to the corresponding website (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1645">#1645</a>)</p></li>
+</ul>
+</li>
 </ul>
 </section>
 </section>
@@ -398,11 +408,14 @@ was ignored (<a class="reference external" href="https://github.com/Komet/MediaE
 <li><p>Custom Movie Scraper: Images from fanart.tv were not loaded, even though it was selected in MediaElch’s settings (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1598">#1598</a>)</p></li>
 <li><p>IMDb TV: If a season has an episode No. 0 (e.g. a pilot), it could not be scraped and all other episodes were offset by 1 (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1614">#1614</a>)</p></li>
 <li><p>Fernsehserien.de: Fix TV show search</p></li>
-<li><p>Universal Music Scraper:
-- MusicBrainz works again (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1597">#1597</a>)
-- MusicBrainz now loads an artist’s biography in the preferred langauge
-- Discogs correctly loads an artists discography again (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1606">#1606</a>)
-- AllMusic loads album ratings again</p></li>
+<li><p>Universal Music Scraper:</p>
+<ul>
+<li><p>MusicBrainz works again (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1597">#1597</a>)</p></li>
+<li><p>MusicBrainz now loads an artist’s biography in the preferred langauge</p></li>
+<li><p>Discogs correctly loads an artists discography again (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1606">#1606</a>)</p></li>
+<li><p>AllMusic loads album ratings again</p></li>
+</ul>
+</li>
 <li><p>The TV show revert button did not revert anything (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1615">#1615</a>)</p></li>
 <li><p>UI: The image dialog did not have a properly distributed image table (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1620">#1620</a>)</p></li>
 </ul>
@@ -434,18 +447,24 @@ See [here](<a class="reference external" href="https://github.com/MediaArea/Medi
 <h3>Fixed<a class="headerlink" href="#id37" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>UI:
-- Selecting TV shows / episodes or artist / albums now has proper background colors on Windows and macOS (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1569">#1569</a>)
-- Color labels have better color for the dark theme (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1545">#1545</a>)
-- The language dropdown menu is now sorted according to the translated language names (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1560">#1560</a>)
-- Fix the ordering of custom movie scraper details; previously it was sorted randomly (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1562">#1562</a>)
-- After scraping movie images, the “has image” icons were not immediately updated (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1591">#1591</a>)</p></li>
+<li><p>UI:</p>
+<ul>
+<li><p>Selecting TV shows / episodes or artist / albums now has proper background colors on Windows and macOS (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1569">#1569</a>)</p></li>
+<li><p>Color labels have better color for the dark theme (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1545">#1545</a>)</p></li>
+<li><p>The language dropdown menu is now sorted according to the translated language names (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1560">#1560</a>)</p></li>
+<li><p>Fix the ordering of custom movie scraper details; previously it was sorted randomly (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1562">#1562</a>)</p></li>
+<li><p>After scraping movie images, the “has image” icons were not immediately updated (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1591">#1591</a>)</p></li>
+</ul>
+</li>
+<li><p>ADE:</p>
+<ul>
+<li><p>Fix title and actor scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1592">#1592</a>)</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">Sale!</span></code> from title if ADE sets it</p></li>
+</ul>
+</li>
 <li><p>If a movie directory contains an invalid <code class="docutils literal notranslate"><span class="pre">*.nfo</span></code> file, it was not listed properly when reloading movies (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1564">#1564</a>)</p></li>
 <li><p>macOS: When a new directory is added in the settings window, the main window was moved on top (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1577">#1577</a>)</p></li>
 <li><p>TV shows: You can now search by an IMDb ID when scraping TV shows.</p></li>
-<li><p>ADE:
-- Fix title and actor scraping (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1592">#1592</a>)
-- Remove <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">Sale!</span></code> from title if ADE sets it</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -501,16 +520,25 @@ with scaling &gt;100% (<a class="reference external" href="https://github.com/Ko
 <li><p>If a movie directory had “auto-reload” enabled, each start of MediaElch added
 entries to our cache database without remove old entries.  The database
 size grew fast.  Clicking “reload” is a workaround (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1487">#1487</a>)</p></li>
-<li><p>IMDb:
-- Movie search did not return any results.
-- TV show search did not return any results.
-- TV show runtimes are scraped correctly again.</p></li>
-<li><p>UI:
-- Incorrectly scaled tables on HighDPI display now work with Qt6.
-- If the renamer dialog was re-opened, the placeholder-table was mixed up.</p></li>
-<li><p>Multi-Movie Scraper:
-- If using TheMovieDb, scraping could get stuck and not continue (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1505">#1505</a>)
-- Adult Scrapers were always shown, even if disabled.</p></li>
+<li><p>IMDb:</p>
+<ul>
+<li><p>Movie search did not return any results.</p></li>
+<li><p>TV show search did not return any results.</p></li>
+<li><p>TV show runtimes are scraped correctly again.</p></li>
+</ul>
+</li>
+<li><p>UI:</p>
+<ul>
+<li><p>Incorrectly scaled tables on HighDPI display now work with Qt6.</p></li>
+<li><p>If the renamer dialog was re-opened, the placeholder-table was mixed up.</p></li>
+</ul>
+</li>
+<li><p>Multi-Movie Scraper:</p>
+<ul>
+<li><p>If using TheMovieDb, scraping could get stuck and not continue (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1505">#1505</a>)</p></li>
+<li><p>Adult Scrapers were always shown, even if disabled.</p></li>
+</ul>
+</li>
 <li><p>TV Show Scraper: The “Downloading images…” dialog was not removed when finished (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1507">#1507</a>)</p></li>
 <li><p>AllMusic: Fix loading of “born” and “died” (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1336">#1336</a>)</p></li>
 <li><p>TvTunes: Spaces around titles were not removed</p></li>
