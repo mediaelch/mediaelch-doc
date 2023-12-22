@@ -19,6 +19,12 @@ The server is also hosted by our team.  If the server is down, please contact us
    Linux <download/linux>
 
 
+.. warning::
+
+   The "macOS 11 or later" version has some major flaws due to an issue in Qt 6.6.1.
+   A version that uses Qt 6.4.3 can be found at https://github.com/Komet/MediaElch/issues/1687#issuecomment-1867577275
+
+
 +---------------------+--------------------+-----------------------------------------------+
 | System (64 bit)     | Version            | Download                                      |
 +=====================+====================+===============================================+
