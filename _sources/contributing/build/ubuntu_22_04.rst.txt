@@ -27,9 +27,7 @@ Dependencies
         libqt5opengl5 \
         libqt5opengl5-dev \
         libqt5svg5 \
-        libqt5svg5-dev \
-        qml-module-qtquick-controls \
-        qml-module-qtqml-models2
+        libqt5svg5-dev
 
 Build
 **********************************************************
