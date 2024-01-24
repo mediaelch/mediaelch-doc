@@ -21,9 +21,7 @@ Dependencies
         qtdeclarative5-dev \
         qtmultimedia5-dev \
         libqt5svg5 \
-        libqt5svg5-dev \
-        qml-module-qtquick-controls \
-        qml-module-qtqml-models2
+        libqt5svg5-dev
 
 
 Build
