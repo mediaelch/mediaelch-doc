@@ -32,6 +32,7 @@ Changed
 - debian: Now uses Qt 6 on Ubuntu Lunar (23.04) and later (`#1697 <https://github.com/Komet/MediaElch/issues/1697>`_)
   Thank you, Philipp (GitHub user ``iluminat23``) for this change!
 - UI: Navigation and menu bar icons now have a hover effect.
+- IMDb: The year in search results works again.
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -41,7 +42,8 @@ Removed
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- TV shows and episodes: If there is more than one network (separated by ``,``),
+  they will be stored as separate ``<studio>`` tags in the NFO file (`#1705 <https://github.com/Komet/MediaElch/issues/1705>`_)
 
 2.10.6 - 2023-12-03
 ************************************
