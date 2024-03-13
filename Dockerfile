@@ -8,7 +8,7 @@ ENV LC_CTYPE="en_US.UTF-8"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git curl wget python3 python3-doc python3-pip && \
+    apt-get install -y git curl wget python3 python3-doc python3-pip locales && \
     apt-get autoremove -y && \
     dpkg-reconfigure locales
 
