@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>macOS &mdash; MediaElch 2.10.6 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=08631ee2"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -124,7 +126,7 @@
            <div itemprop="articleBody">
              
   <section id="macos">
-<h1>macOS<a class="headerlink" href="#macos" title="Permalink to this heading"></a></h1>
+<h1>macOS<a class="headerlink" href="#macos" title="Link to this heading"></a></h1>
 <p>MediaElch is build upon Qt. Qt itself requires macOS 10.12 or later and therefore
 MediaElch does as well.</p>
 <p>Install XCode (e.g. through the <a class="reference external" href="https://itunes.apple.com/de/app/xcode/id497799835">Mac App Store</a>)
@@ -132,7 +134,7 @@ and <a class="reference external" href="https://brew.sh/">Homebrew</a>. Instead 
 <a class="reference external" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE_">XCode Command Line Tools</a>
 (open a Terminal and execute <code class="docutils literal notranslate"><span class="pre">xcode-select</span> <span class="pre">--install</span></code>).</p>
 <section id="command-line-build">
-<h2>Command Line Build<a class="headerlink" href="#command-line-build" title="Permalink to this heading"></a></h2>
+<h2>Command Line Build<a class="headerlink" href="#command-line-build" title="Link to this heading"></a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># [Optional] Install git (it should have already been installed by XCode)</span>
 brew<span class="w"> </span>install<span class="w"> </span>git
 
@@ -155,7 +157,7 @@ make<span class="w"> </span>-j4
 </div>
 </section>
 <section id="qtcreator-build">
-<h2>QtCreator Build<a class="headerlink" href="#qtcreator-build" title="Permalink to this heading"></a></h2>
+<h2>QtCreator Build<a class="headerlink" href="#qtcreator-build" title="Link to this heading"></a></h2>
 <p>Download the <a class="reference external" href="https://www.qt.io/download">Qt online installer</a>. Run it and select the latest Qt
 version for installation (e.g. <code class="docutils literal notranslate"><span class="pre">Qt</span> <span class="pre">5.10.1</span></code>).
 Check that following components are selected:</p>
@@ -172,7 +174,7 @@ by clicking “Download” or using git: <br />
 to create random screenshots of video files. After building MediaElch, place <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>
 inside <code class="docutils literal notranslate"><span class="pre">MediaElch.app/Contents/MacOS</span></code>.</p>
 <section id="other-libraries">
-<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Permalink to this heading"></a></h3>
+<h3>Other Libraries<a class="headerlink" href="#other-libraries" title="Link to this heading"></a></h3>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Install MediaInfo as it is required for MediaElch to get stream details. <br />
@@ -185,13 +187,13 @@ Copy the folder <code class="docutils literal notranslate"><span class="pre">Sou
 </div></blockquote>
 </section>
 <section id="build">
-<h3>Build<a class="headerlink" href="#build" title="Permalink to this heading"></a></h3>
+<h3>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h3>
 <p>Start QtCreator and open <code class="docutils literal notranslate"><span class="pre">/path/to/MediaElch/MediaElch.pro</span></code>. <br />
 Configure it as “Release” and click “Run” (<code class="docutils literal notranslate"><span class="pre">Strg+R</span></code>).</p>
 </section>
 </section>
 <section id="troubleshooting-cmake-build">
-<h2>Troubleshooting (CMake Build)<a class="headerlink" href="#troubleshooting-cmake-build" title="Permalink to this heading"></a></h2>
+<h2>Troubleshooting (CMake Build)<a class="headerlink" href="#troubleshooting-cmake-build" title="Link to this heading"></a></h2>
 <p>Depending on your macOS version, you may need to set the used C++ standard library.
 See <a class="reference external" href="https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update">https://stackoverflow.com/questions/52502852/cmake-cant-find-stdc11-after-xcode-10-update</a></p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bash (command line)</span>
