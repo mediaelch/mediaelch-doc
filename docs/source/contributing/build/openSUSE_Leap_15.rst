@@ -2,6 +2,9 @@
 openSUSE Leap 15 and later
 ============================
 
+Note: These instructions still use Qt 5.  For Qt 6 instructions, see
+the openSUSE Tumbleweed build instructions.
+
 Dependencies
 **********************************************************
 
@@ -34,7 +37,7 @@ Install Qt using zypper:
 
 Note that MediaElch needs ffmpeg to create screenshots.
 ffmpeg itself requires multimedia codecs. Please refer to
-http://opensuse-guide.org/codecs.php to learn how to install them.
+https://opensuse-guide.org/codecs.php to learn how to install them.
 Then install ffmpeg.
 
 .. code-block:: sh
