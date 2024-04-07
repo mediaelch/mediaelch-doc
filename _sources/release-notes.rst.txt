@@ -24,7 +24,8 @@ Notes
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- IMDb: Episode's overviews are scraped again (`#1724 <https://github.com/Komet/MediaElch/issues/1724>`_)
+- Ferhsehserien.de: Fix scraping of episode's thumbnails
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,6 +45,7 @@ Added
 
 - TV shows and episodes: If there is more than one network (separated by ``,``),
   they will be stored as separate ``<studio>`` tags in the NFO file (`#1705 <https://github.com/Komet/MediaElch/issues/1705>`_)
+- Added Kodi v22 to Kodi selection menu.
 
 2.10.6 - 2023-12-03
 ************************************
