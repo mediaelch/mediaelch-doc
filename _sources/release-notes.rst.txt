@@ -30,7 +30,11 @@ Notes
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- IMDb: Episode's overviews are scraped again (`#1724 <https://github.com/Komet/MediaElch/issues/1724>`_)
+- IMDb: 
+  - Episode's overviews are scraped again (`#1724 <https://github.com/Komet/MediaElch/issues/1724>`_, `#1751 <https://github.com/Komet/MediaElch/issues/1751>`_)
+  - TV show titles did not properly decode HTML entities (`#1754 <https://github.com/Komet/MediaElch/issues/1754>`_)
+  - The year in search results works again.
+  - Loading of all tags works again.
 - fernsehserien.de: Fix scraping of episode's thumbnails.
 - TV Show: The custom episode scraper may not have loaded details from IMDb.
 - Possible crash when clicking on empty episode thumbnails.
@@ -44,7 +48,8 @@ Changed
 - debian: Now uses Qt 6 on Ubuntu Lunar (23.04) and later (`#1697 <https://github.com/Komet/MediaElch/issues/1697>`_)
   Thank you, Philipp (GitHub user ``iluminat23``) for this change!
 - UI: Navigation and menu bar icons now have a hover effect.
-- IMDb: The year in search results works again.
+- macOS: The Qt5 build for macOS X no longer supports automatic dark mode
+  detection.  Reason being that it doesn't work on macOS 10.13 (`#1742 <https://github.com/Komet/MediaElch/issues/1742>`_)
 
 Removed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,7 +61,11 @@ Added
 
 - TV shows and episodes: If there is more than one network (separated by ``,``),
   they will be stored as separate ``<studio>`` tags in the NFO file (`#1705 <https://github.com/Komet/MediaElch/issues/1705>`_)
+- Movies have a new field "TV Show Link" which is stored as a ``<showlink>`` in Kodi. |br|
+  It is available in the UI via the movie's "Extended" tab (`#1753 <https://github.com/Komet/MediaElch/issues/1753>`_).
 - Added Kodi v22 to Kodi selection menu.
+- Concerts (i.e. music videos in Kodi) can now have multiple artists, each stored
+  as an ``<artist>`` tag in NFO files.  In the UI, it's a comma-separated list (`#1709 <https://github.com/Komet/MediaElch/issues/1709>`_).
 
 2.10.6 - 2023-12-03
 ************************************
