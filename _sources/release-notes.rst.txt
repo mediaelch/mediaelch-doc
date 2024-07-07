@@ -36,6 +36,7 @@ Fixed
   - The year in search results works again.
   - Loading of all tags works again.
 - fernsehserien.de: Fix scraping of episode's thumbnails.
+- TVMaze: The premiered-date of TV shows was not properly scraped (`#1767 <https://github.com/Komet/MediaElch/issues/1767>`_).
 - TV Show: The custom episode scraper may not have loaded details from IMDb.
 - Possible crash when clicking on empty episode thumbnails.
 - ADE: Search works again (`#1737 <https://github.com/Komet/MediaElch/issues/1737>`_)
@@ -66,7 +67,7 @@ Added
 - Added Kodi v22 to Kodi selection menu.
 - Concerts (i.e. music videos in Kodi) can now have multiple artists, each stored
   as an ``<artist>`` tag in NFO files.  In the UI, it's a comma-separated list (`#1709 <https://github.com/Komet/MediaElch/issues/1709>`_).
-- UI: The movie page now has a "play movie" button in the top right corner (`#1727 <https://github.com/Komet/MediaElch/issues/1727>`_).
+- UI: The movie, concert and episode pages now have a "play movie" button in the top right corner (`#1727 <https://github.com/Komet/MediaElch/issues/1727>`_, `#1764 <https://github.com/Komet/MediaElch/issues/1764>`_).
 
 2.10.6 - 2023-12-03
 ************************************
