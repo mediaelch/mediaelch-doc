@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-sphinx = "==7.4.0"
+sphinx = "==7.4.3"
 sphinx-autobuild = "*"
 sphinx_rtd_theme = "==2.0.0"
 
