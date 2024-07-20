@@ -15,6 +15,6 @@ RUN apt-get update && \
 COPY Pipfile.lock /opt/Pipfile.lock
 COPY Pipfile /opt/Pipfile
 
-RUN cd /opt && pipenv install --system
+RUN cd /opt && pipenv install --system --break-system-packages
 
 WORKDIR /opt
