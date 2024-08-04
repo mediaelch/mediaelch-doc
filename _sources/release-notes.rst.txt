@@ -41,7 +41,9 @@ Fixed
 - Possible crash when clicking on empty episode thumbnails.
 - ADE: Search works again (`#1737 <https://github.com/Komet/MediaElch/issues/1737>`_)
 - ADE/HM: Back cover is also downloaded (`#1743 <https://github.com/Komet/MediaElch/issues/1743>`_)
-- UI: Show movies' full release-date, not just the year (`#1749 <https://github.com/Komet/MediaElch/issues/1749>`_)
+- UI:
+  - Show movies' full release-date, not just the year (`#1749 <https://github.com/Komet/MediaElch/issues/1749>`_)
+  - The language dropdown box was not sorted alphabetically.
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
