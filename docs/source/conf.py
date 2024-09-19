@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'MediaElch'
-copyright = '2018 - 2023, MediaElch authors'
+copyright = '2018 - 2024, MediaElch authors'
 author = ''
 
 # The short X.Y version
