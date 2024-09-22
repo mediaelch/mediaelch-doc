@@ -18,9 +18,9 @@ Linux AppImage
 +-------------------+--------------------+-----------------------------------------------+
 | System (64 bit)   | Version            | Download                                      |
 +===================+====================+===============================================+
-| Linux (AppImage)  | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| Linux (AppImage)  | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +-------------------+--------------------+-----------------------------------------------+
-|                   | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                   | 2.12.0  (Mirror)   | |mirror_release|                              |
 +-------------------+--------------------+-----------------------------------------------+
 |                   | latest (unstable)  | |mirror_snapshot_linux|                       |
 +-------------------+--------------------+-----------------------------------------------+
@@ -77,10 +77,10 @@ Or you can install MediaElch per command line:
 .. _AppImage: https://appimage.org/
 
 .. |gh_pages_release| image:: ../images/badges/Version.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.6
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.12.0
 
 .. |mirror_release| image:: ../images/badges/Version.svg
-   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.6/
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.12.0/
 
 .. |mirror_snapshot_linux| image:: ../images/badges/Linux-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
