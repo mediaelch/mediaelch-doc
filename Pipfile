@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 sphinx = "==8.0.2"
 sphinx-autobuild = "*"
-sphinx_rtd_theme = "==3.0.0rc3"
+sphinx_rtd_theme = "==3.0.0rc4"
 
 [dev-packages]
 
