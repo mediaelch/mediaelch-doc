@@ -18,47 +18,40 @@ The server is also hosted by our team.  If the server is down, please contact us
    macOS <download/macOS>
    Linux <download/linux>
 
-
-.. warning::
-
-   The "macOS 11 or later" version has some major flaws due to an issue in Qt 6.6.1.
-   A version that uses Qt 6.4.3 can be found at https://github.com/Komet/MediaElch/issues/1687#issuecomment-1867577275
-
-
 +---------------------+--------------------+-----------------------------------------------+
 | System (64 bit)     | Version            | Download                                      |
 +=====================+====================+===============================================+
-| Windows 10 or later | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| Windows 10 or later | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                     | 2.12.0  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_windows_10_or_later|         |
 +---------------------+--------------------+-----------------------------------------------+
-| Windows 7 + 8       | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| Windows 7 + 8       | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                     | 2.12.0  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_windows_7_8|                 |
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
-| macOS 11 or later   | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| macOS 11 or later   | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                     | 2.12.0  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_macOS_11_or_later|           |
 +---------------------+--------------------+-----------------------------------------------+
-| macOS X             | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| macOS X             | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                     | 2.12.0  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_macOS_X|                     |
 +---------------------+--------------------+-----------------------------------------------+
 | --                  | --                 | --                                            |
 +---------------------+--------------------+-----------------------------------------------+
-| Linux (AppImage)    | 2.10.6  (GitHub)   | |gh_pages_release|                            |
+| Linux (AppImage)    | 2.12.0  (GitHub)   | |gh_pages_release|                            |
 +---------------------+--------------------+-----------------------------------------------+
-|                     | 2.10.6  (Mirror)   | |mirror_release|                              |
+|                     | 2.12.0  (Mirror)   | |mirror_release|                              |
 +---------------------+--------------------+-----------------------------------------------+
 |                     | latest (unstable)  | |mirror_snapshot_linux|                       |
 +---------------------+--------------------+-----------------------------------------------+
@@ -94,10 +87,10 @@ MediaElch is open source! The source code is located on GitHub: https://github.c
 .. _chocolatey package: https://chocolatey.org/packages/MediaElch
 
 .. |gh_pages_release| image:: images/badges/Version.svg
-   :target: https://github.com/Komet/MediaElch/releases/tag/v2.10.6
+   :target: https://github.com/Komet/MediaElch/releases/tag/v2.12.0
 
 .. |mirror_release| image:: images/badges/Version.svg
-   :target: https://mediaelch-downloads.ameyering.de/releases/v2.10.6/
+   :target: https://mediaelch-downloads.ameyering.de/releases/v2.12.0/
 
 .. |mirror_snapshot_linux| image:: images/badges/Linux-dev.svg
    :target: https://mediaelch-downloads.ameyering.de/snapshots/Linux/
