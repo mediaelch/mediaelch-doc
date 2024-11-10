@@ -24,7 +24,8 @@ Notes
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- UI: The movie search widget is no longer stuck in case of network errors.
+- HotMovies/AdultDvdEmpire: Search works again (`#1811 <https://github.com/Komet/MediaElch/issues/1811>`_)
 
 Changed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,7 +40,7 @@ Removed
 Added
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- tbd
+- Renamer: Placeholder ``<tmdbId>`` is now also available for TV shows and episodes (`#1814 <https://github.com/Komet/MediaElch/issues/1814>`_)
 
 2.12.0 - 2024-10-13
 ************************************
