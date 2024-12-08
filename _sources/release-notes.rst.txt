@@ -42,6 +42,7 @@ Added
 
 - Renamer: Placeholder ``<tmdbId>`` is now also available for TV shows and episodes (`#1814 <https://github.com/Komet/MediaElch/issues/1814>`_)
 - NFO: ``<hdrtype>`` is now supported (`#1810 <https://github.com/Komet/MediaElch/issues/1810>`_)
+- Renamer: Spaces in file names can be replaced by ``_`` or ``-`` (`#1827 <https://github.com/Komet/MediaElch/issues/1827>`_)
 
 2.12.0 - 2024-10-13
 ************************************
