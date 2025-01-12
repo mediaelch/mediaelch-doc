@@ -67,6 +67,7 @@ The following conditional placeholders are available:
  - ``{3D}{/3D}`` It's a 3D movie, you selected a stereo mode in the stream details tab (if not detected automatically)
  - ``{movieset}<movieset>{/movieset}`` The movieset is not empty
  - ``{imdbId}<imdbId>{/imdbId}`` The IMDB Id of the movie
+ - ``{tmdbId}<tmdbId>{/tmdbId}`` The TMDb Id of the movie
 
 If you are unsure if your rename pattern gives you the result you want, just hit
 the "Dry Run" button. No file is renamed but you'll see the
