@@ -21,6 +21,7 @@ Notes
 
 - The renamer has been worked internally (`#1834 <https://github.com/Komet/MediaElch/issues/1834>`_) |br|
   If you encounter issues, please let us know.
+- Qt was updated to v6.9.1 for macOS 11 and later.
 
 Fixed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,6 +32,8 @@ Fixed
   - If a scraper returns an error, in some cases the search bar remained stuck.
   - A quick-open menu for concerts was added, similar to movies.
     Open it by clicking :kbd:`Ctrl+O` (:kbd:`⌘+O` on macOS)
+  - After scraping a single episode, the UI did not allow saving.
+    You had to select another episode again (`#1896 <https://github.com/Komet/MediaElch/issues/1896>`_)
 - HotMovies/AdultDvdEmpire: Search works again (`#1811 <https://github.com/Komet/MediaElch/issues/1811>`_)
 - IMDb: Writers/Directors are scraped again for TV show episodes (`#1832 <https://github.com/Komet/MediaElch/issues/1832>`_)
 - TMDB: If there is an unknown season, and you want to load _all_ episodes, MediaElch
