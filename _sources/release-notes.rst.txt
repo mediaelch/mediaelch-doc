@@ -34,6 +34,7 @@ Fixed
     Open it by clicking :kbd:`Ctrl+O` (:kbd:`⌘+O` on macOS)
   - After scraping a single episode, the UI did not allow saving.
     You had to select another episode again (`#1896 <https://github.com/Komet/MediaElch/issues/1896>`_)
+  - TV shows are sorted according to their sort-title (`#1927 <https://github.com/Komet/MediaElch/issues/1927>`_)
 - HotMovies/AdultDvdEmpire: Search works again (`#1811 <https://github.com/Komet/MediaElch/issues/1811>`_)
 - IMDb:
   - Scraping of was completely broken; it is fixed again (`#1889 <https://github.com/Komet/MediaElch/issues/1889>`_)
