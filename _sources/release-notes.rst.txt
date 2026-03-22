@@ -63,6 +63,7 @@ Added
   - TvMaze can now load episodes' guest cast (actors) for single-episode scraping (`#1801 <https://github.com/Komet/MediaElch/issues/1801>`_)
   - TVMaze can now load episodes' guest crew (directors, writers) for single-episode scraping (`#1877 <https://github.com/Komet/MediaElch/issues/1877>`_)
 - NFO: ``<hdrtype>`` is now supported (`#1810 <https://github.com/Komet/MediaElch/issues/1810>`_)
+- TMDB: Movie logos can now be scraped (`#1950 <https://github.com/Komet/MediaElch/issues/1950>`_)
 - Renamer:
   - Placeholder ``<tmdbId>`` is now also available for TV shows and episodes (`#1814 <https://github.com/Komet/MediaElch/issues/1814>`_)
   - Spaces in file names can be replaced by ``_`` or ``-`` (`#1827 <https://github.com/Komet/MediaElch/issues/1827>`_)
