@@ -3,6 +3,7 @@ FROM ubuntu:26.04
 LABEL maintainer="info@andremeyering.de"
 
 ENV LC_ALL="C"
+ENV LANG="C"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
@@ -11,9 +12,6 @@ RUN apt-get update && \
         python3-pip pipenv && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
-
-RUN mkdir -p $HOME/.config/pip/ && \
-    echo "[global]\nbreak-system-packages = true" > $HOME/.config/pip/pip.conf
 
 COPY Pipfile.lock /opt/Pipfile.lock
 COPY Pipfile /opt/Pipfile
