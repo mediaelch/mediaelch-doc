@@ -14,13 +14,13 @@ SCRIPT_DIR="$(pwd)"
 ###############################################################################
 
 if [[ ! -d dist ]]; then
-  git worktree add --quiet dist gh-pages
+	git worktree add --quiet dist gh-pages
 else
-  cd dist
-  git reset --hard HEAD
-  # Assure we pull the current branch from origin
-  git pull origin "$(git rev-parse --abbrev-ref HEAD)"
-  cd "${SCRIPT_DIR}"
+	cd dist
+	git reset --hard HEAD
+	# Assure we pull the current branch from origin
+	git pull origin "$(git rev-parse --abbrev-ref HEAD)"
+	cd "${SCRIPT_DIR}"
 fi
 
 # Ensure that the worktree is relative.  This is important
@@ -35,7 +35,13 @@ fi
 ###############################################################################
 
 ./docs/create_changelog.sh
-pipenv run sphinx-build --color -b html "docs/source" "./dist"
+
+if command -v sphinx-build >/dev/null 2>&1; then
+	sphinx-build --color -b html "docs/source" "./dist"
+else
+	pipenv run sphinx-build --color -b html "docs/source" "./dist"
+fi
+
 rm -rf ./dist/.doctrees ./dist/.buildinfo
 
 cd ./dist

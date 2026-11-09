@@ -25,4 +25,4 @@ RUN pip install --upgrade pip && \
 COPY Pipfile.lock /opt/Pipfile.lock
 COPY Pipfile /opt/Pipfile
 
-RUN cd /opt && pipenv install
+RUN cd /opt && pipenv install --deploy
