@@ -19,7 +19,7 @@ pipeline {
   }
 
   environment {
-    GIT_AUTHOR_NAME = 'Andre Meyering (Jenkins)'
+    GIT_AUTHOR_NAME = 'Andre Hirt-Meyering (Jenkins)'
     GIT_AUTHOR_EMAIL = 'info@andremeyering.de'
   }
 
