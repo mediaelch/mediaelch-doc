@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f27b9c2a541f24214eb7a21d754e0d394ca10120e4cf6705dd67f5310fb102b4"
+            "sha256": "388220c4ab6263b3ad567cbddb78f64150150d53a4f034a5f99e4d09a14e9781"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -481,12 +481,12 @@
         },
         "sphinx": {
             "hashes": [
-                "sha256:7741722357dd75f8190766926071fed3bdc211c74dd2d7d4df5404da95930ddb",
-                "sha256:c84fdd4e782504495fe4f2c0b3413d6c2bf388589bb352d439b2a3bb99991978"
+                "sha256:4c3ec13b612712c0d3ce4cbdd9e3eb91e68577e07a8e31f32f21cf178453578c",
+                "sha256:90470459f3cab15d9dfed146c71cf77694b0445df17b2e0e69059cb9f7fc9ee4"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.12'",
-            "version": "==9.1.0"
+            "markers": "python_version >= '3.13'",
+            "version": "==9.2.0"
         },
         "sphinx-autobuild": {
             "hashes": [
