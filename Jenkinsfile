@@ -47,6 +47,7 @@ pipeline {
       when { branch 'master' }
       steps {
         withCredentials([gitUsernamePassword(credentialsId: 'mediaelch-org-github', gitToolName: 'Default')]) {
+        	sh 'pipenv install'
           sh 'pipenv run ./update_github_pages.sh'
         }
       }
