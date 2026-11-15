@@ -63,7 +63,7 @@ The server is also hosted by our team.  If the server is down, please contact us
 
   - Windows 7/8, 10 and later
   - macOS 10.13 and later
-  - Ubuntu 18.04 and later (PPA)
+  - Ubuntu 20.04 and later (PPA)
   - Ubuntu 18.04 and later (AppImage)
   - openSUSE Tumbleweed, 15.5 and later
 
