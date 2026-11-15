@@ -314,12 +314,22 @@ aborted scraping after failing to load the unknown season (<a class="reference e
 <li><p>Improved media codec detection for HDR10 and dolby vision (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1883">#1883</a>).
 Thanks to GitHub user <code class="docutils literal notranslate"><span class="pre">&#64;Quppa</span></code> for the help!</p></li>
 <li><p>Music: If an album’s cover can’t be found, MediaElch may have crashed (<a class="reference external" href="https://github.com/Komet/MediaElch/issues/1918">#1918</a>)</p></li>
+<li><p>Renamer:
+- When the target movie folder already existed, the collision counter was</p>
+<blockquote>
+<div><p>appended repeatedly (“Movie 1 2 3”) instead of counting up (“Movie 2”)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Renaming a movie/concert/episode that has no files no longer risks a crash;
+it is reported as an error instead</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="changed">
 <h3>Changed<a class="headerlink" href="#changed" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>tbd</p></li>
+<li><p>Default Kodi version is now v21</p></li>
 </ul>
 </section>
 <section id="removed">
