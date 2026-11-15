@@ -64,12 +64,12 @@ The server is also hosted by our team.  If the server is down, please contact us
   - Windows 7/8, 10 and later
   - macOS 10.13 and later
   - Ubuntu 18.04 and later (PPA)
-  - Ubuntu 16.04 and later (AppImage)
+  - Ubuntu 18.04 and later (AppImage)
   - openSUSE Tumbleweed, 15.5 and later
 
 **Supported Qt versions:**
 
-  - Qt 5.6 or later
+  - Qt 5.9 or later
   - Qt 6.3 or later
 
 Supported architectures are only 64-bit x86 systems.
