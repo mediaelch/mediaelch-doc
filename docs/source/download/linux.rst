@@ -7,8 +7,7 @@ package managers.
 
 **Officially supported systems are:**
 
-  - Ubuntu 18.04 and later (PPA)
-  - Ubuntu 16.04 and later (AppImage)
+  - Ubuntu 18.04 and later (PPA + AppImage)
   - openSUSE Tumbleweed, 15.4 and later (OBS)
 
 
